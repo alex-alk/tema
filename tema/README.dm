@@ -1,1 +1,0 @@
-baza de date: baza.sql
