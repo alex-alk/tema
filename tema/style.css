@@ -1,0 +1,431 @@
+/*
+Theme Name: Tema
+Description: This is a description
+Version:1
+Author: Eu
+*/
+nav a:hover{
+    text-decoration: none;
+    color:black;
+}
+.coms{
+    margin-left: 1em;
+}
+nav br{
+    display: none;
+}
+#meniul{
+    visibility: hidden;
+}
+#cmenu{
+    visibility: hidden;
+}
+nav{
+    background-color: white;
+    box-shadow: 0 4px 2px -2px gray;
+    width: 100%;
+    top:0em;
+    position: fixed;
+    opacity: 0.9;
+    height: 4em;
+    z-index: 1;
+}
+nav span{
+    position:fixed;
+    top:3em;
+    left:10em;
+}
+#c{
+    display: none;
+}
+#search{
+    margin-left: 5em;
+    margin-top: 2.5em;
+}
+#c:checked+span{
+    visibility:visible;
+}
+nav img{
+    position:fixed;
+    left:4em;
+    top:0.7em;
+    bottom: 0.2;
+}
+.menu-meniu-container{
+    padding-top: 0.5em;
+    margin-left: 2em;
+    position: fixed;
+}
+.article0{
+    clear:left;
+    max-width: 52em;
+    height: auto;
+    margin-right: 19em;
+}
+nav li{
+    list-style-type: none;
+    float:left;
+    padding:0.5em;
+    font-size: 110%;
+    font-weight: bold;
+}
+body h2{
+    display: block;
+    max-width: 40em;
+    clear:left;
+    font-size: 130%;
+    margin-bottom: 1em;
+}
+main{
+    margin:4em;
+    padding-top: 5em;
+}
+h2 a{
+    color:black;
+}
+h2 a:hover{
+    text-decoration: none;
+}
+div.article1{
+    float:right;
+    clear: right;
+    max-width: 20em;
+}
+div.article0 img{
+    height: auto;
+    max-width: 100%;
+}
+div.article2{
+    float:right;
+    clear: right;
+    max-width: 20em;
+}
+div.article3{
+    float:right;
+    clear: right;
+    max-width: 20em;
+}
+div.article1 h2{
+    max-width: 20em;
+    
+    font-size: 100%;
+}
+div.article2 h2{
+    max-width: 20em;
+    
+    font-size: 100%;
+}
+div.article3 h2{
+    max-width: 20em;
+    font-size: 100%;
+}
+div.article1 img{
+    max-width: 20em;
+    height: auto;
+}
+div.article2 img{
+    
+    max-width: 20em;
+    height: auto;
+}
+div.article3 img{
+    
+    max-width: 20em;
+    height: auto;
+}
+ul{
+    clear:left;
+}
+div.article0 div.content-home p:nth-child(n+2){
+    display:none;
+}
+div.article1 div.content-home p:nth-child(n+2){
+    display:none;
+}
+div.article2 div.content-home p:nth-child(n+2){
+    display:none;
+}
+div.article3 div.content-home p:nth-child(n+2){
+    display:none;
+}
+main>#rest>div:nth-child(n) img{
+    max-width: 16em;
+    height: 10em;
+    float:left;
+    clear:left;
+    margin-top: -4.2em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+main>#rest>div:nth-child(n) h2{
+    display: block;
+    margin-left: 13em;
+    margin-bottom: -1em;
+    max-width: 65%;
+    overflow: hidden;
+    display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  height: 3.3em;
+}
+main>#rest>div:nth-child(n) p:nth-child(n+2){
+    max-width: 65%;;
+    overflow: hidden;
+    display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-height: 110%;
+  padding-top: 1em;
+  margin-bottom: 0em;
+}
+main>#rest>div:nth-child(n) p:nth-child(n+3){
+    display:none;
+}    
+main>div:nth-child(n+3){
+    float:left;
+    clear:left;
+    width: 70%;
+}
+.article4{
+    margin-top: 1em;
+}
+.category-politic li:nth-child(1) {
+    border-top: 1px solid blue;
+}
+.category-politic li:nth-child(1) a{
+    color:black;
+}
+.category-justitie li:nth-child(2) {
+    border-top: 1px solid blue;
+}
+.category-justitie li:nth-child(2) a{
+    color:black;
+}
+.category-externe li:nth-child(3) {
+    border-top: 1px solid blue;
+}
+.category-externe li:nth-child(3) a{
+    color:black;
+}
+.category-economic li:nth-child(4) {
+    border-top: 1px solid blue;
+}
+.category-economic li:nth-child(4) a{
+    color:black;
+}
+.category-eveniment li:nth-child(5) {
+    border-top: 1px solid blue;
+}
+.category-eveniment li:nth-child(5) a{
+    color: black;
+}
+.category-entertainment li:nth-child(6) {
+    border-top: 1px solid blue;
+}
+.category-entertainment li:nth-child(6) a{
+    color:black;
+}
+.category-sport li:nth-child(7) {
+    border-top: 1px solid blue;
+}
+.category-sport li:nth-child(7) a{
+    color: black;
+}
+.category-cultura-media li:nth-child(8) {
+    border-top: 1px solid blue;
+}
+.category-cultura-media li:nth-child(8) a{
+    color: black;
+}
+.category-social li:nth-child(9) {
+    border-top: 1px solid blue;
+}
+.category-social li:nth-child(9) a{
+    color:black;
+}
+.menu-meniu-container{
+    display: inline-block;
+}
+div.articles{
+    float:right;
+    clear: right;
+    max-width: 20em;
+    height: auto;
+}
+div.articles img{
+    max-width: 20em;
+    height: auto;
+}
+div.articles h2{
+    max-width: 20em;
+    font-size: 100%;
+    height: auto;
+}
+div.article{
+    width:54em;
+}
+div.articles:nth-child(n+1) p:nth-child(n+2){
+    display: none;
+}
+#rep{
+    display: none;
+}
+aside{
+    float:right;
+    top:10em;
+    position: absolute;
+    right:3em;
+}
+.search main>div h2{
+    font-size: 100%;
+}
+.search main>div img{
+    width: 20em;
+    height: 16em;
+}
+#rest{
+    margin-right: 30em;
+    padding-right: 2em;
+}
+@media only screen and (max-width: 940px) {
+    .article0{
+        padding-top: 2em;
+    }
+    #amain{
+        position: static;
+        float:none;
+    }
+    #amain img{
+        max-width: 100%;
+        height: auto;
+    }
+    #rest{
+    margin-right: 0em;
+    padding-right: 0em;
+    width: 100%;
+}
+    #amain{
+        max-width: 100%;
+        height: auto;
+        float:left;
+    }
+   main>#rest>div:nth-child(n) img{
+        float:left;
+        clear:right;
+    }
+  main>#rest>div:nth-child(n) p:nth-child(n+2){
+        float:none;
+    }
+    main{
+        margin:0.2em;
+    }
+    .article0{
+        margin-right: 0;
+    }
+}
+@media only screen and (max-width: 560px){
+
+    main>#rest>div:nth-child(n) img{
+        clear:both;
+        float:none;
+        margin:0;
+        margin-top: 0.5em;
+        margin-bottom: -1em;
+        height: auto;
+        max-width: 100%;
+        
+    }
+
+    div.article1, div.article1 h2{
+        max-width: 100%;
+    }
+    div.article2, div.article2 h2{
+        max-width: 100%;
+    }
+    div.article3, div.article3 h2{
+        max-width: 100%;
+    }
+
+
+    main>#rest>div:nth-child(n){
+        max-width: 100%;
+    }
+    main>#rest>div:nth-child(n) h2{
+        margin: 0;
+        font-size: 100%;
+        margin-top: 1.5em;
+        max-width: 100%;
+    }
+    main>#rest>div:nth-child(n) img{
+        height: auto;
+    }
+    main>#rest>div:nth-child(n) p:nth-child(n+2){
+
+        max-width: 100%;
+    }
+}
+@media only screen and (max-width: 1055px){
+    nav span{
+        visibility: hidden;
+        top:2em;
+    }
+    #menu-meniu{
+        font-size: 80%;
+        margin-left:1em;
+    }
+    #logo{
+    width: 3em;
+    height: auto;
+    left:5em;
+    }
+    nav{
+        height: 5em;
+    }
+}
+@media only screen and (max-width: 580px){
+    nav li{
+        clear:left;
+    }
+    #meniul{
+        color:blue;
+        visibility: visible;
+        border:1px solid cyan;
+        padding: 0.3em;
+        border-radius: 10px;
+        width: 4em;
+        margin:1em auto;
+        display: block;
+    }
+    #meniul:hover{
+        color:black;
+        cursor: pointer;
+    }
+    #logo{
+        left:1em;
+    }
+    .menu-meniu-container{
+        background-color: white;
+        margin:0 auto;
+        width: 12em;
+        visibility: hidden;
+        position: static;
+        display: block;
+    }
+    nav li {
+        float: none;
+        border-top: none !important;
+    }
+    #search{
+        left:0em;
+	top:-2em
+    }
+    #cmenu:checked+.menu-meniu-container{
+        visibility: visible;
+    }
+    nav span{
+        position: static;
+        display: block;
+        width: 10em;
+        margin: -22em auto;
+    }
+}
