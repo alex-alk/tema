@@ -1,3 +1,4 @@
+# Wordpress theme
 How to install:
 - create image from Dockerfile
 - create and run container
