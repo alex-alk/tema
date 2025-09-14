@@ -1,10 +1,10 @@
 import { createComponent } from "../js_modules/main.js"
-import { Table } from "./Table.js"
+//import { Table } from "./Table.js"
 import { store } from '../js_modules/store.js'
 
 export class Users {
 
-    getElement() {
+    async getElement() {
         const html = /* html */`
             <div class="card">
                 <div class="font-semibold text-xl mb-4">Utilizatori</div>
@@ -14,6 +14,10 @@ export class Users {
         const component = createComponent(html)
 
         const $table = component.querySelector('users-table')
+
+        const module = await import("./Table.js")
+        const { Table } = module
+
         const table = new Table()
         $table.replaceWith(table.getElement())
         table.columns = ['Prenumex', 'Numex'];

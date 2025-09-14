@@ -1,8 +1,7 @@
 @font-face {
     font-family: 'primeicons';
-    font-display: block;
-    src: url('../fonts/primeicons.eot');
-    src: url('../fonts/primeicons.eot?#iefix') format('embedded-opentype'), url('../fonts/primeicons.woff2') format('woff2'), url('../fonts/primeicons.woff') format('woff'), url('../fonts/primeicons.ttf') format('truetype'), url('../fonts/primeicons.svg?#primeicons') format('svg');
+    font-display: swap;
+    src:  url('../fonts/primeicons.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -15,6 +14,8 @@
     font-variant: normal;
     text-transform: none;
     line-height: 1;
+     width: 1em;      /* rezervă spațiu fix pentru icon */
+  height: 1em;  
     display: inline-block;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

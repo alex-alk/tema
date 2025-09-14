@@ -1,40 +1,27 @@
-import { AboutPage } from '../AboutPage.js'
-//import NotFoundPage from '../NotFoundPage.js'
+const AppLayout = async () => (await import('./AppLayout.js')).AppLayout
 import Router from '../../js_modules/Router.js'
-import { Dashboard } from '../Dashboard.js'
-import { AboutPagee } from '../AboutPagee.js'
-import { AppLayout } from './AppLayout.js'
-import { Users } from '../Users.js'
 
-// Define routes map
+// Lazy load
+const Dashboard = async () => (await import('../Dashboard.js')).Dashboard
+const AboutPage = async () => (await import('../AboutPage.js')).AboutPage
+const AboutPagee = async () => (await import('../AboutPagee.js')).AboutPagee
+const Users = async () => (await import('../Users.js')).Users
+const Button = async () => (await import('../uikit/Button.js')).Button
+
+
 const routes = [
     {
         path: '/',
-        component:  AppLayout,
+        component: AppLayout,
         children: [
-            {
-                path : '/',
-                component: Dashboard
-            },
-            {
-                path : '/about',
-                component: AboutPage
-            },
-            {
-                path: '/users',
-                component : Users
-            }
+            { path: '/', component: Dashboard },
+            { path: '/about', component: AboutPage },
+            { path: '/users', component: Users },
+            { path: '/button', component: Button }
         ]
     },
-    {
-        path: '/about',
-        component : AboutPagee
-    },
-    // {
-    //     path: '/404',
-    //     component: NotFoundPage,
-    // }
-];
+    { path: '/about', component: AboutPagee }
+]
 
 // Change this to your app's base path, e.g. '/app' or '/' if root
 const BASE_PATH = '/PHP/tema/public';

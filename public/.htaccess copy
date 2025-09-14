@@ -1,0 +1,16 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$ /PHP/tema/public/index.html [NC,L,QSA]
+
+<IfModule mod_deflate.c>
+  # Forțează compresia pentru toate fișierele JS din folderul 'js'
+  <FilesMatch "\.js$">
+    SetOutputFilter DEFLATE
+  </FilesMatch>
+
+  # CSS + HTML + JSON
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css
+  AddOutputFilterByType DEFLATE application/json
+</IfModule>

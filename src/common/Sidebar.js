@@ -4,38 +4,41 @@ import { router } from "./routes.js"
 export class Sidebar {
 
     getElement() {
-        const html = /* html */`
-<div class="layout-sidebar">
-    <ul class=layout-menu>
-        <li class="layout-root-menuitem">
-            <div class="layout-menuitem-root-text">HOME</div>
-            <ul class="layout-submenu">
-                <li>
-                    <a href="/" class="router-link-active router-link-exact-active v-menu-link">
-                        <i class="pi pi-fw pi-home layout-menuitem-icon"></i>
-                        <span class="layout-menuitem-text">Dashboard</span>
-                    </a>
-                </li>
-            </ul>
-        </li>
+        const items = {
+            'HOME' : [
+                ['/', 'pi-home', 'Dashboard']
+            ],
+            'UI COMPONENTS': [
+                ['/button', 'pi-mobile', 'Button'],
+            ],
+            'ACTIUNI': [
+                ['/users', 'pi-id-card', 'Utilizatori'],
+                ['/about', 'pi-id-card', 'About']
+            ]
+        }
 
-        <li class="layout-root-menuitem">
-            <div class="layout-menuitem-root-text">Actiuni</div>
-            <ul class="layout-submenu">
-                <li>
-                    <a href="/users" class="router-link-active router-link-exact-active v-menu-link">
-                        <i class="pi pi-fw pi-id-card layout-menuitem-icon"></i>
-                        <span class="layout-menuitem-text">Utilizatori</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="/about" class="router-link-active router-link-exact-active v-menu-link">
-                        <i class="pi pi-fw pi-id-card layout-menuitem-icon"></i>
-                        <span class="layout-menuitem-text">About</span>
-                    </a>
-                </li>
-            </ul>
-        </li>
+        let html = /* html */`
+<div class="layout-sidebar">
+    <ul class=layout-menu>`
+
+        for (const item in items) {
+            html += /* html */`
+            <li class="layout-root-menuitem">
+                <div class="layout-menuitem-root-text">${item}</div>
+                <ul class="layout-submenu">`
+
+                for (const subitem of items[item]) {
+                    html += /* html */`
+                    <li>
+                        <a href="${subitem[0]}" class="router-link-active router-link-exact-active v-menu-link">
+                            <i class="pi pi-fw ${subitem[1]} layout-menuitem-icon"></i>
+                            <span class="layout-menuitem-text">${subitem[2]}</span>
+                        </a>
+                    </li>`
+                }
+                html += '</ul></li>'
+        }
+        html += `
     </ul>
 </div>
 `

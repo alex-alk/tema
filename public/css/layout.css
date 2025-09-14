@@ -1,0 +1,33 @@
+/************** common ***************/
+
+/************** Sidebar **************/
+.layout-sidebar {
+    position: fixed;
+    width: 20rem;
+    height: calc(100vh - 8rem);
+    overflow-y: auto;
+    top: 6rem;
+    left: 2rem;
+    transition: transform var(--layout-section-transition-duration), left var(--layout-section-transition-duration);
+    background-color: var(--surface-overlay);
+    border-radius: 6px;
+    padding: 0.5rem 1.5rem;
+}
+
+/*********** Button *****************/
+.flex {
+    display: flex;
+}
+@media (min-width: 768px) {
+    .md\:flex-row {
+        flex-direction: row;
+    }
+}
+.gap-8 {
+    gap: 2rem;
+}
+@media (min-width: 768px) {
+    .md\:w-1\/2 {
+        width: 50%;
+    }
+}

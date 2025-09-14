@@ -6,7 +6,7 @@ export class TopbarComp {
         const html = /*html*/`
 <div class="layout-topbar">
     <div class="layout-topbar-logo-container">
-        <button class="layout-menu-button layout-topbar-action">
+        <button class="layout-menu-button layout-topbar-action" aria-label="Deschide meniul">
             <i class="pi pi-bars"></i>
         </button>
         <a aria-current="page" 
