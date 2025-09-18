@@ -8,7 +8,11 @@ export class Button {
     <div class="md:w-1/2">
         <div class="card flex flex-col gap-4">
             <div class="font-semibold text-xl">Default</div>
-            <div class="flex flex-wrap gap-2"></div>
+            <div class="flex flex-wrap gap-2">
+                <button class="p-button p-component" type="button">
+                    <span class="font-500">Submit</span>
+                </button>
+            </div>
         </div>
     </div>
 </div>`

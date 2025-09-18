@@ -1,0 +1,37 @@
+/*********** Button **********************/
+.p-button-text.p-button-secondary {
+    background: transparent;
+    border-color: transparent;
+    color: #64748b;
+}
+.p-button-icon-only.p-button-rounded {
+    border-radius: 50%;
+    height: 2.5rem;
+}
+.p-button-icon-only {
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    gap: 0;
+}
+
+.p-button {
+    display: inline-flex;
+    cursor: pointer;
+    user-select: none;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    padding: 0.5rem 0.75rem;
+    line-height: inherit;
+    background: var(--p-primary-color);
+    color: var(--p-button-primary-color);
+    border: 1px solid var(--p-button-primary-border-color);
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+    font-feature-settings: inherit;
+    transition: background 0.2s, color 0.2s, border-color 0.2s, outline-color 0.2s, box-shadow 0.2s;
+    outline-color: transparent;
+}
+/*************************************
