@@ -1,20 +1,5 @@
-/*********** Button **********************/
-.p-button-text.p-button-secondary {
-    background: transparent;
-    border-color: transparent;
-    color: #64748b;
-}
-.p-button-icon-only.p-button-rounded {
-    border-radius: 50%;
-    height: 2.5rem;
-}
-.p-button-icon-only {
-    padding-inline-start: 0;
-    padding-inline-end: 0;
-    gap: 0;
-}
-
-.p-button {
+/****************** Button **********************/
+.btn {
     display: inline-flex;
     cursor: pointer;
     user-select: none;
@@ -24,14 +9,102 @@
     position: relative;
     padding: 0.5rem 0.75rem;
     line-height: inherit;
-    background: var(--p-primary-color);
-    color: var(--p-button-primary-color);
-    border: 1px solid var(--p-button-primary-border-color);
+    background: var(--color-primary);
+    color: white;
+    border: 1px solid var(--color-primary);
     border-radius: 6px;
     font-size: 1rem;
-    font-family: inherit;
-    font-feature-settings: inherit;
     transition: background 0.2s, color 0.2s, border-color 0.2s, outline-color 0.2s, box-shadow 0.2s;
-    outline-color: transparent;
 }
+
+.btn .btn-label {
+    font-weight: 500
+}
+
+.btn:not(:disabled):hover {
+    background-color: #0C7451;
+}
+
+.btn:disabled {
+    opacity: 0.6;
+    cursor: default;
+}
+
+.btn-link {
+    background: transparent;
+    border-color: transparent;
+    color: var(--color-primary);
+}
+
+.btn-link:not(:disabled):hover {
+    background: transparent;
+    border-color: transparent;
+    color: var(--color-primary);
+}
+.btn-link:not(:disabled):hover .btn-label {
+    text-decoration: underline;
+}
+
+.btn-secondary {
+    background: #f1f5f9;
+    border-color: #f1f5f9;
+    color: #475569;
+}
+
+.btn-secondary:not(:disabled):hover {
+    background: #e2e8f0;
+    border-color: #e2e8f0;
+    color: #334155;
+}
+
+.btn-success {
+    background: #13863F;
+    border-color: #13863F;
+    color: white;
+}
+
+.btn-success:not(:disabled):hover {
+    background: #0E7C37;
+    border-color: #0E7C37;
+    color: white;
+}
+
+.btn-info {
+    background: #0E7DAF;
+    border-color: #0E7DAF;
+    color: white;
+}
+
+.btn-info:not(:disabled):hover {
+    background: #0269A1;
+    border-color: #0269A1;
+    color: white;
+}
+
+/*
+.btn-text.btn-secondary {
+    background: transparent;
+    border-color: transparent;
+    color: #64748b;
+}
+.btn-icon-only.btn-rounded {
+    border-radius: 50%;
+    height: 2.5rem;
+}
+.btn-icon-only {
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    gap: 0;
+}
+
+
+
+
+
+.btn-secondary {
+    background: var(--btn-secondary-background);
+    border: 1px solid var(--btn-secondary-border-color);
+    color: var(--btn-secondary-color);
+}
+    */
 /*************************************

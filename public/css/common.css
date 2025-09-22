@@ -1,3 +1,7 @@
+:root {
+    --color-primary: #0E8660;
+}
+
 .flex {
     display: flex;
 }
@@ -10,12 +14,12 @@
     flex-wrap: wrap;
 }
 
-.font-500 {
-    font-weight: 500;
-}
-
 .font-semibold {
     font-weight: 600;
+}
+
+.gap-2 {
+    gap: 0.5rem;
 }
 
 .gap-4 {
