@@ -1,5 +1,12 @@
 :root {
     --color-primary: #0E8660;
+    --color-secondary: #475569;
+    --color-success: #13863F;
+    --color-info: #0E7DAF;
+    --color-warn: #CB4C0B;
+    --color-help: #9F40F7;
+    --color-danger: #EA1010;
+    --color-contrast: #020617;
 }
 
 .flex {
