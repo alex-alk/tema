@@ -81,6 +81,46 @@ export class Button {
             </div>
         </div>
 
+        <div class="card flex flex-col gap-4">
+            <div class="font-semibold text-xl">Outlined</div>
+            <div class="flex flex-wrap gap-2">
+                <button class="btn btn-outline" type="button">
+                    <span class="btn-label">Primary</span>
+                </button>
+                <button class="btn btn-outline-secondary" type="button">
+                    <span class="btn-label">Secondary</span>
+                </button>
+                <button class="btn btn-outline-success" type="button">
+                    <span class="btn-label">Success</span>
+                </button>
+                <button class="btn btn-outline-info" type="button">
+                    <span class="btn-label">Info</span>
+                </button>
+                <button class="btn btn-outline-warn" style="color" type="button">
+                    <span class="btn-label">Warn</span>
+                </button>
+                <button class="btn btn-outline-help" type="button">
+                    <span class="btn-label">Help</span>
+                </button>
+                <button class="btn btn-outline-danger" type="button">
+                    <span class="btn-label">Danger</span>
+                </button>
+                <button class="btn btn-outline-contrast" type="button">
+                    <span class="btn-label">Contrast</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="card flex flex-col gap-4">
+            <div class="font-semibold text-xl">Group</div>
+            <div class="flex flex-wrap gap-2">
+                <button class="btn btn-outline" type="button">
+                    <span class="btn-label">Primary</span>
+                </button>
+                
+            </div>
+        </div>
+
     </div>
     <div class="md:w-1/2">
 

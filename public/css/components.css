@@ -216,6 +216,112 @@
     background: #f8fafc;
     border-color: transparent;
 }
+
+.btn-outline {
+    background: transparent;
+    border-color: transparent;
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.btn-outline:not(:disabled):hover {
+    background: #ecfdf5;
+    border-color: transparent;
+    border-color: var(--color-primary);
+}
+
+.btn-outline-secondary {
+    background: transparent;
+    border-color: transparent;
+    color: var(--color-secondary);
+    border-color: var(--color-secondary);
+}
+
+.btn-outline-secondary:not(:disabled):hover {
+    background: #f8fafc;
+    border-color: transparent;
+    border-color: var(--color-secondary);
+}
+
+.btn-outline-success {
+    background: transparent;
+    border-color: transparent;
+    color: var(--color-success);
+    border-color: var(--color-success);
+}
+
+.btn-outline-success:not(:disabled):hover {
+    background: #f0fdf4;
+    border-color: transparent;
+    border-color: var(--color-success);
+}
+
+.btn-outline-info {
+    background: transparent;
+    border-color: transparent;
+    color: var(--color-info);
+    border-color: var(--color-info);
+}
+
+.btn-outline-info:not(:disabled):hover {
+    background: #f0f9ff;
+    border-color: transparent;
+    border-color: var(--color-info);
+}
+
+.btn-outline-warn {
+    background: transparent;
+    border-color: transparent;
+    color: var(--color-warn);
+    border-color: var(--color-warn);
+}
+
+.btn-outline-warn:not(:disabled):hover {
+    background: #fff7ed;
+    border-color: transparent;
+    border-color: var(--color-warn);
+}
+
+.btn-outline-help {
+    background: transparent;
+    border-color: transparent;
+    color: var(--color-help);
+    border-color: var(--color-help);
+}
+
+.btn-outline-help:not(:disabled):hover {
+    background: #faf5ff;
+    border-color: transparent;
+    border-color: var(--color-help);
+}
+
+.btn-outline-danger {
+    background: transparent;
+    border-color: transparent;
+    color: var(--color-danger);
+    border-color: var(--color-danger);
+}
+
+.btn-outline-danger:not(:disabled):hover {
+    background: #fef2f2;
+    border-color: transparent;
+    border-color: var(--color-danger);
+}
+
+.btn-outline-contrast {
+    background: transparent;
+    border-color: transparent;
+    color: var(--color-contrast);
+    border-color: var(--color-contrast);
+}
+
+.btn-outline-contrast:not(:disabled):hover {
+    background: #f8fafc;
+    border-color: transparent;
+    border-color: var(--color-contrast);
+}
+
+
 /*
 .btn-icon-only.btn-rounded {
     border-radius: 50%;
