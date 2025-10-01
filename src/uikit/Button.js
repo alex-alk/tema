@@ -114,10 +114,34 @@ export class Button {
         <div class="card flex flex-col gap-4">
             <div class="font-semibold text-xl">Group</div>
             <div class="flex flex-wrap gap-2">
-                <button class="btn btn-outline" type="button">
-                    <span class="btn-label">Primary</span>
-                </button>
-                
+                <span class="btngroup">
+                    <button class="btn" type="button">
+                        <span class="pi pi-check"></span>
+                        <span class="btn-label">Save</span>
+                    </button>
+                    <button class="btn" type="button">
+                        <span class="pi pi-trash"></span>
+                        <span class="btn-label">Delete</span>
+                    </button>
+                    <button class="btn" type="button">
+                        <span class="pi pi-times"></span>
+                        <span class="btn-label">Cancel</span>
+                    </button>
+                </span>
+            </div>
+        </div>
+
+        <div class="card flex flex-col gap-4">
+            <div class="font-semibold text-xl">Split Button</div>
+            <div class="flex flex-wrap gap-2">
+                <div class="btnsplit">
+                    <button class="btn btn-outline-danger" type="button">
+                        <span class="btn-label">Danger</span>
+                    </button>
+                    <button class="btn btn-outline-danger" type="button">
+                        <span class="btn-label">Danger</span>
+                    </button>
+                </div>
             </div>
         </div>
 
