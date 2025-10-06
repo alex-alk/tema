@@ -38,6 +38,14 @@
     gap: 2rem;
 }
 
+.leading-none {
+    line-height: 1;
+}
+
+.relative {
+    position: relative;
+}
+
 .text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
