@@ -164,81 +164,88 @@
     border-color: transparent;
 }
 
-.btn-text-secondary {
+.btn-text.btn-secondary {
     background: transparent;
     border-color: transparent;
     color: var(--color-secondary);
 }
 
-.btn-text-secondary:not(:disabled):hover {
+.btn-text.btn-secondary:not(:disabled):hover {
     background: #f8fafc;
     border-color: transparent;
+    color: var(--color-secondary);
 }
 
-.btn-text-success {
+.btn-text.btn-success {
     background: transparent;
     border-color: transparent;
     color: var(--color-success);
 }
 
-.btn-text-success:not(:disabled):hover {
+.btn-text.btn-success:not(:disabled):hover {
     background: #f0fdf4;
     border-color: transparent;
+    color: var(--color-success);
 }
 
-.btn-text-info {
+.btn-text.btn-info {
     background: transparent;
     border-color: transparent;
     color: var(--color-info);
 }
 
-.btn-text-info:not(:disabled):hover {
+.btn-text.btn-info:not(:disabled):hover {
     background: #f0f9ff;
     border-color: transparent;
+    color: var(--color-info);
 }
 
-.btn-text-warn {
+.btn-text.btn-warn {
     background: transparent;
     border-color: transparent;
     color: var(--color-warn);
 }
 
-.btn-text-warn:not(:disabled):hover {
+.btn-text.btn-warn:not(:disabled):hover {
     background: #fff7ed;
     border-color: transparent;
+    color: var(--color-warn);
 }
 
-.btn-text-help {
+.btn-text.btn-help {
     background: transparent;
     border-color: transparent;
     color: var(--color-help);
 }
 
-.btn-text-help:not(:disabled):hover {
+.btn-text.btn-help:not(:disabled):hover {
     background: #faf5ff;
     border-color: transparent;
+    color: var(--color-help);
 }
 
-.btn-text-danger {
+.btn-text.btn-danger {
     background: transparent;
     border-color: transparent;
     color: var(--color-danger);
 }
 
-.btn-text-danger:not(:disabled):hover {
+.btn-text.btn-danger:not(:disabled):hover {
     background: #fef2f2;
     border-color: transparent;
+    color: var(--color-danger);
 }
 
-.btn-text-contrast {
+.btn-text.btn-contrast {
     background: transparent;
     border-color: transparent;
     color: var(--color-contrast);
 }
 
-.btn-text-contrast:not(:disabled):hover {
+.btn-text.btn-contrast:not(:disabled):hover {
     background: #f8fafc;
     border-color: transparent;
+    color: var(--color-contrast);
 }
 
 .btn-outline {
@@ -254,95 +261,102 @@
     border-color: var(--color-primary);
 }
 
-.btn-outline-secondary {
+.btn-outline.btn-secondary {
     background: transparent;
     border-color: transparent;
     color: var(--color-secondary);
     border-color: var(--color-secondary);
 }
 
-.btn-outline-secondary:not(:disabled):hover {
+.btn-outline.btn-secondary:not(:disabled):hover {
     background: #f8fafc;
     border-color: transparent;
     border-color: var(--color-secondary);
+    color: var(--color-secondary);
 }
 
-.btn-outline-success {
+.btn-outline.btn-success {
     background: transparent;
     border-color: transparent;
     color: var(--color-success);
     border-color: var(--color-success);
 }
 
-.btn-outline-success:not(:disabled):hover {
+.btn-outline.btn-success:not(:disabled):hover {
     background: #f0fdf4;
     border-color: transparent;
     border-color: var(--color-success);
+    color: var(--color-success);
 }
 
-.btn-outline-info {
+.btn-outline.btn-info {
     background: transparent;
     border-color: transparent;
     color: var(--color-info);
     border-color: var(--color-info);
 }
 
-.btn-outline-info:not(:disabled):hover {
+.btn-outline.btn-info:not(:disabled):hover {
     background: #f0f9ff;
     border-color: transparent;
     border-color: var(--color-info);
+    color: var(--color-info);
 }
 
-.btn-outline-warn {
+.btn-outline.btn-warn {
     background: transparent;
     border-color: transparent;
     color: var(--color-warn);
     border-color: var(--color-warn);
 }
 
-.btn-outline-warn:not(:disabled):hover {
+.btn-outline.btn-warn:not(:disabled):hover {
     background: #fff7ed;
     border-color: transparent;
     border-color: var(--color-warn);
+    color: var(--color-warn);
 }
 
-.btn-outline-help {
+.btn-outline.btn-help {
     background: transparent;
     border-color: transparent;
     color: var(--color-help);
     border-color: var(--color-help);
 }
 
-.btn-outline-help:not(:disabled):hover {
+.btn-outline.btn-help:not(:disabled):hover {
     background: #faf5ff;
     border-color: transparent;
     border-color: var(--color-help);
+    color: var(--color-help);
 }
 
-.btn-outline-danger {
+.btn-outline.btn-danger {
     background: transparent;
     border-color: transparent;
     color: var(--color-danger);
     border-color: var(--color-danger);
 }
 
-.btn-outline-danger:not(:disabled):hover {
+.btn-outline.btn-danger:not(:disabled):hover {
     background: #fef2f2;
     border-color: transparent;
     border-color: var(--color-danger);
+    color: var(--color-danger);
 }
 
-.btn-outline-contrast {
+.btn-outline.btn-contrast {
     background: transparent;
     border-color: transparent;
     color: var(--color-contrast);
     border-color: var(--color-contrast);
 }
 
-.btn-outline-contrast:not(:disabled):hover {
+.btn-outline.btn-contrast:not(:disabled):hover {
     background: #f8fafc;
     border-color: transparent;
     border-color: var(--color-contrast);
+    color: var(--color-contrast);
 }
 
 .btngroup {

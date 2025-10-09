@@ -58,25 +58,25 @@ export class Button {
                 <button class="btn btn-text" type="button">
                     <span class="btn-label">Primary</span>
                 </button>
-                <button class="btn btn-text-secondary" type="button">
+                <button class="btn btn-secondary btn-text" type="button">
                     <span class="btn-label">Secondary</span>
                 </button>
-                <button class="btn btn-text-success" type="button">
+                <button class="btn btn-success btn-text" type="button">
                     <span class="btn-label">Success</span>
                 </button>
-                <button class="btn btn-text-info" type="button">
+                <button class="btn btn-info btn-text" type="button">
                     <span class="btn-label">Info</span>
                 </button>
-                <button class="btn btn-text-warn" style="color" type="button">
+                <button class="btn btn-warn btn-text" style="color" type="button">
                     <span class="btn-label">Warn</span>
                 </button>
-                <button class="btn btn-text-help" type="button">
+                <button class="btn btn-help btn-text" type="button">
                     <span class="btn-label">Help</span>
                 </button>
-                <button class="btn btn-text-danger" type="button">
+                <button class="btn btn-danger btn-text" type="button">
                     <span class="btn-label">Danger</span>
                 </button>
-                <button class="btn btn-text-contrast" type="button">
+                <button class="btn btn-contrast btn-text" type="button">
                     <span class="btn-label">Contrast</span>
                 </button>
             </div>
@@ -88,25 +88,25 @@ export class Button {
                 <button class="btn btn-outline" type="button">
                     <span class="btn-label">Primary</span>
                 </button>
-                <button class="btn btn-outline-secondary" type="button">
+                <button class="btn btn-secondary btn-outline" type="button">
                     <span class="btn-label">Secondary</span>
                 </button>
-                <button class="btn btn-outline-success" type="button">
+                <button class="btn btn-success btn-outline" type="button">
                     <span class="btn-label">Success</span>
                 </button>
-                <button class="btn btn-outline-info" type="button">
+                <button class="btn btn-info btn-outline" type="button">
                     <span class="btn-label">Info</span>
                 </button>
-                <button class="btn btn-outline-warn" style="color" type="button">
+                <button class="btn btn-warn btn-outline" style="color" type="button">
                     <span class="btn-label">Warn</span>
                 </button>
-                <button class="btn btn-outline-help" type="button">
+                <button class="btn btn-help btn-outline" type="button">
                     <span class="btn-label">Help</span>
                 </button>
-                <button class="btn btn-outline-danger" type="button">
+                <button class="btn btn-danger btn-outline" type="button">
                     <span class="btn-label">Danger</span>
                 </button>
-                <button class="btn btn-outline-contrast" type="button">
+                <button class="btn btn-contrast btn-outline" type="button">
                     <span class="btn-label">Contrast</span>
                 </button>
             </div>
@@ -534,9 +534,26 @@ export class Button {
             <div class="font-semibold text-xl">Templating</div>
             <div class="flex flex-wrap gap-2">
                 <button class="btn"><img src=${ path("/img/logo-white.svg") } style="width: 1.5rem;"></button>
-                <button class="btn btn-outline-success">
+                <button class="btn btn-success btn-outline">
                     <img src=${ path("/img/logo.svg") } style="width: 1.5rem;">
                     <span class="btn-label">Buton</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="card flex flex-col gap-4">
+            <div class="font-semibold text-xl">Loading</div>
+            <div class="flex flex-wrap gap-4">
+                <button class="btn" type="button">
+                    <span class="pi pi-star-fill"></span>
+                </button>
+                <button class="btn" type="button">
+                    <span class="pi pi-bookmark"></span>
+                    <span class="btn-label">Bookmark</span>
+                </button>
+                <button class="btn" type="button">
+                    <span class="btn-label">Bookmark</span>
+                    <span class="pi pi-bookmark"></span>
                 </button>
             </div>
         </div>
@@ -621,6 +638,33 @@ export class Button {
         </div>
 
         <div class="card flex flex-col gap-4">
+            <div class="font-semibold text-xl">Normal Icons</div>
+            <div class="flex flex-wrap gap-2">
+                <button class="btn btn-icon-only" type="button">
+                    <span class="pi pi-check"></span>
+                </button>
+                <button class="btn btn-secondary btn-icon-only" type="button">
+                    <span class="pi pi-bookmark"></span>
+                </button>
+                <button class="btn btn-success btn-icon-only" type="button">
+                    <span class="pi pi-search"></span>
+                </button>
+                <button class="btn btn-info btn-icon-only" type="button">
+                    <span class="pi pi-user"></span>
+                </button>
+                <button class="btn btn-warn btn-icon-only" type="button">
+                    <span class="pi pi-bell"></span>
+                </button>
+                <button class="btn btn-help btn-icon-only" type="button">
+                    <span class="pi pi-heart"></span>
+                </button>
+                <button class="btn btn-danger btn-icon-only" type="button">
+                    <span class="pi pi-times"></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="card flex flex-col gap-4">
             <div class="font-semibold text-xl">Rounded Icons</div>
             <div class="flex flex-wrap gap-2">
                 <button class="btn btn-rounded btn-icon-only" type="button">
@@ -648,32 +692,85 @@ export class Button {
         </div>
 
         <div class="card flex flex-col gap-4">
-            <div class="font-semibold text-xl">Rounded Raised</div>
+            <div class="font-semibold text-xl">Outlined Rounded Icons</div>
             <div class="flex flex-wrap gap-2">
-                <button class="btn btn-rounded btn-icon-only btn-raised" type="button">
+                <button class="btn btn-rounded btn-icon-only btn-outline" type="button">
                     <span class="pi pi-check"></span>
                 </button>
-                <button class="btn btn-secondary btn-rounded btn-icon-only btn-raised" type="button">
+                <button class="btn btn-secondary btn-rounded btn-icon-only btn-outline" type="button">
                     <span class="pi pi-bookmark"></span>
                 </button>
-                <button class="btn btn-success btn-rounded btn-icon-only btn-raised" type="button">
+                <button class="btn btn-success btn-rounded btn-icon-only btn-outline" type="button">
                     <span class="pi pi-search"></span>
                 </button>
-                <button class="btn btn-info btn-rounded btn-icon-only btn-raised" type="button">
+                <button class="btn btn-info btn-rounded btn-icon-only btn-outline" type="button">
                     <span class="pi pi-user"></span>
                 </button>
-                <button class="btn btn-warn btn-rounded btn-icon-only btn-raised" type="button">
+                <button class="btn btn-warn btn-rounded btn-icon-only btn-outline" type="button">
                     <span class="pi pi-bell"></span>
                 </button>
-                <button class="btn btn-help btn-rounded btn-icon-only btn-raised" type="button">
+                <button class="btn btn-help btn-rounded btn-icon-only btn-outline" type="button">
                     <span class="pi pi-heart"></span>
                 </button>
-                <button class="btn btn-danger btn-rounded btn-icon-only btn-raised" type="button">
+                <button class="btn btn-danger btn-rounded btn-icon-only btn-outline" type="button">
                     <span class="pi pi-times"></span>
                 </button>
             </div>
         </div>
 
+        <div class="card flex flex-col gap-4">
+            <div class="font-semibold text-xl">Rounded Text Icons</div>
+            <div class="flex flex-wrap gap-2">
+                <button class="btn btn-rounded btn-icon-only btn-text" type="button">
+                    <span class="pi pi-check"></span>
+                </button>
+                <button class="btn btn-secondary btn-rounded btn-icon-only btn-text" type="button">
+                    <span class="pi pi-bookmark"></span>
+                </button>
+                <button class="btn btn-success btn-rounded btn-icon-only btn-text" type="button">
+                    <span class="pi pi-search"></span>
+                </button>
+                <button class="btn btn-info btn-rounded btn-icon-only btn-text" type="button">
+                    <span class="pi pi-user"></span>
+                </button>
+                <button class="btn btn-warn btn-rounded btn-icon-only btn-text" type="button">
+                    <span class="pi pi-bell"></span>
+                </button>
+                <button class="btn btn-help btn-rounded btn-icon-only btn-text" type="button">
+                    <span class="pi pi-heart"></span>
+                </button>
+                <button class="btn btn-danger btn-rounded btn-icon-only btn-text" type="button">
+                    <span class="pi pi-times"></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="card flex flex-col gap-4">
+            <div class="font-semibold text-xl">Rounded Text Raised Icons</div>
+            <div class="flex flex-wrap gap-2">
+                <button class="btn btn-rounded btn-icon-only btn-text btn-raised" type="button">
+                    <span class="pi pi-check"></span>
+                </button>
+                <button class="btn btn-secondary btn-rounded btn-icon-only btn-text btn-raised" type="button">
+                    <span class="pi pi-bookmark"></span>
+                </button>
+                <button class="btn btn-success btn-rounded btn-icon-only btn-text btn-raised" type="button">
+                    <span class="pi pi-search"></span>
+                </button>
+                <button class="btn btn-info btn-rounded btn-icon-only btn-text btn-raised" type="button">
+                    <span class="pi pi-user"></span>
+                </button>
+                <button class="btn btn-warn btn-rounded btn-icon-only btn-text btn-raised" type="button">
+                    <span class="pi pi-bell"></span>
+                </button>
+                <button class="btn btn-help btn-rounded btn-icon-only btn-text btn-raised" type="button">
+                    <span class="pi pi-heart"></span>
+                </button>
+                <button class="btn btn-danger btn-rounded btn-icon-only btn-text btn-raised" type="button">
+                    <span class="pi pi-times"></span>
+                </button>
+            </div>
+        </div>
 
     </div>
 </div>`
