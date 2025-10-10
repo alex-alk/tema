@@ -139,7 +139,7 @@ export class Button {
                     <button class="btn btn-split" type="button">
                         <span class="btn-label">Save</span>
                     </button>
-                    <button class="btn btn-split-dropdown" type="button">
+                    <button class="btn btn-split-dropdown" type="button" aria-label="dropdown">
                         <svg 
                             width="14" 
                             height="14" 
@@ -154,7 +154,7 @@ export class Button {
                         <ul class="tieredmenu-root-list">
                             <li class="tieredmenu-item">
                                 <div class="tieredmenu-item-content">
-                                    <a class="tieredmenu-item-link">
+                                    <a  href="" href="" class="tieredmenu-item-link">
                                         <span class="tieredmenu-item-icon pi pi-refresh"></span>
                                         <span class="leading-none">Update</span>
                                     </a>
@@ -163,7 +163,7 @@ export class Button {
 
                             <li class="tieredmenu-item">
                                 <div class="tieredmenu-item-content">
-                                    <a class="tieredmenu-item-link">
+                                    <a  href="" class="tieredmenu-item-link">
                                         <span class="tieredmenu-item-icon pi pi-times"></span>
                                         <span class="leading-none">Delete</span>
                                     </a>
@@ -174,7 +174,7 @@ export class Button {
 
                             <li class="tieredmenu-item">
                                 <div class="tieredmenu-item-content">
-                                    <a class="tieredmenu-item-link">
+                                    <a  href="" class="tieredmenu-item-link">
                                         <span class="tieredmenu-item-icon pi pi-home"></span>
                                         <span class="leading-none">Home</span>
                                     </a>
@@ -188,7 +188,7 @@ export class Button {
                     <button class="btn btn-secondary btn-split" type="button">
                         <span class="btn-label">Save</span>
                     </button>
-                    <button class="btn btn-secondary btn-split-dropdown" type="button">
+                    <button class="btn btn-secondary btn-split-dropdown" type="button" aria-label="dropdown">
                         <svg 
                             width="14" 
                             height="14" 
@@ -203,7 +203,7 @@ export class Button {
                         <ul class="tieredmenu-root-list">
                             <li class="tieredmenu-item">
                                 <div class="tieredmenu-item-content">
-                                    <a class="tieredmenu-item-link">
+                                    <a  href="" class="tieredmenu-item-link">
                                         <span class="tieredmenu-item-icon pi pi-refresh"></span>
                                         <span class="leading-none">Update</span>
                                     </a>
@@ -212,7 +212,7 @@ export class Button {
 
                             <li class="tieredmenu-item">
                                 <div class="tieredmenu-item-content">
-                                    <a class="tieredmenu-item-link">
+                                    <a  href="" class="tieredmenu-item-link">
                                         <span class="tieredmenu-item-icon pi pi-times"></span>
                                         <span class="leading-none">Delete</span>
                                     </a>
@@ -223,7 +223,7 @@ export class Button {
 
                             <li class="tieredmenu-item">
                                 <div class="tieredmenu-item-content">
-                                    <a class="tieredmenu-item-link">
+                                    <a  href="" class="tieredmenu-item-link">
                                         <span class="tieredmenu-item-icon pi pi-home"></span>
                                         <span class="leading-none">Home</span>
                                     </a>
@@ -237,7 +237,7 @@ export class Button {
                     <button class="btn btn-success btn-split" type="button">
                         <span class="btn-label">Save</span>
                     </button>
-                    <button class="btn btn-success btn-split-dropdown" type="button">
+                    <button class="btn btn-success btn-split-dropdown" type="button" aria-label="dropdown">
                         <svg 
                             width="14" 
                             height="14" 
@@ -252,7 +252,7 @@ export class Button {
                         <ul class="tieredmenu-root-list">
                             <li class="tieredmenu-item">
                                 <div class="tieredmenu-item-content">
-                                    <a class="tieredmenu-item-link">
+                                    <a  href="" class="tieredmenu-item-link">
                                         <span class="tieredmenu-item-icon pi pi-refresh"></span>
                                         <span class="leading-none">Update</span>
                                     </a>
@@ -261,7 +261,7 @@ export class Button {
 
                             <li class="tieredmenu-item">
                                 <div class="tieredmenu-item-content">
-                                    <a class="tieredmenu-item-link">
+                                    <a  href="" class="tieredmenu-item-link">
                                         <span class="tieredmenu-item-icon pi pi-times"></span>
                                         <span class="leading-none">Delete</span>
                                     </a>
@@ -272,7 +272,7 @@ export class Button {
 
                             <li class="tieredmenu-item">
                                 <div class="tieredmenu-item-content">
-                                    <a class="tieredmenu-item-link">
+                                    <a  href="" class="tieredmenu-item-link">
                                         <span class="tieredmenu-item-icon pi pi-home"></span>
                                         <span class="leading-none">Home</span>
                                     </a>
@@ -286,7 +286,7 @@ export class Button {
                     <button class="btn btn-info btn-split" type="button">
                         <span class="btn-label">Save</span>
                     </button>
-                    <button class="btn btn-info btn-split-dropdown" type="button">
+                    <button class="btn btn-info btn-split-dropdown" type="button" aria-label="dropdown">
                         <svg 
                             width="14" 
                             height="14" 
@@ -301,7 +301,7 @@ export class Button {
                         <ul class="tieredmenu-root-list">
                             <li class="tieredmenu-item">
                                 <div class="tieredmenu-item-content">
-                                    <a class="tieredmenu-item-link">
+                                    <a  href="" class="tieredmenu-item-link">
                                         <span class="tieredmenu-item-icon pi pi-refresh"></span>
                                         <span class="leading-none">Update</span>
                                     </a>
@@ -310,7 +310,7 @@ export class Button {
 
                             <li class="tieredmenu-item">
                                 <div class="tieredmenu-item-content">
-                                    <a class="tieredmenu-item-link">
+                                    <a  href="" class="tieredmenu-item-link">
                                         <span class="tieredmenu-item-icon pi pi-times"></span>
                                         <span class="leading-none">Delete</span>
                                     </a>
@@ -321,7 +321,7 @@ export class Button {
 
                             <li class="tieredmenu-item">
                                 <div class="tieredmenu-item-content">
-                                    <a class="tieredmenu-item-link">
+                                    <a  href="" class="tieredmenu-item-link">
                                         <span class="tieredmenu-item-icon pi pi-home"></span>
                                         <span class="leading-none">Home</span>
                                     </a>
@@ -335,7 +335,7 @@ export class Button {
                     <button class="btn btn-warn btn-split" type="button">
                         <span class="btn-label">Save</span>
                     </button>
-                    <button class="btn btn-warn btn-split-dropdown" type="button">
+                    <button class="btn btn-warn btn-split-dropdown" type="button" aria-label="dropdown">
                         <svg 
                             width="14" 
                             height="14" 
@@ -350,7 +350,7 @@ export class Button {
                         <ul class="tieredmenu-root-list">
                             <li class="tieredmenu-item">
                                 <div class="tieredmenu-item-content">
-                                    <a class="tieredmenu-item-link">
+                                    <a  href="" class="tieredmenu-item-link">
                                         <span class="tieredmenu-item-icon pi pi-refresh"></span>
                                         <span class="leading-none">Update</span>
                                     </a>
@@ -359,7 +359,7 @@ export class Button {
 
                             <li class="tieredmenu-item">
                                 <div class="tieredmenu-item-content">
-                                    <a class="tieredmenu-item-link">
+                                    <a  href="" class="tieredmenu-item-link">
                                         <span class="tieredmenu-item-icon pi pi-times"></span>
                                         <span class="leading-none">Delete</span>
                                     </a>
@@ -370,7 +370,7 @@ export class Button {
 
                             <li class="tieredmenu-item">
                                 <div class="tieredmenu-item-content">
-                                    <a class="tieredmenu-item-link">
+                                    <a  href="" class="tieredmenu-item-link">
                                         <span class="tieredmenu-item-icon pi pi-home"></span>
                                         <span class="leading-none">Home</span>
                                     </a>
@@ -384,7 +384,7 @@ export class Button {
                     <button class="btn btn-help btn-split" type="button">
                         <span class="btn-label">Save</span>
                     </button>
-                    <button class="btn btn-help btn-split-dropdown" type="button">
+                    <button class="btn btn-help btn-split-dropdown" type="button" aria-label="dropdown">
                         <svg 
                             width="14" 
                             height="14" 
@@ -399,7 +399,7 @@ export class Button {
                         <ul class="tieredmenu-root-list">
                             <li class="tieredmenu-item">
                                 <div class="tieredmenu-item-content">
-                                    <a class="tieredmenu-item-link">
+                                    <a  href="" class="tieredmenu-item-link">
                                         <span class="tieredmenu-item-icon pi pi-refresh"></span>
                                         <span class="leading-none">Update</span>
                                     </a>
@@ -408,7 +408,7 @@ export class Button {
 
                             <li class="tieredmenu-item">
                                 <div class="tieredmenu-item-content">
-                                    <a class="tieredmenu-item-link">
+                                    <a  href="" class="tieredmenu-item-link">
                                         <span class="tieredmenu-item-icon pi pi-times"></span>
                                         <span class="leading-none">Delete</span>
                                     </a>
@@ -419,7 +419,7 @@ export class Button {
 
                             <li class="tieredmenu-item">
                                 <div class="tieredmenu-item-content">
-                                    <a class="tieredmenu-item-link">
+                                    <a  href="" class="tieredmenu-item-link">
                                         <span class="tieredmenu-item-icon pi pi-home"></span>
                                         <span class="leading-none">Home</span>
                                     </a>
@@ -433,7 +433,7 @@ export class Button {
                     <button class="btn btn-danger btn-split" type="button">
                         <span class="btn-label">Save</span>
                     </button>
-                    <button class="btn btn-danger btn-split-dropdown" type="button">
+                    <button class="btn btn-danger btn-split-dropdown" type="button" aria-label="dropdown">
                         <svg 
                             width="14" 
                             height="14" 
@@ -448,7 +448,7 @@ export class Button {
                         <ul class="tieredmenu-root-list">
                             <li class="tieredmenu-item">
                                 <div class="tieredmenu-item-content">
-                                    <a class="tieredmenu-item-link">
+                                    <a  href="" class="tieredmenu-item-link">
                                         <span class="tieredmenu-item-icon pi pi-refresh"></span>
                                         <span class="leading-none">Update</span>
                                     </a>
@@ -457,7 +457,7 @@ export class Button {
 
                             <li class="tieredmenu-item">
                                 <div class="tieredmenu-item-content">
-                                    <a class="tieredmenu-item-link">
+                                    <a  href="" class="tieredmenu-item-link">
                                         <span class="tieredmenu-item-icon pi pi-times"></span>
                                         <span class="leading-none">Delete</span>
                                     </a>
@@ -468,7 +468,7 @@ export class Button {
 
                             <li class="tieredmenu-item">
                                 <div class="tieredmenu-item-content">
-                                    <a class="tieredmenu-item-link">
+                                    <a  href="" class="tieredmenu-item-link">
                                         <span class="tieredmenu-item-icon pi pi-home"></span>
                                         <span class="leading-none">Home</span>
                                     </a>
@@ -482,7 +482,7 @@ export class Button {
                     <button class="btn btn-contrast btn-split" type="button">
                         <span class="btn-label">Save</span>
                     </button>
-                    <button class="btn btn-contrast btn-split-dropdown" type="button">
+                    <button class="btn btn-contrast btn-split-dropdown" type="button" aria-label="dropdown">
                         <svg 
                             width="14" 
                             height="14" 
@@ -497,7 +497,7 @@ export class Button {
                         <ul class="tieredmenu-root-list">
                             <li class="tieredmenu-item">
                                 <div class="tieredmenu-item-content">
-                                    <a class="tieredmenu-item-link">
+                                    <a  href="" class="tieredmenu-item-link">
                                         <span class="tieredmenu-item-icon pi pi-refresh"></span>
                                         <span class="leading-none">Update</span>
                                     </a>
@@ -506,7 +506,7 @@ export class Button {
 
                             <li class="tieredmenu-item">
                                 <div class="tieredmenu-item-content">
-                                    <a class="tieredmenu-item-link">
+                                    <a  href="" class="tieredmenu-item-link">
                                         <span class="tieredmenu-item-icon pi pi-times"></span>
                                         <span class="leading-none">Delete</span>
                                     </a>
@@ -517,7 +517,7 @@ export class Button {
 
                             <li class="tieredmenu-item">
                                 <div class="tieredmenu-item-content">
-                                    <a class="tieredmenu-item-link">
+                                    <a  href="" class="tieredmenu-item-link">
                                         <span class="tieredmenu-item-icon pi pi-home"></span>
                                         <span class="leading-none">Home</span>
                                     </a>
@@ -533,9 +533,9 @@ export class Button {
         <div class="card flex flex-col gap-4">
             <div class="font-semibold text-xl">Templating</div>
             <div class="flex flex-wrap gap-2">
-                <button class="btn"><img src=${ path("/img/logo-white.svg") } style="width: 1.5rem;"></button>
+                <button class="btn"><img alt="Img" src=${ path("/img/logo-white.svg") } style="width: 1.5rem;" aria-label="button"></button>
                 <button class="btn btn-success btn-outline">
-                    <img src=${ path("/img/logo.svg") } style="width: 1.5rem;">
+                    <img alt="Img" src=${ path("/img/logo.svg") } style="width: 1.5rem;">
                     <span class="btn-label">Buton</span>
                 </button>
             </div>
@@ -544,16 +544,13 @@ export class Button {
         <div class="card flex flex-col gap-4">
             <div class="font-semibold text-xl">Loading</div>
             <div class="flex flex-wrap gap-4">
-                <button class="btn" type="button">
-                    <span class="pi pi-star-fill"></span>
+                <button class="btn v-btn1" type="button">
+                    <span class="pi pi-search"></span>
+                    <span class="btn-label">Search</span>
                 </button>
-                <button class="btn" type="button">
-                    <span class="pi pi-bookmark"></span>
-                    <span class="btn-label">Bookmark</span>
-                </button>
-                <button class="btn" type="button">
-                    <span class="btn-label">Bookmark</span>
-                    <span class="pi pi-bookmark"></span>
+                <button class="btn v-btn2" type="button">
+                    <span class="pi pi-spinner icon-spin hidden"></span>
+                    <span class="btn-label">Search</span>
                 </button>
             </div>
         </div>
@@ -563,7 +560,7 @@ export class Button {
         <div class="card flex flex-col gap-4">
             <div class="font-semibold text-xl">Icons</div>
             <div class="flex flex-wrap gap-4">
-                <button class="btn" type="button">
+                <button class="btn" type="button" aria-label="button">
                     <span class="pi pi-star-fill"></span>
                 </button>
                 <button class="btn" type="button">
@@ -640,25 +637,25 @@ export class Button {
         <div class="card flex flex-col gap-4">
             <div class="font-semibold text-xl">Normal Icons</div>
             <div class="flex flex-wrap gap-2">
-                <button class="btn btn-icon-only" type="button">
+                <button class="btn btn-icon-only" type="button" aria-label="button">
                     <span class="pi pi-check"></span>
                 </button>
-                <button class="btn btn-secondary btn-icon-only" type="button">
+                <button class="btn btn-secondary btn-icon-only" type="button" aria-label="button">
                     <span class="pi pi-bookmark"></span>
                 </button>
-                <button class="btn btn-success btn-icon-only" type="button">
+                <button class="btn btn-success btn-icon-only" type="button" aria-label="button">
                     <span class="pi pi-search"></span>
                 </button>
-                <button class="btn btn-info btn-icon-only" type="button">
+                <button class="btn btn-info btn-icon-only" type="button" aria-label="button">
                     <span class="pi pi-user"></span>
                 </button>
-                <button class="btn btn-warn btn-icon-only" type="button">
+                <button class="btn btn-warn btn-icon-only" type="button" aria-label="button">
                     <span class="pi pi-bell"></span>
                 </button>
-                <button class="btn btn-help btn-icon-only" type="button">
+                <button class="btn btn-help btn-icon-only" type="button" aria-label="button">
                     <span class="pi pi-heart"></span>
                 </button>
-                <button class="btn btn-danger btn-icon-only" type="button">
+                <button class="btn btn-danger btn-icon-only" type="button" aria-label="button">
                     <span class="pi pi-times"></span>
                 </button>
             </div>
@@ -667,25 +664,25 @@ export class Button {
         <div class="card flex flex-col gap-4">
             <div class="font-semibold text-xl">Rounded Icons</div>
             <div class="flex flex-wrap gap-2">
-                <button class="btn btn-rounded btn-icon-only" type="button">
+                <button class="btn btn-rounded btn-icon-only" type="button" aria-label="button">
                     <span class="pi pi-check"></span>
                 </button>
-                <button class="btn btn-secondary btn-rounded btn-icon-only" type="button">
+                <button class="btn btn-secondary btn-rounded btn-icon-only" type="button" aria-label="button">
                     <span class="pi pi-bookmark"></span>
                 </button>
-                <button class="btn btn-success btn-rounded btn-icon-only" type="button">
+                <button class="btn btn-success btn-rounded btn-icon-only" type="button" aria-label="button">
                     <span class="pi pi-search"></span>
                 </button>
-                <button class="btn btn-info btn-rounded btn-icon-only" type="button">
+                <button class="btn btn-info btn-rounded btn-icon-only" type="button" aria-label="button">
                     <span class="pi pi-user"></span>
                 </button>
-                <button class="btn btn-warn btn-rounded btn-icon-only" type="button">
+                <button class="btn btn-warn btn-rounded btn-icon-only" type="button" aria-label="button">
                     <span class="pi pi-bell"></span>
                 </button>
-                <button class="btn btn-help btn-rounded btn-icon-only" type="button">
+                <button class="btn btn-help btn-rounded btn-icon-only" type="button" aria-label="button">
                     <span class="pi pi-heart"></span>
                 </button>
-                <button class="btn btn-danger btn-rounded btn-icon-only" type="button">
+                <button class="btn btn-danger btn-rounded btn-icon-only" type="button" aria-label="button">
                     <span class="pi pi-times"></span>
                 </button>
             </div>
@@ -694,25 +691,25 @@ export class Button {
         <div class="card flex flex-col gap-4">
             <div class="font-semibold text-xl">Outlined Rounded Icons</div>
             <div class="flex flex-wrap gap-2">
-                <button class="btn btn-rounded btn-icon-only btn-outline" type="button">
+                <button class="btn btn-rounded btn-icon-only btn-outline" type="button" aria-label="button">
                     <span class="pi pi-check"></span>
                 </button>
-                <button class="btn btn-secondary btn-rounded btn-icon-only btn-outline" type="button">
+                <button class="btn btn-secondary btn-rounded btn-icon-only btn-outline" type="button" aria-label="button">
                     <span class="pi pi-bookmark"></span>
                 </button>
-                <button class="btn btn-success btn-rounded btn-icon-only btn-outline" type="button">
+                <button class="btn btn-success btn-rounded btn-icon-only btn-outline" type="button" aria-label="button">
                     <span class="pi pi-search"></span>
                 </button>
-                <button class="btn btn-info btn-rounded btn-icon-only btn-outline" type="button">
+                <button class="btn btn-info btn-rounded btn-icon-only btn-outline" type="button" aria-label="button">
                     <span class="pi pi-user"></span>
                 </button>
-                <button class="btn btn-warn btn-rounded btn-icon-only btn-outline" type="button">
+                <button class="btn btn-warn btn-rounded btn-icon-only btn-outline" type="button" aria-label="button">
                     <span class="pi pi-bell"></span>
                 </button>
-                <button class="btn btn-help btn-rounded btn-icon-only btn-outline" type="button">
+                <button class="btn btn-help btn-rounded btn-icon-only btn-outline" type="button" aria-label="button">
                     <span class="pi pi-heart"></span>
                 </button>
-                <button class="btn btn-danger btn-rounded btn-icon-only btn-outline" type="button">
+                <button class="btn btn-danger btn-rounded btn-icon-only btn-outline" type="button" aria-label="button">
                     <span class="pi pi-times"></span>
                 </button>
             </div>
@@ -721,25 +718,25 @@ export class Button {
         <div class="card flex flex-col gap-4">
             <div class="font-semibold text-xl">Rounded Text Icons</div>
             <div class="flex flex-wrap gap-2">
-                <button class="btn btn-rounded btn-icon-only btn-text" type="button">
+                <button class="btn btn-rounded btn-icon-only btn-text" type="button" aria-label="button">
                     <span class="pi pi-check"></span>
                 </button>
-                <button class="btn btn-secondary btn-rounded btn-icon-only btn-text" type="button">
+                <button class="btn btn-secondary btn-rounded btn-icon-only btn-text" type="button" aria-label="button">
                     <span class="pi pi-bookmark"></span>
                 </button>
-                <button class="btn btn-success btn-rounded btn-icon-only btn-text" type="button">
+                <button class="btn btn-success btn-rounded btn-icon-only btn-text" type="button" aria-label="button">
                     <span class="pi pi-search"></span>
                 </button>
-                <button class="btn btn-info btn-rounded btn-icon-only btn-text" type="button">
+                <button class="btn btn-info btn-rounded btn-icon-only btn-text" type="button" aria-label="button">
                     <span class="pi pi-user"></span>
                 </button>
-                <button class="btn btn-warn btn-rounded btn-icon-only btn-text" type="button">
+                <button class="btn btn-warn btn-rounded btn-icon-only btn-text" type="button" aria-label="button">
                     <span class="pi pi-bell"></span>
                 </button>
-                <button class="btn btn-help btn-rounded btn-icon-only btn-text" type="button">
+                <button class="btn btn-help btn-rounded btn-icon-only btn-text" type="button" aria-label="button">
                     <span class="pi pi-heart"></span>
                 </button>
-                <button class="btn btn-danger btn-rounded btn-icon-only btn-text" type="button">
+                <button class="btn btn-danger btn-rounded btn-icon-only btn-text" type="button" aria-label="button">
                     <span class="pi pi-times"></span>
                 </button>
             </div>
@@ -748,25 +745,25 @@ export class Button {
         <div class="card flex flex-col gap-4">
             <div class="font-semibold text-xl">Rounded Text Raised Icons</div>
             <div class="flex flex-wrap gap-2">
-                <button class="btn btn-rounded btn-icon-only btn-text btn-raised" type="button">
+                <button class="btn btn-rounded btn-icon-only btn-text btn-raised" type="button" aria-label="button">
                     <span class="pi pi-check"></span>
                 </button>
-                <button class="btn btn-secondary btn-rounded btn-icon-only btn-text btn-raised" type="button">
+                <button class="btn btn-secondary btn-rounded btn-icon-only btn-text btn-raised" type="button" aria-label="button">
                     <span class="pi pi-bookmark"></span>
                 </button>
-                <button class="btn btn-success btn-rounded btn-icon-only btn-text btn-raised" type="button">
+                <button class="btn btn-success btn-rounded btn-icon-only btn-text btn-raised" type="button" aria-label="button">
                     <span class="pi pi-search"></span>
                 </button>
-                <button class="btn btn-info btn-rounded btn-icon-only btn-text btn-raised" type="button">
+                <button class="btn btn-info btn-rounded btn-icon-only btn-text btn-raised" type="button" aria-label="button">
                     <span class="pi pi-user"></span>
                 </button>
-                <button class="btn btn-warn btn-rounded btn-icon-only btn-text btn-raised" type="button">
+                <button class="btn btn-warn btn-rounded btn-icon-only btn-text btn-raised" type="button" aria-label="button">
                     <span class="pi pi-bell"></span>
                 </button>
-                <button class="btn btn-help btn-rounded btn-icon-only btn-text btn-raised" type="button">
+                <button class="btn btn-help btn-rounded btn-icon-only btn-text btn-raised" type="button" aria-label="button">
                     <span class="pi pi-heart"></span>
                 </button>
-                <button class="btn btn-danger btn-rounded btn-icon-only btn-text btn-raised" type="button">
+                <button class="btn btn-danger btn-rounded btn-icon-only btn-text btn-raised" type="button" aria-label="button">
                     <span class="pi pi-times"></span>
                 </button>
             </div>
@@ -775,6 +772,31 @@ export class Button {
     </div>
 </div>`
         const component = createComponent(html)
+
+        const $btn1 = component.querySelector('.v-btn1')
+        const $btn2 = component.querySelector('.v-btn2');
+
+        $btn1.addEventListener('click', function()  {
+                const first = $btn1.querySelector('span');
+                first.classList = '';
+                first.classList.add('pi','pi-spinner', 'icon-spin')
+
+                setTimeout(() => {
+                    first.classList = '';
+                    first.classList.add('pi','pi-search')
+                }, 2000);
+            }
+        );
+
+        $btn2.addEventListener('click', function()  {
+                const first = $btn2.querySelector('span');
+                first.classList.remove('hidden');
+
+                setTimeout(() => {
+                    first.classList.add('hidden');
+                }, 2000);
+            }
+        );
 
         const $btns = component.querySelectorAll('.btn-split-dropdown')
 

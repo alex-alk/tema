@@ -38,6 +38,10 @@
     gap: 2rem;
 }
 
+.hidden {
+    display: none !important;
+}
+
 .leading-none {
     line-height: 1;
 }
