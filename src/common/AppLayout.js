@@ -3,7 +3,7 @@ import { TopbarComp } from '../TopbarComp.js'
 
 export class AppLayout {
 
-    getElement() {
+    async getElement() {
         const html =  /*html*/`
 <div class="layout-wrapper layout-static">
     <top-bar></top-bar>
@@ -23,7 +23,7 @@ export class AppLayout {
         $topbar.replaceWith((new TopbarComp).getElement())
 
         const $sidebar = component.querySelector('side-bar')
-        $sidebar.replaceWith((new Sidebar).getElement())
+        $sidebar.replaceWith(await (new Sidebar).getElement())
 
         return component
     }

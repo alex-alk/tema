@@ -1,10 +1,3 @@
-import { createComponent } from '../../js_modules/main.js'
-import { path } from '../common/routes.js'
-
-export class Button {
-
-    async getElement() {
-        const html = /* html */`
 <div class="flex flex-col md:flex-row gap-8">
     <div class="md:w-1/2">
         <div class="card flex flex-col gap-4">
@@ -67,7 +60,7 @@ export class Button {
                 <button class="btn btn-info btn-text" type="button">
                     <span class="btn-label">Info</span>
                 </button>
-                <button class="btn btn-warn btn-text" style="color" type="button">
+                <button class="btn btn-warn btn-text" type="button">
                     <span class="btn-label">Warn</span>
                 </button>
                 <button class="btn btn-help btn-text" type="button">
@@ -97,7 +90,7 @@ export class Button {
                 <button class="btn btn-info btn-outline" type="button">
                     <span class="btn-label">Info</span>
                 </button>
-                <button class="btn btn-warn btn-outline" style="color" type="button">
+                <button class="btn btn-warn btn-outline" type="button">
                     <span class="btn-label">Warn</span>
                 </button>
                 <button class="btn btn-help btn-outline" type="button">
@@ -533,9 +526,9 @@ export class Button {
         <div class="card flex flex-col gap-4">
             <div class="font-semibold text-xl">Templating</div>
             <div class="flex flex-wrap gap-2">
-                <button class="btn"><img alt="Img" src=${ path("/img/logo-white.svg") } style="width: 1.5rem;" aria-label="button"></button>
+                <button class="btn"><img alt="Img" src="../../../public/img/logo-white.svg" style="width: 1.5px;" aria-label="button"></button>
                 <button class="btn btn-success btn-outline">
-                    <img alt="Img" src=${ path("/img/logo.svg") } style="width: 1.5rem;">
+                    <img alt="Img" src="../../../public/img/logo.svg" style="width: 1.5rem;">
                     <span class="btn-label">Buton</span>
                 </button>
             </div>
@@ -770,52 +763,4 @@ export class Button {
         </div>
 
     </div>
-</div>`
-        const component = createComponent(html)
-
-        const $btn1 = component.querySelector('.v-btn1')
-        const $btn2 = component.querySelector('.v-btn2');
-
-        $btn1.addEventListener('click', function()  {
-                const first = $btn1.querySelector('span');
-                first.classList = '';
-                first.classList.add('pi','pi-spinner', 'icon-spin')
-
-                setTimeout(() => {
-                    first.classList = '';
-                    first.classList.add('pi','pi-search')
-                }, 2000);
-            }
-        );
-
-        $btn2.addEventListener('click', function()  {
-                const first = $btn2.querySelector('span');
-                first.classList.remove('hidden');
-
-                setTimeout(() => {
-                    first.classList.add('hidden');
-                }, 2000);
-            }
-        );
-
-        const $btns = component.querySelectorAll('.btn-split-dropdown')
-
-        for (const $btn of $btns) {
-            const $menu = $btn.nextElementSibling;
-            $btn.addEventListener('click', 
-                (event) => {
-                    $menu.classList.toggle('tieredmenu-show')
-
-                    // if we do not use this, the click will be intercepted by document
-                    // and the menu will never show up
-                    event.stopPropagation()
-                }
-            );
-            document.addEventListener('click', function() {
-                $menu.classList.remove('tieredmenu-show')
-            })
-        }
-        
-        return component
-    }
-}
+</div>

@@ -8,6 +8,17 @@
     --color-danger: #EA1010;
     --color-contrast: #020617;
     --btn-border-radius: 6px;
+    --p-surface-0: white;
+    --p-surface-50: #f8fafc;
+}
+
+.layout-menu ul a .layout-submenu-toggler {
+    font-size: 75%;
+    margin-left: auto;
+    transition: transform var(--element-transition-duration);
+}
+.layout-menu ul ul li a {
+    margin-left: 1rem;
 }
 
 .flex {

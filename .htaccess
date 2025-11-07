@@ -1,0 +1,8 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_URI} !\.(css|js|png|jpg|jpeg|gif|svg|woff2?)$ [NC]
+
+#RewriteRule ^(.*)$ /PHP/tema/public/index.html [NC,L,QSA]
+RewriteRule ^(.*)$ /index.html [NC,L,QSA]

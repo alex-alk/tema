@@ -6,7 +6,7 @@ const Dashboard = async () => (await import('../Dashboard.js')).Dashboard
 const AboutPage = async () => (await import('../AboutPage.js')).AboutPage
 const AboutPagee = async () => (await import('../AboutPagee.js')).AboutPagee
 const Users = async () => (await import('../Users.js')).Users
-const Button = async () => (await import('../uikit/Button.js')).Button
+const Button = async () => (await import('../uikit/button/button.js')).Button
 
 
 const routes = [
@@ -17,14 +17,14 @@ const routes = [
             { path: '/', component: Dashboard },
             { path: '/about', component: AboutPage },
             { path: '/users', component: Users },
-            { path: '/button', component: Button }
+            { path: '/uikit/button', component: Button }
         ]
     },
     { path: '/about', component: AboutPagee }
 ]
 
 // Change this to your app's base path, e.g. '/app' or '/' if root
-const BASE_PATH = '/PHP/tema/public';
+const BASE_PATH = '';
 
 export function path(projectPath) {
     return BASE_PATH + projectPath

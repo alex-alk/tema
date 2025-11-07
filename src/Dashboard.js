@@ -1,23 +1,36 @@
-// import { Sidebar } from './Sidebar.js'
-// import { TopbarComp } from './TopbarComp.js'
+import { createComponent } from '../js_modules/main.js'
 
 export class Dashboard {
 
-    getElement() {
-        const html =  `
-Dash
-`
-        const template = document.createElement('template')
-        template.innerHTML = html
-        const component = template.content
+    async fetchHTML(url) {
+        const response = await fetch(url);
 
-        // const $topbar = component.querySelector('top-bar')
-        // $topbar.replaceWith((new TopbarComp).getElement())
+        if (!response.ok) {
+            throw new Error(`Nu s-a putut încărca HTML-ul de la: ${url}`);
+        }
 
-        // const $sidebar = component.querySelector('side-bar')
-        // $sidebar.replaceWith((new Sidebar).getElement())
+        const htmlText = await response.text();
+
+        return htmlText;
+    }
+
+    async getElement() {
+        const html = await this.fetchHTML('/src/Dashboard.html');
+        const component = createComponent(html)
+
+        const $btn1 = component.querySelector('.v-btn1')
+        $btn1.addEventListener('click', function()  {
+                const first = $btn1.querySelector('span')
+                first.classList = '';
+                first.classList.add('pi','pi-spinner', 'icon-spin')
+
+                setTimeout(() => {
+                    first.classList = '';
+                    first.classList.add('pi','pi-search')
+                }, 2000);
+            }
+        );
 
         return component
     }
-    
 }
