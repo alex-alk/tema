@@ -21,6 +21,7 @@ export class Sidebar {
                 ['/', 'pi-home', 'Dashboard']
             ],
             'UI COMPONENTS': [
+                ['/uikit/input', 'pi-check-square', 'Input'],
                 ['/uikit/button', 'pi-mobile', 'Button'],
             ],
             'ACTIUNI': [
