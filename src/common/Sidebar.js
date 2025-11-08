@@ -32,7 +32,11 @@ export class Sidebar {
                     [['/auth/login', 'pi-sign-in', 'Login'],
                     ['/auth/login', 'pi-sign-in', 'Logins']]
                 ]
-            ]
+            ],
+            'ACTIUNIA': [
+                ['/users', 'pi-id-card', 'Utilizatori'],
+                ['/about', 'pi-id-card', 'About']
+            ],
         }
 
         let html = /* html */`
@@ -50,14 +54,14 @@ export class Sidebar {
                     if (3 in subitem) {
                         html += /* html */`
                         <li>
-                            <a class="v-menu-link">
+                            <a class="v-menu-link toggler">
                                 <i class="pi pi-fw ${subitem[1]} layout-menuitem-icon"></i>
                                 <span class="layout-menuitem-text">${subitem[2]}</span>
                             
                             `
 
                         html += `<i class="pi pi-fw pi-angle-down layout-submenu-toggler"></i></a>`
-                        html += `<ul class="layout-submenu">`
+                        html += `<ul class="layout-submenu closed">`
                         for (const subitemsubitem of subitem[3]) {
                             html += /* html */`
                                 <li>
@@ -67,7 +71,6 @@ export class Sidebar {
                                     </a>
                                 </li>
                                 `
-                            console.log(subitem[3])
                         }
                         html += '</ul>'
                     } else {
@@ -90,9 +93,11 @@ export class Sidebar {
 </div>
 `
        // const html = await this.fetchHTML('/src/common/Sidebar.html');
+        const component = createComponent(html)
 
-        const element = createComponent(html)
-        const links = element.querySelectorAll('.v-menu-link')
+
+        /********************** highlighter ********************/
+        const links = component.querySelectorAll('.v-menu-link')
 
         router.subscribeToRouteChange((path) => {
             selectMenuItem(path)
@@ -110,7 +115,25 @@ export class Sidebar {
         }
 
         selectMenuItem(router.stripBase(window.location.pathname))
-        return element
+
+        /******************** toggler ***************/
+        const $togglers = component.querySelectorAll('.toggler')
+
+        for (const $toggler of $togglers) {
+            $toggler.addEventListener('click', function()  {
+                const $icon = $toggler.querySelector('.layout-submenu-toggler')
+                const submenu = this.nextElementSibling
+                 if (submenu.style.maxHeight) {
+                    submenu.style.maxHeight = null
+                    $icon.style.transform = 'rotate(0)';
+                } else {
+                    submenu.style.maxHeight = submenu.scrollHeight + 'px';
+                    $icon.style.transform = 'rotate(-180deg)';
+                }
+            })
+        }
+        
+        return component
     }
     
 }

@@ -1,0 +1,75 @@
+.layout-menu ul a .layout-submenu-toggler {
+    font-size: 75%;
+    margin-left: auto;
+    transition: transform var(--element-transition-duration);
+}
+
+.layout-menu ul ul li a {
+    margin-left: 1rem;
+}
+
+.layout-menu ul a {
+    display: flex;
+    align-items: center;
+    position: relative;
+    outline: 0 none;
+    color: var(--text-color);
+    cursor: pointer;
+    padding: .75rem 1rem;
+    border-radius: 6px;
+    transition: background-color var(--element-transition-duration), box-shadow var(--element-transition-duration);
+}
+
+
+.layout-submenu.closed{
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+    
+}
+
+.layout-menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.layout-menu .layout-root-menuitem > .layout-menuitem-root-text {
+    font-size: 0.857rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--text-color);
+    margin: 0.75rem 0;
+}
+.layout-menu ul
+ {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.layout-menu ul a.active-route {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+.layout-menu ul a {
+    display: flex;
+    align-items: center;
+    position: relative;
+    outline: 0 none;
+    color: var(--text-color);
+    cursor: pointer;
+    padding: 0.75rem 1rem;
+    border-radius: var(--content-border-radius);
+    transition: background-color var(--element-transition-duration), box-shadow var(--element-transition-duration);
+}
+
+
+.layout-menu ul a:hover
+ {
+    background-color: var(--surface-hover);
+}
+
+
+.layout-menu ul a .layout-menuitem-icon {
+    margin-right: 0.5rem;
+}

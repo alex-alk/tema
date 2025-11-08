@@ -1,0 +1,15 @@
+:root {
+    --color-primary: #0E8660;
+    --color-secondary: #475569;
+    --color-success: #13863F;
+    --color-info: #0E7DAF;
+    --color-warn: #CB4C0B;
+    --color-help: #9F40F7;
+    --color-danger: #EA1010;
+    --color-contrast: #020617;
+    --btn-border-radius: 6px;
+    --p-surface-0: white;
+    --p-surface-50: #f8fafc;
+    --color-text: #334155;
+    --element-transition-duration: 0.2s;
+}
