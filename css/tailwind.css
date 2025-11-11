@@ -1,0 +1,9 @@
+/********** constraints ***********/
+.mb-2 {
+    margin-bottom: .5rem;
+}
+
+/******** fonts ******************/
+.font-medium {
+    font-weight: 500;
+}

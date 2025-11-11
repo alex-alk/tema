@@ -5,13 +5,21 @@
   font-display: swap;
   src: url('../fonts/Lato-Regular.woff2') format('woff2');
 }
-    @font-face {
-        font-family: 'Lato';
-        font-style: normal;
-        font-weight: 600;
-        font-display: swap;
-        src: url('../fonts/Lato-SemiBold.woff2') format('woff2');
-    }
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('../fonts/Lato-SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/Lato-Medium.woff2') format('woff2');
+}
 
 /*
 @font-face {
@@ -98,12 +106,7 @@
     font-weight: 300;
     src: local('Lato'), url('https://fonts.cdnfonts.com/s/14882/Lato-LightItalic.woff') format('woff');
 }
-@font-face {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 500;
-    src: local('Lato'), url('https://fonts.cdnfonts.com/s/14882/Lato-Medium.woff') format('woff');
-}
+
 @font-face {
     font-family: 'Lato';
     font-style: italic;
