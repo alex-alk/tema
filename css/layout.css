@@ -12,3 +12,25 @@
     padding: 0.5rem 1.5rem;
 }
 
+.card {
+    background: var(--surface-card);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 6px;
+}
+
+.border-cover {
+    border-radius: 56px;
+    padding: 0.3rem;
+    background: linear-gradient(180deg, var(--color-primary) 10%, rgba(33, 150, 243, 0) 30%);
+}
+
+img, svg, video, canvas, audio, iframe, embed, object {
+    display: block;
+    vertical-align: middle;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}

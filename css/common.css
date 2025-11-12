@@ -1,14 +1,63 @@
-.flex {
-    display: flex;
+/*********** dimensions **************/
+.min-w-\[100vw\] {
+    min-width: 100vw;
 }
 
-.flex-col {
-    flex-direction: column;
+@media (min-width: 768px) {
+    .md\:w-\[30rem\] {
+        width: 30rem;
+    }
 }
 
-.flex-wrap {
-    flex-wrap: wrap;
+@media (min-width: 768px) {
+    .md\:w-\[25rem\] {
+        width: 25rem;
+    }
 }
+
+@media (min-width: 576px) {
+    .sm\:px-20 {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
+
+@media (min-width: 576px) {
+    .sm\:px-20 {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
+
+@media (min-width: 576px) {
+    .sm\:px-16 {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+
+/************* colors **************/
+.text-muted-color {
+    color: #64748b;
+}
+
+.text-primary {
+    color: var(--color-primary);
+}
+
+.bg-surface-0 {
+    background-color: 
+ color-mix(in srgb, #ffffff calc(100%), transparent);
+}
+
+.text-surface-900 {
+    color: 
+ color-mix(in srgb, #0f172a calc(100%), transparent);
+}
+
+
+
+
 
 .font-semibold {
     font-weight: 600;

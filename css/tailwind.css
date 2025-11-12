@@ -1,9 +1,96 @@
+/*********** colors *************/
+.bg-white {
+  background-color: white;
+}
+
 /********** constraints ***********/
 .mb-2 {
     margin-bottom: .5rem;
 }
 
+.mb-8 {
+    margin-bottom: 2rem;
+}
+
+.mr-2 {
+    margin-right: .5rem;
+}
+
+.top-0 {
+    top: 0;
+}
+
+.left-0 {
+    left: 0;
+}
+
+.py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+/************* dimensions *********/
+.min-h-screen {
+    min-height: 100vh;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.w-16 {
+    width: 4rem;
+}
+
+
 /******** fonts ******************/
 .font-medium {
     font-weight: 500;
+}
+
+.text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+
+/*********** layout ***************/
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.shrink-0 {
+    flex-shrink: 0;
+}
+
+.block {
+    display: block;
+}
+
+.z-10 {
+    z-index: 10;
+}
+
+/*********** position *************/
+.justify-center {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.fixed {
+    position: fixed;
 }

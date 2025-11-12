@@ -1,5 +1,6 @@
 :root {
     --color-primary: #0E8660;
+    --color-primary-hover: #0C7451;
     --color-secondary: #475569;
     --color-success: #13863F;
     --color-info: #0E7DAF;
@@ -12,4 +13,10 @@
     --p-surface-50: #f8fafc;
     --color-text: #334155;
     --element-transition-duration: 0.2s;
+
+    --p-primary-500: #10b981;
+    --p-primary-400: #34d399;
+    --p-primary-300: #6ee7b7;
+    --p-primary-200: #a7f3d0;
+    --p-primary-100: #d1fae5;
 }
