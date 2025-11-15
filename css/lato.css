@@ -1,4 +1,18 @@
 @font-face {
+    font-family: 'Public Sans';
+    font-display: swap;
+    font-style: normal;
+    src: url('../fonts/SansThin.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Public Sans';
+    font-display: swap;
+    font-style: italic;
+    src: url('../fonts/SansThin-Italicc.woff2') format('woff');
+}
+
+/* @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
@@ -19,7 +33,7 @@
     font-style: normal;
     font-weight: 500;
     src: url('../fonts/Lato-Medium.woff2') format('woff2');
-}
+} */
 
 /*
 @font-face {

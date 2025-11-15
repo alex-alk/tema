@@ -1,5 +1,6 @@
 import { createComponent } from "../../js_modules/main.js"
 import { router } from "./routes.js"
+ import { SimpleScrollbar } from "./SimpleScrollbar.js";
 
 export class Sidebar {
 
@@ -40,99 +41,64 @@ export class Sidebar {
             ],
         }
 
-        let html = /* html */`
-<div class="layout-sidebar">
-    <ul class=layout-menu>`
+//         let html = /* html */`
+// <div class="layout-sidebar">
+//     <ul class=layout-menu>`
 
-        for (const item in items) {
-            html += /* html */`
-            <li class="layout-root-menuitem">
-                <div class="layout-menuitem-root-text">${item}</div>
-                <ul class="layout-submenu">`
+//         for (const item in items) {
+//             html += /* html */`
+//             <li class="layout-root-menuitem">
+//                 <div class="layout-menuitem-root-text">${item}</div>
+//                 <ul class="layout-submenu">`
 
-                for (const subitem of items[item]) {
+//                 for (const subitem of items[item]) {
                     
-                    if (3 in subitem) {
-                        html += /* html */`
-                        <li>
-                            <a class="v-menu-link toggler">
-                                <i class="pi pi-fw ${subitem[1]} layout-menuitem-icon"></i>
-                                <span class="layout-menuitem-text">${subitem[2]}</span>
+//                     if (3 in subitem) {
+//                         html += /* html */`
+//                         <li>
+//                             <a class="v-menu-link toggler">
+//                                 <i class="pi pi-fw ${subitem[1]} layout-menuitem-icon"></i>
+//                                 <span class="layout-menuitem-text">${subitem[2]}</span>
                             
-                            `
+//                             `
 
-                        html += `<i class="pi pi-fw pi-angle-down layout-submenu-toggler"></i></a>`
-                        html += `<ul class="layout-submenu closed">`
-                        for (const subitemsubitem of subitem[3]) {
-                            html += /* html */`
-                                <li>
-                                    <a href="${subitemsubitem[0]}" class="v-menu-link">
-                                        <i class="pi pi-fw ${subitemsubitem[1]} layout-menuitem-icon"></i>
-                                        <span class="layout-menuitem-text">${subitemsubitem[2]}</span>
-                                    </a>
-                                </li>
-                                `
-                        }
-                        html += '</ul>'
-                    } else {
-                        html += /* html */`
-                        <li>
-                            <a href="${subitem[0]}" class="v-menu-link">
-                                <i class="pi pi-fw ${subitem[1]} layout-menuitem-icon"></i>
-                                <span class="layout-menuitem-text">${subitem[2]}</span>
+//                         html += `<i class="pi pi-fw pi-angle-down layout-submenu-toggler"></i></a>`
+//                         html += `<ul class="layout-submenu closed">`
+//                         for (const subitemsubitem of subitem[3]) {
+//                             html += /* html */`
+//                                 <li>
+//                                     <a href="${subitemsubitem[0]}" class="v-menu-link">
+//                                         <i class="pi pi-fw ${subitemsubitem[1]} layout-menuitem-icon"></i>
+//                                         <span class="layout-menuitem-text">${subitemsubitem[2]}</span>
+//                                     </a>
+//                                 </li>
+//                                 `
+//                         }
+//                         html += '</ul>'
+//                     } else {
+//                         html += /* html */`
+//                         <li>
+//                             <a href="${subitem[0]}" class="v-menu-link">
+//                                 <i class="pi pi-fw ${subitem[1]} layout-menuitem-icon"></i>
+//                                 <span class="layout-menuitem-text">${subitem[2]}</span>
                             
-                            `
-                        html += '</a>'
-                    }
+//                             `
+//                         html += '</a>'
+//                     }
 
-                    html += `</li>`
-                }
-                html += '</ul></li>'
-        }
-        html += `
-    </ul>
-</div>
-`
-       // const html = await this.fetchHTML('/src/common/Sidebar.html');
+//                     html += `</li>`
+//                 }
+//                 html += '</ul></li>'
+//         }
+//         html += `
+//     </ul>
+// </div>
+// `
+        const html = await this.fetchHTML('/src/common/Sidebar.html');
         const component = createComponent(html)
+        const $box = component.querySelector('.menu-inner');
 
-
-        /********************** highlighter ********************/
-        const links = component.querySelectorAll('.v-menu-link')
-
-        router.subscribeToRouteChange((path) => {
-            selectMenuItem(path)
-        })
-
-        function selectMenuItem(path) {
-            for (const link of links) {
-                const routeFromLink = link.getAttribute('href')
-                if (path === routeFromLink) {
-                    link.classList.add('active-route')
-                } else {
-                    link.classList.remove('active-route')
-                }
-            }
-        }
-
-        selectMenuItem(router.stripBase(window.location.pathname))
-
-        /******************** toggler ***************/
-        const $togglers = component.querySelectorAll('.toggler')
-
-        for (const $toggler of $togglers) {
-            $toggler.addEventListener('click', function()  {
-                const $icon = $toggler.querySelector('.layout-submenu-toggler')
-                const submenu = this.nextElementSibling
-                 if (submenu.style.maxHeight) {
-                    submenu.style.maxHeight = null
-                    $icon.style.transform = 'rotate(0)';
-                } else {
-                    submenu.style.maxHeight = submenu.scrollHeight + 'px';
-                    $icon.style.transform = 'rotate(-180deg)';
-                }
-            })
-        }
+        const scroll = new SimpleScrollbar($box);
         
         return component
     }

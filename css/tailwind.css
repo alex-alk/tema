@@ -12,6 +12,10 @@
     margin-bottom: 2rem;
 }
 
+.mb-6 {
+    margin-bottom: 1.5rem;
+}
+
 .mr-2 {
     margin-right: .5rem;
 }
@@ -29,7 +33,48 @@
     padding-bottom: 5rem;
 }
 
+.py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.mb-12 {
+    margin-bottom: 3rem;
+}
+
+.pb-20 {
+    padding-bottom: 5rem;
+}
+
+.mb-6 {
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 992px) {
+    .lg\:px-20 {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}  
+
+.p-6 {
+    padding: 1.5rem;
+}
+
 /************* dimensions *********/
+.rounded-lg {
+    border-radius: 1rem;
+}
 .min-h-screen {
     min-height: 100vh;
 }
@@ -37,9 +82,22 @@
 .w-full {
     width: 100%;
 }
+@media (min-width: 992px) {
+    .lg\:w-6\/12 {
+        width: 50%;
+    }
+} 
 
 .w-16 {
     width: 4rem;
+}
+
+.h-screen {
+    height: 100vh;
+}
+
+.h-full {
+    height: 100%;
 }
 
 

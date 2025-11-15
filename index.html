@@ -1,27 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="layout-navbar-fixed layout-compact layout-menu-fixed">
 <head>
     <meta name="description" content="Put your description here.">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
     <title>Home</title>
 
-    <link rel="preload" href="/fonts/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/Lato-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/SansThin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/SansThin-Italicc.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/primeicons.woff2" as="font" type="font/woff2" crossorigin>
 
 
     <link rel="preload" href="/css/variables.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="/css/bootstrap.min.css" as="style" onload="this.rel='stylesheet'">
     <link rel="preload" href="/css/input.css" as="style" onload="this.rel='stylesheet'">
     <link rel="preload" href="/css/tailwind.css" as="style" onload="this.rel='stylesheet'">
     <link rel="preload" href="/css/primeicons.css" as="style" onload="this.rel='stylesheet'">
     <link rel="preload" href="/css/layout.css" as="style" onload="this.rel='stylesheet'">
     <link rel="preload" href="/css/lato.css" as="style" onload="this.rel='stylesheet'">
     <link rel="preload" href="/css/common.css" as="style" onload="this.rel='stylesheet'">
-    <link rel="preload" href="/css/components.css" as="style" onload="this.rel='stylesheet'">
     <link rel="preload" href="/css/global.css" as="style" onload="this.rel='stylesheet'">
     <link rel="preload" href="/css/menu.css" as="style" onload="this.rel='stylesheet'">
     <link rel="preload" href="/css/main.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="/css/iconify-icons.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="/css/apex-charts.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="/css/perfect-scrollbar.css" as="style" onload="this.rel='stylesheet'">
   
 </head>
 <body>
@@ -34,10 +37,18 @@
     <link rel="modulepreload" href="/src/common/routes.js">
     <link rel="modulepreload" href="/src/common/AppLayout.js">
     <link rel="modulepreload" href="/src/common/Sidebar.js">
-    <link rel="modulepreload" href="/src/TopbarComp.js">
+    <link rel="modulepreload" href="/src/common/topbar.js">
     <link rel="modulepreload" href="/src/uikit/button/button.js">
 
     <script src="/src/common/routes.js" type="module"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/helpers.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    window.Helpers.initPasswordToggle();
+});
+    </script>
+    <script src="/js/popular.js"></script>
 
 </body>
 </html>
