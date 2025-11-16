@@ -1,6 +1,6 @@
-import { createComponent } from "../../js_modules/main.js"
-import { router } from "./routes.js"
- import { SimpleScrollbar } from "./SimpleScrollbar.js";
+import { createComponent } from "../../../js_modules/main.js"
+import { router } from "../routes.js"
+ import { SimpleScrollbar } from "../SimpleScrollbar.js";
 
 export class Sidebar {
 
@@ -94,11 +94,28 @@ export class Sidebar {
 //     </ul>
 // </div>
 // `
-        const html = await this.fetchHTML('/src/common/Sidebar.html');
-        const component = createComponent(html)
-        const $box = component.querySelector('.menu-inner');
+        const html = await this.fetchHTML('/src/common/sidebar/sidebar.html')
 
-        const scroll = new SimpleScrollbar($box);
+        const component = createComponent(html)
+
+        const $menuItems = component.querySelectorAll('.menu-item')
+        
+        for (const $menuItem of $menuItems) {
+            $menuItem.addEventListener('click', function()  {
+                $menuItem.classList.toggle('open')
+
+                const submenu = $menuItem.querySelector('.menu-sub')
+                if (submenu.style.maxHeight) {
+                    submenu.style.maxHeight = null
+                } else {
+                    submenu.style.maxHeight = submenu.scrollHeight + 'px';
+                }
+            })
+        }
+
+        const $box = component.querySelector('.menu-inner')
+        
+        const ss = new SimpleScrollbar($box);
         
         return component
     }

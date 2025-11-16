@@ -1,4 +1,4 @@
-import { Sidebar } from './Sidebar.js'
+import { Sidebar } from './sidebar/sidebar.js'
 import { Topbar } from './topbar.js'
 
 export class AppLayout {
