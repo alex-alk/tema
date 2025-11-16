@@ -73,3 +73,85 @@
 .layout-menu ul a .layout-menuitem-icon {
     margin-right: 0.5rem;
 }
+
+.ss-track {
+    position: absolute;
+    top: 0;
+    right: 2px;
+    width: 3px;
+    bottom: 0;
+    background: transparent;
+    border-radius: 4px;
+    transition: background-color 0.3s, width 0.3s;
+}
+
+.ss-thumb {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: var(--bs-gray-400);
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0;
+    transition: background 0.3s, opacity 0.3s;
+}
+
+.ss-track.hover {
+    background: rgba(0,0,0,0.05);
+    width: 6px;
+}
+
+.ss-track.hover .ss-thumb {
+    background: var(--bs-gray-700);
+    opacity: 0.9;
+}
+
+.ss-wrapper-hover .ss-thumb {
+    background: var(--bs-gray-400);
+    opacity: 0.75;
+}
+
+.ss-track.hover {
+    background: rgba(0,0,0,0.05);
+    width: 6px;
+}
+
+.ss-track.hover .ss-thumb {
+    background: var(--bs-gray-700);
+    opacity: 0.9;
+}
+.ss-content:hover .ss-thumb {
+    opacity: 0.75;
+    background: var(--bs-gray-400);
+}
+
+.ss-content:hover .ss-track {
+    background: rgba(0,0,0,0.05);
+    width: 6px;
+}
+
+.ss-content:hover .ss-thumb {
+    opacity: 0.75;
+    background: var(--bs-gray-400);
+}
+
+.ss-content:hover .ss-track {
+    background: rgba(0,0,0,0.05);
+    width: 6px;
+}
+
+.ss-track:hover .ss-thumb {
+    opacity: 0.9;
+    background: var(--bs-gray-700);
+    width: 6px;
+}
+
+.ss-track:hover {
+    background: rgba(0,0,0,0.05);
+    width: 6px;
+}
+
+.ss-track:hover .ss-thumb {
+    opacity: 0.9;
+    background: var(--bs-gray-700);
+}
