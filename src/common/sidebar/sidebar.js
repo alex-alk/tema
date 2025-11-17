@@ -98,10 +98,11 @@ export class Sidebar {
 
         const component = createComponent(html)
 
-        const $menuItems = component.querySelectorAll('.menu-item')
+        const $menuLinks = component.querySelectorAll('.menu-link')
         
-        for (const $menuItem of $menuItems) {
-            $menuItem.addEventListener('click', function()  {
+        for (const $menuLink of $menuLinks) {
+            $menuLink.addEventListener('click', function()  {
+                const $menuItem = $menuLink.parentElement
                 $menuItem.classList.toggle('open')
 
                 const submenu = $menuItem.querySelector('.menu-sub')

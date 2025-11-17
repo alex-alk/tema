@@ -7,8 +7,8 @@ const AboutPage = async () => (await import('../AboutPage.js')).AboutPage
 const AboutPagee = async () => (await import('../AboutPagee.js')).AboutPagee
 const Users = async () => (await import('../Users.js')).Users
 const Button = async () => (await import('../uikit/button/button.js')).Button
-const Input = async () => (await import('../uikit/input/input.js')).Input
-const Login = async () => (await import('../auth/login.js')).Login
+const Input = async () => (await import('../pages/forms-basic-inputs/input.js')).Input
+const Login = async () => (await import('../pages/auth-login-basic/login.js')).Login
 
 
 const routes = [
@@ -20,11 +20,11 @@ const routes = [
             { path: '/about', component: AboutPage },
             { path: '/users', component: Users },
             { path: '/uikit/button', component: Button },
-            { path: '/uikit/input', component: Input },
+            { path: '/forms-basic-inputs', component: Input },
         ]
     },
     { path: '/about', component: AboutPagee },
-    { path: '/auth/login', component: Login }
+    { path: '/auth-login-basic', component: Login }
 ]
 
 // Change this to your app's base path, e.g. '/app' or '/' if root

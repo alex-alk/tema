@@ -1,7 +1,6 @@
 import { createComponent } from '../../../js_modules/main.js'
-import { path } from '../../common/routes.js'
 
-export class Input {
+export class Login {
 
     async fetchHTML(url) {
         const response = await fetch(url);
@@ -16,11 +15,8 @@ export class Input {
     }
 
     async getElement() {
-        const html = await this.fetchHTML('/src/uikit/input/input.html');
-
+        const html = await this.fetchHTML('/src/pages/auth-login-basic/login.html');
         const component = createComponent(html)
-
-        
         
         return component
     }

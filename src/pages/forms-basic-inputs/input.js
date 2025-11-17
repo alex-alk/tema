@@ -1,6 +1,7 @@
-import { createComponent } from '../../js_modules/main.js'
+import { createComponent } from '../../../js_modules/main.js'
+import { path } from '../../common/routes.js'
 
-export class Login {
+export class Input {
 
     async fetchHTML(url) {
         const response = await fetch(url);
@@ -15,8 +16,11 @@ export class Login {
     }
 
     async getElement() {
-        const html = await this.fetchHTML('/src/auth/login.html');
+        const html = await this.fetchHTML('/src/pages/forms-basic-inputs/input.html');
+
         const component = createComponent(html)
+
+        
         
         return component
     }
