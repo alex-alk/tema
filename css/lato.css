@@ -12,6 +12,13 @@
     src: url('../fonts/SansThin-Italicc.woff2') format('woff');
 }
 
+@font-face {
+    font-family: 'nunito';
+    font-display: swap;
+    font-style: normal;
+    src: url('../fonts/nunito.woff2') format('woff');
+}
+
 /* @font-face {
   font-family: 'Lato';
   font-style: normal;

@@ -1,17 +1,21 @@
 import { Sidebar } from './sidebar/sidebar.js'
+import { Footer } from './footer/footer.js'
 import { Topbar } from './topbar.js'
 
 export class AppLayout {
 
     async getElement() {
         const html =  /*html*/`
-<div class="layout-wrapper layout-content-navbar">
+<div class="wrapper">
+    <top-bar></top-bar>
     <side-bar></side-bar>
-    <div class="layout-page">
-        <top-bar></top-bar>
-        <div class="content-wrapper">
+    <div class="content-page">
+        <div class="content">
             <router-view></router-view>
         </div>
+        
+        <admin-footer></admin-footer>
+    </div>
     </div>
 </div>
 `
@@ -24,6 +28,9 @@ export class AppLayout {
 
         const $sidebar = component.querySelector('side-bar')
         $sidebar.replaceWith(await (new Sidebar).getElement())
+
+        const $footer = component.querySelector('admin-footer')
+        $footer.replaceWith(await (new Footer).getElement())
 
         return component
     }

@@ -116,7 +116,7 @@ export class Sidebar {
 
         const $box = component.querySelector('.menu-inner')
         
-        const ss = new SimpleScrollbar($box);
+        //const ss = new SimpleScrollbar($box);
         
         return component
     }
