@@ -1,6 +1,6 @@
-import { createComponent } from '../js_modules/main.js'
+import { createComponent } from '../../../js_modules/main.js'
 
-export class Dashboard {
+export class Login {
 
     async fetchHTML(url) {
         const response = await fetch(url);
@@ -15,11 +15,9 @@ export class Dashboard {
     }
 
     async getElement() {
-        const html = await this.fetchHTML('/src/Dashboard.html');
+        const html = await this.fetchHTML('/src/pages/login/login.html');
         const component = createComponent(html)
-
         
-
         return component
     }
 }

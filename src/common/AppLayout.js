@@ -10,10 +10,9 @@ export class AppLayout {
     <top-bar></top-bar>
     <side-bar></side-bar>
     <div class="content-page">
-        <div class="content">
+        <div class="container-fluid">
             <router-view></router-view>
         </div>
-        
         <admin-footer></admin-footer>
     </div>
     </div>

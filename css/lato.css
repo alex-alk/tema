@@ -6,6 +6,20 @@
 }
 
 @font-face {
+    font-family: 'tabler-icons';
+    font-display: swap;
+    font-style: normal;
+    src: url('../fonts/tabler-icons.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-display: swap;
+    font-style: normal;
+    src: url('../fonts/inter.woff2') format('woff2');
+}
+
+@font-face {
     font-family: 'Public Sans';
     font-display: swap;
     font-style: italic;

@@ -1,5 +1,5 @@
 import { createComponent } from "../../js_modules/main.js"
-import { router } from "./routes.js"
+import { router } from "../routes.js"
 
 export class Topbar {
 

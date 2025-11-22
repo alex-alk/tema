@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-menu-color="light" data-topbar-color="light">
+<html lang="en" data-menu-color="light" data-topbar-color="light" data-skin="saas">
 <head>
     <meta name="description" content="Put your description here.">
     <meta charset="UTF-8" />
@@ -13,6 +13,7 @@
 
     <link rel="preload" href="/css/variables.css" as="style" onload="this.rel='stylesheet'">
     <link rel="preload" href="/css/input.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="/css/vendors.min.css" as="style" onload="this.rel='stylesheet'">
     <link rel="preload" href="/css/materialdesignicons.min.css" as="style" onload="this.rel='stylesheet'">
     <link rel="preload" href="/css/remixicon.css" as="style" onload="this.rel='stylesheet'">
     <link rel="preload" href="/css/app.min.css" as="style" onload="this.rel='stylesheet'">
@@ -23,7 +24,6 @@
     <link rel="preload" href="/css/global.css" as="style" onload="this.rel='stylesheet'">
     <link rel="preload" href="/css/menu.css" as="style" onload="this.rel='stylesheet'">
     <link rel="preload" href="/css/main.css" as="style" onload="this.rel='stylesheet'">
-    <link rel="preload" href="/css/iconify-icons.css" as="style" onload="this.rel='stylesheet'">
     <link rel="preload" href="/css/apex-charts.css" as="style" onload="this.rel='stylesheet'">
     <link rel="preload" href="/css/perfect-scrollbar.css" as="style" onload="this.rel='stylesheet'">
   
@@ -35,13 +35,12 @@
     <!-- Preload module -->
     <link rel="modulepreload" href="/js_modules/Router.js">
     <link rel="modulepreload" href="/js_modules/main.js">
-    <link rel="modulepreload" href="/src/common/routes.js">
+    <link rel="modulepreload" href="/src/routes.js">
     <link rel="modulepreload" href="/src/common/AppLayout.js">
     <link rel="modulepreload" href="/src/common/sidebar/sidebar.js">
-    <link rel="modulepreload" href="/src/common/topbar.js">
     <link rel="modulepreload" href="/src/uikit/button/button.js">
 
-    <script src="/src/common/routes.js" type="module"></script>
+    <script src="/src/routes.js" type="module"></script>
     <script src="/js/bootstrap.bundle.min.js"></script>
     <script src="/js/helpers.js"></script>
     <script>

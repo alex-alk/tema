@@ -1,0 +1,52 @@
+const AppLayout = async () => (await import('./common/AppLayout.js')).AppLayout
+import Router from '../js_modules/Router.js'
+
+// Lazy load
+const Dashboard = async () => (await import('./pages/dashboards/dashboard/dashboard.js')).Dashboard
+const Dashboard2 = async () => (await import('./pages/dashboards/dashboard-2/dashboard-2.js')).Dashboard2
+const AboutPage = async () => (await import('./AboutPage.js')).AboutPage
+const AboutPagee = async () => (await import('./AboutPagee.js')).AboutPagee
+const Users = async () => (await import('./Users.js')).Users
+const Button = async () => (await import('./uikit/button/button.js')).Button
+const Input = async () => (await import('./pages/forms-basic-inputs/input.js')).Input
+const Login = async () => (await import('./pages/login/login.js')).Login
+const NotFound = async () => (await import('./pages/error-pages/404-not-found/404.js')).NotFound
+const Chat = async () => (await import('./pages/chat/chat.js')).Chat
+const Calendar = async () => (await import('./pages/calendar/calendar.js')).Calendar
+const FileManager = async () => (await import('./pages/file-manager/file-manager.js')).FileManager
+const EcommerceProducts = async () => (await import('./pages/ecommerce/products/listing/ecommerce-products.js')).EcommerceProducts
+
+const routes = [
+    {
+        path: '/',
+        component: AppLayout,
+        children: [
+            { path: '/', component: Dashboard },
+            { path: '/about', component: AboutPage },
+            { path: '/users', component: Users },
+            { path: '/uikit/button', component: Button },
+            { path: '/forms-basic-inputs', component: Input },
+            { path: '/dashboard-2', component: Dashboard2 },
+            { path: '/chat', component: Chat },
+            { path: '/calendar', component: Calendar },
+            { path: '/file-manager', component: FileManager },
+            { path: '/ecommerce-products', component: EcommerceProducts }
+        ]
+    },
+    { path: '/about', component: AboutPagee },
+    { path: '/pages-login', component: Login },
+    { path: '/404', component: NotFound }
+]
+
+// Change this to your app's base path, e.g. '/app' or '/' if root
+const BASE_PATH = '';
+
+export function path(projectPath) {
+    return BASE_PATH + projectPath
+}
+
+// Instantiate and start router
+export const router = new Router(routes, BASE_PATH);
+window.addEventListener('DOMContentLoaded', () => {
+    router.start();
+});
