@@ -1,0 +1,389 @@
+<div class="page-title-head d-flex align-items-center">
+    <div class="flex-grow-1">
+        <h4 class="fs-xl fw-bold m-0">Add Product</h4>
+    </div>
+
+    <div class="text-end">
+        <ol class="breadcrumb m-0 py-0">
+            <li class="breadcrumb-item"><a href="javascript: void(0);">UBold</a></li>
+
+            <li class="breadcrumb-item"><a href="javascript: void(0);">Ecommerce</a></li>
+
+            <li class="breadcrumb-item active">Add Product</li>
+        </ol>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="row">
+            <div class="col-xxl-8">
+                <div class="card">
+                    <div class="card-header d-block p-3">
+                        <h4 class="card-title mb-1">Product Information</h4>
+                        <p class="text-muted mb-0">To add a new product, please provide the necessary
+                            details in the fields below.</p>
+                    </div> <!-- end card-header -->
+
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="mb-3">
+                                    <label for="productName" class="form-label">Product Name <span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="productName"
+                                        placeholder="Enter product name" required="">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="mb-3">
+                                    <label for="skuId" class="form-label">SKU <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="skuId" placeholder="SOFA-10058"
+                                        required="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="mb-3">
+                                    <label for="stockNumber" class="form-label">Stock <span
+                                            class="text-danger">*</span></label>
+                                    <input type="number" class="form-control" id="stockNumber" placeholder="250">
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div>
+                                    <label class="form-label">Product Description <span
+                                            class="text-muted">(Optional)</span></label>
+                                    <div role="toolbar" class="ql-toolbar ql-snow"><span class="ql-formats"><button
+                                                type="button" class="ql-bold" aria-pressed="false" aria-label="bold"><i
+                                                    class="ti ti-bold fs-lg"></i></button><button type="button"
+                                                class="ql-italic" aria-pressed="false" aria-label="italic"><i
+                                                    class="ti ti-italic fs-lg"></i></button><button type="button"
+                                                class="ql-underline" aria-pressed="false" aria-label="underline"><i
+                                                    class="ti ti-underline fs-lg"></i></button><button type="button"
+                                                class="ql-strike" aria-pressed="false" aria-label="strike"><i
+                                                    class="ti ti-strikethrough fs-lg"></i></button><button type="button"
+                                                class="ql-blockquote" aria-pressed="false" aria-label="blockquote"><i
+                                                    class="ti ti-blockquote fs-lg"></i></button><button type="button"
+                                                class="ql-code-block" aria-pressed="false" aria-label="code-block"><i
+                                                    class="ti ti-code fs-lg"></i></button><button type="button"
+                                                class="ql-list" aria-pressed="false" value="bullet"
+                                                aria-label="list: bullet"><i
+                                                    class="ti ti-list fs-lg"></i></button><button type="button"
+                                                class="ql-link" aria-pressed="false" aria-label="link"><i
+                                                    class="ti ti-link fs-lg"></i></button><button type="button"
+                                                class="ql-image" aria-pressed="false" aria-label="image"><i
+                                                    class="ti ti-photo fs-lg"></i></button></span></div>
+                                    <div id="snow-editor" class="ql-container ql-snow">
+                                        <div class="ql-editor" contenteditable="true">
+                                            <p>Introducing the <strong><em>Azure Comfort Single Sofa</em></strong>, a
+                                                perfect blend of modern design and luxurious comfort.</p>
+                                            <p>This premium blue single sofa is designed to elevate any living space
+                                                with its sleek profile and rich, durable fabric. It’s the perfect
+                                                seating option for your living room, lounge area, or cozy reading nook.
+                                            </p>
+                                            <ol>
+                                                <li data-list="bullet"><span class="ql-ui"
+                                                        contenteditable="false"></span>Crafted with a solid mahogany
+                                                    frame for enhanced durability.</li>
+                                                <li data-list="bullet"><span class="ql-ui"
+                                                        contenteditable="false"></span>Upholstered in a high-quality
+                                                    blue fabric that offers both style and comfort.</li>
+                                            </ol>
+                                        </div>
+                                        <div class="ql-tooltip ql-hidden"><a class="ql-preview"
+                                                rel="noopener noreferrer" target="_blank" href="about:blank"></a><input
+                                                type="text" data-formula="e=mc^2" data-link="https://quilljs.com"
+                                                data-video="Embed URL"><a class="ql-action"></a><a
+                                                class="ql-remove"></a></div>
+                                    </div><!-- end Snow-editor -->
+                                </div>
+                            </div>
+
+                        </div>
+                    </div> <!-- end card-body-->
+                </div> <!-- end card-->
+
+                <div class="card">
+                    <div class="card-header d-block p-3">
+                        <h4 class="card-title mb-1">Product Image</h4>
+                        <p class="text-muted mb-0">To upload a product image, please use the option below to
+                            select and upload the relevant file.</p>
+                    </div> <!-- end card-header -->
+
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <form action="/" method="post" class="dropzone dz-clickable" id="myAwesomeDropzone"
+                                    data-plugin="dropzone" data-previews-container="#file-previews"
+                                    data-upload-preview-template="#uploadPreviewTemplate">
+
+
+                                    <div class="dz-message needsclick">
+                                        <div class="avatar-lg mx-auto mb-3">
+                                            <span class="avatar-title bg-info-subtle text-info rounded-circle">
+                                                <i class="fs-24 ti ti-cloud-upload"></i>
+                                            </span>
+                                        </div>
+                                        <h4 class="mb-2">Drop files here or click to upload.</h4>
+                                        <p class="text-muted fst-italic mb-3">You can drag images here, or
+                                            browse files via the button below.</p>
+                                        <button type="button" class="btn btn-sm shadow btn-default">Browse
+                                            Images
+                                        </button>
+                                    </div>
+                                </form>
+
+                                <!-- Preview -->
+                                <div class="dropzone-previews mt-3" id="file-previews"></div>
+
+                                <!-- file preview template -->
+                                <div class="d-none" id="uploadPreviewTemplate">
+                                    <div class="card mt-1 mb-0 border-dashed border">
+                                        <div class="p-2">
+                                            <div class="row align-items-center">
+                                                <div class="col-auto">
+                                                    <img data-dz-thumbnail="" src="#" class="avatar-sm rounded bg-light"
+                                                        alt="">
+                                                </div>
+                                                <div class="col ps-0">
+                                                    <a href="javascript:void(0);" class="fw-semibold"
+                                                        data-dz-name=""></a>
+                                                    <p class="mb-0 text-muted" data-dz-size=""></p>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <!-- Button -->
+                                                    <a href="" class="btn btn-link btn-lg text-danger"
+                                                        data-dz-remove="">
+                                                        <i class="ti ti-x"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end file preview template -->
+                            </div>
+
+                        </div>
+                    </div> <!-- end card-body-->
+                </div> <!-- end card-->
+
+            </div> <!-- end col-->
+
+            <div class="col-xxl-4">
+                <div class="card">
+                    <div class="card-header d-block p-3">
+                        <h4 class="card-title mb-1">Pricing</h4>
+                        <p class="text-muted mb-0">Set the base price and applicable discount for the
+                            product using the options below.</p>
+                    </div> <!-- end card-header -->
+
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label for="basePrice" class="form-label">Base Price <span
+                                    class="text-danger">*</span></label>
+                            <div class="app-search">
+                                <input type="number" class="form-control" id="basePrice"
+                                    placeholder="Enter base price (e.g., 199.99)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" data-lucide="dollar-sign"
+                                    class="lucide lucide-dollar-sign app-search-icon text-muted">
+                                    <line x1="12" x2="12" y1="2" y2="22"></line>
+                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="discount" class="form-label">Discount Type <span
+                                    class="text-muted">(Optional)</span></label>
+                            <div class="app-search">
+                                <select class="form-select form-control my-1 my-md-0" id="discount">
+                                    <option selected="">Choose Discount</option>
+                                    <option value="No Discount">No Discount</option>
+                                    <option value="Flat Discount">Flat Discount</option>
+                                    <option value="Percentage Discount">Percentage Discount</option>
+                                </select>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" data-lucide="percent"
+                                    class="lucide lucide-percent app-search-icon text-muted">
+                                    <line x1="19" x2="5" y1="5" y2="19"></line>
+                                    <circle cx="6.5" cy="6.5" r="2.5"></circle>
+                                    <circle cx="17.5" cy="17.5" r="2.5"></circle>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="mb-0">
+                            <label for="discountValue" class="form-label">Discount Value <span
+                                    class="text-muted">(Optional)</span></label>
+                            <div class="app-search">
+                                <input type="number" class="form-control" id="discountValue"
+                                    placeholder="Enter discount amount or percentage">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" data-lucide="tag"
+                                    class="lucide lucide-tag app-search-icon text-muted">
+                                    <path
+                                        d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z">
+                                    </path>
+                                    <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header d-block p-3">
+                        <h4 class="card-title mb-1">Organize</h4>
+                        <p class="text-muted mb-0">Organize your product by selecting the appropriate brand,
+                            category, sub-category, status, and tags.</p>
+                    </div> <!-- end card-header -->
+
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label for="brand" class="form-label">Brand</label>
+                            <div class="app-search">
+                                <input type="text" class="form-control" id="brand" placeholder="Enter brand name">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" data-lucide="layers"
+                                    class="lucide lucide-layers app-search-icon text-muted">
+                                    <path
+                                        d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z">
+                                    </path>
+                                    <path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12">
+                                    </path>
+                                    <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="category" class="form-label">Category <span class="text-danger">*</span></label>
+                            <div class="app-search">
+                                <select class="form-select form-control my-1 my-md-0" id="category">
+                                    <option selected="">Choose Category</option>
+                                    <option value="Furniture">Furniture</option>
+                                    <option value="Electronics">Electronics</option>
+                                    <option value="Fashion">Fashion</option>
+                                </select>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" data-lucide="grid"
+                                    class="lucide lucide-grid app-search-icon text-muted">
+                                    <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+                                    <path d="M3 9h18"></path>
+                                    <path d="M3 15h18"></path>
+                                    <path d="M9 3v18"></path>
+                                    <path d="M15 3v18"></path>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="subCategory" class="form-label">Sub Category <span
+                                    class="text-danger">*</span></label>
+                            <div class="app-search">
+                                <select class="form-select form-control my-1 my-md-0" id="subCategory">
+                                    <option selected="">Choose Sub Category</option>
+                                    <option value="Chairs">Chairs</option>
+                                    <option value="Sofas">Sofas</option>
+                                    <option value="Tables">Tables</option>
+                                </select>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" data-lucide="list"
+                                    class="lucide lucide-list app-search-icon text-muted">
+                                    <path d="M3 12h.01"></path>
+                                    <path d="M3 18h.01"></path>
+                                    <path d="M3 6h.01"></path>
+                                    <path d="M8 12h13"></path>
+                                    <path d="M8 18h13"></path>
+                                    <path d="M8 6h13"></path>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="statusOne" class="form-label">Status <span class="text-danger">*</span></label>
+                            <div class="app-search">
+                                <select class="form-select form-control my-1 my-md-0" id="statusOne">
+                                    <option selected="">Choose Status</option>
+                                    <option value="Published">Published</option>
+                                    <option value="Inactive">Inactive</option>
+                                    <option value="Schedule">Schedule</option>
+                                    <option value="Draft">Draft</option>
+                                </select>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" data-lucide="toggle-left"
+                                    class="lucide lucide-toggle-left app-search-icon text-muted">
+                                    <circle cx="9" cy="12" r="3"></circle>
+                                    <rect width="20" height="14" x="2" y="5" rx="7"></rect>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="mb-0">
+                            <label for="tags" class="form-label">Tags</label>
+                            <div class="app-search">
+                                <input type="text" class="form-control" id="tags"
+                                    placeholder="Enter tags separated by commas">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" data-lucide="tag"
+                                    class="lucide lucide-tag app-search-icon text-muted">
+                                    <path
+                                        d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z">
+                                    </path>
+                                    <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div> <!-- end row-->
+
+        <div class="mt-2 mb-4 d-flex gap-2 justify-content-center">
+            <a href="#!" class="btn btn-link text-danger fw-semibold">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    data-lucide="clipboard-x" class="lucide lucide-clipboard-x fs-sm me-2">
+                    <rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect>
+                    <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                    <path d="m15 11-6 6"></path>
+                    <path d="m9 11 6 6"></path>
+                </svg> Discard
+            </a>
+            <a href="#!" class="btn btn-soft-secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    data-lucide="save" class="lucide lucide-save fs-sm me-2">
+                    <path
+                        d="M15.2 3a2 2 0 0 1 1.4.6l3.8 3.8a2 2 0 0 1 .6 1.4V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z">
+                    </path>
+                    <path d="M17 21v-7a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v7"></path>
+                    <path d="M7 3v4a1 1 0 0 0 1 1h7"></path>
+                </svg> Save as Draft
+            </a>
+            <a href="#!" class="btn btn-success">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    data-lucide="plus" class="lucide lucide-plus fs-sm me-2">
+                    <path d="M5 12h14"></path>
+                    <path d="M12 5v14"></path>
+                </svg> Publish
+            </a>
+        </div>
+    </div> <!-- end col-->
+</div> <!-- end row-->

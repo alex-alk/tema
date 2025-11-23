@@ -15,6 +15,13 @@ const Chat = async () => (await import('./pages/chat/chat.js')).Chat
 const Calendar = async () => (await import('./pages/calendar/calendar.js')).Calendar
 const FileManager = async () => (await import('./pages/file-manager/file-manager.js')).FileManager
 const EcommerceProducts = async () => (await import('./pages/ecommerce/products/listing/ecommerce-products.js')).EcommerceProducts
+const EcommerceProductsGrid = async () => (await import('./pages/ecommerce/products/grid/ecommerce-products-grid.js')).EcommerceProductsGrid
+const EcommerceProductDetails = async () => (await import('./pages/ecommerce/products/details/ecommerce-product-details.js')).EcommerceProductDetails
+const EcommerceAddProduct = async () => (await import('./pages/ecommerce/products/add/ecommerce-add-product.js')).EcommerceAddProduct
+const EcommerceCategories = async () => (await import('./pages/ecommerce/categories/ecommerce-categories.js')).EcommerceCategories
+const EcommerceOrders = async () => (await import('./pages/ecommerce/orders/orders/ecommerce-orders.js')).EcommerceOrders
+const EcommerceOrderDetails = async () => (await import('./pages/ecommerce/orders/details/ecommerce-order-details.js')).EcommerceOrderDetails
+const EcommerceCustomers = async () => (await import('./pages/ecommerce/customers/ecommerce-customers.js')).EcommerceCustomers
 
 const routes = [
     {
@@ -30,7 +37,14 @@ const routes = [
             { path: '/chat', component: Chat },
             { path: '/calendar', component: Calendar },
             { path: '/file-manager', component: FileManager },
-            { path: '/ecommerce-products', component: EcommerceProducts }
+            { path: '/ecommerce-products', component: EcommerceProducts },
+            { path: '/ecommerce-products-grid', component: EcommerceProductsGrid },
+            { path: '/ecommerce-product-details', component: EcommerceProductDetails },
+            { path: '/ecommerce-add-product', component: EcommerceAddProduct },
+            { path: '/ecommerce-categories', component: EcommerceCategories },
+            { path: '/ecommerce-orders', component: EcommerceOrders },
+            { path: '/ecommerce-order-details', component: EcommerceOrderDetails },
+            { path: '/ecommerce-customers', component: EcommerceCustomers }
         ]
     },
     { path: '/about', component: AboutPagee },
