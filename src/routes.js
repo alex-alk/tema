@@ -22,6 +22,15 @@ const EcommerceCategories = async () => (await import('./pages/ecommerce/categor
 const EcommerceOrders = async () => (await import('./pages/ecommerce/orders/orders/ecommerce-orders.js')).EcommerceOrders
 const EcommerceOrderDetails = async () => (await import('./pages/ecommerce/orders/details/ecommerce-order-details.js')).EcommerceOrderDetails
 const EcommerceCustomers = async () => (await import('./pages/ecommerce/customers/ecommerce-customers.js')).EcommerceCustomers
+const EcommerceSellers = async () => (await import('./pages/ecommerce/sellers/sellers/ecommerce-sellers.js')).EcommerceSellers
+const EcommerceSellerDetails = async () => (await import('./pages/ecommerce/sellers/details/ecommerce-seller-details.js')).EcommerceSellerDetails
+const EcommerceReviews = async () => (await import('./pages/ecommerce/reviews/ecommerce-reviews.js')).EcommerceReviews
+const Email = async () => (await import('./pages/email/inbox/email.js')).Email
+const EmailDetails = async () => (await import('./pages/email/details/email-details.js')).EmailDetails
+const EmailCompose = async () => (await import('./pages/email/compose/email-compose.js')).EmailCompose
+const EmailTemplates = async () => (await import('./pages/email/templates/email-templates.js')).EmailTemplates
+const CrmContacts = async () => (await import('./pages/crm/contacts/crm-contacts.js')).CrmContacts
+const CrmOpportunities = async () => (await import('./pages/crm/opportunities/crm-opportunities.js')).CrmOpportunities
 
 const routes = [
     {
@@ -44,7 +53,16 @@ const routes = [
             { path: '/ecommerce-categories', component: EcommerceCategories },
             { path: '/ecommerce-orders', component: EcommerceOrders },
             { path: '/ecommerce-order-details', component: EcommerceOrderDetails },
-            { path: '/ecommerce-customers', component: EcommerceCustomers }
+            { path: '/ecommerce-customers', component: EcommerceCustomers },
+            { path: '/ecommerce-sellers', component: EcommerceSellers },
+            { path: '/ecommerce-seller-details', component: EcommerceSellerDetails },
+            { path: '/ecommerce-reviews', component: EcommerceReviews },
+            { path: '/email', component: Email },
+            { path: '/email-details', component: EmailDetails },
+            { path: '/email-compose', component: EmailCompose },
+            { path: '/email-templates', component: EmailTemplates },
+            { path: '/crm-contacts', component: CrmContacts },
+            { path: '/crm-opportunities', component: CrmOpportunities }
         ]
     },
     { path: '/about', component: AboutPagee },
