@@ -31,6 +31,16 @@ const EmailCompose = async () => (await import('./pages/email/compose/email-comp
 const EmailTemplates = async () => (await import('./pages/email/templates/email-templates.js')).EmailTemplates
 const CrmContacts = async () => (await import('./pages/crm/contacts/crm-contacts.js')).CrmContacts
 const CrmOpportunities = async () => (await import('./pages/crm/opportunities/crm-opportunities.js')).CrmOpportunities
+const CrmDeals = async () => (await import('./pages/crm/deals/crm-deals.js')).CrmDeals
+const CrmLeads = async () => (await import('./pages/crm/leads/crm-leads.js')).CrmLeads
+const CrmPipeline = async () => (await import('./pages/crm/pipeline/crm-pipeline.js')).CrmPipeline
+const CrmCampaign = async () => (await import('./pages/crm/campaign/crm-campaign.js')).CrmCampaign
+const CrmProposals = async () => (await import('./pages/crm/proposals/crm-proposals.js')).CrmProposals
+const CrmEstimations = async () => (await import('./pages/crm/estimations/crm-estimations.js')).CrmEstimations
+const CrmCustomers = async () => (await import('./pages/crm/customers/crm-customers.js')).CrmCustomers
+const CrmActivities = async () => (await import('./pages/crm/activities/crm-activities.js')).CrmActivities
+const UsersContacts = async () => (await import('./pages/users/contacts/users-contacts.js')).UsersContacts
+const UsersProfile = async () => (await import('./pages/users/profile/users-profile.js')).UsersProfile
 
 const routes = [
     {
@@ -62,7 +72,17 @@ const routes = [
             { path: '/email-compose', component: EmailCompose },
             { path: '/email-templates', component: EmailTemplates },
             { path: '/crm-contacts', component: CrmContacts },
-            { path: '/crm-opportunities', component: CrmOpportunities }
+            { path: '/crm-opportunities', component: CrmOpportunities },
+            { path: '/crm-deals', component: CrmDeals },
+            { path: '/crm-leads', component: CrmLeads },
+            { path: '/crm-pipeline', component: CrmPipeline },
+            { path: '/crm-campaign', component: CrmCampaign },
+            { path: '/crm-proposals', component: CrmProposals },
+            { path: '/crm-estimations', component: CrmEstimations },
+            { path: '/crm-customers', component: CrmCustomers },
+            { path: '/crm-activities', component: CrmActivities },
+            { path: '/users-contacts', component: UsersContacts },
+            { path: '/users-profile', component: UsersProfile }
         ]
     },
     { path: '/about', component: AboutPagee },
