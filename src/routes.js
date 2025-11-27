@@ -41,6 +41,11 @@ const CrmCustomers = async () => (await import('./pages/crm/customers/crm-custom
 const CrmActivities = async () => (await import('./pages/crm/activities/crm-activities.js')).CrmActivities
 const UsersContacts = async () => (await import('./pages/users/contacts/users-contacts.js')).UsersContacts
 const UsersProfile = async () => (await import('./pages/users/profile/users-profile.js')).UsersProfile
+const UsersRoles = async () => (await import('./pages/users/roles/users-roles.js')).UsersRoles
+const UsersRoleDetails = async () => (await import('./pages/users/role-details/users-role-details.js')).UsersRoleDetails
+const UsersPermissions = async () => (await import('./pages/users/permissions/users-permissions.js')).UsersPermissions
+const Invoices = async () => (await import('./pages/invoice/invoices/invoices.js')).Invoices
+
 
 const routes = [
     {
@@ -82,7 +87,11 @@ const routes = [
             { path: '/crm-customers', component: CrmCustomers },
             { path: '/crm-activities', component: CrmActivities },
             { path: '/users-contacts', component: UsersContacts },
-            { path: '/users-profile', component: UsersProfile }
+            { path: '/users-profile', component: UsersProfile },
+            { path: '/users-roles', component: UsersRoles },
+            { path: '/users-role-details', component: UsersRoleDetails },
+            { path: '/users-permissions', component: UsersPermissions },
+            { path: '/invoices', component: Invoices }
         ]
     },
     { path: '/about', component: AboutPagee },
