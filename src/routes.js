@@ -45,7 +45,11 @@ const UsersRoles = async () => (await import('./pages/users/roles/users-roles.js
 const UsersRoleDetails = async () => (await import('./pages/users/role-details/users-role-details.js')).UsersRoleDetails
 const UsersPermissions = async () => (await import('./pages/users/permissions/users-permissions.js')).UsersPermissions
 const Invoices = async () => (await import('./pages/invoice/invoices/invoices.js')).Invoices
-
+const InvoiceDetails = async () => (await import('./pages/invoice/single/invoice-details.js')).InvoiceDetails
+const InvoiceCreate = async () => (await import('./pages/invoice/create/invoice-create.js')).InvoiceCreate
+const SocialFeed = async () => (await import('./pages/social-feed/social-feed.js')).SocialFeed
+const Tickets = async () => (await import('./pages/support-center/tickets/tickets.js')).Tickets
+const TicketDetails = async () => (await import('./pages/support-center/details/ticket-details.js')).TicketDetails
 
 const routes = [
     {
@@ -91,7 +95,12 @@ const routes = [
             { path: '/users-roles', component: UsersRoles },
             { path: '/users-role-details', component: UsersRoleDetails },
             { path: '/users-permissions', component: UsersPermissions },
-            { path: '/invoices', component: Invoices }
+            { path: '/invoices', component: Invoices },
+            { path: '/invoice-details', component: InvoiceDetails },
+            { path: '/invoice-create', component: InvoiceCreate },
+            { path: '/social-feed', component: SocialFeed },
+            { path: '/tickets-list', component: Tickets },
+            { path: '/ticket-details', component: TicketDetails }
         ]
     },
     { path: '/about', component: AboutPagee },
