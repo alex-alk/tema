@@ -50,6 +50,9 @@ const InvoiceCreate = async () => (await import('./pages/invoice/create/invoice-
 const SocialFeed = async () => (await import('./pages/social-feed/social-feed.js')).SocialFeed
 const Tickets = async () => (await import('./pages/support-center/tickets/tickets.js')).Tickets
 const TicketDetails = async () => (await import('./pages/support-center/details/ticket-details.js')).TicketDetails
+const TicketCreate = async () => (await import('./pages/support-center/create/ticket-create.js')).TicketCreate
+const ApiKeys = async () => (await import('./pages/api-keys/api-keys.js')).ApiKeys
+const PagesFaq = async () => (await import('./pages/pages/faq/pages-faq.js')).PagesFaq
 
 const routes = [
     {
@@ -100,7 +103,10 @@ const routes = [
             { path: '/invoice-create', component: InvoiceCreate },
             { path: '/social-feed', component: SocialFeed },
             { path: '/tickets-list', component: Tickets },
-            { path: '/ticket-details', component: TicketDetails }
+            { path: '/ticket-details', component: TicketDetails },
+            { path: '/ticket-create', component: TicketCreate },
+            { path: '/api-keys', component: ApiKeys },
+            { path: '/pages-faq', component: PagesFaq }
         ]
     },
     { path: '/about', component: AboutPagee },
