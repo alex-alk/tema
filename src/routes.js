@@ -53,6 +53,12 @@ const TicketDetails = async () => (await import('./pages/support-center/details/
 const TicketCreate = async () => (await import('./pages/support-center/create/ticket-create.js')).TicketCreate
 const ApiKeys = async () => (await import('./pages/api-keys/api-keys.js')).ApiKeys
 const PagesFaq = async () => (await import('./pages/pages/faq/pages-faq.js')).PagesFaq
+const PagesPricing = async () => (await import('./pages/pages/pricing/pages-pricing.js')).PagesPricing
+const PagesEmpty = async () => (await import('./pages/pages/empty/pages-empty.js')).PagesEmpty
+const PagesTimeline = async () => (await import('./pages/pages/timeline/pages-timeline.js')).PagesTimeline
+const PagesSitemap = async () => (await import('./pages/pages/sitemap/pages-sitemap.js')).PagesSitemap
+const PagesSearchResults = async () => (await import('./pages/pages/search-results/pages-search-results.js')).PagesSearchResults
+
 
 const routes = [
     {
@@ -106,7 +112,12 @@ const routes = [
             { path: '/ticket-details', component: TicketDetails },
             { path: '/ticket-create', component: TicketCreate },
             { path: '/api-keys', component: ApiKeys },
-            { path: '/pages-faq', component: PagesFaq }
+            { path: '/pages-faq', component: PagesFaq },
+            { path: '/pages-pricing', component: PagesPricing },
+            { path: '/pages-empty', component: PagesEmpty },
+            { path: '/pages-timeline', component: PagesTimeline },
+            { path: '/pages-sitemap', component: PagesSitemap },
+            { path: '/pages-search-results', component: PagesSearchResults }
         ]
     },
     { path: '/about', component: AboutPagee },
