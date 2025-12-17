@@ -58,6 +58,8 @@ const PagesEmpty = async () => (await import('./pages/pages/empty/pages-empty.js
 const PagesTimeline = async () => (await import('./pages/pages/timeline/pages-timeline.js')).PagesTimeline
 const PagesSitemap = async () => (await import('./pages/pages/sitemap/pages-sitemap.js')).PagesSitemap
 const PagesSearchResults = async () => (await import('./pages/pages/search-results/pages-search-results.js')).PagesSearchResults
+const PagesComingSoon = async () => (await import('./pages/pages/coming-soon/pages-coming-soon.js')).PagesComingSoon
+const PagesTermsConditions = async () => (await import('./pages/pages/terms-conditions/pages-terms-conditions.js')).PagesTermsConditions
 
 
 const routes = [
@@ -117,12 +119,14 @@ const routes = [
             { path: '/pages-empty', component: PagesEmpty },
             { path: '/pages-timeline', component: PagesTimeline },
             { path: '/pages-sitemap', component: PagesSitemap },
-            { path: '/pages-search-results', component: PagesSearchResults }
+            { path: '/pages-search-results', component: PagesSearchResults },
+            { path: '/pages-terms-conditions', component: PagesTermsConditions }
         ]
     },
     { path: '/about', component: AboutPagee },
     { path: '/pages-login', component: Login },
-    { path: '/404', component: NotFound }
+    { path: '/404', component: NotFound },
+    { path: '/pages-coming-soon', component: PagesComingSoon }
 ]
 
 // Change this to your app's base path, e.g. '/app' or '/' if root
