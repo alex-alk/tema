@@ -63,6 +63,9 @@ const PagesTermsConditions = async () => (await import('./pages/pages/terms-cond
 const AuthSignIn = async () => (await import('./pages/auth/basic/sign-in/auth-sign-in.js')).AuthSignIn
 const AuthSignUp = async () => (await import('./pages/auth/basic/sign-up/auth-sign-up.js')).AuthSignUp
 const AuthResetPass = async () => (await import('./pages/auth/basic/reset-pass/auth-reset-pass.js')).AuthResetPass
+const AuthNewPass = async () => (await import('./pages/auth/basic/new-pass/auth-new-pass.js')).AuthNewPass
+const AuthTwoFactor = async () => (await import('./pages/auth/basic/two-factor/auth-two-factor.js')).AuthTwoFactor
+const AuthLockScreen = async () => (await import('./pages/auth/basic/lock-screen/auth-lock-screen.js')).AuthLockScreen
 
 
 const routes = [
@@ -132,7 +135,11 @@ const routes = [
     { path: '/pages-coming-soon', component: PagesComingSoon },
     { path: '/auth-sign-in', component: AuthSignIn },
     { path: '/auth-sign-up', component: AuthSignUp },
-    { path: '/auth-reset-pass', component: AuthResetPass }
+    { path: '/auth-reset-pass', component: AuthResetPass },
+    { path: '/auth-new-pass', component: AuthNewPass },
+    { path: '/auth-two-factor', component: AuthTwoFactor },
+    { path: '/auth-lock-screen', component: AuthLockScreen }
+
 
 ]
 
