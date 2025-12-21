@@ -60,6 +60,9 @@ const PagesSitemap = async () => (await import('./pages/pages/sitemap/pages-site
 const PagesSearchResults = async () => (await import('./pages/pages/search-results/pages-search-results.js')).PagesSearchResults
 const PagesComingSoon = async () => (await import('./pages/pages/coming-soon/pages-coming-soon.js')).PagesComingSoon
 const PagesTermsConditions = async () => (await import('./pages/pages/terms-conditions/pages-terms-conditions.js')).PagesTermsConditions
+const AuthSignIn = async () => (await import('./pages/auth/basic/sign-in/auth-sign-in.js')).AuthSignIn
+const AuthSignUp = async () => (await import('./pages/auth/basic/sign-up/auth-sign-up.js')).AuthSignUp
+const AuthResetPass = async () => (await import('./pages/auth/basic/reset-pass/auth-reset-pass.js')).AuthResetPass
 
 
 const routes = [
@@ -126,7 +129,11 @@ const routes = [
     { path: '/about', component: AboutPagee },
     { path: '/pages-login', component: Login },
     { path: '/404', component: NotFound },
-    { path: '/pages-coming-soon', component: PagesComingSoon }
+    { path: '/pages-coming-soon', component: PagesComingSoon },
+    { path: '/auth-sign-in', component: AuthSignIn },
+    { path: '/auth-sign-up', component: AuthSignUp },
+    { path: '/auth-reset-pass', component: AuthResetPass }
+
 ]
 
 // Change this to your app's base path, e.g. '/app' or '/' if root
