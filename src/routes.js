@@ -66,6 +66,7 @@ const AuthResetPass = async () => (await import('./pages/auth/basic/reset-pass/a
 const AuthNewPass = async () => (await import('./pages/auth/basic/new-pass/auth-new-pass.js')).AuthNewPass
 const AuthTwoFactor = async () => (await import('./pages/auth/basic/two-factor/auth-two-factor.js')).AuthTwoFactor
 const AuthLockScreen = async () => (await import('./pages/auth/basic/lock-screen/auth-lock-screen.js')).AuthLockScreen
+const AuthSuccessMail = async () => (await import('./pages/auth/basic/success-mail/auth-success-mail.js')).AuthSuccessMail
 
 
 const routes = [
@@ -138,7 +139,8 @@ const routes = [
     { path: '/auth-reset-pass', component: AuthResetPass },
     { path: '/auth-new-pass', component: AuthNewPass },
     { path: '/auth-two-factor', component: AuthTwoFactor },
-    { path: '/auth-lock-screen', component: AuthLockScreen }
+    { path: '/auth-lock-screen', component: AuthLockScreen },
+    { path: '/auth-success-mail', component: AuthSuccessMail }
 
 
 ]
