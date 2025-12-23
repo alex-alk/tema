@@ -67,7 +67,25 @@ const AuthNewPass = async () => (await import('./pages/auth/basic/new-pass/auth-
 const AuthTwoFactor = async () => (await import('./pages/auth/basic/two-factor/auth-two-factor.js')).AuthTwoFactor
 const AuthLockScreen = async () => (await import('./pages/auth/basic/lock-screen/auth-lock-screen.js')).AuthLockScreen
 const AuthSuccessMail = async () => (await import('./pages/auth/basic/success-mail/auth-success-mail.js')).AuthSuccessMail
-
+const AuthLoginPin = async () => (await import('./pages/auth/basic/login-pin/auth-login-pin.js')).AuthLoginPin
+const AuthDeleteAccount = async () => (await import('./pages/auth/basic/delete-account/auth-delete-account.js')).AuthDeleteAccount
+const AuthCoverSignIn = async () => (await import('./pages/auth/cover/sign-in/auth-cover-sign-in.js')).AuthCoverSignIn
+const AuthCoverSignUp = async () => (await import('./pages/auth/cover/sign-up/auth-cover-sign-up.js')).AuthCoverSignUp
+const AuthCoverResetPass = async () => (await import('./pages/auth/cover/reset-pass/auth-cover-reset-pass.js')).AuthCoverResetPass
+const AuthCoverNewPass = async () => (await import('./pages/auth/cover/new-pass/auth-cover-new-pass.js')).AuthCoverNewPass
+const AuthCoverTwoFactor = async () => (await import('./pages/auth/cover/two-factor/auth-cover-two-factor.js')).AuthCoverTwoFactor
+const AuthCoverLockScreen = async () => (await import('./pages/auth/cover/lock-screen/auth-cover-lock-screen.js')).AuthCoverLockScreen
+const AuthCoverSuccessMail = async () => (await import('./pages/auth/cover/success-mail/auth-cover-success-mail.js')).AuthCoverSuccessMail
+const AuthCoverLoginPin = async () => (await import('./pages/auth/cover/login-pin/auth-cover-login-pin.js')).AuthCoverLoginPin
+const AuthCoverDeleteAccount = async () => (await import('./pages/auth/cover/delete-account/auth-cover-delete-account.js')).AuthCoverDeleteAccount
+const BadRequest = async () => (await import('./pages/error-pages/400-bad-request/400.js')).BadRequest
+const Unauthorized = async () => (await import('./pages/error-pages/401-unauthorized/401.js')).Unauthorized
+const Forbidden = async () => (await import('./pages/error-pages/403-forbidden/403.js')).Forbidden
+const Timeout = async () => (await import('./pages/error-pages/408-timeout/408.js')).Timeout
+const ServerError = async () => (await import('./pages/error-pages/500-server-error/500.js')).ServerError
+const Maintenance = async () => (await import('./pages/error-pages/maintenance/maintenance.js')).Maintenance
+const LayoutsScrollable = async () => (await import('./pages/layouts/scrollable/layouts-scrollable.js')).LayoutsScrollable
+const LayoutsCompact = async () => (await import('./pages/layouts/compact/layouts-compact.js')).LayoutsCompact
 
 const routes = [
     {
@@ -127,7 +145,9 @@ const routes = [
             { path: '/pages-timeline', component: PagesTimeline },
             { path: '/pages-sitemap', component: PagesSitemap },
             { path: '/pages-search-results', component: PagesSearchResults },
-            { path: '/pages-terms-conditions', component: PagesTermsConditions }
+            { path: '/pages-terms-conditions', component: PagesTermsConditions },
+            { path: '/layouts-scrollable', component: LayoutsScrollable },
+            { path: '/layouts-compact', component: LayoutsCompact }
         ]
     },
     { path: '/about', component: AboutPagee },
@@ -140,9 +160,24 @@ const routes = [
     { path: '/auth-new-pass', component: AuthNewPass },
     { path: '/auth-two-factor', component: AuthTwoFactor },
     { path: '/auth-lock-screen', component: AuthLockScreen },
-    { path: '/auth-success-mail', component: AuthSuccessMail }
-
-
+    { path: '/auth-success-mail', component: AuthSuccessMail },
+    { path: '/auth-login-pin', component: AuthLoginPin },
+    { path: '/auth-delete-account', component: AuthDeleteAccount },
+    { path: '/auth-cover-sign-in', component: AuthCoverSignIn },
+    { path: '/auth-cover-sign-up', component: AuthCoverSignUp },
+    { path: '/auth-cover-reset-pass', component: AuthCoverResetPass },
+    { path: '/auth-cover-new-pass', component: AuthCoverNewPass },
+    { path: '/auth-cover-two-factor', component: AuthCoverTwoFactor },
+    { path: '/auth-cover-lock-screen', component: AuthCoverLockScreen },
+    { path: '/auth-cover-success-mail', component: AuthCoverSuccessMail },
+    { path: '/auth-cover-login-pin', component: AuthCoverLoginPin },
+    { path: '/auth-cover-delete-account', component: AuthCoverDeleteAccount },
+    { path: '/error-400', component: BadRequest },
+    { path: '/error-401', component: Unauthorized },
+    { path: '/error-403', component: Forbidden },
+    { path: '/error-408', component: Timeout },
+    { path: '/error-500', component: ServerError },
+    { path: '/maintenance', component: Maintenance },
 ]
 
 // Change this to your app's base path, e.g. '/app' or '/' if root
