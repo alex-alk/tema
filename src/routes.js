@@ -86,6 +86,9 @@ const ServerError = async () => (await import('./pages/error-pages/500-server-er
 const Maintenance = async () => (await import('./pages/error-pages/maintenance/maintenance.js')).Maintenance
 const LayoutsScrollable = async () => (await import('./pages/layouts/scrollable/layouts-scrollable.js')).LayoutsScrollable
 const LayoutsCompact = async () => (await import('./pages/layouts/compact/layouts-compact.js')).LayoutsCompact
+const LayoutsBoxed = async () => (await import('./pages/layouts/boxed/layouts-boxed.js')).LayoutsBoxed
+const LayoutsHorizontal = async () => (await import('./pages/layouts/horizontal/layouts-horizontal.js')).LayoutsHorizontal
+const LayoutsPreloader = async () => (await import('./pages/layouts/preloader/layouts-preloader.js')).LayoutsPreloader
 
 const routes = [
     {
@@ -147,7 +150,10 @@ const routes = [
             { path: '/pages-search-results', component: PagesSearchResults },
             { path: '/pages-terms-conditions', component: PagesTermsConditions },
             { path: '/layouts-scrollable', component: LayoutsScrollable },
-            { path: '/layouts-compact', component: LayoutsCompact }
+            { path: '/layouts-compact', component: LayoutsCompact },
+            { path: '/layouts-boxed', component: LayoutsBoxed },
+            { path: '/layouts-horizontal', component: LayoutsHorizontal },
+            { path: '/layouts-preloader', component: LayoutsPreloader }
         ]
     },
     { path: '/about', component: AboutPagee },
