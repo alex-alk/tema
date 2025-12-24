@@ -2,6 +2,7 @@ const AppLayout = async () => (await import('./common/AppLayout.js')).AppLayout
 import Router from '../js_modules/Router.js'
 
 // Lazy load
+// todo: incercat daca merge cu callback in loc de async
 const Dashboard = async () => (await import('./pages/dashboards/dashboard/dashboard.js')).Dashboard
 const Dashboard2 = async () => (await import('./pages/dashboards/dashboard-2/dashboard-2.js')).Dashboard2
 const AboutPage = async () => (await import('./AboutPage.js')).AboutPage
@@ -89,6 +90,10 @@ const LayoutsCompact = async () => (await import('./pages/layouts/compact/layout
 const LayoutsBoxed = async () => (await import('./pages/layouts/boxed/layouts-boxed.js')).LayoutsBoxed
 const LayoutsHorizontal = async () => (await import('./pages/layouts/horizontal/layouts-horizontal.js')).LayoutsHorizontal
 const LayoutsPreloader = async () => (await import('./pages/layouts/preloader/layouts-preloader.js')).LayoutsPreloader
+const SidebarDark = async () => (await import('./pages/sidebar/dark/sidebar-dark.js')).SidebarDark
+const SidebarGradient = async () => (await import('./pages/sidebar/gradient/sidebar-gradient.js')).SidebarGradient
+const SidebarGray = async () => (await import('./pages/sidebar/gray/sidebar-gray.js')).SidebarGray
+
 
 const routes = [
     {
@@ -153,7 +158,10 @@ const routes = [
             { path: '/layouts-compact', component: LayoutsCompact },
             { path: '/layouts-boxed', component: LayoutsBoxed },
             { path: '/layouts-horizontal', component: LayoutsHorizontal },
-            { path: '/layouts-preloader', component: LayoutsPreloader }
+            { path: '/layouts-preloader', component: LayoutsPreloader },
+            { path: '/sidebar-dark', component: SidebarDark },
+            { path: '/sidebar-gradient', component: SidebarGradient },
+            { path: '/sidebar-gray', component: SidebarGray }
         ]
     },
     { path: '/about', component: AboutPagee },
@@ -186,7 +194,7 @@ const routes = [
     { path: '/maintenance', component: Maintenance },
 ]
 
-// Change this to your app's base path, e.g. '/app' or '/' if root
+// Change this to your app's base path, e.g. '/app' or '' if root
 const BASE_PATH = '';
 
 export function path(projectPath) {
