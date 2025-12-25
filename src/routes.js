@@ -93,6 +93,12 @@ const LayoutsPreloader = async () => (await import('./pages/layouts/preloader/la
 const SidebarDark = async () => (await import('./pages/sidebar/dark/sidebar-dark.js')).SidebarDark
 const SidebarGradient = async () => (await import('./pages/sidebar/gradient/sidebar-gradient.js')).SidebarGradient
 const SidebarGray = async () => (await import('./pages/sidebar/gray/sidebar-gray.js')).SidebarGray
+const SidebarImage = async () => (await import('./pages/sidebar/image/sidebar-image.js')).SidebarImage
+const SidebarCompact = async () => (await import('./pages/sidebar/compact/sidebar-compact.js')).SidebarCompact
+const SidebarIconView = async () => (await import('./pages/sidebar/icon-view/sidebar-icon-view.js')).SidebarIconView
+const SidebarOnHover = async () => (await import('./pages/sidebar/on-hover/sidebar-on-hover.js')).SidebarOnHover
+const SidebarOnHoverActive = async () => (await import('./pages/sidebar/on-hover-active/sidebar-on-hover-active.js')).SidebarOnHoverActive
+const SidebarOffcanvas = async () => (await import('./pages/sidebar/offcanvas/sidebar-offcanvas.js')).SidebarOffcanvas
 
 
 const routes = [
@@ -161,7 +167,13 @@ const routes = [
             { path: '/layouts-preloader', component: LayoutsPreloader },
             { path: '/sidebar-dark', component: SidebarDark },
             { path: '/sidebar-gradient', component: SidebarGradient },
-            { path: '/sidebar-gray', component: SidebarGray }
+            { path: '/sidebar-gray', component: SidebarGray },
+            { path: '/sidebar-image', component: SidebarImage },
+            { path: '/sidebar-compact', component: SidebarCompact },
+            { path: '/sidebar-icon-view', component: SidebarIconView },
+            { path: '/sidebar-on-hover', component: SidebarOnHover },
+            { path: '/sidebar-on-hover-active', component: SidebarOnHoverActive },
+            { path: '/sidebar-offcanvas', component: SidebarOffcanvas }
         ]
     },
     { path: '/about', component: AboutPagee },
