@@ -99,6 +99,7 @@ const SidebarIconView = async () => (await import('./pages/sidebar/icon-view/sid
 const SidebarOnHover = async () => (await import('./pages/sidebar/on-hover/sidebar-on-hover.js')).SidebarOnHover
 const SidebarOnHoverActive = async () => (await import('./pages/sidebar/on-hover-active/sidebar-on-hover-active.js')).SidebarOnHoverActive
 const SidebarOffcanvas = async () => (await import('./pages/sidebar/offcanvas/sidebar-offcanvas.js')).SidebarOffcanvas
+const SidebarNoIcons = async () => (await import('./pages/sidebar/no-icons/sidebar-no-icons.js')).SidebarNoIcons
 
 
 const routes = [
@@ -173,7 +174,8 @@ const routes = [
             { path: '/sidebar-icon-view', component: SidebarIconView },
             { path: '/sidebar-on-hover', component: SidebarOnHover },
             { path: '/sidebar-on-hover-active', component: SidebarOnHoverActive },
-            { path: '/sidebar-offcanvas', component: SidebarOffcanvas }
+            { path: '/sidebar-offcanvas', component: SidebarOffcanvas },
+            { path: '/sidebar-no-icons', component: SidebarNoIcons }
         ]
     },
     { path: '/about', component: AboutPagee },
