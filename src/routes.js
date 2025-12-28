@@ -102,6 +102,8 @@ const SidebarOffcanvas = async () => (await import('./pages/sidebar/offcanvas/si
 const SidebarNoIcons = async () => (await import('./pages/sidebar/no-icons/sidebar-no-icons.js')).SidebarNoIcons
 const SidebarWithLines = async () => (await import('./pages/sidebar/with-lines/sidebar-with-lines.js')).SidebarWithLines
 const TopbarLight = async () => (await import('./pages/topbar/light/topbar-light.js')).TopbarLight
+const TopbarGray = async () => (await import('./pages/topbar/gray/topbar-gray.js')).TopbarGray
+const TopbarGradient = async () => (await import('./pages/topbar/gradient/topbar-gradient.js')).TopbarGradient
 
 
 const routes = [
@@ -179,7 +181,9 @@ const routes = [
             { path: '/sidebar-offcanvas', component: SidebarOffcanvas },
             { path: '/sidebar-no-icons', component: SidebarNoIcons },
             { path: '/sidebar-with-lines', component: SidebarWithLines },
-            { path: '/topbar-light', component: TopbarLight }
+            { path: '/topbar-light', component: TopbarLight },
+            { path: '/topbar-gray', component: TopbarGray },
+            { path: '/topbar-gradient', component: TopbarGradient }
 
         ]
     },
