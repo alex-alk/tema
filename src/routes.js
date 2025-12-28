@@ -105,7 +105,30 @@ const TopbarLight = async () => (await import('./pages/topbar/light/topbar-light
 const TopbarGray = async () => (await import('./pages/topbar/gray/topbar-gray.js')).TopbarGray
 const TopbarGradient = async () => (await import('./pages/topbar/gradient/topbar-gradient.js')).TopbarGradient
 const UIButtons = async () => (await import('./pages/ui/buttons/ui-buttons.js')).UIButtons
-
+const UIImages = async () => (await import('./pages/ui/images/ui-images.js')).UIImages
+const UIAccordions = async () => (await import('./pages/ui/accordions/ui-accordions.js')).UIAccordions
+const UIAlerts = async () => (await import('./pages/ui/alerts/ui-alerts.js')).UIAlerts
+const UIBadges = async () => (await import('./pages/ui/badges/ui-badges.js')).UIBadges
+const UIBreadcrumb = async () => (await import('./pages/ui/breadcrumb/ui-breadcrumb.js')).UIBreadcrumb
+const UICards = async () => (await import('./pages/ui/cards/ui-cards.js')).UICards
+const UICarousel = async () => (await import('./pages/ui/carousel/ui-carousel.js')).UICarousel
+const UICollapse = async () => (await import('./pages/ui/collapse/ui-collapse.js')).UICollapse
+const UIColors = async () => (await import('./pages/ui/colors/ui-colors.js')).UIColors
+const UIDropdowns = async () => (await import('./pages/ui/dropdowns/ui-dropdowns.js')).UIDropdowns
+const UIVideos = async () => (await import('./pages/ui/videos/ui-videos.js')).UIVideos
+const UIGrid = async () => (await import('./pages/ui/grid/ui-grid.js')).UIGrid
+const UILinks = async () => (await import('./pages/ui/links/ui-links.js')).UILinks
+const UIListGroup = async () => (await import('./pages/ui/list-group/ui-list-group.js')).UIListGroup
+const UIModals = async () => (await import('./pages/ui/modals/ui-modals.js')).UIModals
+const UINotifications = async () => (await import('./pages/ui/notifications/ui-notifications.js')).UINotifications
+const UIOffcanvas = async () => (await import('./pages/ui/offcanvas/ui-offcanvas.js')).UIOffcanvas
+const UIPlaceholders = async () => (await import('./pages/ui/placeholders/ui-placeholders.js')).UIPlaceholders
+const UIPagination = async () => (await import('./pages/ui/pagination/ui-pagination.js')).UIPagination
+const UIPopovers = async () => (await import('./pages/ui/popovers/ui-popovers.js')).UIPopovers
+const UIProgress = async () => (await import('./pages/ui/progress/ui-progress.js')).UIProgress
+const UIScrollspy = async () => (await import('./pages/ui/scrollspy/ui-scrollspy.js')).UIScrollspy
+const UISpinners = async () => (await import('./pages/ui/spinners/ui-spinners.js')).UISpinners
+const UIAlerts = async () => (await import('./pages/ui/alerts/ui-alerts.js')).UIAlerts
 
 const routes = [
     {
@@ -185,7 +208,10 @@ const routes = [
             { path: '/topbar-light', component: TopbarLight },
             { path: '/topbar-gray', component: TopbarGray },
             { path: '/topbar-gradient', component: TopbarGradient },
-            { path: '/ui-buttons', component: UIButtons }
+            { path: '/ui-buttons', component: UIButtons },
+            { path: '/ui-images', component: UIImages },
+            { path: '/ui-accordions', component: UIAccordions },
+            { path: '/ui-alerts', component: UIAlerts }
 
         ]
     },
