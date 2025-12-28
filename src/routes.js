@@ -128,7 +128,10 @@ const UIPopovers = async () => (await import('./pages/ui/popovers/ui-popovers.js
 const UIProgress = async () => (await import('./pages/ui/progress/ui-progress.js')).UIProgress
 const UIScrollspy = async () => (await import('./pages/ui/scrollspy/ui-scrollspy.js')).UIScrollspy
 const UISpinners = async () => (await import('./pages/ui/spinners/ui-spinners.js')).UISpinners
-const UIAlerts = async () => (await import('./pages/ui/alerts/ui-alerts.js')).UIAlerts
+const UITabs = async () => (await import('./pages/ui/tabs/ui-tabs.js')).UITabs
+const UITooltips = async () => (await import('./pages/ui/tooltips/ui-tooltips.js')).UITooltips
+const UITypography = async () => (await import('./pages/ui/typography/ui-typography.js')).UITypography
+const UIUtilities = async () => (await import('./pages/ui/utilities/ui-utilities.js')).UIUtilities
 
 const routes = [
     {
@@ -211,7 +214,28 @@ const routes = [
             { path: '/ui-buttons', component: UIButtons },
             { path: '/ui-images', component: UIImages },
             { path: '/ui-accordions', component: UIAccordions },
-            { path: '/ui-alerts', component: UIAlerts }
+            { path: '/ui-alerts', component: UIAlerts },
+            { path: '/ui-badges', component: UIBadges },
+            { path: '/ui-alerts', component: UIAlerts },
+            { path: '/ui-breadcrumb', component: UIBreadcrumb },
+            { path: '/ui-cards', component: UICards },
+            { path: '/ui-carousel', component: UICarousel },
+            { path: '/ui-collapse', component: UICollapse },
+            { path: '/ui-colors', component: UIColors },
+            { path: '/ui-dropdowns', component: UIDropdowns },
+            { path: '/ui-videos', component: UIVideos },
+            { path: '/ui-grid', component: UIGrid },
+            { path: '/ui-links', component: UILinks },
+            { path: '/ui-list-group', component: UIListGroup },
+            { path: '/ui-modals', component: UIModals },
+            { path: '/ui-notifications', component: UINotifications },
+            { path: '/ui-offcanvas', component: UIOffcanvas },
+            { path: '/ui-placeholders', component: UIPlaceholders },
+            { path: '/ui-pagination', component: UIPagination },
+            { path: '/ui-popovers', component: UIPopovers },
+            { path: '/ui-progress', component: UIProgress },
+            { path: '/ui-notifications', component: UINotifications },
+            { path: '/ui-scrollspy', component: UIScrollspy }
 
         ]
     },
