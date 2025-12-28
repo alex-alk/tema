@@ -104,6 +104,7 @@ const SidebarWithLines = async () => (await import('./pages/sidebar/with-lines/s
 const TopbarLight = async () => (await import('./pages/topbar/light/topbar-light.js')).TopbarLight
 const TopbarGray = async () => (await import('./pages/topbar/gray/topbar-gray.js')).TopbarGray
 const TopbarGradient = async () => (await import('./pages/topbar/gradient/topbar-gradient.js')).TopbarGradient
+const UIButtons = async () => (await import('./pages/ui/buttons/ui-buttons.js')).UIButtons
 
 
 const routes = [
@@ -183,7 +184,8 @@ const routes = [
             { path: '/sidebar-with-lines', component: SidebarWithLines },
             { path: '/topbar-light', component: TopbarLight },
             { path: '/topbar-gray', component: TopbarGray },
-            { path: '/topbar-gradient', component: TopbarGradient }
+            { path: '/topbar-gradient', component: TopbarGradient },
+            { path: '/ui-buttons', component: UIButtons }
 
         ]
     },
