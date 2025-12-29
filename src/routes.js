@@ -140,6 +140,8 @@ const MiscPassMeter = async () => (await import('./pages/misc/pass-meter/misc-pa
 const MiscClipboard = async () => (await import('./pages/misc/clipboard/misc-clipboard.js')).MiscClipboard
 const MiscTreeView = async () => (await import('./pages/misc/tree-view/misc-tree-view.js')).MiscTreeView
 const MiscTour = async () => (await import('./pages/misc/tour/misc-tour.js')).MiscTour
+const Widgets = async () => (await import('./pages/widgets/widgets.js')).Widgets
+const ChartsApexArea = async () => (await import('./pages/charts/apex/area/charts-apex-area.js')).ChartsApexArea
 
 const routes = [
     {
@@ -257,6 +259,8 @@ const routes = [
             { path: '/misc-clipboard', component: MiscClipboard },
             { path: '/misc-tree-view', component: MiscTreeView },
             { path: '/misc-tour', component: MiscTour },
+            { path: '/widgets', component: Widgets },
+            { path: '/charts-apex-area', component: ChartsApexArea }
 
         ]
     },
