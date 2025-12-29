@@ -1,9 +1,9 @@
 import { createComponent, fetchHTML } from '../../../../../js_modules/main.js'
 
-export class UIBadges {
+export class MiscTreeView {
 
     async getElement() {
-        const html = await fetchHTML('/src/pages/ui/badges/ui-badges.html');
+        const html = await fetchHTML('/src/pages/misc/tree-view/misc-tree-view.html');
         const component = createComponent(html)
         return component
     }

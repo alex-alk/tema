@@ -132,6 +132,14 @@ const UITabs = async () => (await import('./pages/ui/tabs/ui-tabs.js')).UITabs
 const UITooltips = async () => (await import('./pages/ui/tooltips/ui-tooltips.js')).UITooltips
 const UITypography = async () => (await import('./pages/ui/typography/ui-typography.js')).UITypography
 const UIUtilities = async () => (await import('./pages/ui/utilities/ui-utilities.js')).UIUtilities
+const MiscSortable = async () => (await import('./pages/misc/sortable/misc-sortable.js')).MiscSortable
+const MiscPdfViewer = async () => (await import('./pages/misc/pdf-viewer/misc-pdf-viewer.js')).MiscPdfViewer
+const MiscI18 = async () => (await import('./pages/misc/i18/misc-i18.js')).MiscI18
+const MiscSweetAlerts = async () => (await import('./pages/misc/sweet-alerts/misc-sweet-alerts.js')).MiscSweetAlerts
+const MiscPassMeter = async () => (await import('./pages/misc/pass-meter/misc-pass-meter.js')).MiscPassMeter
+const MiscClipboard = async () => (await import('./pages/misc/clipboard/misc-clipboard.js')).MiscClipboard
+const MiscTreeView = async () => (await import('./pages/misc/tree-view/misc-tree-view.js')).MiscTreeView
+const MiscTour = async () => (await import('./pages/misc/tour/misc-tour.js')).MiscTour
 
 const routes = [
     {
@@ -235,7 +243,20 @@ const routes = [
             { path: '/ui-popovers', component: UIPopovers },
             { path: '/ui-progress', component: UIProgress },
             { path: '/ui-notifications', component: UINotifications },
-            { path: '/ui-scrollspy', component: UIScrollspy }
+            { path: '/ui-scrollspy', component: UIScrollspy },
+            { path: '/ui-spinners', component: UISpinners },
+            { path: '/ui-tabs', component: UITabs },
+            { path: '/ui-tooltips', component: UITooltips },
+            { path: '/ui-typography', component: UITypography },
+            { path: '/ui-utilities', component: UIUtilities },
+            { path: '/misc-sortable', component: MiscSortable },
+            { path: '/misc-pdf-viewer', component: MiscPdfViewer },
+            { path: '/misc-i18', component: MiscI18 },
+            { path: '/misc-sweet-alerts', component: MiscSweetAlerts },
+            { path: '/misc-pass-meter', component: MiscPassMeter },
+            { path: '/misc-clipboard', component: MiscClipboard },
+            { path: '/misc-tree-view', component: MiscTreeView },
+            { path: '/misc-tour', component: MiscTour },
 
         ]
     },
