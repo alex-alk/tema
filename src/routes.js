@@ -142,6 +142,9 @@ const MiscTreeView = async () => (await import('./pages/misc/tree-view/misc-tree
 const MiscTour = async () => (await import('./pages/misc/tour/misc-tour.js')).MiscTour
 const Widgets = async () => (await import('./pages/widgets/widgets.js')).Widgets
 const ChartsApexArea = async () => (await import('./pages/charts/apex/area/charts-apex-area.js')).ChartsApexArea
+const ChartsApexBar = async () => (await import('./pages/charts/apex/bar/charts-apex-bar.js')).ChartsApexBar
+const ChartsApexBubble = async () => (await import('./pages/charts/apex/bubble/charts-apex-bubble.js')).ChartsApexBubble
+const ChartsApexCandlestick = async () => (await import('./pages/charts/apex/candlestick/charts-apex-candlestick.js')).ChartsApexCandlestick
 
 const routes = [
     {
