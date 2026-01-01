@@ -145,6 +145,22 @@ const ChartsApexArea = async () => (await import('./pages/charts/apex/area/chart
 const ChartsApexBar = async () => (await import('./pages/charts/apex/bar/charts-apex-bar.js')).ChartsApexBar
 const ChartsApexBubble = async () => (await import('./pages/charts/apex/bubble/charts-apex-bubble.js')).ChartsApexBubble
 const ChartsApexCandlestick = async () => (await import('./pages/charts/apex/candlestick/charts-apex-candlestick.js')).ChartsApexCandlestick
+const ChartsApexColumn = async () => (await import('./pages/charts/apex/column/charts-apex-column.js')).ChartsApexColumn
+const ChartsApexHeatmap = async () => (await import('./pages/charts/apex/heatmap/charts-apex-heatmap.js')).ChartsApexHeatmap
+const ChartsApexLine = async () => (await import('./pages/charts/apex/line/charts-apex-line.js')).ChartsApexLine
+const ChartsApexMixed = async () => (await import('./pages/charts/apex/mixed/charts-apex-mixed.js')).ChartsApexMixed
+const ChartsApexTimeline = async () => (await import('./pages/charts/apex/timeline/charts-apex-timeline.js')).ChartsApexTimeline
+const ChartsApexBoxplot = async () => (await import('./pages/charts/apex/boxplot/charts-apex-boxplot.js')).ChartsApexBoxplot
+const ChartsApexTreemap = async () => (await import('./pages/charts/apex/treemap/charts-apex-treemap.js')).ChartsApexTreemap
+const ChartsApexPie = async () => (await import('./pages/charts/apex/pie/charts-apex-pie.js')).ChartsApexPie
+const ChartsApexRadar = async () => (await import('./pages/charts/apex/radar/charts-apex-radar.js')).ChartsApexRadar
+const ChartsApexRadialbar = async () => (await import('./pages/charts/apex/radialbar/charts-apex-radialbar.js')).ChartsApexRadialbar
+const ChartsApexScatter = async () => (await import('./pages/charts/apex/scatter/charts-apex-scatter.js')).ChartsApexScatter
+const ChartsApexPolarArea = async () => (await import('./pages/charts/apex/polar-area/charts-apex-polar-area.js')).ChartsApexPolarArea
+const ChartsApexSparklines = async () => (await import('./pages/charts/apex/sparklines/charts-apex-sparklines.js')).ChartsApexSparklines
+const ChartsApexRange = async () => (await import('./pages/charts/apex/range/charts-apex-range.js')).ChartsApexRange
+const ChartsApexFunnel = async () => (await import('./pages/charts/apex/funnel/charts-apex-funnel.js')).ChartsApexFunnel
+const ChartsApexSlope = async () => (await import('./pages/charts/apex/slope/charts-apex-slope.js')).ChartsApexSlope
 
 const routes = [
     {
@@ -263,7 +279,26 @@ const routes = [
             { path: '/misc-tree-view', component: MiscTreeView },
             { path: '/misc-tour', component: MiscTour },
             { path: '/widgets', component: Widgets },
-            { path: '/charts-apex-area', component: ChartsApexArea }
+            { path: '/charts-apex-area', component: ChartsApexArea },
+            { path: '/charts-apex-bar', component: ChartsApexBar },
+            { path: '/charts-apex-bubble', component: ChartsApexBubble },
+            { path: '/charts-apex-candlestick', component: ChartsApexCandlestick },
+            { path: '/charts-apex-column', component: ChartsApexColumn },
+            { path: '/charts-apex-heatmap', component: ChartsApexHeatmap },
+            { path: '/charts-apex-line', component: ChartsApexLine },
+            { path: '/charts-apex-mixed', component: ChartsApexMixed },
+            { path: '/charts-apex-timeline', component: ChartsApexTimeline },
+            { path: '/charts-apex-boxplot', component: ChartsApexBoxplot },
+            { path: '/charts-apex-treemap', component: ChartsApexTreemap },
+            { path: '/charts-apex-pie', component: ChartsApexPie },
+            { path: '/charts-apex-radar', component: ChartsApexRadar },
+            { path: '/charts-apex-radialbar', component: ChartsApexRadialbar },
+            { path: '/charts-apex-scatter', component: ChartsApexScatter },
+            { path: '/charts-apex-polar-area', component: ChartsApexPolarArea },
+            { path: '/charts-apex-sparklines', component: ChartsApexSparklines },
+            { path: '/charts-apex-range', component: ChartsApexRange },
+            { path: '/charts-apex-funnel', component: ChartsApexFunnel },
+            { path: '/charts-apex-slope', component: ChartsApexSlope },
 
         ]
     },
