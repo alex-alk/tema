@@ -1,0 +1,340 @@
+<div class="page-title-head d-flex align-items-center">
+    <div class="flex-grow-1">
+        <h4 class="fs-xl fw-bold m-0">Data Rendering</h4>
+    </div>
+
+    <div class="text-end">
+        <ol class="breadcrumb m-0 py-0">
+            <li class="breadcrumb-item"><a href="javascript: void(0);">UBold</a></li>
+
+            <li class="breadcrumb-item"><a href="javascript: void(0);">Datatables</a></li>
+
+            <li class="breadcrumb-item active">Data Rendering</li>
+        </ol>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header justify-content-between">
+                <h4 class="card-title"> Example </h4>
+                <a href="https://datatables.net/examples/basic_init/data_rendering.html" target="_blank"
+                    class="icon-link icon-link-hover link-primary fw-semibold">View Docs <i
+                        class="ti ti-arrow-right bi align-middle fs-lg"></i></a>
+            </div>
+
+            <div class="card-body">
+
+
+                <div id="datatable-rendering_wrapper" class="dt-container dt-bootstrap5 dt-empty-footer">
+                    <div class="row mt-2 justify-content-between">
+                        <div
+                            class="d-md-flex justify-content-between align-items-center dt-layout-start col-md-auto me-auto">
+                            <div class="dt-length"><select aria-controls="datatable-rendering"
+                                    class="form-select form-select-sm" id="dt-length-0">
+                                    <option value="10">10</option>
+                                    <option value="25">25</option>
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                </select><label for="dt-length-0"> entries per page</label></div>
+                        </div>
+                        <div
+                            class="d-md-flex justify-content-between align-items-center dt-layout-end col-md-auto ms-auto">
+                            <div class="dt-search"><label for="dt-search-0">Search:</label><input type="search"
+                                    class="form-control form-control-sm" id="dt-search-0" placeholder=""
+                                    aria-controls="datatable-rendering"></div>
+                        </div>
+                    </div>
+                    <div class="row mt-2 justify-content-between dt-layout-table">
+                        <div class="d-md-flex justify-content-between align-items-center col-12 dt-layout-full col-md">
+                            <table id="datatable-rendering"
+                                class="table table-striped dt-responsive align-middle mb-0 dataTable dtr-inline"
+                                aria-describedby="datatable-rendering_info" style="width: 100%;">
+                                <colgroup>
+                                    <col data-dt-column="0" style="width: 206.137px;">
+                                    <col data-dt-column="1" style="width: 304.188px;">
+                                    <col data-dt-column="2" style="width: 220.375px;">
+                                    <col data-dt-column="3" style="width: 138.262px;">
+                                    <col data-dt-column="4" style="width: 150.688px;">
+                                    <col data-dt-column="5" style="width: 163.55px;">
+                                </colgroup>
+                                <thead class="thead-sm text-uppercase fs-xxs">
+                                    <tr>
+                                        <th data-dt-column="0" rowspan="1" colspan="1"
+                                            class="dt-orderable-asc dt-orderable-desc dt-ordering-asc"
+                                            aria-sort="ascending">
+                                            <div class="dt-column-header"><span class="dt-column-title">Name</span><span
+                                                    class="dt-column-order" role="button"
+                                                    aria-label="Name: Activate to invert sorting" tabindex="0"></span>
+                                            </div>
+                                        </th>
+                                        <th data-dt-column="1" rowspan="1" colspan="1"
+                                            class="dt-orderable-asc dt-orderable-desc">
+                                            <div class="dt-column-header"><span
+                                                    class="dt-column-title">Position</span><span class="dt-column-order"
+                                                    role="button" aria-label="Position: Activate to sort"
+                                                    tabindex="0"></span></div>
+                                        </th>
+                                        <th data-dt-column="2" class="f32 dt-orderable-asc dt-orderable-desc"
+                                            rowspan="1" colspan="1">
+                                            <div class="dt-column-header"><span
+                                                    class="dt-column-title">Office</span><span class="dt-column-order"
+                                                    role="button" aria-label="Office: Activate to sort"
+                                                    tabindex="0"></span></div>
+                                        </th>
+                                        <th data-dt-column="3" rowspan="1" colspan="1"
+                                            class="dt-orderable-asc dt-orderable-desc dt-type-numeric">
+                                            <div class="dt-column-header"><span
+                                                    class="dt-column-title">Progress</span><span class="dt-column-order"
+                                                    role="button" aria-label="Progress: Activate to sort"
+                                                    tabindex="0"></span></div>
+                                        </th>
+                                        <th data-dt-column="4" rowspan="1" colspan="1"
+                                            class="dt-orderable-asc dt-orderable-desc dt-type-date">
+                                            <div class="dt-column-header"><span class="dt-column-title">Start
+                                                    date</span><span class="dt-column-order" role="button"
+                                                    aria-label="Start date: Activate to sort" tabindex="0"></span></div>
+                                        </th>
+                                        <th data-dt-column="5" rowspan="1" colspan="1"
+                                            class="dt-orderable-asc dt-orderable-desc dt-type-numeric">
+                                            <div class="dt-column-header"><span
+                                                    class="dt-column-title">Salary</span><span class="dt-column-order"
+                                                    role="button" aria-label="Salary: Activate to sort"
+                                                    tabindex="0"></span></div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">Airi Satou</td>
+                                        <td><a href="https://cloudtables.com">Accountant</a></td>
+                                        <td class="f32"><span class="flag jp">
+                                                <img class="avatar-xs rounded me-2" src="assets/images/flags/jp.svg"
+                                                    alt="Tokyo">
+                                            </span> Tokyo</td>
+                                        <td class="dt-type-numeric">
+                                            <div class="progress" role="progressbar" aria-label="Basic example"
+                                                aria-valuenow="5407" aria-valuemin="0" aria-valuemax="9999"
+                                                style="height:8px">
+                                                <div class="progress-bar" style="width: 54.07540754075407%"></div>
+                                            </div>
+                                        </td>
+                                        <td class="dt-type-date">2008-11-28</td>
+                                        <td class="dt-type-numeric"><span style="color:red">$162,700.00</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">Angelica Ramos</td>
+                                        <td><a href="https://cloudtables.com">Chief Executive Officer (CEO)</a></td>
+                                        <td class="f32"><span class="flag gb">
+                                                <img class="avatar-xs rounded me-2" src="assets/images/flags/gb.svg"
+                                                    alt="London">
+                                            </span> London</td>
+                                        <td class="dt-type-numeric">
+                                            <div class="progress" role="progressbar" aria-label="Basic example"
+                                                aria-valuenow="5797" aria-valuemin="0" aria-valuemax="9999"
+                                                style="height:8px">
+                                                <div class="progress-bar" style="width: 57.97579757975797%"></div>
+                                            </div>
+                                        </td>
+                                        <td class="dt-type-date">2009-10-09</td>
+                                        <td class="dt-type-numeric"><span style="color:green">$1,200,000.00</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">Ashton Cox</td>
+                                        <td><a href="https://editor.datatables.net">Junior Technical Author</a></td>
+                                        <td class="f32"><span class="flag us">
+                                                <img class="avatar-xs rounded me-2" src="assets/images/flags/us.svg"
+                                                    alt="San Francisco">
+                                            </span> San Francisco</td>
+                                        <td class="dt-type-numeric">
+                                            <div class="progress" role="progressbar" aria-label="Basic example"
+                                                aria-valuenow="1562" aria-valuemin="0" aria-valuemax="9999"
+                                                style="height:8px">
+                                                <div class="progress-bar" style="width: 15.62156215621562%"></div>
+                                            </div>
+                                        </td>
+                                        <td class="dt-type-date">2009-01-12</td>
+                                        <td class="dt-type-numeric"><span style="color:red">$86,000.00</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">Bradley Greer</td>
+                                        <td><a href="https://datatables.net">Software Engineer</a></td>
+                                        <td class="f32"><span class="flag gb">
+                                                <img class="avatar-xs rounded me-2" src="assets/images/flags/gb.svg"
+                                                    alt="London">
+                                            </span> London</td>
+                                        <td class="dt-type-numeric">
+                                            <div class="progress" role="progressbar" aria-label="Basic example"
+                                                aria-valuenow="2558" aria-valuemin="0" aria-valuemax="9999"
+                                                style="height:8px">
+                                                <div class="progress-bar" style="width: 25.58255825582558%"></div>
+                                            </div>
+                                        </td>
+                                        <td class="dt-type-date">2012-10-13</td>
+                                        <td class="dt-type-numeric"><span style="color:red">$132,000.00</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">Brenden Wagner</td>
+                                        <td><a href="https://datatables.net">Software Engineer</a></td>
+                                        <td class="f32"><span class="flag us">
+                                                <img class="avatar-xs rounded me-2" src="assets/images/flags/us.svg"
+                                                    alt="San Francisco">
+                                            </span> San Francisco</td>
+                                        <td class="dt-type-numeric">
+                                            <div class="progress" role="progressbar" aria-label="Basic example"
+                                                aria-valuenow="1314" aria-valuemin="0" aria-valuemax="9999"
+                                                style="height:8px">
+                                                <div class="progress-bar" style="width: 13.141314131413143%"></div>
+                                            </div>
+                                        </td>
+                                        <td class="dt-type-date">2011-06-07</td>
+                                        <td class="dt-type-numeric"><span style="color:red">$206,850.00</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">Brielle Williamson</td>
+                                        <td><a href="https://editor.datatables.net">Integration Specialist</a></td>
+                                        <td class="f32"><span class="flag us">
+                                                <img class="avatar-xs rounded me-2" src="assets/images/flags/us.svg"
+                                                    alt="New York">
+                                            </span> New York</td>
+                                        <td class="dt-type-numeric">
+                                            <div class="progress" role="progressbar" aria-label="Basic example"
+                                                aria-valuenow="4804" aria-valuemin="0" aria-valuemax="9999"
+                                                style="height:8px">
+                                                <div class="progress-bar" style="width: 48.04480448044804%"></div>
+                                            </div>
+                                        </td>
+                                        <td class="dt-type-date">2012-12-02</td>
+                                        <td class="dt-type-numeric"><span style="color:orange">$372,000.00</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">Bruno Nash</td>
+                                        <td><a href="https://datatables.net">Software Engineer</a></td>
+                                        <td class="f32"><span class="flag gb">
+                                                <img class="avatar-xs rounded me-2" src="assets/images/flags/gb.svg"
+                                                    alt="London">
+                                            </span> London</td>
+                                        <td class="dt-type-numeric">
+                                            <div class="progress" role="progressbar" aria-label="Basic example"
+                                                aria-valuenow="6222" aria-valuemin="0" aria-valuemax="9999"
+                                                style="height:8px">
+                                                <div class="progress-bar" style="width: 62.22622262226223%"></div>
+                                            </div>
+                                        </td>
+                                        <td class="dt-type-date">2011-05-03</td>
+                                        <td class="dt-type-numeric"><span style="color:red">$163,500.00</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">Caesar Vance</td>
+                                        <td><a href="https://editor.datatables.net">Pre-Sales Support</a></td>
+                                        <td class="f32"><span class="flag us">
+                                                <img class="avatar-xs rounded me-2" src="assets/images/flags/us.svg"
+                                                    alt="New York">
+                                            </span> New York</td>
+                                        <td class="dt-type-numeric">
+                                            <div class="progress" role="progressbar" aria-label="Basic example"
+                                                aria-valuenow="8330" aria-valuemin="0" aria-valuemax="9999"
+                                                style="height:8px">
+                                                <div class="progress-bar" style="width: 83.30833083308332%"></div>
+                                            </div>
+                                        </td>
+                                        <td class="dt-type-date">2011-12-12</td>
+                                        <td class="dt-type-numeric"><span style="color:red">$106,450.00</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">Cara Stevens</td>
+                                        <td><a href="https://datatables.net">Sales Assistant</a></td>
+                                        <td class="f32"><span class="flag us">
+                                                <img class="avatar-xs rounded me-2" src="assets/images/flags/us.svg"
+                                                    alt="New York">
+                                            </span> New York</td>
+                                        <td class="dt-type-numeric">
+                                            <div class="progress" role="progressbar" aria-label="Basic example"
+                                                aria-valuenow="3990" aria-valuemin="0" aria-valuemax="9999"
+                                                style="height:8px">
+                                                <div class="progress-bar" style="width: 39.9039903990399%"></div>
+                                            </div>
+                                        </td>
+                                        <td class="dt-type-date">2011-12-06</td>
+                                        <td class="dt-type-numeric"><span style="color:red">$145,600.00</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">Cedric Kelly</td>
+                                        <td><a href="https://datatables.net">Senior Javascript Developer</a></td>
+                                        <td class="f32"><span class="flag in">
+                                                <img class="avatar-xs rounded me-2" src="assets/images/flags/in.svg"
+                                                    alt="Gujarat">
+                                            </span> Gujarat</td>
+                                        <td class="dt-type-numeric">
+                                            <div class="progress" role="progressbar" aria-label="Basic example"
+                                                aria-valuenow="6224" aria-valuemin="0" aria-valuemax="9999"
+                                                style="height:8px">
+                                                <div class="progress-bar" style="width: 62.24622462246224%"></div>
+                                            </div>
+                                        </td>
+                                        <td class="dt-type-date">2012-03-29</td>
+                                        <td class="dt-type-numeric"><span style="color:orange">$433,060.00</span></td>
+                                    </tr>
+                                </tbody>
+                                <tfoot></tfoot>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row mt-2 justify-content-between">
+                        <div
+                            class="d-md-flex justify-content-between align-items-center dt-layout-start col-md-auto me-auto">
+                            <div class="dt-info" aria-live="polite" id="datatable-rendering_info" role="status">Showing
+                                1 to 10 of 57 entries</div>
+                        </div>
+                        <div
+                            class="d-md-flex justify-content-between align-items-center dt-layout-end col-md-auto ms-auto">
+                            <div class="dt-paging">
+                                <nav aria-label="pagination">
+                                    <ul class="pagination">
+                                        <li class="dt-paging-button page-item disabled"><button class="page-link first"
+                                                role="link" type="button" aria-controls="datatable-rendering"
+                                                aria-disabled="true" aria-label="First" data-dt-idx="first"
+                                                tabindex="-1"><i class="ti ti-chevrons-left"></i></button></li>
+                                        <li class="dt-paging-button page-item disabled"><button
+                                                class="page-link previous" role="link" type="button"
+                                                aria-controls="datatable-rendering" aria-disabled="true"
+                                                aria-label="Previous" data-dt-idx="previous" tabindex="-1"><i
+                                                    class="ti ti-chevron-left"></i></button></li>
+                                        <li class="dt-paging-button page-item active"><button class="page-link"
+                                                role="link" type="button" aria-controls="datatable-rendering"
+                                                aria-current="page" data-dt-idx="0">1</button></li>
+                                        <li class="dt-paging-button page-item"><button class="page-link" role="link"
+                                                type="button" aria-controls="datatable-rendering"
+                                                data-dt-idx="1">2</button></li>
+                                        <li class="dt-paging-button page-item"><button class="page-link" role="link"
+                                                type="button" aria-controls="datatable-rendering"
+                                                data-dt-idx="2">3</button></li>
+                                        <li class="dt-paging-button page-item"><button class="page-link" role="link"
+                                                type="button" aria-controls="datatable-rendering"
+                                                data-dt-idx="3">4</button></li>
+                                        <li class="dt-paging-button page-item"><button class="page-link" role="link"
+                                                type="button" aria-controls="datatable-rendering"
+                                                data-dt-idx="4">5</button></li>
+                                        <li class="dt-paging-button page-item"><button class="page-link" role="link"
+                                                type="button" aria-controls="datatable-rendering"
+                                                data-dt-idx="5">6</button></li>
+                                        <li class="dt-paging-button page-item"><button class="page-link next"
+                                                role="link" type="button" aria-controls="datatable-rendering"
+                                                aria-label="Next" data-dt-idx="next"><i
+                                                    class="ti ti-chevron-right"></i></button></li>
+                                        <li class="dt-paging-button page-item"><button class="page-link last"
+                                                role="link" type="button" aria-controls="datatable-rendering"
+                                                aria-label="Last" data-dt-idx="last"><i
+                                                    class="ti ti-chevrons-right"></i></button></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dt-autosize" style="width: 100%; height: 0px;"></div>
+                </div>
+            </div> <!-- end card-body-->
+        </div> <!-- end card-->
+    </div>
+</div>

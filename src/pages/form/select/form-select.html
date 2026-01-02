@@ -1,0 +1,1026 @@
+<div class="page-title-head d-flex align-items-center">
+    <div class="flex-grow-1">
+        <h4 class="fs-xl fw-bold m-0">Select</h4>
+    </div>
+
+    <div class="text-end">
+        <ol class="breadcrumb m-0 py-0">
+            <li class="breadcrumb-item"><a href="javascript: void(0);">UBold</a></li>
+
+            <li class="breadcrumb-item"><a href="javascript: void(0);">Forms</a></li>
+
+            <li class="breadcrumb-item active">Select</li>
+        </ol>
+    </div>
+</div>
+
+<div class="row justify-content-center">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header d-block">
+                <h4 class="card-title mb-1">Choices.Js</h4>
+                <p class="text-muted mb-0">
+                    Choices.js is a lightweight, configurable select box/text input plugin. Similar to Select2 and
+                    Selectize but without the jQuery dependency.
+                </p>
+            </div>
+
+            <div class="card-body">
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <h5>Single Select Input: Default</h5>
+                        <p class="text-muted mb-0">Set <code>data-choices</code> attribute to set a default single
+                            select.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="choices" data-type="select-one" tabindex="0" role="listbox" aria-haspopup="true"
+                            aria-expanded="false">
+                            <div class="choices__inner"><select class="form-control choices__input" data-choices=""
+                                    name="choices-single-default" id="choices-single-default" hidden="" tabindex="-1"
+                                    data-choice="active">
+                                    <option value="" selected="">This is a placeholder</option>
+                                    <option value="Choice 1">Choice 1</option>
+                                    <option value="Choice 2">Choice 2</option>
+                                    <option value="Choice 3">Choice 3</option>
+                                </select>
+                                <div class="choices__list choices__list--single">
+                                    <div class="choices__item choices__placeholder choices__item--selectable"
+                                        data-item="" data-id="1" data-value="" aria-selected="true" role="option"
+                                        data-placeholder="">This is a placeholder</div>
+                                </div>
+                            </div>
+                            <div class="choices__list choices__list--dropdown" aria-expanded="false">
+                                <div class="choices__list" role="listbox">
+                                    <div id="choices--choices-single-default-item-choice-1"
+                                        class="choices__item choices__item--choice is-selected choices__placeholder choices__item--selectable is-highlighted"
+                                        role="option" data-choice="" data-id="1" data-value=""
+                                        data-select-text="Press to select" data-choice-selectable=""
+                                        aria-selected="true">This is a placeholder</div>
+                                    <div id="choices--choices-single-default-item-choice-2"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="option" data-choice="" data-id="2" data-value="Choice 1"
+                                        data-select-text="Press to select" data-choice-selectable="">Choice 1</div>
+                                    <div id="choices--choices-single-default-item-choice-3"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="option" data-choice="" data-id="3" data-value="Choice 2"
+                                        data-select-text="Press to select" data-choice-selectable="">Choice 2</div>
+                                    <div id="choices--choices-single-default-item-choice-4"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="option" data-choice="" data-id="4" data-value="Choice 3"
+                                        data-select-text="Press to select" data-choice-selectable="">Choice 3</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="my-4 border-top border-dashed"></div>
+
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <h5>Single Select Input: Option Groups</h5>
+                        <p class="text-muted mb-0">Set <code>data-choices data-choices-groups</code> attribute to set
+                            option group</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="choices" data-type="select-one" tabindex="0" role="listbox" aria-haspopup="true"
+                            aria-expanded="false">
+                            <div class="choices__inner"><select class="form-control choices__input"
+                                    id="choices-single-groups" data-choices="" data-choices-groups=""
+                                    data-placeholder="Select City" name="choices-single-groups" hidden="" tabindex="-1"
+                                    data-choice="active">
+                                    <option value="">Choose a city</option>
+                                    <optgroup label="UK">
+                                        <option value="London">London</option>
+                                        <option value="Manchester">Manchester</option>
+                                        <option value="Liverpool">Liverpool</option>
+                                    </optgroup>
+                                    <optgroup label="FR">
+                                        <option value="Paris">Paris</option>
+                                        <option value="Lyon">Lyon</option>
+                                        <option value="Marseille">Marseille</option>
+                                    </optgroup>
+                                    <optgroup label="DE" disabled="">
+                                        <option value="Hamburg">Hamburg</option>
+                                        <option value="Munich">Munich</option>
+                                        <option value="Berlin">Berlin</option>
+                                    </optgroup>
+                                    <optgroup label="US">
+                                        <option value="New York">New York</option>
+                                        <option value="Washington" disabled="">Washington</option>
+                                        <option value="Michigan">Michigan</option>
+                                    </optgroup>
+                                    <optgroup label="SP">
+                                        <option value="Madrid">Madrid</option>
+                                        <option value="Barcelona">Barcelona</option>
+                                        <option value="Malaga">Malaga</option>
+                                    </optgroup>
+                                    <optgroup label="CA">
+                                        <option value="Montreal">Montreal</option>
+                                        <option value="Toronto">Toronto</option>
+                                        <option value="Vancouver">Vancouver</option>
+                                    </optgroup>
+                                </select>
+                                <div class="choices__list choices__list--single">
+                                    <div class="choices__item choices__placeholder choices__item--selectable"
+                                        data-item="" data-id="0" data-value="" aria-selected="true" role="option"
+                                        data-placeholder="">This is a placeholder set in the config</div>
+                                </div>
+                            </div>
+                            <div class="choices__list choices__list--dropdown" aria-expanded="false">
+                                <div class="choices__list" role="listbox">
+                                    <div id="choices--choices-single-groups-item-choice-1"
+                                        class="choices__item choices__item--choice choices__item--selectable is-highlighted"
+                                        role="option" data-choice="" data-id="1" data-value=""
+                                        data-select-text="Press to select" data-choice-selectable=""
+                                        aria-selected="true">Choose a city</div>
+                                    <div class="choices__group" role="group" data-group="" data-id="6" data-value="CA">
+                                        <div class="choices__heading">CA</div>
+                                    </div>
+                                    <div id="choices--choices-single-groups-item-choice-17"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="treeitem" data-choice="" data-id="17" data-value="Montreal"
+                                        data-select-text="Press to select" data-group-id="6" data-choice-selectable="">
+                                        Montreal</div>
+                                    <div id="choices--choices-single-groups-item-choice-18"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="treeitem" data-choice="" data-id="18" data-value="Toronto"
+                                        data-select-text="Press to select" data-group-id="6" data-choice-selectable="">
+                                        Toronto</div>
+                                    <div id="choices--choices-single-groups-item-choice-19"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="treeitem" data-choice="" data-id="19" data-value="Vancouver"
+                                        data-select-text="Press to select" data-group-id="6" data-choice-selectable="">
+                                        Vancouver</div>
+                                    <div class="choices__group" role="group" data-group="" data-id="2" data-value="FR">
+                                        <div class="choices__heading">FR</div>
+                                    </div>
+                                    <div id="choices--choices-single-groups-item-choice-6"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="treeitem" data-choice="" data-id="6" data-value="Lyon"
+                                        data-select-text="Press to select" data-group-id="2" data-choice-selectable="">
+                                        Lyon</div>
+                                    <div id="choices--choices-single-groups-item-choice-7"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="treeitem" data-choice="" data-id="7" data-value="Marseille"
+                                        data-select-text="Press to select" data-group-id="2" data-choice-selectable="">
+                                        Marseille</div>
+                                    <div id="choices--choices-single-groups-item-choice-5"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="treeitem" data-choice="" data-id="5" data-value="Paris"
+                                        data-select-text="Press to select" data-group-id="2" data-choice-selectable="">
+                                        Paris</div>
+                                    <div class="choices__group" role="group" data-group="" data-id="5" data-value="SP">
+                                        <div class="choices__heading">SP</div>
+                                    </div>
+                                    <div id="choices--choices-single-groups-item-choice-15"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="treeitem" data-choice="" data-id="15" data-value="Barcelona"
+                                        data-select-text="Press to select" data-group-id="5" data-choice-selectable="">
+                                        Barcelona</div>
+                                    <div id="choices--choices-single-groups-item-choice-14"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="treeitem" data-choice="" data-id="14" data-value="Madrid"
+                                        data-select-text="Press to select" data-group-id="5" data-choice-selectable="">
+                                        Madrid</div>
+                                    <div id="choices--choices-single-groups-item-choice-16"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="treeitem" data-choice="" data-id="16" data-value="Malaga"
+                                        data-select-text="Press to select" data-group-id="5" data-choice-selectable="">
+                                        Malaga</div>
+                                    <div class="choices__group" role="group" data-group="" data-id="1" data-value="UK">
+                                        <div class="choices__heading">UK</div>
+                                    </div>
+                                    <div id="choices--choices-single-groups-item-choice-4"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="treeitem" data-choice="" data-id="4" data-value="Liverpool"
+                                        data-select-text="Press to select" data-group-id="1" data-choice-selectable="">
+                                        Liverpool</div>
+                                    <div id="choices--choices-single-groups-item-choice-2"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="treeitem" data-choice="" data-id="2" data-value="London"
+                                        data-select-text="Press to select" data-group-id="1" data-choice-selectable="">
+                                        London</div>
+                                    <div id="choices--choices-single-groups-item-choice-3"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="treeitem" data-choice="" data-id="3" data-value="Manchester"
+                                        data-select-text="Press to select" data-group-id="1" data-choice-selectable="">
+                                        Manchester</div>
+                                    <div class="choices__group" role="group" data-group="" data-id="4" data-value="US">
+                                        <div class="choices__heading">US</div>
+                                    </div>
+                                    <div id="choices--choices-single-groups-item-choice-13"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="treeitem" data-choice="" data-id="13" data-value="Michigan"
+                                        data-select-text="Press to select" data-group-id="4" data-choice-selectable="">
+                                        Michigan</div>
+                                    <div id="choices--choices-single-groups-item-choice-11"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="treeitem" data-choice="" data-id="11" data-value="New York"
+                                        data-select-text="Press to select" data-group-id="4" data-choice-selectable="">
+                                        New York</div>
+                                    <div id="choices--choices-single-groups-item-choice-12"
+                                        class="choices__item choices__item--choice choices__item--disabled"
+                                        role="treeitem" data-choice="" data-id="12" data-value="Washington"
+                                        data-select-text="Press to select" data-group-id="4" data-choice-disabled=""
+                                        aria-disabled="true">Washington</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="my-4 border-top border-dashed"></div>
+
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <h5>Single Select Input: No Search</h5>
+                        <p class="text-muted mb-0">Set
+                            <code>data-choices data-choices-search-false data-choices-removeItem</code></p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="choices" data-type="select-one" tabindex="0" role="listbox" aria-haspopup="true"
+                            aria-expanded="false">
+                            <div class="choices__inner"><select class="form-control choices__input"
+                                    id="choices-single-no-search" name="choices-single-no-search" data-choices=""
+                                    data-choices-search-false="" data-choices-removeitem="" hidden="" tabindex="-1"
+                                    data-choice="active">
+                                    <option value="Zero" selected="">Zero</option>
+                                    <option value="One">One</option>
+                                    <option value="Two">Two</option>
+                                    <option value="Three">Three</option>
+                                    <option value="Four">Four</option>
+                                    <option value="Five">Five</option>
+                                    <option value="Six">Six</option>
+                                </select>
+                                <div class="choices__list choices__list--single">
+                                    <div class="choices__item choices__item--selectable" data-item="" data-id="1"
+                                        data-value="Zero" aria-selected="true" role="option" data-deletable="">
+                                        Zero<button type="button" class="choices__button" aria-label="Remove item: Zero"
+                                            data-button="">Remove item</button></div>
+                                </div>
+                            </div>
+                            <div class="choices__list choices__list--dropdown" aria-expanded="false">
+                                <div class="choices__list" role="listbox">
+                                    <div id="choices--choices-single-no-search-item-choice-6"
+                                        class="choices__item choices__item--choice choices__item--selectable is-highlighted"
+                                        role="option" data-choice="" data-id="6" data-value="Five"
+                                        data-select-text="Press to select" data-choice-selectable=""
+                                        aria-selected="true">Five</div>
+                                    <div id="choices--choices-single-no-search-item-choice-5"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="option" data-choice="" data-id="5" data-value="Four"
+                                        data-select-text="Press to select" data-choice-selectable="">Four</div>
+                                    <div id="choices--choices-single-no-search-item-choice-2"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="option" data-choice="" data-id="2" data-value="One"
+                                        data-select-text="Press to select" data-choice-selectable="">One</div>
+                                    <div id="choices--choices-single-no-search-item-choice-7"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="option" data-choice="" data-id="7" data-value="Six"
+                                        data-select-text="Press to select" data-choice-selectable="">Six</div>
+                                    <div id="choices--choices-single-no-search-item-choice-4"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="option" data-choice="" data-id="4" data-value="Three"
+                                        data-select-text="Press to select" data-choice-selectable="">Three</div>
+                                    <div id="choices--choices-single-no-search-item-choice-3"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="option" data-choice="" data-id="3" data-value="Two"
+                                        data-select-text="Press to select" data-choice-selectable="">Two</div>
+                                    <div id="choices--choices-single-no-search-item-choice-1"
+                                        class="choices__item choices__item--choice is-selected choices__item--selectable"
+                                        role="option" data-choice="" data-id="1" data-value="Zero"
+                                        data-select-text="Press to select" data-choice-selectable="">Zero</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="my-4 border-top border-dashed"></div>
+
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <h5>Single Select Input: No Sorting</h5>
+                        <p class="text-muted mb-0">Set <code>data-choices data-choices-sorting-false</code> attribute.
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="choices" data-type="select-one" tabindex="0" role="listbox" aria-haspopup="true"
+                            aria-expanded="false">
+                            <div class="choices__inner"><select class="form-control choices__input"
+                                    id="choices-single-no-sorting" name="choices-single-no-sorting" data-choices=""
+                                    data-choices-sorting-false="" hidden="" tabindex="-1" data-choice="active">
+                                    <option value="Madrid" selected="">Madrid</option>
+                                    <option value="Toronto">Toronto</option>
+                                    <option value="Vancouver">Vancouver</option>
+                                    <option value="London">London</option>
+                                    <option value="Manchester">Manchester</option>
+                                    <option value="Liverpool">Liverpool</option>
+                                    <option value="Paris">Paris</option>
+                                    <option value="Malaga">Malaga</option>
+                                    <option value="Washington" disabled="">Washington</option>
+                                    <option value="Lyon">Lyon</option>
+                                    <option value="Marseille">Marseille</option>
+                                    <option value="Hamburg">Hamburg</option>
+                                    <option value="Munich">Munich</option>
+                                    <option value="Barcelona">Barcelona</option>
+                                    <option value="Berlin">Berlin</option>
+                                    <option value="Montreal">Montreal</option>
+                                    <option value="New York">New York</option>
+                                    <option value="Michigan">Michigan</option>
+                                </select>
+                                <div class="choices__list choices__list--single">
+                                    <div class="choices__item choices__item--selectable" data-item="" data-id="1"
+                                        data-value="Madrid" aria-selected="true" role="option">Madrid</div>
+                                </div>
+                            </div>
+                            <div class="choices__list choices__list--dropdown" aria-expanded="false">
+                                <div class="choices__list" role="listbox">
+                                    <div id="choices--choices-single-no-sorting-item-choice-1"
+                                        class="choices__item choices__item--choice is-selected choices__item--selectable is-highlighted"
+                                        role="option" data-choice="" data-id="1" data-value="Madrid"
+                                        data-select-text="Press to select" data-choice-selectable=""
+                                        aria-selected="true">Madrid</div>
+                                    <div id="choices--choices-single-no-sorting-item-choice-2"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="option" data-choice="" data-id="2" data-value="Toronto"
+                                        data-select-text="Press to select" data-choice-selectable="">Toronto</div>
+                                    <div id="choices--choices-single-no-sorting-item-choice-3"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="option" data-choice="" data-id="3" data-value="Vancouver"
+                                        data-select-text="Press to select" data-choice-selectable="">Vancouver</div>
+                                    <div id="choices--choices-single-no-sorting-item-choice-4"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="option" data-choice="" data-id="4" data-value="London"
+                                        data-select-text="Press to select" data-choice-selectable="">London</div>
+                                    <div id="choices--choices-single-no-sorting-item-choice-5"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="option" data-choice="" data-id="5" data-value="Manchester"
+                                        data-select-text="Press to select" data-choice-selectable="">Manchester</div>
+                                    <div id="choices--choices-single-no-sorting-item-choice-6"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="option" data-choice="" data-id="6" data-value="Liverpool"
+                                        data-select-text="Press to select" data-choice-selectable="">Liverpool</div>
+                                    <div id="choices--choices-single-no-sorting-item-choice-7"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="option" data-choice="" data-id="7" data-value="Paris"
+                                        data-select-text="Press to select" data-choice-selectable="">Paris</div>
+                                    <div id="choices--choices-single-no-sorting-item-choice-8"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="option" data-choice="" data-id="8" data-value="Malaga"
+                                        data-select-text="Press to select" data-choice-selectable="">Malaga</div>
+                                    <div id="choices--choices-single-no-sorting-item-choice-9"
+                                        class="choices__item choices__item--choice choices__item--disabled"
+                                        role="option" data-choice="" data-id="9" data-value="Washington"
+                                        data-select-text="Press to select" data-choice-disabled="" aria-disabled="true">
+                                        Washington</div>
+                                    <div id="choices--choices-single-no-sorting-item-choice-10"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="option" data-choice="" data-id="10" data-value="Lyon"
+                                        data-select-text="Press to select" data-choice-selectable="">Lyon</div>
+                                    <div id="choices--choices-single-no-sorting-item-choice-11"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="option" data-choice="" data-id="11" data-value="Marseille"
+                                        data-select-text="Press to select" data-choice-selectable="">Marseille</div>
+                                    <div id="choices--choices-single-no-sorting-item-choice-12"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="option" data-choice="" data-id="12" data-value="Hamburg"
+                                        data-select-text="Press to select" data-choice-selectable="">Hamburg</div>
+                                    <div id="choices--choices-single-no-sorting-item-choice-13"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="option" data-choice="" data-id="13" data-value="Munich"
+                                        data-select-text="Press to select" data-choice-selectable="">Munich</div>
+                                    <div id="choices--choices-single-no-sorting-item-choice-14"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="option" data-choice="" data-id="14" data-value="Barcelona"
+                                        data-select-text="Press to select" data-choice-selectable="">Barcelona</div>
+                                    <div id="choices--choices-single-no-sorting-item-choice-15"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="option" data-choice="" data-id="15" data-value="Berlin"
+                                        data-select-text="Press to select" data-choice-selectable="">Berlin</div>
+                                    <div id="choices--choices-single-no-sorting-item-choice-16"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="option" data-choice="" data-id="16" data-value="Montreal"
+                                        data-select-text="Press to select" data-choice-selectable="">Montreal</div>
+                                    <div id="choices--choices-single-no-sorting-item-choice-17"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="option" data-choice="" data-id="17" data-value="New York"
+                                        data-select-text="Press to select" data-choice-selectable="">New York</div>
+                                    <div id="choices--choices-single-no-sorting-item-choice-18"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="option" data-choice="" data-id="18" data-value="Michigan"
+                                        data-select-text="Press to select" data-choice-selectable="">Michigan</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="my-4 border-top border-dashed"></div>
+
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <h5>Multiple Select Input: Default</h5>
+                        <p class="text-muted mb-0">Set <code>data-choices multiple</code> attribute.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="choices" data-type="select-multiple" role="combobox" aria-autocomplete="list"
+                            aria-haspopup="true" aria-expanded="false">
+                            <div class="choices__inner"><select class="form-control choices__input"
+                                    id="choices-multiple-default" data-choices="" name="choices-multiple-default"
+                                    multiple="" hidden="" tabindex="-1" data-choice="active">
+                                    <option value="Choice 1" selected="">Choice 1</option>
+                                    <option value="Choice 2">Choice 2</option>
+                                    <option value="Choice 3">Choice 3</option>
+                                    <option value="Choice 4" disabled="">Choice 4</option>
+                                </select>
+                                <div class="choices__list choices__list--multiple" role="listbox">
+                                    <div class="choices__item choices__item--selectable" data-item="" data-id="1"
+                                        data-value="Choice 1" aria-selected="true" role="option">Choice 1</div>
+                                </div><input type="search" class="choices__input choices__input--cloned"
+                                    autocomplete="off" autocapitalize="off" spellcheck="false" aria-autocomplete="list"
+                                    style="min-width: 1ch; width: 1ch;">
+                            </div>
+                            <div class="choices__list choices__list--dropdown" aria-expanded="false">
+                                <div class="choices__list" aria-multiselectable="true" role="listbox">
+                                    <div id="choices--choices-multiple-default-item-choice-2"
+                                        class="choices__item choices__item--choice choices__item--selectable is-highlighted"
+                                        role="option" data-choice="" data-id="2" data-value="Choice 2"
+                                        data-select-text="Press to select" data-choice-selectable=""
+                                        aria-selected="true">Choice 2</div>
+                                    <div id="choices--choices-multiple-default-item-choice-3"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="option" data-choice="" data-id="3" data-value="Choice 3"
+                                        data-select-text="Press to select" data-choice-selectable="">Choice 3</div>
+                                    <div id="choices--choices-multiple-default-item-choice-4"
+                                        class="choices__item choices__item--choice choices__item--disabled"
+                                        role="option" data-choice="" data-id="4" data-value="Choice 4"
+                                        data-select-text="Press to select" data-choice-disabled="" aria-disabled="true">
+                                        Choice 4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="my-4 border-top border-dashed"></div>
+
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <h5>Multiple Select Input: With Remove Button</h5>
+                        <p class="text-muted mb-0">Set <code>data-choices data-choices-removeItem multiple</code>
+                            attribute.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="choices" data-type="select-multiple" role="combobox" aria-autocomplete="list"
+                            aria-haspopup="true" aria-expanded="false">
+                            <div class="choices__inner"><select class="form-control choices__input"
+                                    id="choices-multiple-remove-button" data-choices="" data-choices-removeitem=""
+                                    name="choices-multiple-remove-button" multiple="" hidden="" tabindex="-1"
+                                    data-choice="active">
+                                    <option value="Choice 1" selected="">Choice 1</option>
+                                    <option value="Choice 2">Choice 2</option>
+                                    <option value="Choice 3">Choice 3</option>
+                                    <option value="Choice 4">Choice 4</option>
+                                </select>
+                                <div class="choices__list choices__list--multiple" role="listbox">
+                                    <div class="choices__item choices__item--selectable" data-item="" data-id="1"
+                                        data-value="Choice 1" aria-selected="true" role="option" data-deletable="">
+                                        Choice 1<button type="button" class="choices__button"
+                                            aria-label="Remove item: Choice 1" data-button="">Remove item</button></div>
+                                </div><input type="search" class="choices__input choices__input--cloned"
+                                    autocomplete="off" autocapitalize="off" spellcheck="false" aria-autocomplete="list"
+                                    style="min-width: 1ch; width: 1ch;">
+                            </div>
+                            <div class="choices__list choices__list--dropdown" aria-expanded="false">
+                                <div class="choices__list" aria-multiselectable="true" role="listbox">
+                                    <div id="choices--choices-multiple-remove-button-item-choice-2"
+                                        class="choices__item choices__item--choice choices__item--selectable is-highlighted"
+                                        role="option" data-choice="" data-id="2" data-value="Choice 2"
+                                        data-select-text="Press to select" data-choice-selectable=""
+                                        aria-selected="true">Choice 2</div>
+                                    <div id="choices--choices-multiple-remove-button-item-choice-3"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="option" data-choice="" data-id="3" data-value="Choice 3"
+                                        data-select-text="Press to select" data-choice-selectable="">Choice 3</div>
+                                    <div id="choices--choices-multiple-remove-button-item-choice-4"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="option" data-choice="" data-id="4" data-value="Choice 4"
+                                        data-select-text="Press to select" data-choice-selectable="">Choice 4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="my-4 border-top border-dashed"></div>
+
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <h5>Multiple Select Input: Option Groups</h5>
+                        <p class="text-muted mb-0">Set
+                            <code>data-choices data-choices-multiple-groups="true" multiple</code> attribute.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="choices" data-type="select-multiple" role="combobox" aria-autocomplete="list"
+                            aria-haspopup="true" aria-expanded="false">
+                            <div class="choices__inner"><select class="form-control choices__input"
+                                    id="choices-multiple-groups" name="choices-multiple-groups" data-choices=""
+                                    data-choices-multiple-groups="true" multiple="" hidden="" tabindex="-1"
+                                    data-choice="active">
+                                    <option value="">Choose a city</option>
+                                    <optgroup label="UK">
+                                        <option value="London">London</option>
+                                        <option value="Manchester">Manchester</option>
+                                        <option value="Liverpool">Liverpool</option>
+                                    </optgroup>
+                                    <optgroup label="FR">
+                                        <option value="Paris">Paris</option>
+                                        <option value="Lyon">Lyon</option>
+                                        <option value="Marseille">Marseille</option>
+                                    </optgroup>
+                                    <optgroup label="DE" disabled="">
+                                        <option value="Hamburg">Hamburg</option>
+                                        <option value="Munich">Munich</option>
+                                        <option value="Berlin">Berlin</option>
+                                    </optgroup>
+                                    <optgroup label="US">
+                                        <option value="New York">New York</option>
+                                        <option value="Washington" disabled="">Washington</option>
+                                        <option value="Michigan">Michigan</option>
+                                    </optgroup>
+                                    <optgroup label="SP">
+                                        <option value="Madrid">Madrid</option>
+                                        <option value="Barcelona">Barcelona</option>
+                                        <option value="Malaga">Malaga</option>
+                                    </optgroup>
+                                    <optgroup label="CA">
+                                        <option value="Montreal">Montreal</option>
+                                        <option value="Toronto">Toronto</option>
+                                        <option value="Vancouver">Vancouver</option>
+                                    </optgroup>
+                                </select>
+                                <div class="choices__list choices__list--multiple" role="listbox"></div><input
+                                    type="search" class="choices__input choices__input--cloned" autocomplete="off"
+                                    autocapitalize="off" spellcheck="false" aria-autocomplete="list"
+                                    aria-label="Choose a city" placeholder="Choose a city"
+                                    style="min-width: 14ch; width: 1ch;">
+                            </div>
+                            <div class="choices__list choices__list--dropdown" aria-expanded="false">
+                                <div class="choices__list" aria-multiselectable="true" role="listbox">
+                                    <div class="choices__group" role="group" data-group="" data-id="6" data-value="CA">
+                                        <div class="choices__heading">CA</div>
+                                    </div>
+                                    <div id="choices--choices-multiple-groups-item-choice-17"
+                                        class="choices__item choices__item--choice choices__item--selectable is-highlighted"
+                                        role="treeitem" data-choice="" data-id="17" data-value="Montreal"
+                                        data-select-text="Press to select" data-group-id="6" data-choice-selectable=""
+                                        aria-selected="true">Montreal</div>
+                                    <div id="choices--choices-multiple-groups-item-choice-18"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="treeitem" data-choice="" data-id="18" data-value="Toronto"
+                                        data-select-text="Press to select" data-group-id="6" data-choice-selectable="">
+                                        Toronto</div>
+                                    <div id="choices--choices-multiple-groups-item-choice-19"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="treeitem" data-choice="" data-id="19" data-value="Vancouver"
+                                        data-select-text="Press to select" data-group-id="6" data-choice-selectable="">
+                                        Vancouver</div>
+                                    <div class="choices__group" role="group" data-group="" data-id="2" data-value="FR">
+                                        <div class="choices__heading">FR</div>
+                                    </div>
+                                    <div id="choices--choices-multiple-groups-item-choice-6"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="treeitem" data-choice="" data-id="6" data-value="Lyon"
+                                        data-select-text="Press to select" data-group-id="2" data-choice-selectable="">
+                                        Lyon</div>
+                                    <div id="choices--choices-multiple-groups-item-choice-7"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="treeitem" data-choice="" data-id="7" data-value="Marseille"
+                                        data-select-text="Press to select" data-group-id="2" data-choice-selectable="">
+                                        Marseille</div>
+                                    <div id="choices--choices-multiple-groups-item-choice-5"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="treeitem" data-choice="" data-id="5" data-value="Paris"
+                                        data-select-text="Press to select" data-group-id="2" data-choice-selectable="">
+                                        Paris</div>
+                                    <div class="choices__group" role="group" data-group="" data-id="5" data-value="SP">
+                                        <div class="choices__heading">SP</div>
+                                    </div>
+                                    <div id="choices--choices-multiple-groups-item-choice-15"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="treeitem" data-choice="" data-id="15" data-value="Barcelona"
+                                        data-select-text="Press to select" data-group-id="5" data-choice-selectable="">
+                                        Barcelona</div>
+                                    <div id="choices--choices-multiple-groups-item-choice-14"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="treeitem" data-choice="" data-id="14" data-value="Madrid"
+                                        data-select-text="Press to select" data-group-id="5" data-choice-selectable="">
+                                        Madrid</div>
+                                    <div id="choices--choices-multiple-groups-item-choice-16"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="treeitem" data-choice="" data-id="16" data-value="Malaga"
+                                        data-select-text="Press to select" data-group-id="5" data-choice-selectable="">
+                                        Malaga</div>
+                                    <div class="choices__group" role="group" data-group="" data-id="1" data-value="UK">
+                                        <div class="choices__heading">UK</div>
+                                    </div>
+                                    <div id="choices--choices-multiple-groups-item-choice-4"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="treeitem" data-choice="" data-id="4" data-value="Liverpool"
+                                        data-select-text="Press to select" data-group-id="1" data-choice-selectable="">
+                                        Liverpool</div>
+                                    <div id="choices--choices-multiple-groups-item-choice-2"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="treeitem" data-choice="" data-id="2" data-value="London"
+                                        data-select-text="Press to select" data-group-id="1" data-choice-selectable="">
+                                        London</div>
+                                    <div id="choices--choices-multiple-groups-item-choice-3"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="treeitem" data-choice="" data-id="3" data-value="Manchester"
+                                        data-select-text="Press to select" data-group-id="1" data-choice-selectable="">
+                                        Manchester</div>
+                                    <div class="choices__group" role="group" data-group="" data-id="4" data-value="US">
+                                        <div class="choices__heading">US</div>
+                                    </div>
+                                    <div id="choices--choices-multiple-groups-item-choice-13"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="treeitem" data-choice="" data-id="13" data-value="Michigan"
+                                        data-select-text="Press to select" data-group-id="4" data-choice-selectable="">
+                                        Michigan</div>
+                                    <div id="choices--choices-multiple-groups-item-choice-11"
+                                        class="choices__item choices__item--choice choices__item--selectable"
+                                        role="treeitem" data-choice="" data-id="11" data-value="New York"
+                                        data-select-text="Press to select" data-group-id="4" data-choice-selectable="">
+                                        New York</div>
+                                    <div id="choices--choices-multiple-groups-item-choice-12"
+                                        class="choices__item choices__item--choice choices__item--disabled"
+                                        role="treeitem" data-choice="" data-id="12" data-value="Washington"
+                                        data-select-text="Press to select" data-group-id="4" data-choice-disabled=""
+                                        aria-disabled="true">Washington</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="my-4 border-top border-dashed"></div>
+
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <h5>Text Input: Limit Values with Remove Button</h5>
+                        <p class="text-muted mb-0">Set
+                            <code>data-choices data-choices-limit="3" data-choices-removeItem</code> attribute.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="choices" data-type="text">
+                            <div class="choices__inner"><input class="form-control choices__input"
+                                    id="choices-text-remove-button" data-choices="" data-choices-limit="3"
+                                    data-choices-removeitem="" type="text" value="Task-1" hidden="" tabindex="-1"
+                                    data-choice="active">
+                                <div class="choices__list choices__list--multiple">
+                                    <div class="choices__item choices__item--selectable" data-item="" data-id="1"
+                                        data-value="Task-1" data-deletable="">Task-1<button type="button"
+                                            class="choices__button" aria-label="Remove item: Task-1"
+                                            data-button="">Remove item</button></div>
+                                </div><input type="search" class="choices__input choices__input--cloned"
+                                    autocomplete="off" autocapitalize="off" spellcheck="false" aria-autocomplete="list"
+                                    style="min-width: 1ch; width: 1ch;">
+                            </div>
+                            <div class="choices__list choices__list--dropdown" aria-expanded="false">
+                                <div class="choices__list" aria-multiselectable="true" role="listbox"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="my-4 border-top border-dashed"></div>
+
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <h5>Text Input: Unique Values Only</h5>
+                        <p class="text-muted mb-0">Set <code>data-choices data-choices-text-unique-true</code>
+                            attribute.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="choices" data-type="text">
+                            <div class="choices__inner"><input class="form-control choices__input"
+                                    id="choices-text-unique-values" data-choices="" data-choices-text-unique-true=""
+                                    type="text" value="Project-A, Project-B" hidden="" tabindex="-1"
+                                    data-choice="active">
+                                <div class="choices__list choices__list--multiple">
+                                    <div class="choices__item choices__item--selectable" data-item="" data-id="1"
+                                        data-value="Project-A">Project-A</div>
+                                    <div class="choices__item choices__item--selectable" data-item="" data-id="2"
+                                        data-value=" Project-B"> Project-B</div>
+                                </div><input type="search" class="choices__input choices__input--cloned"
+                                    autocomplete="off" autocapitalize="off" spellcheck="false" aria-autocomplete="list"
+                                    style="min-width: 1ch; width: 1ch;">
+                            </div>
+                            <div class="choices__list choices__list--dropdown" aria-expanded="false">
+                                <div class="choices__list" aria-multiselectable="true" role="listbox"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="my-4 border-top border-dashed"></div>
+
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <h5>Text Input: Disabled</h5>
+                        <p class="text-muted mb-0">Set <code>data-choices data-choices-text-disabled-true</code>
+                            attribute.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="choices is-disabled" data-type="text" aria-disabled="true">
+                            <div class="choices__inner"><input class="form-control choices__input"
+                                    id="choices-text-disabled" data-choices="" data-choices-text-disabled-true=""
+                                    type="text" value="josh@joshuajohnson.co.uk, joe@bloggs.co.uk" hidden=""
+                                    tabindex="-1" data-choice="active" disabled="">
+                                <div class="choices__list choices__list--multiple">
+                                    <div class="choices__item choices__item--selectable" data-item="" data-id="1"
+                                        data-value="josh@joshuajohnson.co.uk" aria-disabled="true">
+                                        josh@joshuajohnson.co.uk</div>
+                                    <div class="choices__item choices__item--selectable" data-item="" data-id="2"
+                                        data-value=" joe@bloggs.co.uk" aria-disabled="true"> joe@bloggs.co.uk</div>
+                                </div><input type="search" class="choices__input choices__input--cloned"
+                                    autocomplete="off" autocapitalize="off" spellcheck="false" aria-autocomplete="list"
+                                    disabled="" style="min-width: 1ch; width: 1ch;">
+                            </div>
+                            <div class="choices__list choices__list--dropdown" aria-expanded="false">
+                                <div class="choices__list" aria-multiselectable="true" role="listbox"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- end card-body-->
+        </div> <!-- end card-->
+
+        <div class="card">
+            <div class="card-header d-block">
+                <h4 class="card-title mb-1">Select2</h4>
+                <p class="text-muted">
+                    Select2 is an advanced replacement for standard select boxes.
+                    It supports searching, remote data sources, and infinite scrolling of results.
+                </p>
+
+
+            </div>
+
+            <div class="card-body">
+                <!-- Single Select Input with Button -->
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <h5>Single Select Input with Button</h5>
+                        <p class="text-muted mb-0">An example of a select dropdown with an appended button using
+                            Select2.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <select id="select2BasicExample" class="form-control select2 select2-hidden-accessible"
+                            data-toggle="select2" data-select2-id="select2-data-select2BasicExample" tabindex="-1"
+                            aria-hidden="true">
+                            <option value="AK" data-select2-id="select2-data-2-72nx">Alaska</option>
+                            <option value="HI">Hawaii</option>
+                            <option value="CA">California</option>
+                            <option value="NV">Nevada</option>
+                            <option value="OR">Oregon</option>
+                            <option value="WA">Washington</option>
+                            <option value="AZ">Arizona</option>
+                            <option value="CO">Colorado</option>
+                            <option value="ID">Idaho</option>
+                            <option value="MT">Montana</option>
+                            <option value="NE">Nebraska</option>
+                            <option value="NM">New Mexico</option>
+                            <option value="ND">North Dakota</option>
+                            <option value="UT">Utah</option>
+                            <option value="WY">Wyoming</option>
+                            <option value="AL">Alabama</option>
+                            <option value="AR">Arkansas</option>
+                            <option value="IL">Illinois</option>
+                            <option value="IA">Iowa</option>
+                            <option value="KS">Kansas</option>
+                            <option value="KY">Kentucky</option>
+                            <option value="LA">Louisiana</option>
+                            <option value="MN">Minnesota</option>
+                            <option value="MS">Mississippi</option>
+                            <option value="MO">Missouri</option>
+                            <option value="OK">Oklahoma</option>
+                            <option value="SD">South Dakota</option>
+                            <option value="TX">Texas</option>
+                            <option value="TN">Tennessee</option>
+                            <option value="WI">Wisconsin</option>
+                            <option value="CT">Connecticut</option>
+                            <option value="DE">Delaware</option>
+                            <option value="FL">Florida</option>
+                            <option value="GA">Georgia</option>
+                            <option value="IN">Indiana</option>
+                            <option value="ME">Maine</option>
+                            <option value="MD">Maryland</option>
+                            <option value="MA">Massachusetts</option>
+                            <option value="MI">Michigan</option>
+                            <option value="NH">New Hampshire</option>
+                            <option value="NJ">New Jersey</option>
+                            <option value="NY">New York</option>
+                            <option value="NC">North Carolina</option>
+                            <option value="OH">Ohio</option>
+                            <option value="PA">Pennsylvania</option>
+                            <option value="RI">Rhode Island</option>
+                            <option value="SC">South Carolina</option>
+                            <option value="VT">Vermont</option>
+                            <option value="VA">Virginia</option>
+                            <option value="WV">West Virginia</option>
+                        </select><span class="select2 select2-container select2-container--default" dir="ltr"
+                            data-select2-id="select2-data-1-q45c" style="width: 573.6px;"><span class="selection"><span
+                                    class="select2-selection select2-selection--single" role="combobox"
+                                    aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false"
+                                    aria-labelledby="select2-select2BasicExample-container"
+                                    aria-controls="select2-select2BasicExample-container"><span
+                                        class="select2-selection__rendered" id="select2-select2BasicExample-container"
+                                        role="textbox" aria-readonly="true" title="Alaska">Alaska</span><span
+                                        class="select2-selection__arrow" role="presentation"><b
+                                            role="presentation"></b></span></span></span><span class="dropdown-wrapper"
+                                aria-hidden="true"></span></span>
+                    </div>
+                </div>
+
+                <div class="my-4 border-top border-dashed"></div>
+
+                <!-- Single Select Input with Groups -->
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <h5>Single Select Input with Groups</h5>
+                        <p class="text-muted mb-0">Select2 can take a regular select box with optgroup support for
+                            better organization.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <select class="form-control select2 select2-hidden-accessible" data-toggle="select2"
+                            data-select2-id="select2-data-3-w949" tabindex="-1" aria-hidden="true">
+                            <option data-select2-id="select2-data-5-opvb">Select</option>
+                            <optgroup label="Alaskan/Hawaiian Time Zone">
+                                <option value="AK">Alaska</option>
+                                <option value="HI">Hawaii</option>
+                            </optgroup>
+                            <optgroup label="Pacific Time Zone">
+                                <option value="CA">California</option>
+                                <option value="NV">Nevada</option>
+                                <option value="OR">Oregon</option>
+                                <option value="WA">Washington</option>
+                            </optgroup>
+                            <optgroup label="Mountain Time Zone">
+                                <option value="AZ">Arizona</option>
+                                <option value="CO">Colorado</option>
+                                <option value="ID">Idaho</option>
+                                <option value="MT">Montana</option>
+                                <option value="NE">Nebraska</option>
+                                <option value="NM">New Mexico</option>
+                                <option value="ND">North Dakota</option>
+                                <option value="UT">Utah</option>
+                                <option value="WY">Wyoming</option>
+                            </optgroup>
+                            <optgroup label="Central Time Zone">
+                                <option value="AL">Alabama</option>
+                                <option value="AR">Arkansas</option>
+                                <option value="IL">Illinois</option>
+                                <option value="IA">Iowa</option>
+                                <option value="KS">Kansas</option>
+                                <option value="KY">Kentucky</option>
+                                <option value="LA">Louisiana</option>
+                                <option value="MN">Minnesota</option>
+                                <option value="MS">Mississippi</option>
+                                <option value="MO">Missouri</option>
+                                <option value="OK">Oklahoma</option>
+                                <option value="SD">South Dakota</option>
+                                <option value="TX">Texas</option>
+                                <option value="TN">Tennessee</option>
+                                <option value="WI">Wisconsin</option>
+                            </optgroup>
+                            <optgroup label="Eastern Time Zone">
+                                <option value="CT">Connecticut</option>
+                                <option value="DE">Delaware</option>
+                                <option value="FL">Florida</option>
+                                <option value="GA">Georgia</option>
+                                <option value="IN">Indiana</option>
+                                <option value="ME">Maine</option>
+                                <option value="MD">Maryland</option>
+                                <option value="MA">Massachusetts</option>
+                                <option value="MI">Michigan</option>
+                                <option value="NH">New Hampshire</option>
+                                <option value="NJ">New Jersey</option>
+                                <option value="NY">New York</option>
+                                <option value="NC">North Carolina</option>
+                                <option value="OH">Ohio</option>
+                                <option value="PA">Pennsylvania</option>
+                                <option value="RI">Rhode Island</option>
+                                <option value="SC">South Carolina</option>
+                                <option value="VT">Vermont</option>
+                                <option value="VA">Virginia</option>
+                                <option value="WV">West Virginia</option>
+                            </optgroup>
+                        </select><span class="select2 select2-container select2-container--default" dir="ltr"
+                            data-select2-id="select2-data-4-c1ov" style="width: 573.6px;"><span class="selection"><span
+                                    class="select2-selection select2-selection--single" role="combobox"
+                                    aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false"
+                                    aria-labelledby="select2-h9h5-container"
+                                    aria-controls="select2-h9h5-container"><span class="select2-selection__rendered"
+                                        id="select2-h9h5-container" role="textbox" aria-readonly="true"
+                                        title="Select">Select</span><span class="select2-selection__arrow"
+                                        role="presentation"><b role="presentation"></b></span></span></span><span
+                                class="dropdown-wrapper" aria-hidden="true"></span></span>
+                    </div>
+                </div>
+
+                <div class="my-4 border-top border-dashed"></div>
+
+                <!-- Multiple Select Input -->
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <h5>Multiple Select Input</h5>
+                        <p class="text-muted mb-0">Select2 multiple select with grouped options and placeholder.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <select class="select2 form-control select2-multiple select2-hidden-accessible"
+                            data-toggle="select2" multiple="" data-placeholder="Choose ..."
+                            data-select2-id="select2-data-6-7umm" tabindex="-1" aria-hidden="true">
+                            <optgroup label="Alaskan/Hawaiian Time Zone">
+                                <option value="AK">Alaska</option>
+                                <option value="HI">Hawaii</option>
+                            </optgroup>
+                            <optgroup label="Pacific Time Zone">
+                                <option value="CA">California</option>
+                                <option value="NV">Nevada</option>
+                                <option value="OR">Oregon</option>
+                                <option value="WA">Washington</option>
+                            </optgroup>
+                            <optgroup label="Mountain Time Zone">
+                                <option value="AZ">Arizona</option>
+                                <option value="CO">Colorado</option>
+                                <option value="ID">Idaho</option>
+                                <option value="MT">Montana</option>
+                                <option value="NE">Nebraska</option>
+                                <option value="NM">New Mexico</option>
+                                <option value="ND">North Dakota</option>
+                                <option value="UT">Utah</option>
+                                <option value="WY">Wyoming</option>
+                            </optgroup>
+                            <optgroup label="Central Time Zone">
+                                <option value="AL">Alabama</option>
+                                <option value="AR">Arkansas</option>
+                                <option value="IL">Illinois</option>
+                                <option value="IA">Iowa</option>
+                                <option value="KS">Kansas</option>
+                                <option value="KY">Kentucky</option>
+                                <option value="LA">Louisiana</option>
+                                <option value="MN">Minnesota</option>
+                                <option value="MS">Mississippi</option>
+                                <option value="MO">Missouri</option>
+                                <option value="OK">Oklahoma</option>
+                                <option value="SD">South Dakota</option>
+                                <option value="TX">Texas</option>
+                                <option value="TN">Tennessee</option>
+                                <option value="WI">Wisconsin</option>
+                            </optgroup>
+                            <optgroup label="Eastern Time Zone">
+                                <option value="CT">Connecticut</option>
+                                <option value="DE">Delaware</option>
+                                <option value="FL">Florida</option>
+                                <option value="GA">Georgia</option>
+                                <option value="IN">Indiana</option>
+                                <option value="ME">Maine</option>
+                                <option value="MD">Maryland</option>
+                                <option value="MA">Massachusetts</option>
+                                <option value="MI">Michigan</option>
+                                <option value="NH">New Hampshire</option>
+                                <option value="NJ">New Jersey</option>
+                                <option value="NY">New York</option>
+                                <option value="NC">North Carolina</option>
+                                <option value="OH">Ohio</option>
+                                <option value="PA">Pennsylvania</option>
+                                <option value="RI">Rhode Island</option>
+                                <option value="SC">South Carolina</option>
+                                <option value="VT">Vermont</option>
+                                <option value="VA">Virginia</option>
+                                <option value="WV">West Virginia</option>
+                            </optgroup>
+                        </select><span class="select2 select2-container select2-container--default" dir="ltr"
+                            data-select2-id="select2-data-7-j0q1" style="width: 573.6px;"><span class="selection"><span
+                                    class="select2-selection select2-selection--multiple" role="combobox"
+                                    aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false">
+                                    <ul class="select2-selection__rendered" id="select2-bltl-container"></ul><span
+                                        class="select2-search select2-search--inline"><textarea
+                                            class="select2-search__field" type="search" tabindex="0" autocorrect="off"
+                                            autocapitalize="none" spellcheck="false" role="searchbox"
+                                            aria-autocomplete="list" autocomplete="off" aria-label="Search"
+                                            aria-describedby="select2-bltl-container" placeholder="Choose ..."
+                                            style="width: 100%;"></textarea></span>
+                                </span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                    </div>
+                </div>
+
+            </div> <!-- end card-body-->
+        </div> <!-- end card-->
+    </div>
+    <!-- end col -->
+</div> <!-- end row -->

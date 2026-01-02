@@ -167,6 +167,36 @@ const ChartsChartjsLine = async () => (await import('./pages/charts/chartjs/line
 const ChartsChartjsOther = async () => (await import('./pages/charts/chartjs/other/charts-chartjs-other.js')).ChartsChartjsOther
 const ChartsApextree = async () => (await import('./pages/charts/apextree/charts-apextree.js')).ChartsApextree
 const ChartsApexsankey = async () => (await import('./pages/charts/apexsankey/charts-apexsankey.js')).ChartsApexsankey
+const FormElements = async () => (await import('./pages/form/elements/form-elements.js')).FormElements
+const FormPickers = async () => (await import('./pages/form/pickers/form-pickers.js')).FormPickers
+const FormSelect = async () => (await import('./pages/form/select/form-select.js')).FormSelect
+const FormValidation = async () => (await import('./pages/form/validation/form-validation.js')).FormValidation
+const FormWizard = async () => (await import('./pages/form/wizard/form-wizard.js')).FormWizard
+const FormFileuploads = async () => (await import('./pages/form/fileuploads/form-fileuploads.js')).FormFileuploads
+const FormTextEditors = async () => (await import('./pages/form/text-editors/form-text-editors.js')).FormTextEditors
+const FormRangeSlider = async () => (await import('./pages/form/range-slider/form-range-slider.js')).FormRangeSlider
+const FormLayouts = async () => (await import('./pages/form/layouts/form-layouts.js')).FormLayouts
+const FormOtherPlugins = async () => (await import('./pages/form/other-plugins/form-other-plugins.js')).FormOtherPlugins
+const TablesStatic = async () => (await import('./pages/tables/static/tables-static.js')).TablesStatic
+const TablesCustom = async () => (await import('./pages/tables/custom/tables-custom.js')).TablesCustom
+const TablesDatatablesBasic = async () => (await import('./pages/tables/datatables/basic/tables-datatables-basic.js')).TablesDatatablesBasic
+const TablesDatatablesExportData = async () => (await import('./pages/tables/datatables/export-data/tables-datatables-export-data.js')).TablesDatatablesExportData
+const TablesDatatablesSelect = async () => (await import('./pages/tables/datatables/select/tables-datatables-select.js')).TablesDatatablesSelect
+const TablesDatatablesAjax = async () => (await import('./pages/tables/datatables/ajax/tables-datatables-ajax.js')).TablesDatatablesAjax
+const TablesDatatablesJavascript = async () => (await import('./pages/tables/datatables/javascript/tables-datatables-javascript.js')).TablesDatatablesJavascript
+const TablesDatatablesRendering = async () => (await import('./pages/tables/datatables/rendering/tables-datatables-rendering.js')).TablesDatatablesRendering
+const TablesDatatablesScroll = async () => (await import('./pages/tables/datatables/scroll/tables-datatables-scroll.js')).TablesDatatablesScroll
+const TablesDatatablesFixedColumns = async () => (await import('./pages/tables/datatables/fixed-columns/tables-datatables-fixed-columns.js')).TablesDatatablesFixedColumns
+const TablesDatatablesColumns = async () => (await import('./pages/tables/datatables/columns/tables-datatables-columns.js')).TablesDatatablesColumns
+const TablesDatatablesChildRows = async () => (await import('./pages/tables/datatables/child-rows/tables-datatables-child-rows.js')).TablesDatatablesChildRows
+const TablesDatatablesColumnSearching = async () => (await import('./pages/tables/datatables/column-searching/tables-datatables-column-searching.js')).TablesDatatablesColumnSearching
+const TablesDatatablesRangeSearch = async () => (await import('./pages/tables/datatables/range-search/tables-datatables-range-search.js')).TablesDatatablesRangeSearch
+const TablesDatatablesFixedHeader = async () => (await import('./pages/tables/datatables/fixed-header/tables-datatables-fixed-header.js')).TablesDatatablesFixedHeader
+const TablesDatatablesAddRows = async () => (await import('./pages/tables/datatables/add-rows/tables-datatables-add-rows.js')).TablesDatatablesAddRows
+const TablesDatatablesCheckboxSelect = async () => (await import('./pages/tables/datatables/checkbox-select/tables-datatables-checkbox-select.js')).TablesDatatablesCheckboxSelect
+const IconsTabler = async () => (await import('./pages/icons/tabler/icons-tabler.js')).IconsTabler
+const IconsLucide = async () => (await import('./pages/icons/lucide/icons-lucide.js')).IconsLucide
+const IconsFlags = async () => (await import('./pages/icons/flags/icons-flags.js')).IconsFlags
 
 
 const routes = [
@@ -312,6 +342,36 @@ const routes = [
             { path: '/chartjs-other', component: ChartsChartjsOther },
             { path: '/charts-apextree', component: ChartsApextree },
             { path: '/charts-apexsankey', component: ChartsApexsankey },
+            { path: '/form-elements', component: FormElements },
+            { path: '/form-pickers', component: FormPickers },
+            { path: '/form-select', component: FormSelect },
+            { path: '/form-validation', component: FormValidation },
+            { path: '/form-wizard', component: FormWizard },
+            { path: '/form-fileuploads', component: FormFileuploads },
+            { path: '/form-text-editors', component: FormTextEditors },
+            { path: '/form-range-slider', component: FormRangeSlider },
+            { path: '/form-layouts', component: FormLayouts },
+            { path: '/form-other-plugins', component: FormOtherPlugins },
+            { path: '/tables-static', component: TablesStatic },
+            { path: '/tables-custom', component: TablesCustom },
+            { path: '/tables-datatables-basic', component: TablesDatatablesBasic },
+            { path: '/tables-datatables-export-data', component: TablesDatatablesExportData },
+            { path: '/tables-datatables-select', component: TablesDatatablesSelect },
+            { path: '/tables-datatables-ajax', component: TablesDatatablesAjax },
+            { path: '/tables-datatables-javascript', component: TablesDatatablesJavascript },
+            { path: '/tables-datatables-rendering', component: TablesDatatablesRendering },
+            { path: '/tables-datatables-scroll', component: TablesDatatablesScroll },
+            { path: '/tables-datatables-fixed-columns', component: TablesDatatablesFixedColumns },
+            { path: '/tables-datatables-columns', component: TablesDatatablesColumns },
+            { path: '/tables-datatables-child-rows', component: TablesDatatablesChildRows },
+            { path: '/tables-datatables-column-searching', component: TablesDatatablesColumnSearching },
+            { path: '/tables-datatables-range-search', component: TablesDatatablesRangeSearch },
+            { path: '/tables-datatables-fixed-header', component: TablesDatatablesFixedHeader },
+            { path: '/tables-datatables-add-rows', component: TablesDatatablesAddRows },
+            { path: '/tables-datatables-checkbox-select', component: TablesDatatablesCheckboxSelect },
+            { path: '/icons-tabler', component: IconsTabler },
+            { path: '/icons-lucide', component: IconsLucide },
+            { path: '/icons-flags', component: IconsFlags },
 
         ]
     },

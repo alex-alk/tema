@@ -1,0 +1,285 @@
+<div class="page-title-head d-flex align-items-center">
+    <div class="flex-grow-1">
+        <h4 class="fs-xl fw-bold m-0">Javascript Source</h4>
+    </div>
+
+    <div class="text-end">
+        <ol class="breadcrumb m-0 py-0">
+            <li class="breadcrumb-item"><a href="javascript: void(0);">UBold</a></li>
+
+            <li class="breadcrumb-item"><a href="javascript: void(0);">DataTables</a></li>
+
+            <li class="breadcrumb-item active">Javascript Source</li>
+        </ol>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header justify-content-between">
+                <h4 class="card-title"> Example </h4>
+                <a href="https://datatables.net/examples/data_sources/js_array.html" target="_blank"
+                    class="icon-link icon-link-hover link-primary fw-semibold">View Docs <i
+                        class="ti ti-arrow-right bi align-middle fs-lg"></i></a>
+            </div>
+
+            <div class="card-body">
+
+
+                <div id="datatables-javascript-source_wrapper" class="dt-container dt-bootstrap5 dt-empty-footer">
+                    <div class="row mt-2 justify-content-between">
+                        <div
+                            class="d-md-flex justify-content-between align-items-center dt-layout-start col-md-auto me-auto">
+                            <div class="dt-length"><select aria-controls="datatables-javascript-source"
+                                    class="form-select form-select-sm" id="dt-length-0">
+                                    <option value="10">10</option>
+                                    <option value="25">25</option>
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                </select><label for="dt-length-0"> Companies per page</label></div>
+                        </div>
+                        <div
+                            class="d-md-flex justify-content-between align-items-center dt-layout-end col-md-auto ms-auto">
+                            <div class="dt-search"><label for="dt-search-0">Search:</label><input type="search"
+                                    class="form-control form-control-sm" id="dt-search-0" placeholder=""
+                                    aria-controls="datatables-javascript-source"></div>
+                        </div>
+                    </div>
+                    <div class="row mt-2 justify-content-between dt-layout-table">
+                        <div class="d-md-flex justify-content-between align-items-center col-12 dt-layout-full col-md">
+                            <table id="datatables-javascript-source"
+                                class="table table-striped dt-responsive align-middle mb-0 dataTable dtr-inline"
+                                aria-describedby="datatables-javascript-source_info" style="width: 100%;">
+                                <colgroup>
+                                    <col data-dt-column="0" style="width: 310.65px;">
+                                    <col data-dt-column="1" style="width: 119.188px;">
+                                    <col data-dt-column="2" style="width: 130.675px;">
+                                    <col data-dt-column="3" style="width: 119.825px;">
+                                    <col data-dt-column="4" style="width: 119.15px;">
+                                    <col data-dt-column="5" style="width: 160.425px;">
+                                    <col data-dt-column="6" style="width: 110.275px;">
+                                    <col data-dt-column="7" style="width: 113.013px;">
+                                </colgroup>
+                                <thead class="thead-sm text-uppercase fs-xxs">
+                                    <tr>
+                                        <th data-dt-column="0" rowspan="1" colspan="1"
+                                            class="dt-orderable-asc dt-orderable-desc dt-ordering-asc"
+                                            aria-sort="ascending">
+                                            <div class="dt-column-header"><span
+                                                    class="dt-column-title">company</span><span class="dt-column-order"
+                                                    role="button" aria-label="company: Activate to invert sorting"
+                                                    tabindex="0"></span></div>
+                                        </th>
+                                        <th data-dt-column="1" rowspan="1" colspan="1"
+                                            class="dt-orderable-asc dt-orderable-desc">
+                                            <div class="dt-column-header"><span
+                                                    class="dt-column-title">symbol</span><span class="dt-column-order"
+                                                    role="button" aria-label="symbol: Activate to sort"
+                                                    tabindex="0"></span></div>
+                                        </th>
+                                        <th data-dt-column="2" rowspan="1" colspan="1"
+                                            class="dt-orderable-asc dt-orderable-desc">
+                                            <div class="dt-column-header"><span
+                                                    class="dt-column-title">price</span><span class="dt-column-order"
+                                                    role="button" aria-label="price: Activate to sort"
+                                                    tabindex="0"></span></div>
+                                        </th>
+                                        <th data-dt-column="3" rowspan="1" colspan="1"
+                                            class="dt-orderable-asc dt-orderable-desc">
+                                            <div class="dt-column-header"><span
+                                                    class="dt-column-title">change</span><span class="dt-column-order"
+                                                    role="button" aria-label="change: Activate to sort"
+                                                    tabindex="0"></span></div>
+                                        </th>
+                                        <th data-dt-column="4" rowspan="1" colspan="1"
+                                            class="dt-orderable-asc dt-orderable-desc">
+                                            <div class="dt-column-header"><span
+                                                    class="dt-column-title">volume</span><span class="dt-column-order"
+                                                    role="button" aria-label="volume: Activate to sort"
+                                                    tabindex="0"></span></div>
+                                        </th>
+                                        <th data-dt-column="5" rowspan="1" colspan="1"
+                                            class="dt-orderable-asc dt-orderable-desc">
+                                            <div class="dt-column-header"><span
+                                                    class="dt-column-title">market_cap</span><span
+                                                    class="dt-column-order" role="button"
+                                                    aria-label="market_cap: Activate to sort" tabindex="0"></span></div>
+                                        </th>
+                                        <th data-dt-column="6" rowspan="1" colspan="1"
+                                            class="dt-orderable-asc dt-orderable-desc">
+                                            <div class="dt-column-header"><span
+                                                    class="dt-column-title">rating</span><span class="dt-column-order"
+                                                    role="button" aria-label="rating: Activate to sort"
+                                                    tabindex="0"></span></div>
+                                        </th>
+                                        <th data-dt-column="7" rowspan="1" colspan="1"
+                                            class="dt-orderable-asc dt-orderable-desc">
+                                            <div class="dt-column-header"><span
+                                                    class="dt-column-title">status</span><span class="dt-column-order"
+                                                    role="button" aria-label="status: Activate to sort"
+                                                    tabindex="0"></span></div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">3M Company</td>
+                                        <td>MMM</td>
+                                        <td>95.30</td>
+                                        <td>-0.50%</td>
+                                        <td>5234100</td>
+                                        <td>50B</td>
+                                        <td>Hold</td>
+                                        <td><span class="badge badge-label badge-soft-danger">Neutral</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">AbbVie Inc.</td>
+                                        <td>ABBV</td>
+                                        <td>152.10</td>
+                                        <td>-0.20%</td>
+                                        <td>4123150</td>
+                                        <td>270B</td>
+                                        <td>Hold</td>
+                                        <td><span class="badge badge-label badge-soft-danger">Neutral</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">Adobe Inc.</td>
+                                        <td>ADBE</td>
+                                        <td>515.60</td>
+                                        <td>+1.10%</td>
+                                        <td>3214320</td>
+                                        <td>240B</td>
+                                        <td>Buy</td>
+                                        <td><span class="badge badge-label badge-soft-success">Bullish</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">Alphabet Inc.</td>
+                                        <td>GOOGL</td>
+                                        <td>130.25</td>
+                                        <td>+1.23%</td>
+                                        <td>18452123</td>
+                                        <td>1.72T</td>
+                                        <td>Hold</td>
+                                        <td><span class="badge badge-label badge-soft-success">Bullish</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">Amazon.com Inc.</td>
+                                        <td>AMZN</td>
+                                        <td>120.10</td>
+                                        <td>+0.94%</td>
+                                        <td>31232145</td>
+                                        <td>1.55T</td>
+                                        <td>Buy</td>
+                                        <td><span class="badge badge-label badge-soft-success">Bullish</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">American Express Company</td>
+                                        <td>AXP</td>
+                                        <td>185.30</td>
+                                        <td>+0.80%</td>
+                                        <td>3124500</td>
+                                        <td>140B</td>
+                                        <td>Buy</td>
+                                        <td><span class="badge badge-label badge-soft-success">Bullish</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">Amgen Inc.</td>
+                                        <td>AMGN</td>
+                                        <td>255.30</td>
+                                        <td>-0.10%</td>
+                                        <td>5213000</td>
+                                        <td>140B</td>
+                                        <td>Hold</td>
+                                        <td><span class="badge badge-label badge-soft-danger">Neutral</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">Apple Inc.</td>
+                                        <td>AAPL</td>
+                                        <td>174.55</td>
+                                        <td>+0.82%</td>
+                                        <td>75214350</td>
+                                        <td>2.80T</td>
+                                        <td>Buy</td>
+                                        <td><span class="badge badge-label badge-soft-success">Bullish</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">AT&amp;T Inc.</td>
+                                        <td>T</td>
+                                        <td>16.45</td>
+                                        <td>-0.25%</td>
+                                        <td>41235400</td>
+                                        <td>120B</td>
+                                        <td>Hold</td>
+                                        <td><span class="badge badge-label badge-soft-danger">Neutral</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">Bank of America Corporation</td>
+                                        <td>BAC</td>
+                                        <td>28.45</td>
+                                        <td>-0.15%</td>
+                                        <td>18923140</td>
+                                        <td>270B</td>
+                                        <td>Hold</td>
+                                        <td><span class="badge badge-label badge-soft-danger">Neutral</span></td>
+                                    </tr>
+                                </tbody>
+                                <tfoot></tfoot>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row mt-2 justify-content-between">
+                        <div
+                            class="d-md-flex justify-content-between align-items-center dt-layout-start col-md-auto me-auto">
+                            <div class="dt-info" aria-live="polite" id="datatables-javascript-source_info"
+                                role="status">Showing <span class="fw-semibold">1 </span> to <span
+                                    class="fw-semibold">10</span> of <span class="fw-semibold">49</span> Companies</div>
+                        </div>
+                        <div
+                            class="d-md-flex justify-content-between align-items-center dt-layout-end col-md-auto ms-auto">
+                            <div class="dt-paging">
+                                <nav aria-label="pagination">
+                                    <ul class="pagination">
+                                        <li class="dt-paging-button page-item disabled"><button class="page-link first"
+                                                role="link" type="button" aria-controls="datatables-javascript-source"
+                                                aria-disabled="true" aria-label="First" data-dt-idx="first"
+                                                tabindex="-1"><i class="ti ti-chevrons-left"></i></button></li>
+                                        <li class="dt-paging-button page-item disabled"><button
+                                                class="page-link previous" role="link" type="button"
+                                                aria-controls="datatables-javascript-source" aria-disabled="true"
+                                                aria-label="Previous" data-dt-idx="previous" tabindex="-1"><i
+                                                    class="ti ti-chevron-left"></i></button></li>
+                                        <li class="dt-paging-button page-item active"><button class="page-link"
+                                                role="link" type="button" aria-controls="datatables-javascript-source"
+                                                aria-current="page" data-dt-idx="0">1</button></li>
+                                        <li class="dt-paging-button page-item"><button class="page-link" role="link"
+                                                type="button" aria-controls="datatables-javascript-source"
+                                                data-dt-idx="1">2</button></li>
+                                        <li class="dt-paging-button page-item"><button class="page-link" role="link"
+                                                type="button" aria-controls="datatables-javascript-source"
+                                                data-dt-idx="2">3</button></li>
+                                        <li class="dt-paging-button page-item"><button class="page-link" role="link"
+                                                type="button" aria-controls="datatables-javascript-source"
+                                                data-dt-idx="3">4</button></li>
+                                        <li class="dt-paging-button page-item"><button class="page-link" role="link"
+                                                type="button" aria-controls="datatables-javascript-source"
+                                                data-dt-idx="4">5</button></li>
+                                        <li class="dt-paging-button page-item"><button class="page-link next"
+                                                role="link" type="button" aria-controls="datatables-javascript-source"
+                                                aria-label="Next" data-dt-idx="next"><i
+                                                    class="ti ti-chevron-right"></i></button></li>
+                                        <li class="dt-paging-button page-item"><button class="page-link last"
+                                                role="link" type="button" aria-controls="datatables-javascript-source"
+                                                aria-label="Last" data-dt-idx="last"><i
+                                                    class="ti ti-chevrons-right"></i></button></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dt-autosize" style="width: 100%; height: 0px;"></div>
+                </div>
+            </div> <!-- end card-body-->
+        </div> <!-- end card-->
+    </div> <!-- end col-->
+</div> <!-- end row-->

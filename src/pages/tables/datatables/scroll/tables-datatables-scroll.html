@@ -1,0 +1,988 @@
+<div class="page-title-head d-flex align-items-center">
+    <div class="flex-grow-1">
+        <h4 class="fs-xl fw-bold m-0">Scroll</h4>
+    </div>
+
+    <div class="text-end">
+        <ol class="breadcrumb m-0 py-0">
+            <li class="breadcrumb-item"><a href="javascript: void(0);">UBold</a></li>
+
+            <li class="breadcrumb-item"><a href="javascript: void(0);">Datatables</a></li>
+
+            <li class="breadcrumb-item active">Scroll</li>
+        </ol>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header justify-content-between">
+                <h4 class="card-title"> Vertical Scroll </h4>
+                <a href="https://datatables.net/examples/basic_init/scroll_y.html" target="_blank"
+                    class="icon-link icon-link-hover link-primary fw-semibold">View Docs <i
+                        class="ti ti-arrow-right bi align-middle fs-lg"></i></a>
+            </div>
+
+            <div class="card-body">
+
+
+                <div id="vertical-scroll_wrapper" class="dt-container dt-bootstrap5 dt-empty-footer">
+                    <div class="row mt-2 justify-content-between">
+                        <div
+                            class="d-md-flex justify-content-between align-items-center dt-layout-start col-md-auto me-auto">
+                        </div>
+                        <div
+                            class="d-md-flex justify-content-between align-items-center dt-layout-end col-md-auto ms-auto">
+                            <div class="dt-search"><label for="dt-search-0">Search:</label><input type="search"
+                                    class="form-control form-control-sm" id="dt-search-0" placeholder=""
+                                    aria-controls="vertical-scroll"></div>
+                        </div>
+                    </div>
+                    <div class="row mt-2 justify-content-between dt-layout-table">
+                        <div class="d-md-flex justify-content-between align-items-center col-12 dt-layout-full col-md">
+                            <div class="dt-scroll">
+                                <div class="dt-scroll-head"
+                                    style="overflow: hidden; position: relative; border: 0px; width: 100%;">
+                                    <div class="dt-scroll-headInner"
+                                        style="box-sizing: content-box; width: 1168px; padding-right: 15px;">
+                                        <table class="table table-striped nowrap align-middle mb-0 dataTable"
+                                            aria-describedby="vertical-scroll_info"
+                                            style="margin-left: 0px; width: 1168px;">
+                                            <thead class="thead-sm text-uppercase fs-xxs">
+                                                <tr>
+                                                    <th data-dt-column="0" rowspan="1" colspan="1"
+                                                        class="dt-orderable-asc dt-orderable-desc dt-ordering-asc"
+                                                        aria-sort="ascending">
+                                                        <div class="dt-column-header"><span
+                                                                class="dt-column-title">Company</span><span
+                                                                class="dt-column-order" role="button"
+                                                                aria-label="Company: Activate to invert sorting"
+                                                                tabindex="0"></span></div>
+                                                    </th>
+                                                    <th data-dt-column="1" rowspan="1" colspan="1"
+                                                        class="dt-orderable-asc dt-orderable-desc">
+                                                        <div class="dt-column-header"><span
+                                                                class="dt-column-title">Symbol</span><span
+                                                                class="dt-column-order" role="button"
+                                                                aria-label="Symbol: Activate to sort"
+                                                                tabindex="0"></span></div>
+                                                    </th>
+                                                    <th data-dt-column="2" rowspan="1" colspan="1"
+                                                        class="dt-type-numeric dt-orderable-asc dt-orderable-desc">
+                                                        <div class="dt-column-header"><span
+                                                                class="dt-column-title">Price</span><span
+                                                                class="dt-column-order" role="button"
+                                                                aria-label="Price: Activate to sort"
+                                                                tabindex="0"></span></div>
+                                                    </th>
+                                                    <th data-dt-column="3" rowspan="1" colspan="1"
+                                                        class="dt-type-numeric dt-orderable-asc dt-orderable-desc">
+                                                        <div class="dt-column-header"><span
+                                                                class="dt-column-title">Change</span><span
+                                                                class="dt-column-order" role="button"
+                                                                aria-label="Change: Activate to sort"
+                                                                tabindex="0"></span></div>
+                                                    </th>
+                                                    <th data-dt-column="4" rowspan="1" colspan="1"
+                                                        class="dt-type-numeric dt-orderable-asc dt-orderable-desc">
+                                                        <div class="dt-column-header"><span
+                                                                class="dt-column-title">Volume</span><span
+                                                                class="dt-column-order" role="button"
+                                                                aria-label="Volume: Activate to sort"
+                                                                tabindex="0"></span></div>
+                                                    </th>
+                                                    <th data-dt-column="5" rowspan="1" colspan="1"
+                                                        class="dt-orderable-asc dt-orderable-desc">
+                                                        <div class="dt-column-header"><span
+                                                                class="dt-column-title">Market Cap</span><span
+                                                                class="dt-column-order" role="button"
+                                                                aria-label="Market Cap: Activate to sort"
+                                                                tabindex="0"></span></div>
+                                                    </th>
+                                                    <th data-dt-column="6" rowspan="1" colspan="1"
+                                                        class="dt-orderable-asc dt-orderable-desc">
+                                                        <div class="dt-column-header"><span
+                                                                class="dt-column-title">Rating</span><span
+                                                                class="dt-column-order" role="button"
+                                                                aria-label="Rating: Activate to sort"
+                                                                tabindex="0"></span></div>
+                                                    </th>
+                                                    <th data-dt-column="7" rowspan="1" colspan="1"
+                                                        class="dt-orderable-asc dt-orderable-desc">
+                                                        <div class="dt-column-header"><span
+                                                                class="dt-column-title">Status</span><span
+                                                                class="dt-column-order" role="button"
+                                                                aria-label="Status: Activate to sort"
+                                                                tabindex="0"></span></div>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <colgroup>
+                                                <col data-dt-column="0" style="width: 267.425px;">
+                                                <col data-dt-column="1" style="width: 123.162px;">
+                                                <col data-dt-column="2" style="width: 120.85px;">
+                                                <col data-dt-column="3" style="width: 123.812px;">
+                                                <col data-dt-column="4" style="width: 138.663px;">
+                                                <col data-dt-column="5" style="width: 163.35px;">
+                                                <col data-dt-column="6" style="width: 113.963px;">
+                                                <col data-dt-column="7" style="width: 116.775px;">
+                                            </colgroup>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="dt-scroll-body"
+                                    style="position: relative; overflow: auto; max-height: 250px;">
+                                    <table id="vertical-scroll"
+                                        class="table table-striped nowrap align-middle mb-0 dataTable"
+                                        aria-describedby="vertical-scroll_info" style="width: 100%;">
+                                        <colgroup>
+                                            <col data-dt-column="0" style="width: 267.425px;">
+                                            <col data-dt-column="1" style="width: 123.162px;">
+                                            <col data-dt-column="2" style="width: 120.85px;">
+                                            <col data-dt-column="3" style="width: 123.812px;">
+                                            <col data-dt-column="4" style="width: 138.663px;">
+                                            <col data-dt-column="5" style="width: 163.35px;">
+                                            <col data-dt-column="6" style="width: 113.963px;">
+                                            <col data-dt-column="7" style="width: 116.775px;">
+                                        </colgroup>
+                                        <thead class="thead-sm text-uppercase fs-xxs">
+                                            <tr>
+                                                <th data-dt-column="0" rowspan="1" colspan="1"
+                                                    class="dt-orderable-asc dt-orderable-desc dt-ordering-asc"
+                                                    aria-sort="ascending">
+                                                    <div class="dt-scroll-sizing">
+                                                        <div class="dt-column-header"><span
+                                                                class="dt-column-title">Company</span><span
+                                                                class="dt-column-order" role="button"
+                                                                aria-label="Company: Activate to invert sorting"
+                                                                tabindex="0"></span></div>
+                                                    </div>
+                                                </th>
+                                                <th data-dt-column="1" rowspan="1" colspan="1"
+                                                    class="dt-orderable-asc dt-orderable-desc">
+                                                    <div class="dt-scroll-sizing">
+                                                        <div class="dt-column-header"><span
+                                                                class="dt-column-title">Symbol</span><span
+                                                                class="dt-column-order" role="button"
+                                                                aria-label="Symbol: Activate to sort"
+                                                                tabindex="0"></span></div>
+                                                    </div>
+                                                </th>
+                                                <th data-dt-column="2" rowspan="1" colspan="1"
+                                                    class="dt-type-numeric dt-orderable-asc dt-orderable-desc">
+                                                    <div class="dt-scroll-sizing">
+                                                        <div class="dt-column-header"><span
+                                                                class="dt-column-title">Price</span><span
+                                                                class="dt-column-order" role="button"
+                                                                aria-label="Price: Activate to sort"
+                                                                tabindex="0"></span></div>
+                                                    </div>
+                                                </th>
+                                                <th data-dt-column="3" rowspan="1" colspan="1"
+                                                    class="dt-type-numeric dt-orderable-asc dt-orderable-desc">
+                                                    <div class="dt-scroll-sizing">
+                                                        <div class="dt-column-header"><span
+                                                                class="dt-column-title">Change</span><span
+                                                                class="dt-column-order" role="button"
+                                                                aria-label="Change: Activate to sort"
+                                                                tabindex="0"></span></div>
+                                                    </div>
+                                                </th>
+                                                <th data-dt-column="4" rowspan="1" colspan="1"
+                                                    class="dt-type-numeric dt-orderable-asc dt-orderable-desc">
+                                                    <div class="dt-scroll-sizing">
+                                                        <div class="dt-column-header"><span
+                                                                class="dt-column-title">Volume</span><span
+                                                                class="dt-column-order" role="button"
+                                                                aria-label="Volume: Activate to sort"
+                                                                tabindex="0"></span></div>
+                                                    </div>
+                                                </th>
+                                                <th data-dt-column="5" rowspan="1" colspan="1"
+                                                    class="dt-orderable-asc dt-orderable-desc">
+                                                    <div class="dt-scroll-sizing">
+                                                        <div class="dt-column-header"><span
+                                                                class="dt-column-title">Market Cap</span><span
+                                                                class="dt-column-order" role="button"
+                                                                aria-label="Market Cap: Activate to sort"
+                                                                tabindex="0"></span></div>
+                                                    </div>
+                                                </th>
+                                                <th data-dt-column="6" rowspan="1" colspan="1"
+                                                    class="dt-orderable-asc dt-orderable-desc">
+                                                    <div class="dt-scroll-sizing">
+                                                        <div class="dt-column-header"><span
+                                                                class="dt-column-title">Rating</span><span
+                                                                class="dt-column-order" role="button"
+                                                                aria-label="Rating: Activate to sort"
+                                                                tabindex="0"></span></div>
+                                                    </div>
+                                                </th>
+                                                <th data-dt-column="7" rowspan="1" colspan="1"
+                                                    class="dt-orderable-asc dt-orderable-desc">
+                                                    <div class="dt-scroll-sizing">
+                                                        <div class="dt-column-header"><span
+                                                                class="dt-column-title">Status</span><span
+                                                                class="dt-column-order" role="button"
+                                                                aria-label="Status: Activate to sort"
+                                                                tabindex="0"></span></div>
+                                                    </div>
+                                                </th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                <td class="sorting_1">3M Company</td>
+                                                <td>MMM</td>
+                                                <td class="dt-type-numeric">$178.36</td>
+                                                <td class="dt-type-numeric">-0.14%</td>
+                                                <td class="dt-type-numeric">5,643,980</td>
+                                                <td>$106.95B</td>
+                                                <td>4.2 ★</td>
+                                                <td><span class="badge badge-label badge-soft-danger">Bearish</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sorting_1">AbbVie Inc.</td>
+                                                <td>ABBV</td>
+                                                <td class="dt-type-numeric">$148.13</td>
+                                                <td class="dt-type-numeric">+1.15%</td>
+                                                <td class="dt-type-numeric">9,582,210</td>
+                                                <td>$259.78B</td>
+                                                <td>4.5 ★</td>
+                                                <td><span class="badge badge-label badge-soft-success">Bullish</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sorting_1">Alphabet Inc.</td>
+                                                <td>GOOGL</td>
+                                                <td class="dt-type-numeric">$2803.77</td>
+                                                <td class="dt-type-numeric">+0.68%</td>
+                                                <td class="dt-type-numeric">22,545,332</td>
+                                                <td>$1.88T</td>
+                                                <td>4.6 ★</td>
+                                                <td><span class="badge badge-label badge-soft-success">Bullish</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sorting_1">Amazon.com Inc.</td>
+                                                <td>AMZN</td>
+                                                <td class="dt-type-numeric">$3470.79</td>
+                                                <td class="dt-type-numeric">+1.34%</td>
+                                                <td class="dt-type-numeric">32,548,923</td>
+                                                <td>$1.75T</td>
+                                                <td>4.3 ★</td>
+                                                <td><span class="badge badge-label badge-soft-success">Bullish</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sorting_1">American Express</td>
+                                                <td>AXP</td>
+                                                <td class="dt-type-numeric">$160.95</td>
+                                                <td class="dt-type-numeric">+0.88%</td>
+                                                <td class="dt-type-numeric">7,125,347</td>
+                                                <td>$146.57B</td>
+                                                <td>4.4 ★</td>
+                                                <td><span class="badge badge-label badge-soft-success">Bullish</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sorting_1">Apple Inc.</td>
+                                                <td>AAPL</td>
+                                                <td class="dt-type-numeric">$2109.53</td>
+                                                <td class="dt-type-numeric">-0.42%</td>
+                                                <td class="dt-type-numeric">48,374,838</td>
+                                                <td>$53.59B</td>
+                                                <td>4.7 ★</td>
+                                                <td><span class="badge badge-label badge-soft-danger">Bearish</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sorting_1">AT&amp;T Inc.</td>
+                                                <td>T</td>
+                                                <td class="dt-type-numeric">$22.51</td>
+                                                <td class="dt-type-numeric">+1.22%</td>
+                                                <td class="dt-type-numeric">27,528,906</td>
+                                                <td>$161.83B</td>
+                                                <td>4.0 ★</td>
+                                                <td><span class="badge badge-label badge-soft-success">Bullish</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sorting_1">Cisco Systems</td>
+                                                <td>CSCO</td>
+                                                <td class="dt-type-numeric">$54.12</td>
+                                                <td class="dt-type-numeric">+0.88%</td>
+                                                <td class="dt-type-numeric">14,730,222</td>
+                                                <td>$233.78B</td>
+                                                <td>4.3 ★</td>
+                                                <td><span class="badge badge-label badge-soft-success">Bullish</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sorting_1">Coca-Cola Co.</td>
+                                                <td>KO</td>
+                                                <td class="dt-type-numeric">$59.63</td>
+                                                <td class="dt-type-numeric">+0.11%</td>
+                                                <td class="dt-type-numeric">19,870,902</td>
+                                                <td>$255.45B</td>
+                                                <td>4.4 ★</td>
+                                                <td><span class="badge badge-label badge-soft-success">Bullish</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sorting_1">Disney</td>
+                                                <td>DIS</td>
+                                                <td class="dt-type-numeric">$179.56</td>
+                                                <td class="dt-type-numeric">-0.93%</td>
+                                                <td class="dt-type-numeric">8,502,109</td>
+                                                <td>$328.72B</td>
+                                                <td>3.9 ★</td>
+                                                <td><span class="badge badge-label badge-soft-danger">Bearish</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sorting_1">ExxonMobil</td>
+                                                <td>XOM</td>
+                                                <td class="dt-type-numeric">$62.32</td>
+                                                <td class="dt-type-numeric">+0.12%</td>
+                                                <td class="dt-type-numeric">15,658,723</td>
+                                                <td>$264.59B</td>
+                                                <td>4.0 ★</td>
+                                                <td><span class="badge badge-label badge-soft-success">Bullish</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sorting_1">Home Depot</td>
+                                                <td>HD</td>
+                                                <td class="dt-type-numeric">$340.78</td>
+                                                <td class="dt-type-numeric">+0.23%</td>
+                                                <td class="dt-type-numeric">10,245,120</td>
+                                                <td>$283.74B</td>
+                                                <td>4.2 ★</td>
+                                                <td><span class="badge badge-label badge-soft-success">Bullish</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sorting_1">Intel Corp.</td>
+                                                <td>INTC</td>
+                                                <td class="dt-type-numeric">$54.83</td>
+                                                <td class="dt-type-numeric">-0.72%</td>
+                                                <td class="dt-type-numeric">18,442,560</td>
+                                                <td>$224.67B</td>
+                                                <td>3.7 ★</td>
+                                                <td><span class="badge badge-label badge-soft-danger">Bearish</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sorting_1">Johnson &amp; Johnson</td>
+                                                <td>JNJ</td>
+                                                <td class="dt-type-numeric">$174.89</td>
+                                                <td class="dt-type-numeric">+0.45%</td>
+                                                <td class="dt-type-numeric">12,789,456</td>
+                                                <td>$457.43B</td>
+                                                <td>4.1 ★</td>
+                                                <td><span class="badge badge-label badge-soft-success">Bullish</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sorting_1">JPMorgan Chase</td>
+                                                <td>JPM</td>
+                                                <td class="dt-type-numeric">$158.47</td>
+                                                <td class="dt-type-numeric">-0.23%</td>
+                                                <td class="dt-type-numeric">13,523,487</td>
+                                                <td>$464.93B</td>
+                                                <td>3.9 ★</td>
+                                                <td><span class="badge badge-label badge-soft-danger">Bearish</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sorting_1">Lockheed Martin</td>
+                                                <td>LMT</td>
+                                                <td class="dt-type-numeric">$385.12</td>
+                                                <td class="dt-type-numeric">+0.68%</td>
+                                                <td class="dt-type-numeric">3,251,432</td>
+                                                <td>$105.02B</td>
+                                                <td>4.8 ★</td>
+                                                <td><span class="badge badge-label badge-soft-success">Bullish</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sorting_1">Mastercard Inc.</td>
+                                                <td>MA</td>
+                                                <td class="dt-type-numeric">$392.90</td>
+                                                <td class="dt-type-numeric">-1.01%</td>
+                                                <td class="dt-type-numeric">8,431,999</td>
+                                                <td>$390.87B</td>
+                                                <td>4.3 ★</td>
+                                                <td><span class="badge badge-label badge-soft-danger">Bearish</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sorting_1">McDonald's Corp.</td>
+                                                <td>MCD</td>
+                                                <td class="dt-type-numeric">$258.68</td>
+                                                <td class="dt-type-numeric">+0.45%</td>
+                                                <td class="dt-type-numeric">10,023,576</td>
+                                                <td>$194.35B</td>
+                                                <td>4.6 ★</td>
+                                                <td><span class="badge badge-label badge-soft-success">Bullish</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sorting_1">Merck &amp; Co.</td>
+                                                <td>MRK</td>
+                                                <td class="dt-type-numeric">$85.27</td>
+                                                <td class="dt-type-numeric">-0.31%</td>
+                                                <td class="dt-type-numeric">11,402,899</td>
+                                                <td>$217.74B</td>
+                                                <td>4.4 ★</td>
+                                                <td><span class="badge badge-label badge-soft-danger">Bearish</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sorting_1">Meta Platforms</td>
+                                                <td>META</td>
+                                                <td class="dt-type-numeric">$395.68</td>
+                                                <td class="dt-type-numeric">-0.76%</td>
+                                                <td class="dt-type-numeric">21,134,438</td>
+                                                <td>$1.06T</td>
+                                                <td>4.2 ★</td>
+                                                <td><span class="badge badge-label badge-soft-danger">Bearish</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sorting_1">Microsoft Corp.</td>
+                                                <td>MSFT</td>
+                                                <td class="dt-type-numeric">$450.98</td>
+                                                <td class="dt-type-numeric">-2.04%</td>
+                                                <td class="dt-type-numeric">26,604,335</td>
+                                                <td>$927.77B</td>
+                                                <td>3.8 ★</td>
+                                                <td><span class="badge badge-label badge-soft-danger">Bearish</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sorting_1">NVIDIA Corp.</td>
+                                                <td>NVDA</td>
+                                                <td class="dt-type-numeric">$288.63</td>
+                                                <td class="dt-type-numeric">+3.12%</td>
+                                                <td class="dt-type-numeric">27,014,934</td>
+                                                <td>$710.89B</td>
+                                                <td>4.8 ★</td>
+                                                <td><span class="badge badge-label badge-soft-success">Bullish</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sorting_1">PepsiCo Inc.</td>
+                                                <td>PEP</td>
+                                                <td class="dt-type-numeric">$155.68</td>
+                                                <td class="dt-type-numeric">+0.75%</td>
+                                                <td class="dt-type-numeric">6,578,987</td>
+                                                <td>$215.58B</td>
+                                                <td>4.2 ★</td>
+                                                <td><span class="badge badge-label badge-soft-success">Bullish</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sorting_1">Pfizer Inc.</td>
+                                                <td>PFE</td>
+                                                <td class="dt-type-numeric">$45.22</td>
+                                                <td class="dt-type-numeric">+2.07%</td>
+                                                <td class="dt-type-numeric">15,345,324</td>
+                                                <td>$252.53B</td>
+                                                <td>4.0 ★</td>
+                                                <td><span class="badge badge-label badge-soft-success">Bullish</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sorting_1">Procter &amp; Gamble</td>
+                                                <td>PG</td>
+                                                <td class="dt-type-numeric">$136.44</td>
+                                                <td class="dt-type-numeric">-0.21%</td>
+                                                <td class="dt-type-numeric">9,563,721</td>
+                                                <td>$338.56B</td>
+                                                <td>4.5 ★</td>
+                                                <td><span class="badge badge-label badge-soft-danger">Bearish</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sorting_1">Tesla Inc.</td>
+                                                <td>TSLA</td>
+                                                <td class="dt-type-numeric">$1034.48</td>
+                                                <td class="dt-type-numeric">+2.04%</td>
+                                                <td class="dt-type-numeric">18,622,988</td>
+                                                <td>$1.08T</td>
+                                                <td>5.0 ★</td>
+                                                <td><span class="badge badge-label badge-soft-success">Bullish</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sorting_1">UnitedHealth Group</td>
+                                                <td>UNH</td>
+                                                <td class="dt-type-numeric">$438.57</td>
+                                                <td class="dt-type-numeric">+1.34%</td>
+                                                <td class="dt-type-numeric">7,903,765</td>
+                                                <td>$385.26B</td>
+                                                <td>4.4 ★</td>
+                                                <td><span class="badge badge-label badge-soft-success">Bullish</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sorting_1">Verizon Communications</td>
+                                                <td>VZ</td>
+                                                <td class="dt-type-numeric">$50.74</td>
+                                                <td class="dt-type-numeric">-0.67%</td>
+                                                <td class="dt-type-numeric">16,346,523</td>
+                                                <td>$205.38B</td>
+                                                <td>3.8 ★</td>
+                                                <td><span class="badge badge-label badge-soft-danger">Bearish</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sorting_1">Visa Inc.</td>
+                                                <td>V</td>
+                                                <td class="dt-type-numeric">$226.44</td>
+                                                <td class="dt-type-numeric">+0.19%</td>
+                                                <td class="dt-type-numeric">17,532,998</td>
+                                                <td>$472.35B</td>
+                                                <td>4.7 ★</td>
+                                                <td><span class="badge badge-label badge-soft-success">Bullish</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sorting_1">Walmart Inc.</td>
+                                                <td>WMT</td>
+                                                <td class="dt-type-numeric">$150.76</td>
+                                                <td class="dt-type-numeric">+0.55%</td>
+                                                <td class="dt-type-numeric">14,888,342</td>
+                                                <td>$421.57B</td>
+                                                <td>3.9 ★</td>
+                                                <td><span class="badge badge-label badge-soft-success">Bullish</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="dt-scroll-foot" style="overflow: hidden; border: 0px; width: 100%;">
+                                    <div class="dt-scroll-footInner">
+                                        <table class="table table-striped nowrap align-middle mb-0 dataTable"
+                                            aria-describedby="vertical-scroll_info" style="margin-left: 0px;">
+                                            <tfoot></tfoot>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-2 justify-content-between">
+                        <div
+                            class="d-md-flex justify-content-between align-items-center dt-layout-start col-md-auto me-auto">
+                            <div class="dt-info" aria-live="polite" id="vertical-scroll_info" role="status">Showing 1 to
+                                30 of 30 entries</div>
+                        </div>
+                        <div
+                            class="d-md-flex justify-content-between align-items-center dt-layout-end col-md-auto ms-auto">
+                        </div>
+                    </div>
+                    <div class="dt-autosize" style="width: 100%; height: 0px;"></div>
+                </div>
+            </div> <!-- end card-body-->
+        </div> <!-- end card-->
+
+        <div class="card">
+            <div class="card-header justify-content-between">
+                <h4 class="card-title"> Horizontal Scroll </h4>
+                <a href="https://datatables.net/examples/basic_init/scroll_x.html" target="_blank"
+                    class="icon-link icon-link-hover link-primary fw-semibold">View Docs <i
+                        class="ti ti-arrow-right bi align-middle fs-lg"></i></a>
+            </div>
+
+            <div class="card-body">
+                <div id="horizontal-scroll_wrapper" class="dt-container dt-bootstrap5 dt-empty-footer">
+                    <div class="row mt-2 justify-content-between">
+                        <div
+                            class="d-md-flex justify-content-between align-items-center dt-layout-start col-md-auto me-auto">
+                            <div class="dt-length"><select aria-controls="horizontal-scroll"
+                                    class="form-select form-select-sm" id="dt-length-0">
+                                    <option value="10">10</option>
+                                    <option value="25">25</option>
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                </select><label for="dt-length-0"> Companies per page</label></div>
+                        </div>
+                        <div
+                            class="d-md-flex justify-content-between align-items-center dt-layout-end col-md-auto ms-auto">
+                            <div class="dt-search"><label for="dt-search-1">Search:</label><input type="search"
+                                    class="form-control form-control-sm" id="dt-search-1" placeholder=""
+                                    aria-controls="horizontal-scroll"></div>
+                        </div>
+                    </div>
+                    <div class="row mt-2 justify-content-between dt-layout-table">
+                        <div class="d-md-flex justify-content-between align-items-center col-12 dt-layout-full col-md">
+                            <div class="dt-scroll">
+                                <div class="dt-scroll-head"
+                                    style="overflow: hidden; position: relative; border: 0px; width: 100%;">
+                                    <div class="dt-scroll-headInner"
+                                        style="box-sizing: content-box; width: 1183.2px; padding-right: 0px;">
+                                        <table class="table table-striped nowrap align-middle mb-0 dataTable"
+                                            aria-describedby="horizontal-scroll_info"
+                                            style="margin-left: 0px; width: 1183.2px;">
+                                            <thead class="thead-sm text-uppercase fs-xxs">
+                                                <tr>
+                                                    <th data-dt-column="0" rowspan="1" colspan="1"
+                                                        class="dt-orderable-asc dt-orderable-desc dt-ordering-asc"
+                                                        aria-sort="ascending">
+                                                        <div class="dt-column-header"><span
+                                                                class="dt-column-title">Company</span><span
+                                                                class="dt-column-order" role="button"
+                                                                aria-label="Company: Activate to invert sorting"
+                                                                tabindex="0"></span></div>
+                                                    </th>
+                                                    <th data-dt-column="1" rowspan="1" colspan="1"
+                                                        class="dt-orderable-asc dt-orderable-desc">
+                                                        <div class="dt-column-header"><span
+                                                                class="dt-column-title">Symbol</span><span
+                                                                class="dt-column-order" role="button"
+                                                                aria-label="Symbol: Activate to sort"
+                                                                tabindex="0"></span></div>
+                                                    </th>
+                                                    <th data-dt-column="2" rowspan="1" colspan="1"
+                                                        class="dt-type-numeric dt-orderable-asc dt-orderable-desc">
+                                                        <div class="dt-column-header"><span
+                                                                class="dt-column-title">Price</span><span
+                                                                class="dt-column-order" role="button"
+                                                                aria-label="Price: Activate to sort"
+                                                                tabindex="0"></span></div>
+                                                    </th>
+                                                    <th data-dt-column="3" rowspan="1" colspan="1"
+                                                        class="dt-type-numeric dt-orderable-asc dt-orderable-desc">
+                                                        <div class="dt-column-header"><span
+                                                                class="dt-column-title">Change</span><span
+                                                                class="dt-column-order" role="button"
+                                                                aria-label="Change: Activate to sort"
+                                                                tabindex="0"></span></div>
+                                                    </th>
+                                                    <th data-dt-column="4" rowspan="1" colspan="1"
+                                                        class="dt-type-numeric dt-orderable-asc dt-orderable-desc">
+                                                        <div class="dt-column-header"><span
+                                                                class="dt-column-title">Volume</span><span
+                                                                class="dt-column-order" role="button"
+                                                                aria-label="Volume: Activate to sort"
+                                                                tabindex="0"></span></div>
+                                                    </th>
+                                                    <th data-dt-column="5" rowspan="1" colspan="1"
+                                                        class="dt-orderable-asc dt-orderable-desc">
+                                                        <div class="dt-column-header"><span
+                                                                class="dt-column-title">Market Cap</span><span
+                                                                class="dt-column-order" role="button"
+                                                                aria-label="Market Cap: Activate to sort"
+                                                                tabindex="0"></span></div>
+                                                    </th>
+                                                    <th data-dt-column="6" rowspan="1" colspan="1"
+                                                        class="dt-orderable-asc dt-orderable-desc">
+                                                        <div class="dt-column-header"><span
+                                                                class="dt-column-title">Rating</span><span
+                                                                class="dt-column-order" role="button"
+                                                                aria-label="Rating: Activate to sort"
+                                                                tabindex="0"></span></div>
+                                                    </th>
+                                                    <th data-dt-column="7" rowspan="1" colspan="1"
+                                                        class="dt-orderable-asc dt-orderable-desc">
+                                                        <div class="dt-column-header"><span
+                                                                class="dt-column-title">Status</span><span
+                                                                class="dt-column-order" role="button"
+                                                                aria-label="Status: Activate to sort"
+                                                                tabindex="0"></span></div>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <colgroup>
+                                                <col data-dt-column="0" style="width: 270.888px; min-width: 270.888px;">
+                                                <col data-dt-column="1" style="width: 124.75px; min-width: 124.75px;">
+                                                <col data-dt-column="2" style="width: 122.412px; min-width: 122.412px;">
+                                                <col data-dt-column="3" style="width: 125.425px; min-width: 125.425px;">
+                                                <col data-dt-column="4" style="width: 140.45px; min-width: 140.45px;">
+                                                <col data-dt-column="5" style="width: 165.475px; min-width: 165.475px;">
+                                                <col data-dt-column="6" style="width: 115.438px; min-width: 115.438px;">
+                                                <col data-dt-column="7" style="width: 118.363px; min-width: 118.363px;">
+                                            </colgroup>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="dt-scroll-body" style="position: relative; overflow: auto; width: 100%;">
+                                    <table id="horizontal-scroll"
+                                        class="table table-striped nowrap align-middle mb-0 dataTable"
+                                        aria-describedby="horizontal-scroll_info" style="width: 100%;">
+                                        <colgroup>
+                                            <col data-dt-column="0" style="width: 270.888px; min-width: 270.888px;">
+                                            <col data-dt-column="1" style="width: 124.75px; min-width: 124.75px;">
+                                            <col data-dt-column="2" style="width: 122.412px; min-width: 122.412px;">
+                                            <col data-dt-column="3" style="width: 125.425px; min-width: 125.425px;">
+                                            <col data-dt-column="4" style="width: 140.45px; min-width: 140.45px;">
+                                            <col data-dt-column="5" style="width: 165.475px; min-width: 165.475px;">
+                                            <col data-dt-column="6" style="width: 115.438px; min-width: 115.438px;">
+                                            <col data-dt-column="7" style="width: 118.363px; min-width: 118.363px;">
+                                        </colgroup>
+                                        <thead class="thead-sm text-uppercase fs-xxs">
+                                            <tr>
+                                                <th data-dt-column="0" rowspan="1" colspan="1"
+                                                    class="dt-orderable-asc dt-orderable-desc dt-ordering-asc"
+                                                    aria-sort="ascending">
+                                                    <div class="dt-scroll-sizing">
+                                                        <div class="dt-column-header"><span
+                                                                class="dt-column-title">Company</span><span
+                                                                class="dt-column-order" role="button"
+                                                                aria-label="Company: Activate to invert sorting"
+                                                                tabindex="0"></span></div>
+                                                    </div>
+                                                </th>
+                                                <th data-dt-column="1" rowspan="1" colspan="1"
+                                                    class="dt-orderable-asc dt-orderable-desc">
+                                                    <div class="dt-scroll-sizing">
+                                                        <div class="dt-column-header"><span
+                                                                class="dt-column-title">Symbol</span><span
+                                                                class="dt-column-order" role="button"
+                                                                aria-label="Symbol: Activate to sort"
+                                                                tabindex="0"></span></div>
+                                                    </div>
+                                                </th>
+                                                <th data-dt-column="2" rowspan="1" colspan="1"
+                                                    class="dt-type-numeric dt-orderable-asc dt-orderable-desc">
+                                                    <div class="dt-scroll-sizing">
+                                                        <div class="dt-column-header"><span
+                                                                class="dt-column-title">Price</span><span
+                                                                class="dt-column-order" role="button"
+                                                                aria-label="Price: Activate to sort"
+                                                                tabindex="0"></span></div>
+                                                    </div>
+                                                </th>
+                                                <th data-dt-column="3" rowspan="1" colspan="1"
+                                                    class="dt-type-numeric dt-orderable-asc dt-orderable-desc">
+                                                    <div class="dt-scroll-sizing">
+                                                        <div class="dt-column-header"><span
+                                                                class="dt-column-title">Change</span><span
+                                                                class="dt-column-order" role="button"
+                                                                aria-label="Change: Activate to sort"
+                                                                tabindex="0"></span></div>
+                                                    </div>
+                                                </th>
+                                                <th data-dt-column="4" rowspan="1" colspan="1"
+                                                    class="dt-type-numeric dt-orderable-asc dt-orderable-desc">
+                                                    <div class="dt-scroll-sizing">
+                                                        <div class="dt-column-header"><span
+                                                                class="dt-column-title">Volume</span><span
+                                                                class="dt-column-order" role="button"
+                                                                aria-label="Volume: Activate to sort"
+                                                                tabindex="0"></span></div>
+                                                    </div>
+                                                </th>
+                                                <th data-dt-column="5" rowspan="1" colspan="1"
+                                                    class="dt-orderable-asc dt-orderable-desc">
+                                                    <div class="dt-scroll-sizing">
+                                                        <div class="dt-column-header"><span
+                                                                class="dt-column-title">Market Cap</span><span
+                                                                class="dt-column-order" role="button"
+                                                                aria-label="Market Cap: Activate to sort"
+                                                                tabindex="0"></span></div>
+                                                    </div>
+                                                </th>
+                                                <th data-dt-column="6" rowspan="1" colspan="1"
+                                                    class="dt-orderable-asc dt-orderable-desc">
+                                                    <div class="dt-scroll-sizing">
+                                                        <div class="dt-column-header"><span
+                                                                class="dt-column-title">Rating</span><span
+                                                                class="dt-column-order" role="button"
+                                                                aria-label="Rating: Activate to sort"
+                                                                tabindex="0"></span></div>
+                                                    </div>
+                                                </th>
+                                                <th data-dt-column="7" rowspan="1" colspan="1"
+                                                    class="dt-orderable-asc dt-orderable-desc">
+                                                    <div class="dt-scroll-sizing">
+                                                        <div class="dt-column-header"><span
+                                                                class="dt-column-title">Status</span><span
+                                                                class="dt-column-order" role="button"
+                                                                aria-label="Status: Activate to sort"
+                                                                tabindex="0"></span></div>
+                                                    </div>
+                                                </th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                <td class="sorting_1">3M Company</td>
+                                                <td>MMM</td>
+                                                <td class="dt-type-numeric">$178.36</td>
+                                                <td class="dt-type-numeric">-0.14%</td>
+                                                <td class="dt-type-numeric">5,643,980</td>
+                                                <td>$106.95B</td>
+                                                <td>4.2 ★</td>
+                                                <td><span class="badge badge-label badge-soft-danger">Bearish</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sorting_1">AbbVie Inc.</td>
+                                                <td>ABBV</td>
+                                                <td class="dt-type-numeric">$148.13</td>
+                                                <td class="dt-type-numeric">+1.15%</td>
+                                                <td class="dt-type-numeric">9,582,210</td>
+                                                <td>$259.78B</td>
+                                                <td>4.5 ★</td>
+                                                <td><span class="badge badge-label badge-soft-success">Bullish</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sorting_1">Alphabet Inc.</td>
+                                                <td>GOOGL</td>
+                                                <td class="dt-type-numeric">$2803.77</td>
+                                                <td class="dt-type-numeric">+0.68%</td>
+                                                <td class="dt-type-numeric">22,545,332</td>
+                                                <td>$1.88T</td>
+                                                <td>4.6 ★</td>
+                                                <td><span class="badge badge-label badge-soft-success">Bullish</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sorting_1">Amazon.com Inc.</td>
+                                                <td>AMZN</td>
+                                                <td class="dt-type-numeric">$3470.79</td>
+                                                <td class="dt-type-numeric">+1.34%</td>
+                                                <td class="dt-type-numeric">32,548,923</td>
+                                                <td>$1.75T</td>
+                                                <td>4.3 ★</td>
+                                                <td><span class="badge badge-label badge-soft-success">Bullish</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sorting_1">American Express</td>
+                                                <td>AXP</td>
+                                                <td class="dt-type-numeric">$160.95</td>
+                                                <td class="dt-type-numeric">+0.88%</td>
+                                                <td class="dt-type-numeric">7,125,347</td>
+                                                <td>$146.57B</td>
+                                                <td>4.4 ★</td>
+                                                <td><span class="badge badge-label badge-soft-success">Bullish</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sorting_1">Apple Inc.</td>
+                                                <td>AAPL</td>
+                                                <td class="dt-type-numeric">$2109.53</td>
+                                                <td class="dt-type-numeric">-0.42%</td>
+                                                <td class="dt-type-numeric">48,374,838</td>
+                                                <td>$53.59B</td>
+                                                <td>4.7 ★</td>
+                                                <td><span class="badge badge-label badge-soft-danger">Bearish</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sorting_1">AT&amp;T Inc.</td>
+                                                <td>T</td>
+                                                <td class="dt-type-numeric">$22.51</td>
+                                                <td class="dt-type-numeric">+1.22%</td>
+                                                <td class="dt-type-numeric">27,528,906</td>
+                                                <td>$161.83B</td>
+                                                <td>4.0 ★</td>
+                                                <td><span class="badge badge-label badge-soft-success">Bullish</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sorting_1">Cisco Systems</td>
+                                                <td>CSCO</td>
+                                                <td class="dt-type-numeric">$54.12</td>
+                                                <td class="dt-type-numeric">+0.88%</td>
+                                                <td class="dt-type-numeric">14,730,222</td>
+                                                <td>$233.78B</td>
+                                                <td>4.3 ★</td>
+                                                <td><span class="badge badge-label badge-soft-success">Bullish</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sorting_1">Coca-Cola Co.</td>
+                                                <td>KO</td>
+                                                <td class="dt-type-numeric">$59.63</td>
+                                                <td class="dt-type-numeric">+0.11%</td>
+                                                <td class="dt-type-numeric">19,870,902</td>
+                                                <td>$255.45B</td>
+                                                <td>4.4 ★</td>
+                                                <td><span class="badge badge-label badge-soft-success">Bullish</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sorting_1">Disney</td>
+                                                <td>DIS</td>
+                                                <td class="dt-type-numeric">$179.56</td>
+                                                <td class="dt-type-numeric">-0.93%</td>
+                                                <td class="dt-type-numeric">8,502,109</td>
+                                                <td>$328.72B</td>
+                                                <td>3.9 ★</td>
+                                                <td><span class="badge badge-label badge-soft-danger">Bearish</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="dt-scroll-foot" style="overflow: hidden; border: 0px; width: 100%;">
+                                    <div class="dt-scroll-footInner">
+                                        <table class="table table-striped nowrap align-middle mb-0 dataTable"
+                                            aria-describedby="horizontal-scroll_info" style="margin-left: 0px;">
+                                            <tfoot></tfoot>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-2 justify-content-between">
+                        <div
+                            class="d-md-flex justify-content-between align-items-center dt-layout-start col-md-auto me-auto">
+                            <div class="dt-info" aria-live="polite" id="horizontal-scroll_info" role="status">Showing
+                                <span class="fw-semibold">1 </span> to <span class="fw-semibold">10</span> of <span
+                                    class="fw-semibold">30</span> Companies</div>
+                        </div>
+                        <div
+                            class="d-md-flex justify-content-between align-items-center dt-layout-end col-md-auto ms-auto">
+                            <div class="dt-paging">
+                                <nav aria-label="pagination">
+                                    <ul class="pagination">
+                                        <li class="dt-paging-button page-item disabled"><button class="page-link first"
+                                                role="link" type="button" aria-controls="horizontal-scroll"
+                                                aria-disabled="true" aria-label="First" data-dt-idx="first"
+                                                tabindex="-1"><i class="ti ti-chevrons-left"></i></button></li>
+                                        <li class="dt-paging-button page-item disabled"><button
+                                                class="page-link previous" role="link" type="button"
+                                                aria-controls="horizontal-scroll" aria-disabled="true"
+                                                aria-label="Previous" data-dt-idx="previous" tabindex="-1"><i
+                                                    class="ti ti-chevron-left"></i></button></li>
+                                        <li class="dt-paging-button page-item active"><button class="page-link"
+                                                role="link" type="button" aria-controls="horizontal-scroll"
+                                                aria-current="page" data-dt-idx="0">1</button></li>
+                                        <li class="dt-paging-button page-item"><button class="page-link" role="link"
+                                                type="button" aria-controls="horizontal-scroll"
+                                                data-dt-idx="1">2</button></li>
+                                        <li class="dt-paging-button page-item"><button class="page-link" role="link"
+                                                type="button" aria-controls="horizontal-scroll"
+                                                data-dt-idx="2">3</button></li>
+                                        <li class="dt-paging-button page-item"><button class="page-link next"
+                                                role="link" type="button" aria-controls="horizontal-scroll"
+                                                aria-label="Next" data-dt-idx="next"><i
+                                                    class="ti ti-chevron-right"></i></button></li>
+                                        <li class="dt-paging-button page-item"><button class="page-link last"
+                                                role="link" type="button" aria-controls="horizontal-scroll"
+                                                aria-label="Last" data-dt-idx="last"><i
+                                                    class="ti ti-chevrons-right"></i></button></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dt-autosize" style="width: 100%; height: 0px;"></div>
+                </div>
+            </div> <!-- end card-body-->
+        </div> <!-- end card-->
+    </div> <!-- end col-->
+</div> <!-- end row-->

@@ -1,0 +1,425 @@
+<div class="page-title-head d-flex align-items-center">
+    <div class="flex-grow-1">
+        <h4 class="fs-xl fw-bold m-0">Fixed Header</h4>
+    </div>
+
+    <div class="text-end">
+        <ol class="breadcrumb m-0 py-0">
+            <li class="breadcrumb-item"><a href="javascript: void(0);">UBold</a></li>
+
+            <li class="breadcrumb-item"><a href="javascript: void(0);">DataTables</a></li>
+
+            <li class="breadcrumb-item active">Fixed Header</li>
+        </ol>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header justify-content-between">
+                <h4 class="card-title"> Example </h4>
+                <a href="https://datatables.net/extensions/fixedheader/examples/styling/bootstrap5.html" target="_blank"
+                    class="icon-link icon-link-hover link-primary fw-semibold">View Docs <i
+                        class="ti ti-arrow-right bi align-middle fs-lg"></i></a>
+            </div>
+
+            <div class="card-body">
+
+
+                <div id="fixed-header-data_wrapper" class="dt-container dt-bootstrap5 dt-empty-footer">
+                    <div class="row mt-2 justify-content-between">
+                        <div
+                            class="d-md-flex justify-content-between align-items-center dt-layout-start col-md-auto me-auto">
+                            <div class="dt-length"><select aria-controls="fixed-header-data"
+                                    class="form-select form-select-sm" id="dt-length-0">
+                                    <option value="10">10</option>
+                                    <option value="25">25</option>
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                </select><label for="dt-length-0"> entries per page</label></div>
+                        </div>
+                        <div
+                            class="d-md-flex justify-content-between align-items-center dt-layout-end col-md-auto ms-auto">
+                            <div class="dt-search"><label for="dt-search-0">Search:</label><input type="search"
+                                    class="form-control form-control-sm" id="dt-search-0" placeholder=""
+                                    aria-controls="fixed-header-data"></div>
+                        </div>
+                    </div>
+                    <div class="row mt-2 justify-content-between dt-layout-table">
+                        <div class="d-md-flex justify-content-between align-items-center col-12 dt-layout-full col-md">
+                            <table id="fixed-header-data"
+                                class="table table-striped dt-responsive align-middle mb-0 dataTable dtr-inline"
+                                aria-describedby="fixed-header-data_info" style="width: 100%;">
+                                <thead class="thead-sm text-uppercase fs-xxs">
+                                    <tr>
+                                        <th data-dt-column="0" rowspan="1" colspan="1"
+                                            class="dt-orderable-asc dt-orderable-desc dt-ordering-asc"
+                                            aria-sort="ascending">
+                                            <div class="dt-column-header"><span
+                                                    class="dt-column-title">Company</span><span class="dt-column-order"
+                                                    role="button" aria-label="Company: Activate to invert sorting"
+                                                    tabindex="0"></span></div>
+                                        </th>
+                                        <th data-dt-column="1" rowspan="1" colspan="1"
+                                            class="dt-orderable-asc dt-orderable-desc">
+                                            <div class="dt-column-header"><span
+                                                    class="dt-column-title">Symbol</span><span class="dt-column-order"
+                                                    role="button" aria-label="Symbol: Activate to sort"
+                                                    tabindex="0"></span></div>
+                                        </th>
+                                        <th data-dt-column="2" rowspan="1" colspan="1"
+                                            class="dt-type-numeric dt-orderable-asc dt-orderable-desc">
+                                            <div class="dt-column-header"><span
+                                                    class="dt-column-title">Price</span><span class="dt-column-order"
+                                                    role="button" aria-label="Price: Activate to sort"
+                                                    tabindex="0"></span></div>
+                                        </th>
+                                        <th data-dt-column="3" rowspan="1" colspan="1"
+                                            class="dt-type-numeric dt-orderable-asc dt-orderable-desc">
+                                            <div class="dt-column-header"><span
+                                                    class="dt-column-title">Change</span><span class="dt-column-order"
+                                                    role="button" aria-label="Change: Activate to sort"
+                                                    tabindex="0"></span></div>
+                                        </th>
+                                        <th data-dt-column="4" rowspan="1" colspan="1"
+                                            class="dt-type-numeric dt-orderable-asc dt-orderable-desc">
+                                            <div class="dt-column-header"><span
+                                                    class="dt-column-title">Volume</span><span class="dt-column-order"
+                                                    role="button" aria-label="Volume: Activate to sort"
+                                                    tabindex="0"></span></div>
+                                        </th>
+                                        <th data-dt-column="5" rowspan="1" colspan="1"
+                                            class="dt-orderable-asc dt-orderable-desc">
+                                            <div class="dt-column-header"><span class="dt-column-title">Market
+                                                    Cap</span><span class="dt-column-order" role="button"
+                                                    aria-label="Market Cap: Activate to sort" tabindex="0"></span></div>
+                                        </th>
+                                        <th data-dt-column="6" rowspan="1" colspan="1"
+                                            class="dt-orderable-asc dt-orderable-desc">
+                                            <div class="dt-column-header"><span
+                                                    class="dt-column-title">Rating</span><span class="dt-column-order"
+                                                    role="button" aria-label="Rating: Activate to sort"
+                                                    tabindex="0"></span></div>
+                                        </th>
+                                        <th data-dt-column="7" rowspan="1" colspan="1"
+                                            class="dt-orderable-asc dt-orderable-desc">
+                                            <div class="dt-column-header"><span
+                                                    class="dt-column-title">Status</span><span class="dt-column-order"
+                                                    role="button" aria-label="Status: Activate to sort"
+                                                    tabindex="0"></span></div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <colgroup>
+                                    <col data-dt-column="0" style="width: 270.9px;">
+                                    <col data-dt-column="1" style="width: 124.763px;">
+                                    <col data-dt-column="2" style="width: 122.425px;">
+                                    <col data-dt-column="3" style="width: 125.425px;">
+                                    <col data-dt-column="4" style="width: 140.463px;">
+                                    <col data-dt-column="5" style="width: 165.488px;">
+                                    <col data-dt-column="6" style="width: 115.438px;">
+                                    <col data-dt-column="7" style="width: 118.3px;">
+                                </colgroup>
+
+                                <tbody>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">3M Company</td>
+                                        <td>MMM</td>
+                                        <td class="dt-type-numeric">$178.36</td>
+                                        <td class="dt-type-numeric">-0.14%</td>
+                                        <td class="dt-type-numeric">5,643,980</td>
+                                        <td>$106.95B</td>
+                                        <td>4.2 ★</td>
+                                        <td><span class="badge badge-label badge-soft-danger">Bearish</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">Abbott Laboratories</td>
+                                        <td>ABT</td>
+                                        <td class="dt-type-numeric">$119.93</td>
+                                        <td class="dt-type-numeric">+0.51%</td>
+                                        <td class="dt-type-numeric">7,287,634</td>
+                                        <td>$209.33B</td>
+                                        <td>4.6 ★</td>
+                                        <td><span class="badge badge-label badge-soft-success">Bullish</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">AbbVie</td>
+                                        <td>ABBV</td>
+                                        <td class="dt-type-numeric">$142.83</td>
+                                        <td class="dt-type-numeric">+1.19%</td>
+                                        <td class="dt-type-numeric">9,725,439</td>
+                                        <td>$246.68B</td>
+                                        <td>4.4 ★</td>
+                                        <td><span class="badge badge-label badge-soft-success">Bullish</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">AbbVie Inc.</td>
+                                        <td>ABBV</td>
+                                        <td class="dt-type-numeric">$148.13</td>
+                                        <td class="dt-type-numeric">+1.15%</td>
+                                        <td class="dt-type-numeric">9,582,210</td>
+                                        <td>$259.78B</td>
+                                        <td>4.5 ★</td>
+                                        <td><span class="badge badge-label badge-soft-success">Bullish</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">Alphabet Inc.</td>
+                                        <td>GOOGL</td>
+                                        <td class="dt-type-numeric">$2803.77</td>
+                                        <td class="dt-type-numeric">+0.68%</td>
+                                        <td class="dt-type-numeric">22,545,332</td>
+                                        <td>$1.88T</td>
+                                        <td>4.6 ★</td>
+                                        <td><span class="badge badge-label badge-soft-success">Bullish</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">Amazon.com Inc.</td>
+                                        <td>AMZN</td>
+                                        <td class="dt-type-numeric">$3470.79</td>
+                                        <td class="dt-type-numeric">+1.34%</td>
+                                        <td class="dt-type-numeric">32,548,923</td>
+                                        <td>$1.75T</td>
+                                        <td>4.3 ★</td>
+                                        <td><span class="badge badge-label badge-soft-success">Bullish</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">American Express</td>
+                                        <td>AXP</td>
+                                        <td class="dt-type-numeric">$160.95</td>
+                                        <td class="dt-type-numeric">+0.88%</td>
+                                        <td class="dt-type-numeric">7,125,347</td>
+                                        <td>$146.57B</td>
+                                        <td>4.4 ★</td>
+                                        <td><span class="badge badge-label badge-soft-success">Bullish</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">Apple Inc.</td>
+                                        <td>AAPL</td>
+                                        <td class="dt-type-numeric">$2109.53</td>
+                                        <td class="dt-type-numeric">-0.42%</td>
+                                        <td class="dt-type-numeric">48,374,838</td>
+                                        <td>$53.59B</td>
+                                        <td>4.7 ★</td>
+                                        <td><span class="badge badge-label badge-soft-danger">Bearish</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">AT&amp;T Inc.</td>
+                                        <td>T</td>
+                                        <td class="dt-type-numeric">$22.51</td>
+                                        <td class="dt-type-numeric">+1.22%</td>
+                                        <td class="dt-type-numeric">27,528,906</td>
+                                        <td>$161.83B</td>
+                                        <td>4.0 ★</td>
+                                        <td><span class="badge badge-label badge-soft-success">Bullish</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">Biogen Inc.</td>
+                                        <td>BIIB</td>
+                                        <td class="dt-type-numeric">$273.62</td>
+                                        <td class="dt-type-numeric">-0.56%</td>
+                                        <td class="dt-type-numeric">5,890,444</td>
+                                        <td>$41.88B</td>
+                                        <td>4.0 ★</td>
+                                        <td><span class="badge badge-label badge-soft-danger">Bearish</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">Chevron Corp.</td>
+                                        <td>CVX</td>
+                                        <td class="dt-type-numeric">$172.94</td>
+                                        <td class="dt-type-numeric">-0.11%</td>
+                                        <td class="dt-type-numeric">8,203,474</td>
+                                        <td>$318.75B</td>
+                                        <td>4.5 ★</td>
+                                        <td><span class="badge badge-label badge-soft-danger">Bearish</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">Cisco Systems</td>
+                                        <td>CSCO</td>
+                                        <td class="dt-type-numeric">$54.12</td>
+                                        <td class="dt-type-numeric">+0.88%</td>
+                                        <td class="dt-type-numeric">14,730,222</td>
+                                        <td>$233.78B</td>
+                                        <td>4.3 ★</td>
+                                        <td><span class="badge badge-label badge-soft-success">Bullish</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">Coca-Cola Co.</td>
+                                        <td>KO</td>
+                                        <td class="dt-type-numeric">$59.63</td>
+                                        <td class="dt-type-numeric">+0.11%</td>
+                                        <td class="dt-type-numeric">19,870,902</td>
+                                        <td>$255.45B</td>
+                                        <td>4.4 ★</td>
+                                        <td><span class="badge badge-label badge-soft-success">Bullish</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">Colgate-Palmolive</td>
+                                        <td>CL</td>
+                                        <td class="dt-type-numeric">$78.92</td>
+                                        <td class="dt-type-numeric">+0.27%</td>
+                                        <td class="dt-type-numeric">10,298,121</td>
+                                        <td>$67.95B</td>
+                                        <td>4.1 ★</td>
+                                        <td><span class="badge badge-label badge-soft-success">Bullish</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">Danaher Corporation</td>
+                                        <td>DHR</td>
+                                        <td class="dt-type-numeric">$256.12</td>
+                                        <td class="dt-type-numeric">+1.20%</td>
+                                        <td class="dt-type-numeric">6,241,544</td>
+                                        <td>$186.57B</td>
+                                        <td>4.7 ★</td>
+                                        <td><span class="badge badge-label badge-soft-success">Bullish</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">Disney</td>
+                                        <td>DIS</td>
+                                        <td class="dt-type-numeric">$179.56</td>
+                                        <td class="dt-type-numeric">-0.93%</td>
+                                        <td class="dt-type-numeric">8,502,109</td>
+                                        <td>$328.72B</td>
+                                        <td>3.9 ★</td>
+                                        <td><span class="badge badge-label badge-soft-danger">Bearish</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">ExxonMobil</td>
+                                        <td>XOM</td>
+                                        <td class="dt-type-numeric">$62.32</td>
+                                        <td class="dt-type-numeric">+0.12%</td>
+                                        <td class="dt-type-numeric">15,658,723</td>
+                                        <td>$264.59B</td>
+                                        <td>4.0 ★</td>
+                                        <td><span class="badge badge-label badge-soft-success">Bullish</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">General Dynamics</td>
+                                        <td>GD</td>
+                                        <td class="dt-type-numeric">$220.57</td>
+                                        <td class="dt-type-numeric">+0.78%</td>
+                                        <td class="dt-type-numeric">6,232,367</td>
+                                        <td>$75.99B</td>
+                                        <td>4.6 ★</td>
+                                        <td><span class="badge badge-label badge-soft-success">Bullish</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">Home Depot</td>
+                                        <td>HD</td>
+                                        <td class="dt-type-numeric">$340.78</td>
+                                        <td class="dt-type-numeric">+0.23%</td>
+                                        <td class="dt-type-numeric">10,245,120</td>
+                                        <td>$283.74B</td>
+                                        <td>4.2 ★</td>
+                                        <td><span class="badge badge-label badge-soft-success">Bullish</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">Intel Corp.</td>
+                                        <td>INTC</td>
+                                        <td class="dt-type-numeric">$54.83</td>
+                                        <td class="dt-type-numeric">-0.72%</td>
+                                        <td class="dt-type-numeric">18,442,560</td>
+                                        <td>$224.67B</td>
+                                        <td>3.7 ★</td>
+                                        <td><span class="badge badge-label badge-soft-danger">Bearish</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">Intel Corp.</td>
+                                        <td>INTC</td>
+                                        <td class="dt-type-numeric">$45.13</td>
+                                        <td class="dt-type-numeric">-0.98%</td>
+                                        <td class="dt-type-numeric">14,015,888</td>
+                                        <td>$185.77B</td>
+                                        <td>3.7 ★</td>
+                                        <td><span class="badge badge-label badge-soft-danger">Bearish</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">Johnson &amp; Johnson</td>
+                                        <td>JNJ</td>
+                                        <td class="dt-type-numeric">$174.89</td>
+                                        <td class="dt-type-numeric">+0.45%</td>
+                                        <td class="dt-type-numeric">12,789,456</td>
+                                        <td>$457.43B</td>
+                                        <td>4.1 ★</td>
+                                        <td><span class="badge badge-label badge-soft-success">Bullish</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">Johnson &amp; Johnson</td>
+                                        <td>JNJ</td>
+                                        <td class="dt-type-numeric">$175.98</td>
+                                        <td class="dt-type-numeric">+1.02%</td>
+                                        <td class="dt-type-numeric">9,124,487</td>
+                                        <td>$461.98B</td>
+                                        <td>4.8 ★</td>
+                                        <td><span class="badge badge-label badge-soft-success">Bullish</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">JPMorgan Chase</td>
+                                        <td>JPM</td>
+                                        <td class="dt-type-numeric">$158.47</td>
+                                        <td class="dt-type-numeric">-0.23%</td>
+                                        <td class="dt-type-numeric">13,523,487</td>
+                                        <td>$464.93B</td>
+                                        <td>3.9 ★</td>
+                                        <td><span class="badge badge-label badge-soft-danger">Bearish</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">Lockheed Martin</td>
+                                        <td>LMT</td>
+                                        <td class="dt-type-numeric">$385.12</td>
+                                        <td class="dt-type-numeric">+0.68%</td>
+                                        <td class="dt-type-numeric">3,251,432</td>
+                                        <td>$105.02B</td>
+                                        <td>4.8 ★</td>
+                                        <td><span class="badge badge-label badge-soft-success">Bullish</span></td>
+                                    </tr>
+                                </tbody>
+                                <tfoot></tfoot>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row mt-2 justify-content-between">
+                        <div
+                            class="d-md-flex justify-content-between align-items-center dt-layout-start col-md-auto me-auto">
+                            <div class="dt-info" aria-live="polite" id="fixed-header-data_info" role="status">Showing 1
+                                to 25 of 44 entries</div>
+                        </div>
+                        <div
+                            class="d-md-flex justify-content-between align-items-center dt-layout-end col-md-auto ms-auto">
+                            <div class="dt-paging">
+                                <nav aria-label="pagination">
+                                    <ul class="pagination">
+                                        <li class="dt-paging-button page-item disabled"><button class="page-link first"
+                                                role="link" type="button" aria-controls="fixed-header-data"
+                                                aria-disabled="true" aria-label="First" data-dt-idx="first"
+                                                tabindex="-1"><i class="ti ti-chevrons-left"></i></button></li>
+                                        <li class="dt-paging-button page-item disabled"><button
+                                                class="page-link previous" role="link" type="button"
+                                                aria-controls="fixed-header-data" aria-disabled="true"
+                                                aria-label="Previous" data-dt-idx="previous" tabindex="-1"><i
+                                                    class="ti ti-chevron-left"></i></button></li>
+                                        <li class="dt-paging-button page-item active"><button class="page-link"
+                                                role="link" type="button" aria-controls="fixed-header-data"
+                                                aria-current="page" data-dt-idx="0">1</button></li>
+                                        <li class="dt-paging-button page-item"><button class="page-link" role="link"
+                                                type="button" aria-controls="fixed-header-data"
+                                                data-dt-idx="1">2</button></li>
+                                        <li class="dt-paging-button page-item"><button class="page-link next"
+                                                role="link" type="button" aria-controls="fixed-header-data"
+                                                aria-label="Next" data-dt-idx="next"><i
+                                                    class="ti ti-chevron-right"></i></button></li>
+                                        <li class="dt-paging-button page-item"><button class="page-link last"
+                                                role="link" type="button" aria-controls="fixed-header-data"
+                                                aria-label="Last" data-dt-idx="last"><i
+                                                    class="ti ti-chevrons-right"></i></button></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dt-autosize" style="width: 100%; height: 0px;"></div>
+                </div>
+            </div> <!-- end card-body-->
+        </div> <!-- end card-->
+    </div>
+</div>

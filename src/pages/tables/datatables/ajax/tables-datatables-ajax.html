@@ -1,0 +1,293 @@
+<div class="page-title-head d-flex align-items-center">
+    <div class="flex-grow-1">
+        <h4 class="fs-xl fw-bold m-0">Ajax</h4>
+    </div>
+
+    <div class="text-end">
+        <ol class="breadcrumb m-0 py-0">
+            <li class="breadcrumb-item"><a href="javascript: void(0);">UBold</a></li>
+
+            <li class="breadcrumb-item"><a href="javascript: void(0);">DataTables</a></li>
+
+            <li class="breadcrumb-item active">Ajax</li>
+        </ol>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header justify-content-between">
+                <h4 class="card-title"> Example </h4>
+                <a href="https://datatables.net/examples/ajax/" target="_blank"
+                    class="icon-link icon-link-hover link-primary fw-semibold">View Docs <i
+                        class="ti ti-arrow-right bi align-middle fs-lg"></i></a>
+            </div>
+
+            <div class="card-body">
+
+
+                <div id="datatables-ajax_wrapper" class="dt-container dt-bootstrap5 dt-empty-footer">
+                    <div class="row mt-2 justify-content-between">
+                        <div
+                            class="d-md-flex justify-content-between align-items-center dt-layout-start col-md-auto me-auto">
+                            <div class="dt-length"><select aria-controls="datatables-ajax"
+                                    class="form-select form-select-sm" id="dt-length-0">
+                                    <option value="10">10</option>
+                                    <option value="25">25</option>
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                </select><label for="dt-length-0"> Companies per page</label></div>
+                        </div>
+                        <div
+                            class="d-md-flex justify-content-between align-items-center dt-layout-end col-md-auto ms-auto">
+                            <div class="dt-search"><label for="dt-search-0">Search:</label><input type="search"
+                                    class="form-control form-control-sm" id="dt-search-0" placeholder=""
+                                    aria-controls="datatables-ajax"></div>
+                        </div>
+                    </div>
+                    <div class="row mt-2 justify-content-between dt-layout-table">
+                        <div class="d-md-flex justify-content-between align-items-center col-12 dt-layout-full col-md">
+                            <div id="datatables-ajax_processing" class="dt-processing card" role="status"
+                                style="display: none;">
+                                <div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <table id="datatables-ajax"
+                                class="table table-striped dt-responsive align-middle mb-0 dataTable dtr-inline"
+                                aria-describedby="datatables-ajax_info" style="width: 100%;">
+                                <colgroup>
+                                    <col data-dt-column="0" style="width: 266.013px;">
+                                    <col data-dt-column="1" style="width: 124.888px;">
+                                    <col data-dt-column="2" style="width: 142.275px;">
+                                    <col data-dt-column="3" style="width: 125.562px;">
+                                    <col data-dt-column="4" style="width: 124.85px;">
+                                    <col data-dt-column="5" style="width: 165.65px;">
+                                    <col data-dt-column="6" style="width: 115.562px;">
+                                    <col data-dt-column="7" style="width: 118.4px;">
+                                </colgroup>
+                                <thead class="thead-sm text-uppercase fs-xxs">
+                                    <tr>
+                                        <th data-dt-column="0" rowspan="1" colspan="1"
+                                            class="dt-orderable-asc dt-orderable-desc dt-ordering-asc"
+                                            aria-sort="ascending">
+                                            <div class="dt-column-header"><span
+                                                    class="dt-column-title">Company</span><span class="dt-column-order"
+                                                    role="button" aria-label="Company: Activate to invert sorting"
+                                                    tabindex="0"></span></div>
+                                        </th>
+                                        <th data-dt-column="1" rowspan="1" colspan="1"
+                                            class="dt-orderable-asc dt-orderable-desc">
+                                            <div class="dt-column-header"><span
+                                                    class="dt-column-title">Symbol</span><span class="dt-column-order"
+                                                    role="button" aria-label="Symbol: Activate to sort"
+                                                    tabindex="0"></span></div>
+                                        </th>
+                                        <th data-dt-column="2" rowspan="1" colspan="1"
+                                            class="dt-orderable-asc dt-orderable-desc dt-type-numeric">
+                                            <div class="dt-column-header"><span
+                                                    class="dt-column-title">Price</span><span class="dt-column-order"
+                                                    role="button" aria-label="Price: Activate to sort"
+                                                    tabindex="0"></span></div>
+                                        </th>
+                                        <th data-dt-column="3" rowspan="1" colspan="1"
+                                            class="dt-orderable-asc dt-orderable-desc dt-type-numeric">
+                                            <div class="dt-column-header"><span
+                                                    class="dt-column-title">Change</span><span class="dt-column-order"
+                                                    role="button" aria-label="Change: Activate to sort"
+                                                    tabindex="0"></span></div>
+                                        </th>
+                                        <th data-dt-column="4" rowspan="1" colspan="1"
+                                            class="dt-orderable-asc dt-orderable-desc dt-type-numeric">
+                                            <div class="dt-column-header"><span
+                                                    class="dt-column-title">Volume</span><span class="dt-column-order"
+                                                    role="button" aria-label="Volume: Activate to sort"
+                                                    tabindex="0"></span></div>
+                                        </th>
+                                        <th data-dt-column="5" rowspan="1" colspan="1"
+                                            class="dt-orderable-asc dt-orderable-desc">
+                                            <div class="dt-column-header"><span class="dt-column-title">Market
+                                                    Cap</span><span class="dt-column-order" role="button"
+                                                    aria-label="Market Cap: Activate to sort" tabindex="0"></span></div>
+                                        </th>
+                                        <th data-dt-column="6" rowspan="1" colspan="1"
+                                            class="dt-orderable-asc dt-orderable-desc">
+                                            <div class="dt-column-header"><span
+                                                    class="dt-column-title">Rating</span><span class="dt-column-order"
+                                                    role="button" aria-label="Rating: Activate to sort"
+                                                    tabindex="0"></span></div>
+                                        </th>
+                                        <th data-dt-column="7" rowspan="1" colspan="1"
+                                            class="dt-orderable-asc dt-orderable-desc">
+                                            <div class="dt-column-header"><span
+                                                    class="dt-column-title">Status</span><span class="dt-column-order"
+                                                    role="button" aria-label="Status: Activate to sort"
+                                                    tabindex="0"></span></div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">3M Company</td>
+                                        <td>MMM</td>
+                                        <td class="dt-type-numeric">$113.95</td>
+                                        <td class="dt-type-numeric">0.48%</td>
+                                        <td class="dt-type-numeric">518,654</td>
+                                        <td>66.17B</td>
+                                        <td>4.1 ★</td>
+                                        <td><span class="badge badge-label badge-soft-danger">Bearish</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">Abbott Laboratories</td>
+                                        <td>ABT</td>
+                                        <td class="dt-type-numeric">$125.20</td>
+                                        <td class="dt-type-numeric">-3.47%</td>
+                                        <td class="dt-type-numeric">7,556,855</td>
+                                        <td>185.85B</td>
+                                        <td>4.4 ★</td>
+                                        <td><span class="badge badge-label badge-soft-danger">Bearish</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">AbbVie Inc.</td>
+                                        <td>ABBV</td>
+                                        <td class="dt-type-numeric">$113.84</td>
+                                        <td class="dt-type-numeric">-3.39%</td>
+                                        <td class="dt-type-numeric">5,054,850</td>
+                                        <td>286.97B</td>
+                                        <td>4.4 ★</td>
+                                        <td><span class="badge badge-label badge-soft-danger">Bearish</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">Adobe Inc.</td>
+                                        <td>ADBE</td>
+                                        <td class="dt-type-numeric">$503.46</td>
+                                        <td class="dt-type-numeric">2.7%</td>
+                                        <td class="dt-type-numeric">4,521,395</td>
+                                        <td>240.23B</td>
+                                        <td>4.8 ★</td>
+                                        <td><span class="badge badge-label badge-soft-danger">Bearish</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">Alphabet Inc.</td>
+                                        <td>GOOGL</td>
+                                        <td class="dt-type-numeric">$2787.28</td>
+                                        <td class="dt-type-numeric">0.43%</td>
+                                        <td class="dt-type-numeric">7,698,249</td>
+                                        <td>1.88T</td>
+                                        <td>4.6 ★</td>
+                                        <td><span class="badge badge-label badge-soft-danger">Bearish</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">Amazon.com Inc.</td>
+                                        <td>AMZN</td>
+                                        <td class="dt-type-numeric">$3363.58</td>
+                                        <td class="dt-type-numeric">0.04%</td>
+                                        <td class="dt-type-numeric">4,466,395</td>
+                                        <td>1.72T</td>
+                                        <td>4.3 ★</td>
+                                        <td><span class="badge badge-label badge-soft-danger">Bearish</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">American Express</td>
+                                        <td>AXP</td>
+                                        <td class="dt-type-numeric">$133.04</td>
+                                        <td class="dt-type-numeric">-0.29%</td>
+                                        <td class="dt-type-numeric">2,360,835</td>
+                                        <td>155.83B</td>
+                                        <td>4.4 ★</td>
+                                        <td><span class="badge badge-label badge-soft-success">Bullish</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">Apple Inc.</td>
+                                        <td>AAPL</td>
+                                        <td class="dt-type-numeric">$2146.86</td>
+                                        <td class="dt-type-numeric">2.92%</td>
+                                        <td class="dt-type-numeric">4,900,854</td>
+                                        <td>53.59B</td>
+                                        <td>4.7 ★</td>
+                                        <td><span class="badge badge-label badge-soft-danger">Bearish</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">Berkshire Hathaway</td>
+                                        <td>BRK.A</td>
+                                        <td class="dt-type-numeric">$419247.03</td>
+                                        <td class="dt-type-numeric">0.24%</td>
+                                        <td class="dt-type-numeric">1,054,720</td>
+                                        <td>828.66B</td>
+                                        <td>4.8 ★</td>
+                                        <td><span class="badge badge-label badge-soft-danger">Bearish</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sorting_1 dtr-control" tabindex="0">Boeing Company</td>
+                                        <td>BA</td>
+                                        <td class="dt-type-numeric">$217.56</td>
+                                        <td class="dt-type-numeric">1.75%</td>
+                                        <td class="dt-type-numeric">4,681,504</td>
+                                        <td>117.92B</td>
+                                        <td>4.4 ★</td>
+                                        <td><span class="badge badge-label badge-soft-danger">Bearish</span></td>
+                                    </tr>
+                                </tbody>
+                                <tfoot></tfoot>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row mt-2 justify-content-between">
+                        <div
+                            class="d-md-flex justify-content-between align-items-center dt-layout-start col-md-auto me-auto">
+                            <div class="dt-info" aria-live="polite" id="datatables-ajax_info" role="status">Showing
+                                <span class="fw-semibold">1</span> to <span class="fw-semibold">10</span> of <span
+                                    class="fw-semibold">50</span> Companies</div>
+                        </div>
+                        <div
+                            class="d-md-flex justify-content-between align-items-center dt-layout-end col-md-auto ms-auto">
+                            <div class="dt-paging">
+                                <nav aria-label="pagination">
+                                    <ul class="pagination">
+                                        <li class="dt-paging-button page-item disabled"><button class="page-link first"
+                                                role="link" type="button" aria-controls="datatables-ajax"
+                                                aria-disabled="true" aria-label="First" data-dt-idx="first"
+                                                tabindex="-1"><i class="ti ti-chevrons-left"></i></button></li>
+                                        <li class="dt-paging-button page-item disabled"><button
+                                                class="page-link previous" role="link" type="button"
+                                                aria-controls="datatables-ajax" aria-disabled="true"
+                                                aria-label="Previous" data-dt-idx="previous" tabindex="-1"><i
+                                                    class="ti ti-chevron-left"></i></button></li>
+                                        <li class="dt-paging-button page-item active"><button class="page-link"
+                                                role="link" type="button" aria-controls="datatables-ajax"
+                                                aria-current="page" data-dt-idx="0">1</button></li>
+                                        <li class="dt-paging-button page-item"><button class="page-link" role="link"
+                                                type="button" aria-controls="datatables-ajax" data-dt-idx="1">2</button>
+                                        </li>
+                                        <li class="dt-paging-button page-item"><button class="page-link" role="link"
+                                                type="button" aria-controls="datatables-ajax" data-dt-idx="2">3</button>
+                                        </li>
+                                        <li class="dt-paging-button page-item"><button class="page-link" role="link"
+                                                type="button" aria-controls="datatables-ajax" data-dt-idx="3">4</button>
+                                        </li>
+                                        <li class="dt-paging-button page-item"><button class="page-link" role="link"
+                                                type="button" aria-controls="datatables-ajax" data-dt-idx="4">5</button>
+                                        </li>
+                                        <li class="dt-paging-button page-item"><button class="page-link next"
+                                                role="link" type="button" aria-controls="datatables-ajax"
+                                                aria-label="Next" data-dt-idx="next"><i
+                                                    class="ti ti-chevron-right"></i></button></li>
+                                        <li class="dt-paging-button page-item"><button class="page-link last"
+                                                role="link" type="button" aria-controls="datatables-ajax"
+                                                aria-label="Last" data-dt-idx="last"><i
+                                                    class="ti ti-chevrons-right"></i></button></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dt-autosize" style="width: 100%; height: 0px;"></div>
+                </div>
+            </div> <!-- end card-body-->
+        </div> <!-- end card-->
+    </div>
+</div>
