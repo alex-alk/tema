@@ -197,6 +197,9 @@ const TablesDatatablesCheckboxSelect = async () => (await import('./pages/tables
 const IconsTabler = async () => (await import('./pages/icons/tabler/icons-tabler.js')).IconsTabler
 const IconsLucide = async () => (await import('./pages/icons/lucide/icons-lucide.js')).IconsLucide
 const IconsFlags = async () => (await import('./pages/icons/flags/icons-flags.js')).IconsFlags
+const MapsVector = async () => (await import('./pages/maps/vector/maps-vector.js')).MapsVector
+const MapsLeaflet = async () => (await import('./pages/maps/leaflet/maps-leaflet.js')).MapsLeaflet
+
 
 
 const routes = [
@@ -372,6 +375,8 @@ const routes = [
             { path: '/icons-tabler', component: IconsTabler },
             { path: '/icons-lucide', component: IconsLucide },
             { path: '/icons-flags', component: IconsFlags },
+            { path: '/maps-vector', component: MapsVector },
+            { path: '/maps-leaflet', component: MapsLeaflet }
 
         ]
     },

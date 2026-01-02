@@ -1,0 +1,927 @@
+<div class="page-title-head d-flex align-items-center">
+    <div class="flex-grow-1">
+        <h4 class="fs-xl fw-bold m-0">Leaflet</h4>
+    </div>
+
+    <div class="text-end">
+        <ol class="breadcrumb m-0 py-0">
+            <li class="breadcrumb-item"><a href="javascript: void(0);">UBold</a></li>
+
+            <li class="breadcrumb-item"><a href="javascript: void(0);">Maps</a></li>
+
+            <li class="breadcrumb-item active">Leaflet</li>
+        </ol>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-header d-block">
+                <h5 class="mb-1 card-title">Basic Map</h5>
+                <p class="text-muted mb-0">A simple Leaflet map centered with default tile layer and controls.</p>
+            </div>
+            <div class="card-body">
+                <div id="basicMap" style="height: 300px; position: relative;"
+                    class="leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
+                    tabindex="0">
+                    <div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);">
+                        <div class="leaflet-pane leaflet-tile-pane">
+                            <div class="leaflet-layer " style="z-index: 1; opacity: 1;">
+                                <div class="leaflet-tile-container leaflet-zoom-animated"
+                                    style="z-index: 18; transform: translate3d(0px, 0px, 0px) scale(1);"><img alt=""
+                                        src="https://a.tile.osm.org/10/309/378.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(68px, -50px, 0px); opacity: 1;"><img
+                                        alt="" src="https://b.tile.osm.org/10/309/379.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(68px, 206px, 0px); opacity: 1;"><img
+                                        alt="" src="https://c.tile.osm.org/10/308/378.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(-188px, -50px, 0px); opacity: 1;"><img
+                                        alt="" src="https://b.tile.osm.org/10/310/378.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(324px, -50px, 0px); opacity: 1;"><img
+                                        alt="" src="https://a.tile.osm.org/10/308/379.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(-188px, 206px, 0px); opacity: 1;"><img
+                                        alt="" src="https://c.tile.osm.org/10/310/379.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(324px, 206px, 0px); opacity: 1;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leaflet-pane leaflet-overlay-pane"></div>
+                        <div class="leaflet-pane leaflet-shadow-pane"></div>
+                        <div class="leaflet-pane leaflet-marker-pane"></div>
+                        <div class="leaflet-pane leaflet-tooltip-pane"></div>
+                        <div class="leaflet-pane leaflet-popup-pane"></div>
+                        <div class="leaflet-proxy leaflet-zoom-animated"
+                            style="transform: translate3d(79313.1px, 96968.4px, 0px) scale(512);"></div>
+                    </div>
+                    <div class="leaflet-control-container">
+                        <div class="leaflet-top leaflet-left">
+                            <div class="leaflet-control-zoom leaflet-bar leaflet-control"><a
+                                    class="leaflet-control-zoom-in" href="#" title="Zoom in" role="button"
+                                    aria-label="Zoom in" aria-disabled="false"><span aria-hidden="true">+</span></a><a
+                                    class="leaflet-control-zoom-out" href="#" title="Zoom out" role="button"
+                                    aria-label="Zoom out" aria-disabled="false"><span aria-hidden="true">−</span></a>
+                            </div>
+                        </div>
+                        <div class="leaflet-top leaflet-right"></div>
+                        <div class="leaflet-bottom leaflet-left"></div>
+                        <div class="leaflet-bottom leaflet-right">
+                            <div class="leaflet-control-attribution leaflet-control"><a href="https://leafletjs.com"
+                                    title="A JavaScript library for interactive maps"><svg aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8"
+                                        class="leaflet-attribution-flag">
+                                        <path fill="#4C7BE1" d="M0 0h12v4H0z"></path>
+                                        <path fill="#FFD500" d="M0 4h12v3H0z"></path>
+                                        <path fill="#E0BC00" d="M0 7h12v1H0z"></path>
+                                    </svg> Leaflet</a> <span aria-hidden="true">|</span> Map data © <a
+                                    href="https://www.openstreetmap.org/">OpenStreetMap</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-header d-block">
+                <h5 class="mb-1 card-title">Marker, Circle &amp; Polygon</h5>
+                <p class="text-muted mb-0">Shows how to add interactive markers, circles, and polygons on the map.</p>
+            </div>
+            <div class="card-body">
+                <div id="shapeMap" style="height: 300px; position: relative;"
+                    class="leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
+                    tabindex="0">
+                    <div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);">
+                        <div class="leaflet-pane leaflet-tile-pane">
+                            <div class="leaflet-layer " style="z-index: 1; opacity: 1;">
+                                <div class="leaflet-tile-container leaflet-zoom-animated"
+                                    style="z-index: 18; transform: translate3d(0px, 0px, 0px) scale(1);"><img alt=""
+                                        src="https://c.tile.osm.org/12/2046/1361.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(28px, -147px, 0px); opacity: 1;"><img
+                                        alt="" src="https://a.tile.osm.org/12/2047/1361.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(284px, -147px, 0px); opacity: 1;"><img
+                                        alt="" src="https://a.tile.osm.org/12/2046/1362.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(28px, 109px, 0px); opacity: 1;"><img
+                                        alt="" src="https://b.tile.osm.org/12/2047/1362.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(284px, 109px, 0px); opacity: 1;"><img
+                                        alt="" src="https://b.tile.osm.org/12/2045/1361.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(-228px, -147px, 0px); opacity: 1;"><img
+                                        alt="" src="https://b.tile.osm.org/12/2048/1361.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(540px, -147px, 0px); opacity: 1;"><img
+                                        alt="" src="https://c.tile.osm.org/12/2045/1362.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(-228px, 109px, 0px); opacity: 1;"><img
+                                        alt="" src="https://c.tile.osm.org/12/2048/1362.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(540px, 109px, 0px); opacity: 1;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leaflet-pane leaflet-overlay-pane"><svg pointer-events="none"
+                                class="leaflet-zoom-animated" width="666" height="360" viewBox="-55 -30 666 360"
+                                style="transform: translate3d(-55px, -30px, 0px);">
+                                <g>
+                                    <path class="leaflet-interactive" stroke="red" stroke-opacity="1" stroke-width="3"
+                                        stroke-linecap="round" stroke-linejoin="round" fill="#f03" fill-opacity="0.5"
+                                        fill-rule="evenodd"
+                                        d="M198.60177777777426,112.47352300095372a21,21 0 1,0 42,0 a21,21 0 1,0 -42,0 ">
+                                    </path>
+                                    <path class="leaflet-interactive" stroke="#3388ff" stroke-opacity="1"
+                                        stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="#3388ff"
+                                        fill-opacity="0.2" fill-rule="evenodd" d="M307 108L365 136L403 103z"></path>
+                                </g>
+                            </svg></div>
+                        <div class="leaflet-pane leaflet-shadow-pane"><img src="assets/images/leaflet/marker-shadow.png"
+                                class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+                                style="transform: translate3d(278px, 150px, 0px);"></div>
+                        <div class="leaflet-pane leaflet-marker-pane"><img src="assets/images/leaflet/marker-icon.png"
+                                class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="Marker"
+                                tabindex="0" role="button"
+                                style="transform: translate3d(278px, 150px, 0px); z-index: 150;"></div>
+                        <div class="leaflet-pane leaflet-tooltip-pane"></div>
+                        <div class="leaflet-pane leaflet-popup-pane"></div>
+                        <div class="leaflet-proxy leaflet-zoom-animated"
+                            style="transform: translate3d(524026px, 348713px, 0px) scale(2048);"></div>
+                    </div>
+                    <div class="leaflet-control-container">
+                        <div class="leaflet-top leaflet-left">
+                            <div class="leaflet-control-zoom leaflet-bar leaflet-control"><a
+                                    class="leaflet-control-zoom-in" href="#" title="Zoom in" role="button"
+                                    aria-label="Zoom in" aria-disabled="false"><span aria-hidden="true">+</span></a><a
+                                    class="leaflet-control-zoom-out" href="#" title="Zoom out" role="button"
+                                    aria-label="Zoom out" aria-disabled="false"><span aria-hidden="true">−</span></a>
+                            </div>
+                        </div>
+                        <div class="leaflet-top leaflet-right"></div>
+                        <div class="leaflet-bottom leaflet-left"></div>
+                        <div class="leaflet-bottom leaflet-right">
+                            <div class="leaflet-control-attribution leaflet-control"><a href="https://leafletjs.com"
+                                    title="A JavaScript library for interactive maps"><svg aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8"
+                                        class="leaflet-attribution-flag">
+                                        <path fill="#4C7BE1" d="M0 0h12v4H0z"></path>
+                                        <path fill="#FFD500" d="M0 4h12v3H0z"></path>
+                                        <path fill="#E0BC00" d="M0 7h12v1H0z"></path>
+                                    </svg> Leaflet</a> <span aria-hidden="true">|</span> Map data © <a
+                                    href="https://www.openstreetmap.org/">OpenStreetMap</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-header d-block">
+                <h5 class="mb-1 card-title">Draggable Marker with Popup</h5>
+                <p class="text-muted mb-0">Allows dragging a marker with a popup that displays dynamic content.</p>
+            </div>
+            <div class="card-body">
+                <div id="dragMap" style="height: 300px; position: relative;"
+                    class="leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
+                    tabindex="0">
+                    <div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);">
+                        <div class="leaflet-pane leaflet-tile-pane">
+                            <div class="leaflet-layer " style="z-index: 1; opacity: 1;">
+                                <div class="leaflet-tile-container leaflet-zoom-animated"
+                                    style="z-index: 18; transform: translate3d(0px, 0px, 0px) scale(1);"><img alt=""
+                                        src="https://b.tile.osm.org/12/2075/1409.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(39px, -60px, 0px); opacity: 1;"><img
+                                        alt="" src="https://c.tile.osm.org/12/2076/1409.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(295px, -60px, 0px); opacity: 1;"><img
+                                        alt="" src="https://c.tile.osm.org/12/2075/1410.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(39px, 196px, 0px); opacity: 1;"><img
+                                        alt="" src="https://a.tile.osm.org/12/2076/1410.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(295px, 196px, 0px); opacity: 1;"><img
+                                        alt="" src="https://a.tile.osm.org/12/2074/1409.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(-217px, -60px, 0px); opacity: 1;"><img
+                                        alt="" src="https://a.tile.osm.org/12/2077/1409.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(551px, -60px, 0px); opacity: 1;"><img
+                                        alt="" src="https://b.tile.osm.org/12/2074/1410.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(-217px, 196px, 0px); opacity: 1;"><img
+                                        alt="" src="https://b.tile.osm.org/12/2077/1410.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(551px, 196px, 0px); opacity: 1;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leaflet-pane leaflet-overlay-pane"></div>
+                        <div class="leaflet-pane leaflet-shadow-pane"><img src="assets/images/leaflet/marker-shadow.png"
+                                class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+                                style="transform: translate3d(278px, 150px, 0px);"></div>
+                        <div class="leaflet-pane leaflet-marker-pane"><img src="assets/images/leaflet/marker-icon.png"
+                                class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive leaflet-marker-draggable"
+                                alt="Marker" tabindex="0" role="button"
+                                style="transform: translate3d(278px, 150px, 0px); z-index: 150;"></div>
+                        <div class="leaflet-pane leaflet-tooltip-pane"></div>
+                        <div class="leaflet-pane leaflet-popup-pane">
+                            <div class="leaflet-popup  leaflet-zoom-animated"
+                                style="opacity: 1; transform: translate3d(278px, 150px, 0px); bottom: -7px; left: -58px;">
+                                <div class="leaflet-popup-content-wrapper">
+                                    <div class="leaflet-popup-content" style="width: 70px;"><b>You're here!</b></div>
+                                </div>
+                                <div class="leaflet-popup-tip-container">
+                                    <div class="leaflet-popup-tip"></div>
+                                </div><a class="leaflet-popup-close-button" role="button" aria-label="Close popup"
+                                    href="#close"><span aria-hidden="true">×</span></a>
+                            </div>
+                        </div>
+                        <div class="leaflet-proxy leaflet-zoom-animated"
+                            style="transform: translate3d(531439px, 360914px, 0px) scale(2048);"></div>
+                    </div>
+                    <div class="leaflet-control-container">
+                        <div class="leaflet-top leaflet-left">
+                            <div class="leaflet-control-zoom leaflet-bar leaflet-control"><a
+                                    class="leaflet-control-zoom-in" href="#" title="Zoom in" role="button"
+                                    aria-label="Zoom in" aria-disabled="false"><span aria-hidden="true">+</span></a><a
+                                    class="leaflet-control-zoom-out" href="#" title="Zoom out" role="button"
+                                    aria-label="Zoom out" aria-disabled="false"><span aria-hidden="true">−</span></a>
+                            </div>
+                        </div>
+                        <div class="leaflet-top leaflet-right"></div>
+                        <div class="leaflet-bottom leaflet-left"></div>
+                        <div class="leaflet-bottom leaflet-right">
+                            <div class="leaflet-control-attribution leaflet-control"><a href="https://leafletjs.com"
+                                    title="A JavaScript library for interactive maps"><svg aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8"
+                                        class="leaflet-attribution-flag">
+                                        <path fill="#4C7BE1" d="M0 0h12v4H0z"></path>
+                                        <path fill="#FFD500" d="M0 4h12v3H0z"></path>
+                                        <path fill="#E0BC00" d="M0 7h12v1H0z"></path>
+                                    </svg> Leaflet</a> <span aria-hidden="true">|</span> Map data © <a
+                                    href="https://www.openstreetmap.org/">OpenStreetMap</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-header d-block">
+                <h5 class="mb-1 card-title">User Location</h5>
+                <p class="text-muted mb-0">Uses the browser's geolocation API to show the user's current location.</p>
+            </div>
+            <div class="card-body">
+                <div id="userLocation" style="height: 300px; position: relative;"
+                    class="leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
+                    tabindex="0">
+                    <div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);">
+                        <div class="leaflet-pane leaflet-tile-pane">
+                            <div class="leaflet-layer " style="z-index: 1; opacity: 1;">
+                                <div class="leaflet-tile-container leaflet-zoom-animated"
+                                    style="z-index: 18; transform: translate3d(0px, 0px, 0px) scale(1);"><img alt=""
+                                        src="https://a.tile.osm.org/13/4678/2924.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(34px, -107px, 0px); opacity: 1;"><img
+                                        alt="" src="https://b.tile.osm.org/13/4679/2924.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(290px, -107px, 0px); opacity: 1;"><img
+                                        alt="" src="https://b.tile.osm.org/13/4678/2925.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(34px, 149px, 0px); opacity: 1;"><img
+                                        alt="" src="https://c.tile.osm.org/13/4679/2925.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(290px, 149px, 0px); opacity: 1;"><img
+                                        alt="" src="https://c.tile.osm.org/13/4677/2924.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(-222px, -107px, 0px); opacity: 1;"><img
+                                        alt="" src="https://c.tile.osm.org/13/4680/2924.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(546px, -107px, 0px); opacity: 1;"><img
+                                        alt="" src="https://a.tile.osm.org/13/4677/2925.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(-222px, 149px, 0px); opacity: 1;"><img
+                                        alt="" src="https://a.tile.osm.org/13/4680/2925.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(546px, 149px, 0px); opacity: 1;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leaflet-pane leaflet-overlay-pane"><svg pointer-events="none"
+                                class="leaflet-zoom-animated" width="666" height="360" viewBox="-55 -30 666 360"
+                                style="transform: translate3d(-55px, -30px, 0px);">
+                                <g>
+                                    <path class="leaflet-interactive" stroke="#3388ff" stroke-opacity="1"
+                                        stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="#3388ff"
+                                        fill-opacity="0.2" fill-rule="evenodd"
+                                        d="M188.7969783465378,150.38360227970406a89,89 0 1,0 178,0 a89,89 0 1,0 -178,0 ">
+                                    </path>
+                                </g>
+                            </svg></div>
+                        <div class="leaflet-pane leaflet-shadow-pane"><img
+                                src="https://coderthemes.com/ubold/html/assets/plugins/leaflet/images/marker-shadow.png"
+                                class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+                                style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(278px, 150px, 0px);">
+                        </div>
+                        <div class="leaflet-pane leaflet-marker-pane"><img
+                                src="https://coderthemes.com/ubold/html/assets/plugins/leaflet/images/marker-icon-2x.png"
+                                class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="Marker"
+                                tabindex="0" role="button"
+                                style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(278px, 150px, 0px); z-index: 150;">
+                        </div>
+                        <div class="leaflet-pane leaflet-tooltip-pane"></div>
+                        <div class="leaflet-pane leaflet-popup-pane">
+                            <div class="leaflet-popup  leaflet-zoom-animated"
+                                style="opacity: 1; transform: translate3d(279px, 116px, 0px); bottom: -7px; left: -174px;">
+                                <div class="leaflet-popup-content-wrapper">
+                                    <div class="leaflet-popup-content" style="width: 301px;">You are somewhere around
+                                        1189 meters from this point</div>
+                                </div>
+                                <div class="leaflet-popup-tip-container">
+                                    <div class="leaflet-popup-tip"></div>
+                                </div><a class="leaflet-popup-close-button" role="button" aria-label="Close popup"
+                                    href="#close"><span aria-hidden="true">×</span></a>
+                            </div>
+                        </div>
+                        <div class="leaflet-proxy leaflet-zoom-animated"
+                            style="transform: translate3d(1.19781e+06px, 748801px, 0px) scale(4096);"></div>
+                    </div>
+                    <div class="leaflet-control-container">
+                        <div class="leaflet-top leaflet-left">
+                            <div class="leaflet-control-zoom leaflet-bar leaflet-control"><a
+                                    class="leaflet-control-zoom-in" href="#" title="Zoom in" role="button"
+                                    aria-label="Zoom in" aria-disabled="false"><span aria-hidden="true">+</span></a><a
+                                    class="leaflet-control-zoom-out" href="#" title="Zoom out" role="button"
+                                    aria-label="Zoom out" aria-disabled="false"><span aria-hidden="true">−</span></a>
+                            </div>
+                        </div>
+                        <div class="leaflet-top leaflet-right"></div>
+                        <div class="leaflet-bottom leaflet-left"></div>
+                        <div class="leaflet-bottom leaflet-right">
+                            <div class="leaflet-control-attribution leaflet-control"><a href="https://leafletjs.com"
+                                    title="A JavaScript library for interactive maps"><svg aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8"
+                                        class="leaflet-attribution-flag">
+                                        <path fill="#4C7BE1" d="M0 0h12v4H0z"></path>
+                                        <path fill="#FFD500" d="M0 4h12v3H0z"></path>
+                                        <path fill="#E0BC00" d="M0 7h12v1H0z"></path>
+                                    </svg> Leaflet</a> <span aria-hidden="true">|</span> Map data © <a
+                                    href="https://www.openstreetmap.org/">OpenStreetMap</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-header d-block">
+                <h5 class="mb-1 card-title">Custom Icons</h5>
+                <p class="text-muted mb-0">Demonstrates using custom image icons for Leaflet map markers.</p>
+            </div>
+            <div class="card-body">
+                <div id="customIcons" style="height: 300px; position: relative;"
+                    class="leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
+                    tabindex="0">
+                    <div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);">
+                        <div class="leaflet-pane leaflet-tile-pane">
+                            <div class="leaflet-layer " style="z-index: 1; opacity: 1;">
+                                <div class="leaflet-tile-container leaflet-zoom-animated"
+                                    style="z-index: 18; transform: translate3d(0px, 0px, 0px) scale(1);"><img alt=""
+                                        src="https://c.tile.osm.org/10/511/340.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(87px, 12px, 0px); opacity: 1;"><img
+                                        alt="" src="https://b.tile.osm.org/10/511/339.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(87px, -244px, 0px); opacity: 1;"><img
+                                        alt="" src="https://b.tile.osm.org/10/510/340.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(-169px, 12px, 0px); opacity: 1;"><img
+                                        alt="" src="https://a.tile.osm.org/10/512/340.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(343px, 12px, 0px); opacity: 1;"><img
+                                        alt="" src="https://a.tile.osm.org/10/511/341.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(87px, 268px, 0px); opacity: 1;"><img
+                                        alt="" src="https://a.tile.osm.org/10/510/339.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(-169px, -244px, 0px); opacity: 1;"><img
+                                        alt="" src="https://c.tile.osm.org/10/512/339.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(343px, -244px, 0px); opacity: 1;"><img
+                                        alt="" src="https://c.tile.osm.org/10/510/341.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(-169px, 268px, 0px); opacity: 1;"><img
+                                        alt="" src="https://b.tile.osm.org/10/512/341.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(343px, 268px, 0px); opacity: 1;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leaflet-pane leaflet-overlay-pane"></div>
+                        <div class="leaflet-pane leaflet-shadow-pane"><img src="assets/images/leaflet/leaf-shadow.png"
+                                class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+                                style="margin-left: -4px; margin-top: -62px; width: 50px; height: 64px; transform: translate3d(277px, 150px, 0px);"><img
+                                src="assets/images/leaflet/leaf-shadow.png"
+                                class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+                                style="margin-left: -4px; margin-top: -62px; width: 50px; height: 64px; transform: translate3d(-28px, 267px, 0px);"><img
+                                src="assets/images/leaflet/leaf-shadow.png"
+                                class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+                                style="margin-left: -4px; margin-top: -62px; width: 50px; height: 64px; transform: translate3d(15px, 162px, 0px);">
+                        </div>
+                        <div class="leaflet-pane leaflet-marker-pane"><img src="assets/images/leaflet/leaf-red.png"
+                                class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="Marker"
+                                tabindex="0" role="button"
+                                style="margin-left: -22px; margin-top: -94px; width: 38px; height: 95px; transform: translate3d(277px, 150px, 0px); z-index: 150;"><img
+                                src="assets/images/leaflet/leaf-green.png"
+                                class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="Marker"
+                                tabindex="0" role="button"
+                                style="margin-left: -22px; margin-top: -94px; width: 38px; height: 95px; transform: translate3d(-28px, 267px, 0px); z-index: 267;"><img
+                                src="assets/images/leaflet/leaf-orange.png"
+                                class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="Marker"
+                                tabindex="0" role="button"
+                                style="margin-left: -22px; margin-top: -94px; width: 38px; height: 95px; transform: translate3d(15px, 162px, 0px); z-index: 162;">
+                        </div>
+                        <div class="leaflet-pane leaflet-tooltip-pane"></div>
+                        <div class="leaflet-pane leaflet-popup-pane"></div>
+                        <div class="leaflet-proxy leaflet-zoom-animated"
+                            style="transform: translate3d(131006px, 87178.2px, 0px) scale(512);"></div>
+                    </div>
+                    <div class="leaflet-control-container">
+                        <div class="leaflet-top leaflet-left">
+                            <div class="leaflet-control-zoom leaflet-bar leaflet-control"><a
+                                    class="leaflet-control-zoom-in" href="#" title="Zoom in" role="button"
+                                    aria-label="Zoom in" aria-disabled="false"><span aria-hidden="true">+</span></a><a
+                                    class="leaflet-control-zoom-out" href="#" title="Zoom out" role="button"
+                                    aria-label="Zoom out" aria-disabled="false"><span aria-hidden="true">−</span></a>
+                            </div>
+                        </div>
+                        <div class="leaflet-top leaflet-right"></div>
+                        <div class="leaflet-bottom leaflet-left"></div>
+                        <div class="leaflet-bottom leaflet-right">
+                            <div class="leaflet-control-attribution leaflet-control"><a href="https://leafletjs.com"
+                                    title="A JavaScript library for interactive maps"><svg aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8"
+                                        class="leaflet-attribution-flag">
+                                        <path fill="#4C7BE1" d="M0 0h12v4H0z"></path>
+                                        <path fill="#FFD500" d="M0 4h12v3H0z"></path>
+                                        <path fill="#E0BC00" d="M0 7h12v1H0z"></path>
+                                    </svg> Leaflet</a> <span aria-hidden="true">|</span> Map data © <a
+                                    href="https://www.openstreetmap.org/">OpenStreetMap</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-header d-block">
+                <h5 class="mb-1 card-title">Layer Control</h5>
+                <p class="text-muted mb-0">Toggles between multiple map layers or overlays using Leaflet’s layer
+                    control.</p>
+            </div>
+            <div class="card-body">
+                <div id="layerControl" style="height: 300px; position: relative;"
+                    class="leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
+                    tabindex="0">
+                    <div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);">
+                        <div class="leaflet-pane leaflet-tile-pane">
+                            <div class="leaflet-layer " style="z-index: 1; opacity: 1;">
+                                <div class="leaflet-tile-container leaflet-zoom-animated"
+                                    style="z-index: 18; transform: translate3d(0px, 0px, 0px) scale(1);"><img alt=""
+                                        src="https://b.tile.osm.org/10/213/388.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(185px, -20px, 0px); opacity: 1;"><img
+                                        alt="" src="https://c.tile.osm.org/10/213/389.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(185px, 236px, 0px); opacity: 1;"><img
+                                        alt="" src="https://a.tile.osm.org/10/212/388.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(-71px, -20px, 0px); opacity: 1;"><img
+                                        alt="" src="https://c.tile.osm.org/10/214/388.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(441px, -20px, 0px); opacity: 1;"><img
+                                        alt="" src="https://b.tile.osm.org/10/212/389.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(-71px, 236px, 0px); opacity: 1;"><img
+                                        alt="" src="https://a.tile.osm.org/10/214/389.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(441px, 236px, 0px); opacity: 1;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leaflet-pane leaflet-overlay-pane"></div>
+                        <div class="leaflet-pane leaflet-shadow-pane"><img src="assets/images/leaflet/marker-shadow.png"
+                                class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+                                style="transform: translate3d(256px, 264px, 0px);"><img
+                                src="assets/images/leaflet/marker-shadow.png"
+                                class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+                                style="transform: translate3d(278px, 141px, 0px);"><img
+                                src="assets/images/leaflet/marker-shadow.png"
+                                class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+                                style="transform: translate3d(416px, 150px, 0px);"><img
+                                src="assets/images/leaflet/marker-shadow.png"
+                                class="leaflet-marker-shadow leaflet-zoom-animated" alt=""
+                                style="transform: translate3d(103px, 113px, 0px);"></div>
+                        <div class="leaflet-pane leaflet-marker-pane"><img src="assets/images/leaflet/marker-icon.png"
+                                class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="Marker"
+                                tabindex="0" role="button"
+                                style="transform: translate3d(256px, 264px, 0px); z-index: 264;"><img
+                                src="assets/images/leaflet/marker-icon.png"
+                                class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="Marker"
+                                tabindex="0" role="button"
+                                style="transform: translate3d(278px, 141px, 0px); z-index: 141;"><img
+                                src="assets/images/leaflet/marker-icon.png"
+                                class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="Marker"
+                                tabindex="0" role="button"
+                                style="transform: translate3d(416px, 150px, 0px); z-index: 150;"><img
+                                src="assets/images/leaflet/marker-icon.png"
+                                class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="Marker"
+                                tabindex="0" role="button"
+                                style="transform: translate3d(103px, 113px, 0px); z-index: 113;"></div>
+                        <div class="leaflet-pane leaflet-tooltip-pane"></div>
+                        <div class="leaflet-pane leaflet-popup-pane"></div>
+                        <div class="leaflet-proxy leaflet-zoom-animated"></div>
+                    </div>
+                    <div class="leaflet-control-container">
+                        <div class="leaflet-top leaflet-left">
+                            <div class="leaflet-control-zoom leaflet-bar leaflet-control"><a
+                                    class="leaflet-control-zoom-in" href="#" title="Zoom in" role="button"
+                                    aria-label="Zoom in" aria-disabled="false"><span aria-hidden="true">+</span></a><a
+                                    class="leaflet-control-zoom-out" href="#" title="Zoom out" role="button"
+                                    aria-label="Zoom out" aria-disabled="false"><span aria-hidden="true">−</span></a>
+                            </div>
+                        </div>
+                        <div class="leaflet-top leaflet-right">
+                            <div class="leaflet-control-layers leaflet-control" aria-haspopup="true"><a
+                                    class="leaflet-control-layers-toggle" href="#" title="Layers" role="button"></a>
+                                <section class="leaflet-control-layers-list">
+                                    <div class="leaflet-control-layers-base"><label><span><input type="radio"
+                                                    class="leaflet-control-layers-selector"
+                                                    name="leaflet-base-layers_191" checked="checked"><span>
+                                                    Street</span></span></label><label><span><input type="radio"
+                                                    class="leaflet-control-layers-selector"
+                                                    name="leaflet-base-layers_191"><span>
+                                                    Watercolor</span></span></label></div>
+                                    <div class="leaflet-control-layers-separator"></div>
+                                    <div class="leaflet-control-layers-overlays"><label><span><input type="checkbox"
+                                                    class="leaflet-control-layers-selector" checked=""><span>
+                                                    Cities</span></span></label></div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="leaflet-bottom leaflet-left"></div>
+                        <div class="leaflet-bottom leaflet-right">
+                            <div class="leaflet-control-attribution leaflet-control"><a href="https://leafletjs.com"
+                                    title="A JavaScript library for interactive maps"><svg aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8"
+                                        class="leaflet-attribution-flag">
+                                        <path fill="#4C7BE1" d="M0 0h12v4H0z"></path>
+                                        <path fill="#FFD500" d="M0 4h12v3H0z"></path>
+                                        <path fill="#E0BC00" d="M0 7h12v1H0z"></path>
+                                    </svg> Leaflet</a> <span aria-hidden="true">|</span> Map data © <a
+                                    href="https://www.openstreetmap.org/">OpenStreetMap</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-header d-block">
+                <h5 class="mb-1 card-title">Interactive Choropleth Map</h5>
+                <p class="text-muted mb-0">Displays region-based data using GeoJSON and interactive color scales.</p>
+            </div>
+            <div class="card-body">
+                <div id="geoJson" style="height: 300px; position: relative;"
+                    class="leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
+                    tabindex="0">
+                    <div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);">
+                        <div class="leaflet-pane leaflet-tile-pane">
+                            <div class="leaflet-layer " style="z-index: 1; opacity: 1;">
+                                <div class="leaflet-tile-container leaflet-zoom-animated"
+                                    style="z-index: 18; transform: translate3d(0px, 0px, 0px) scale(1);"><img alt=""
+                                        src="https://b.tile.osm.org/3/2/2.png" class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(178px, -81px, 0px); opacity: 1;"><img
+                                        alt="" src="https://c.tile.osm.org/3/2/3.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(178px, 175px, 0px); opacity: 1;"><img
+                                        alt="" src="https://a.tile.osm.org/3/1/2.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(-78px, -81px, 0px); opacity: 1;"><img
+                                        alt="" src="https://c.tile.osm.org/3/3/2.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(434px, -81px, 0px); opacity: 1;"><img
+                                        alt="" src="https://b.tile.osm.org/3/1/3.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(-78px, 175px, 0px); opacity: 1;"><img
+                                        alt="" src="https://a.tile.osm.org/3/3/3.png"
+                                        class="leaflet-tile leaflet-tile-loaded"
+                                        style="width: 256px; height: 256px; transform: translate3d(434px, 175px, 0px); opacity: 1;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="leaflet-pane leaflet-overlay-pane"><svg pointer-events="none"
+                                class="leaflet-zoom-animated" width="666" height="360" viewBox="-55 -30 666 360"
+                                style="transform: translate3d(-55px, -30px, 0px);">
+                                <g>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#FD8D3C" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M193 218L203 218L205 233L207 236L206 244L192 245L192 250L189 247L189 249L187 250L189 219L188 218z">
+                                    </path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#FFEDA0" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M-57 53L-57 55zM-57 40L-50 44L-49 52L-53 58L-56 53L-54 52L-57 52z"></path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#FD8D3C" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M70 204L70 243L58 243L37 235L39 233L37 229L39 227L39 224L41 223L38 219L37 211L41 210L41 204L61 204z">
+                                    </path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#FD8D3C" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M153 208L177 208L178 209L176 211L180 211L177 215L177 219L171 228L171 232L155 232L155 228L153 228L152 208z">
+                                    </path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#E31A1C" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M-11 167L7 167L7 190L38 218L41 223L37 229L39 233L38 234L24 235L23 231L20 228L16 227L10 222L4 221L-4 207L-4 204L-6 203L-6 196L-8 198L-14 190L-15 184L-18 179L-16 176L-17 167z">
+                                    </path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#FEB24C" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M76 175L109 175L109 204L70 204L70 175z"></path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#BD0026" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M274 167L282 167L282 172L271 175L272 167z"></path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#E31A1C" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M261 184L260 185L263 194L259 194L260 184z"></path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#800026" fill-opacity="0.7" fill-rule="evenodd" d="M252 190L251 190z">
+                                    </path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#E31A1C" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M204 245L206 245L207 247L222 248L223 250L224 246L227 247L229 258L232 262L235 273L232 283L229 283L227 279L225 279L223 272L222 273L220 269L221 266L219 267L220 259L212 251L205 254L201 250L192 250L192 245z">
+                                    </path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#FC4E2A" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M217 218L216 220L222 226L222 228L230 238L227 247L224 246L223 250L222 248L207 247L206 245L207 237L205 233L203 218L214 218z">
+                                    </path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#E31A1C" fill-opacity="0.7" fill-rule="evenodd" d="M0 0"></path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#FED976" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M30 110L30 119L32 121L32 124L38 130L40 130L38 139L40 140L42 138L48 149L56 146L58 148L58 167L24 167L25 150L23 150L27 139L24 133L24 110z">
+                                    </path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#E31A1C" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M174 163L190 163L192 169L192 192L189 196L189 201L187 201L186 204L183 204L181 202L181 200L176 195L177 190L175 190L169 182L170 178L173 175L172 173L177 169L176 165z">
+                                    </path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#FC4E2A" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M201 169L208 169L208 191L205 192L201 197L190 198L189 196L192 192L192 169L196 169z">
+                                    </path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#FD8D3C" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M170 156L172 158L171 160L177 166L177 169L172 172L173 174L170 180L168 178L145 178L143 170L144 169L140 162L141 156z">
+                                    </path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#FEB24C" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M110 182L148 182L150 184L149 186L152 189L152 204L109 204L109 182z"></path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#FC4E2A" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M213 191L218 191L223 200L222 202L219 203L219 205L214 207L189 206L189 208L182 208L183 204L186 204L186 202L189 201L189 198L197 198L199 196L201 197L207 191L207 189L210 189L211 191z">
+                                    </path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#FC4E2A" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M157 232L171 232L172 239L169 241L169 244L179 245L181 251L179 252L182 253L180 255L184 257L183 258L179 256L177 258L174 258L169 254L157 254L156 253L158 244L155 239L155 232z">
+                                    </path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#FEB24C" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M288 159L286 157L286 141L290 137L296 123L298 126L302 124L304 127L304 138L306 139L309 145L308 147L307 146L303 149L302 148L301 150L298 149L293 154L290 154L291 155L289 157z">
+                                    </path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#BD0026" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M258 197L257 197zM238 184L259 184L259 194L263 194L262 197L258 198L259 195L257 195L256 193L256 189L258 186L255 188L254 191L256 196L251 194L252 191L249 189L247 185L242 185L238 188z">
+                                    </path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#BD0026" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M287 160L286 164L290 169L292 169L289 171L286 171L284 167L272 167L273 162L285 161z">
+                                    </path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#FC4E2A" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M215 169L196 169L200 162L198 155L200 147L199 146L200 144L203 143L203 146L204 142L208 137L216 143L216 149L212 154L214 155L218 151L220 153L221 163L220 162L215 169zM204 138L203 138zM192 143L190 141L191 138L186 135L177 133L179 129L181 129L187 124L190 124L187 127L187 129L190 128L194 132L205 129L206 132L210 131L213 136L215 135L208 135L208 137L205 135L199 136L197 138L196 137L192 143zM185 119L183 120L186 117L186 119z">
+                                    </path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#FD8D3C" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M167 130L165 130L165 135L162 138L162 146L167 149L171 153L171 155L141 156L141 141L139 139L141 137L139 130L139 122L137 118L137 110L149 110L149 107L151 108L152 113L160 113L169 119L172 117L179 119L166 129z">
+                                    </path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#FD8D3C" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M187 218L189 219L187 250L181 250L179 248L179 245L169 245L169 241L172 239L171 228L176 218z">
+                                    </path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#FD8D3C" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M168 178L174 190L177 190L176 194L181 199L182 207L180 211L176 211L178 209L177 208L153 208L152 189L145 178L159 178z">
+                                    </path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#FFEDA0" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M98 110L98 144L58 144L58 148L56 146L54 148L48 148L42 139L38 139L40 130L36 129L32 124L32 121L30 119L30 110L67 110z">
+                                    </path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#FEB24C" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M102 160L130 160L140 162L144 169L143 170L145 177L148 182L110 182L109 175L98 175L98 160z">
+                                    </path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#FEB24C" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M24 167L41 167L41 210L37 211L38 217L7 190L7 167L15 167z"></path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#FC4E2A" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M286 141L286 157L288 159L287 161L284 162L278 162L277 161L280 149L283 147L283 144L285 142z">
+                                    </path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#800026" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M268 174L270 175L267 179L269 179L268 184L264 190L260 186L264 181L262 178L265 172z">
+                                    </path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#FED976" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M79 204L104 204L104 239L74 240L74 243L70 243L70 204z"></path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#E31A1C" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M273 144L273 161L271 174L273 176L279 174L280 175L270 178L270 175L265 172L261 167L236 167L236 165L241 161L240 158L254 157L257 152L256 151L262 145L268 144z">
+                                    </path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#FC4E2A" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M229 207L258 207L259 210L254 212L257 211L259 213L257 216L255 216L255 221L254 220L249 222L246 226L243 226L237 220L230 219L230 217L210 218L213 214L218 213L225 207z">
+                                    </path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#FFEDA0" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M137 110L137 118L139 122L139 130L141 136L98 136L98 110z"></path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#E31A1C" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M232 167L231 182L228 187L224 191L222 191L222 193L220 194L218 191L215 192L211 191L210 189L207 189L208 170L215 169L218 171L219 170L220 172L225 171L232 167z">
+                                    </path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#FD8D3C" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M121 204L152 204L152 228L148 225L142 227L139 225L137 227L134 225L133 226L130 224L126 224L125 222L122 221L121 208L104 208L104 204L109 204z">
+                                    </path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#FEB24C" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M-11 134L-8 138L-5 139L1 139L10 136L25 136L27 138L23 149L25 150L24 167L-17 167L-19 161L-16 153L-15 136L-13 133L-12 134z">
+                                    </path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#E31A1C" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M236 165L236 167L261 167L264 172L262 177L265 181L261 184L232 184L232 167L236 165z">
+                                    </path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#800026" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M285 170L284 171zM283 167L283 172L281 172L282 167z"></path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#FC4E2A" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M219 218L229 217L230 219L237 220L243 226L239 232L237 232L230 238L222 228L222 226L216 220L217 218z">
+                                    </path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#FD8D3C" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M98 136L141 136L139 139L141 141L141 164L137 161L130 160L98 160L98 144z">
+                                    </path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#FD8D3C" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M189 208L189 206L225 207L225 209L218 213L213 214L210 217L176 218L182 208z">
+                                    </path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#FD8D3C" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M111 208L121 208L121 221L125 222L126 224L132 224L137 227L139 225L141 227L150 226L154 228L155 239L158 244L157 251L155 254L149 255L149 258L144 261L140 260L142 262L139 262L135 270L137 278L131 277L126 274L123 267L119 263L118 259L113 254L106 254L103 259L95 254L93 247L90 246L83 239L104 239L104 208z">
+                                    </path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#FEB24C" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M52 167L58 167L58 175L70 175L70 204L41 204L41 167z"></path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#FD8D3C" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M283 144L278 155L278 162L273 162L273 145L279 144z"></path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#E31A1C" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M261 197L259 203L257 202L260 197zM258 197L257 197zM244 186L247 189L248 187L252 191L250 194L252 194L256 198L256 204L254 203L258 205L258 207L214 207L219 205L219 203L224 200L225 203L232 201L236 194L238 194L244 188z">
+                                    </path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#FC4E2A" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M24 110L25 136L10 136L1 139L-8 138L-10 134L-16 133L-15 131L-19 117L-11 117L-6 125L-5 119L-7 115L-6 114L-9 111L-8 110zM-8 116L-8 117zM-10 114L-8 114L-10 115z">
+                                    </path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#FD8D3C" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M232 178L232 184L238 184L238 188L242 185L247 185L248 187L247 189L244 186L244 188L238 194L236 194L233 201L226 203L224 202L220 194L222 194L222 191L224 191L225 188L230 184L232 179L231 178z">
+                                    </path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#FC4E2A" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M176 131L177 133L189 136L191 138L190 141L192 143L189 146L190 147L194 142L195 143L192 147L190 163L174 163L171 160L171 153L162 146L162 139L163 136L165 135L165 130L174 128L173 129L175 131z">
+                                    </path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#FFEDA0" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M69 144L98 144L98 175L58 175L58 144z"></path>
+                                    <path class="leaflet-interactive" stroke="white" stroke-opacity="1" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3"
+                                        fill="#800026" fill-opacity="0.7" fill-rule="evenodd"
+                                        d="M312 327L308 327L307 325L317 325L313 327z"></path>
+                                </g>
+                            </svg></div>
+                        <div class="leaflet-pane leaflet-shadow-pane"></div>
+                        <div class="leaflet-pane leaflet-marker-pane"></div>
+                        <div class="leaflet-pane leaflet-tooltip-pane"></div>
+                        <div class="leaflet-pane leaflet-popup-pane"></div>
+                        <div class="leaflet-proxy leaflet-zoom-animated"
+                            style="transform: translate3d(611.123px, 742.578px, 0px) scale(4);"></div>
+                    </div>
+                    <div class="leaflet-control-container">
+                        <div class="leaflet-top leaflet-left">
+                            <div class="leaflet-control-zoom leaflet-bar leaflet-control"><a
+                                    class="leaflet-control-zoom-in" href="#" title="Zoom in" role="button"
+                                    aria-label="Zoom in" aria-disabled="false"><span aria-hidden="true">+</span></a><a
+                                    class="leaflet-control-zoom-out" href="#" title="Zoom out" role="button"
+                                    aria-label="Zoom out" aria-disabled="false"><span aria-hidden="true">−</span></a>
+                            </div>
+                        </div>
+                        <div class="leaflet-top leaflet-right"></div>
+                        <div class="leaflet-bottom leaflet-left"></div>
+                        <div class="leaflet-bottom leaflet-right">
+                            <div class="leaflet-control-attribution leaflet-control"><a href="https://leafletjs.com"
+                                    title="A JavaScript library for interactive maps"><svg aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8"
+                                        class="leaflet-attribution-flag">
+                                        <path fill="#4C7BE1" d="M0 0h12v4H0z"></path>
+                                        <path fill="#FFD500" d="M0 4h12v3H0z"></path>
+                                        <path fill="#E0BC00" d="M0 7h12v1H0z"></path>
+                                    </svg> Leaflet</a> <span aria-hidden="true">|</span> Map data © <a
+                                    href="https://www.openstreetmap.org/">OpenStreetMap</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- end row -->
