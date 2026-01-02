@@ -161,6 +161,13 @@ const ChartsApexSparklines = async () => (await import('./pages/charts/apex/spar
 const ChartsApexRange = async () => (await import('./pages/charts/apex/range/charts-apex-range.js')).ChartsApexRange
 const ChartsApexFunnel = async () => (await import('./pages/charts/apex/funnel/charts-apex-funnel.js')).ChartsApexFunnel
 const ChartsApexSlope = async () => (await import('./pages/charts/apex/slope/charts-apex-slope.js')).ChartsApexSlope
+const ChartsChartjsArea = async () => (await import('./pages/charts/chartjs/area/charts-chartjs-area.js')).ChartsChartjsArea
+const ChartsChartjsBar = async () => (await import('./pages/charts/chartjs/bar/charts-chartjs-bar.js')).ChartsChartjsBar
+const ChartsChartjsLine = async () => (await import('./pages/charts/chartjs/line/charts-chartjs-line.js')).ChartsChartjsLine
+const ChartsChartjsOther = async () => (await import('./pages/charts/chartjs/other/charts-chartjs-other.js')).ChartsChartjsOther
+const ChartsApextree = async () => (await import('./pages/charts/apextree/charts-apextree.js')).ChartsApextree
+const ChartsApexsankey = async () => (await import('./pages/charts/apexsankey/charts-apexsankey.js')).ChartsApexsankey
+
 
 const routes = [
     {
@@ -299,6 +306,12 @@ const routes = [
             { path: '/charts-apex-range', component: ChartsApexRange },
             { path: '/charts-apex-funnel', component: ChartsApexFunnel },
             { path: '/charts-apex-slope', component: ChartsApexSlope },
+            { path: '/chartjs-area', component: ChartsChartjsArea },
+            { path: '/chartjs-bar', component: ChartsChartjsBar },
+            { path: '/chartjs-line', component: ChartsChartjsLine },
+            { path: '/chartjs-other', component: ChartsChartjsOther },
+            { path: '/charts-apextree', component: ChartsApextree },
+            { path: '/charts-apexsankey', component: ChartsApexsankey },
 
         ]
     },
