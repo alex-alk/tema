@@ -1,0 +1,520 @@
+<div class="container-fluid">
+
+    <!-- start page title -->
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box">
+                <div class="page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item"><a href="javascript: void(0);">Hyper</a></li>
+                        <li class="breadcrumb-item"><a href="javascript: void(0);">eCommerce</a></li>
+                        <li class="breadcrumb-item active">Customers</li>
+                    </ol>
+                </div>
+                <h4 class="page-title">Customers</h4>
+            </div>
+        </div>
+    </div>
+    <!-- end page title -->
+
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row mb-2">
+                        <div class="col-sm-5">
+                            <a href="javascript:void(0);" class="btn btn-danger mb-2"><i
+                                    class="mdi mdi-plus-circle me-2"></i> Add Customers</a>
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="text-sm-end">
+                                <button type="button" class="btn btn-success mb-2 me-1"><i
+                                        class="mdi mdi-cog"></i></button>
+                                <button type="button" class="btn btn-light mb-2 me-1">Import</button>
+                                <button type="button" class="btn btn-light mb-2">Export</button>
+                            </div>
+                        </div><!-- end col-->
+                    </div>
+
+                    <div id="customers-datatable_wrapper" class="dt-container dt-bootstrap5 dt-empty-footer">
+                        <div class="row mt-2 justify-content-between">
+                            <div
+                                class="d-md-flex justify-content-between align-items-center dt-layout-start col-md-auto me-auto">
+                                <div class="dt-length"><select aria-controls="customers-datatable"
+                                        class="form-select form-select-sm" id="dt-length-0">
+                                        <option value="10">10</option>
+                                        <option value="25">25</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                    </select><label for="dt-length-0"> entries per page</label></div>
+                            </div>
+                            <div
+                                class="d-md-flex justify-content-between align-items-center dt-layout-end col-md-auto ms-auto">
+                                <div class="dt-search"><label for="dt-search-0">Search:</label><input type="search"
+                                        class="form-control form-control-sm" id="dt-search-0" placeholder=""
+                                        aria-controls="customers-datatable"></div>
+                            </div>
+                        </div>
+                        <div class="row mt-2 justify-content-between dt-layout-table">
+                            <div
+                                class="d-md-flex justify-content-between align-items-center col-12 dt-layout-full col-md">
+                                <table
+                                    class="table table-centered table-striped dt-responsive nowrap w-100 mb-0 dataTable dtr-inline"
+                                    id="customers-datatable" aria-describedby="customers-datatable_info"
+                                    style="width: 100%;">
+                                    <colgroup>
+                                        <col data-dt-column="0" style="width: 108.4px;">
+                                        <col data-dt-column="1" style="width: 192.4px;">
+                                        <col data-dt-column="2" style="width: 132.738px;">
+                                        <col data-dt-column="3" style="width: 197.425px;">
+                                        <col data-dt-column="4" style="width: 147.463px;">
+                                        <col data-dt-column="5" style="width: 134.675px;">
+                                        <col data-dt-column="6" style="width: 133.725px;">
+                                        <col data-dt-column="7" style="width: 133.975px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 1%;" data-dt-column="0" rowspan="1" colspan="1"
+                                                class="dt-select dt-orderable-none">
+                                                <div class="dt-column-header"><span class="dt-column-title"></span><span
+                                                        class="dt-column-order"></span><input class="form-check-input"
+                                                        type="checkbox" aria-label="Select all rows"></div>
+                                            </th>
+                                            <th data-dt-column="1" rowspan="1" colspan="1"
+                                                class="dt-orderable-asc dt-orderable-desc dt-ordering-asc"
+                                                aria-sort="ascending">
+                                                <div class="dt-column-header"><span
+                                                        class="dt-column-title">Customer</span><span
+                                                        class="dt-column-order" role="button"
+                                                        aria-label="Customer: Activate to invert sorting"
+                                                        tabindex="0"></span></div>
+                                            </th>
+                                            <th data-dt-column="2" rowspan="1" colspan="1"
+                                                class="dt-orderable-asc dt-orderable-desc">
+                                                <div class="dt-column-header"><span
+                                                        class="dt-column-title">Phone</span><span
+                                                        class="dt-column-order" role="button"
+                                                        aria-label="Phone: Activate to sort" tabindex="0"></span></div>
+                                            </th>
+                                            <th data-dt-column="3" rowspan="1" colspan="1"
+                                                class="dt-orderable-asc dt-orderable-desc">
+                                                <div class="dt-column-header"><span
+                                                        class="dt-column-title">Email</span><span
+                                                        class="dt-column-order" role="button"
+                                                        aria-label="Email: Activate to sort" tabindex="0"></span></div>
+                                            </th>
+                                            <th data-dt-column="4" rowspan="1" colspan="1"
+                                                class="dt-orderable-asc dt-orderable-desc">
+                                                <div class="dt-column-header"><span
+                                                        class="dt-column-title">Location</span><span
+                                                        class="dt-column-order" role="button"
+                                                        aria-label="Location: Activate to sort" tabindex="0"></span>
+                                                </div>
+                                            </th>
+                                            <th data-dt-column="5" rowspan="1" colspan="1"
+                                                class="dt-orderable-asc dt-orderable-desc">
+                                                <div class="dt-column-header"><span class="dt-column-title">Create
+                                                        Date</span><span class="dt-column-order" role="button"
+                                                        aria-label="Create Date: Activate to sort" tabindex="0"></span>
+                                                </div>
+                                            </th>
+                                            <th data-dt-column="6" rowspan="1" colspan="1"
+                                                class="dt-orderable-asc dt-orderable-desc">
+                                                <div class="dt-column-header"><span
+                                                        class="dt-column-title">Status</span><span
+                                                        class="dt-column-order" role="button"
+                                                        aria-label="Status: Activate to sort" tabindex="0"></span></div>
+                                            </th>
+                                            <th style="width: 75px;" data-dt-column="7" rowspan="1" colspan="1"
+                                                class="dt-orderable-none">
+                                                <div class="dt-column-header"><span
+                                                        class="dt-column-title">Action</span><span
+                                                        class="dt-column-order"></span></div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="dt-select dtr-control" tabindex="0"><input
+                                                    aria-label="Select row" class="form-check-input" type="checkbox">
+                                            </td>
+                                            <td class="table-user sorting_1">
+                                                <img src="assets/images/users/avatar-9.jpg" alt="table-user"
+                                                    class="me-2 rounded-circle">
+                                                <a href="javascript:void(0);" class="text-body fw-semibold">Anna
+                                                    Ciantar</a>
+                                            </td>
+                                            <td>
+                                                (216) 76 298 896
+                                            </td>
+                                            <td>
+                                                annac@hotmai.us
+                                            </td>
+                                            <td>
+                                                Philippines
+                                            </td>
+                                            <td>
+                                                05/06/2018
+                                            </td>
+                                            <td>
+                                                <span class="badge badge-success-lighten">Active</span>
+                                            </td>
+
+                                            <td>
+                                                <a href="javascript:void(0);" class="action-icon"> <i
+                                                        class="mdi mdi-square-edit-outline"></i></a>
+                                                <a href="javascript:void(0);" class="action-icon"> <i
+                                                        class="mdi mdi-delete"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="dt-select dtr-control" tabindex="0"><input
+                                                    aria-label="Select row" class="form-check-input" type="checkbox">
+                                            </td>
+                                            <td class="table-user sorting_1">
+                                                <img src="assets/images/users/avatar-6.jpg" alt="table-user"
+                                                    class="me-2 rounded-circle">
+                                                <a href="javascript:void(0);" class="text-body fw-semibold">Annette P.
+                                                    Kelsch</a>
+                                            </td>
+                                            <td>
+                                                (+15) 73 483 758
+                                            </td>
+                                            <td>
+                                                annette@email.net
+                                            </td>
+                                            <td>
+                                                India
+                                            </td>
+                                            <td>
+                                                09/05/2018
+                                            </td>
+                                            <td>
+                                                <span class="badge badge-success-lighten">Active</span>
+                                            </td>
+
+                                            <td>
+                                                <a href="javascript:void(0);" class="action-icon"> <i
+                                                        class="mdi mdi-square-edit-outline"></i></a>
+                                                <a href="javascript:void(0);" class="action-icon"> <i
+                                                        class="mdi mdi-delete"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="dt-select dtr-control" tabindex="0"><input
+                                                    aria-label="Select row" class="form-check-input" type="checkbox">
+                                            </td>
+                                            <td class="table-user sorting_1">
+                                                <img src="assets/images/users/avatar-3.jpg" alt="table-user"
+                                                    class="me-2 rounded-circle">
+                                                <a href="javascript:void(0);" class="text-body fw-semibold">Bryan J.
+                                                    Luellen</a>
+                                            </td>
+                                            <td>
+                                                215-302-3376
+                                            </td>
+                                            <td>
+                                                bryuellen@dayrep.com
+                                            </td>
+                                            <td>
+                                                New York
+                                            </td>
+                                            <td>
+                                                09/12/2018
+                                            </td>
+                                            <td>
+                                                <span class="badge badge-success-lighten">Active</span>
+                                            </td>
+
+                                            <td>
+                                                <a href="javascript:void(0);" class="action-icon"> <i
+                                                        class="mdi mdi-square-edit-outline"></i></a>
+                                                <a href="javascript:void(0);" class="action-icon"> <i
+                                                        class="mdi mdi-delete"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="dt-select dtr-control" tabindex="0"><input
+                                                    aria-label="Select row" class="form-check-input" type="checkbox">
+                                            </td>
+                                            <td class="table-user sorting_1">
+                                                <img src="assets/images/users/avatar-10.jpg" alt="table-user"
+                                                    class="me-2 rounded-circle">
+                                                <a href="javascript:void(0);" class="text-body fw-semibold">Dean
+                                                    Smithies</a>
+                                            </td>
+                                            <td>
+                                                077 6157 4248
+                                            </td>
+                                            <td>
+                                                deanes@dayrep.com
+                                            </td>
+                                            <td>
+                                                Singapore
+                                            </td>
+                                            <td>
+                                                04/09/2018
+                                            </td>
+                                            <td>
+                                                <span class="badge badge-success-lighten">Active</span>
+                                            </td>
+
+                                            <td>
+                                                <a href="javascript:void(0);" class="action-icon"> <i
+                                                        class="mdi mdi-square-edit-outline"></i></a>
+                                                <a href="javascript:void(0);" class="action-icon"> <i
+                                                        class="mdi mdi-delete"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="dt-select dtr-control" tabindex="0"><input
+                                                    aria-label="Select row" class="form-check-input" type="checkbox">
+                                            </td>
+                                            <td class="table-user sorting_1">
+                                                <img src="assets/images/users/avatar-8.jpg" alt="table-user"
+                                                    class="me-2 rounded-circle">
+                                                <a href="javascript:void(0);" class="text-body fw-semibold">Edward
+                                                    Roseby</a>
+                                            </td>
+                                            <td>
+                                                078 6013 3854
+                                            </td>
+                                            <td>
+                                                edwardR@armyspy.com
+                                            </td>
+                                            <td>
+                                                Monaco
+                                            </td>
+                                            <td>
+                                                08/23/2018
+                                            </td>
+                                            <td>
+                                                <span class="badge badge-success-lighten">Active</span>
+                                            </td>
+
+                                            <td>
+                                                <a href="javascript:void(0);" class="action-icon"> <i
+                                                        class="mdi mdi-square-edit-outline"></i></a>
+                                                <a href="javascript:void(0);" class="action-icon"> <i
+                                                        class="mdi mdi-delete"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="dt-select dtr-control" tabindex="0"><input
+                                                    aria-label="Select row" class="form-check-input" type="checkbox">
+                                            </td>
+                                            <td class="table-user sorting_1">
+                                                <img src="assets/images/users/avatar-7.jpg" alt="table-user"
+                                                    class="me-2 rounded-circle">
+                                                <a href="javascript:void(0);" class="text-body fw-semibold">Jenny C.
+                                                    Gero</a>
+                                            </td>
+                                            <td>
+                                                078 7173 9261
+                                            </td>
+                                            <td>
+                                                jennygero@teleworm.us
+                                            </td>
+                                            <td>
+                                                Lesotho
+                                            </td>
+                                            <td>
+                                                08/02/2018
+                                            </td>
+                                            <td>
+                                                <span class="badge badge-danger-lighten">Blocked</span>
+                                            </td>
+
+                                            <td>
+                                                <a href="javascript:void(0);" class="action-icon"> <i
+                                                        class="mdi mdi-square-edit-outline"></i></a>
+                                                <a href="javascript:void(0);" class="action-icon"> <i
+                                                        class="mdi mdi-delete"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="dt-select dtr-control" tabindex="0"><input
+                                                    aria-label="Select row" class="form-check-input" type="checkbox">
+                                            </td>
+                                            <td class="table-user sorting_1">
+                                                <img src="assets/images/users/avatar-3.jpg" alt="table-user"
+                                                    class="me-2 rounded-circle">
+                                                <a href="javascript:void(0);" class="text-body fw-semibold">Kathryn S.
+                                                    Collier</a>
+                                            </td>
+                                            <td>
+                                                828-216-2190
+                                            </td>
+                                            <td>
+                                                collier@jourrapide.com
+                                            </td>
+                                            <td>
+                                                Canada
+                                            </td>
+                                            <td>
+                                                06/30/2018
+                                            </td>
+                                            <td>
+                                                <span class="badge badge-danger-lighten">Blocked</span>
+                                            </td>
+
+                                            <td>
+                                                <a href="javascript:void(0);" class="action-icon"> <i
+                                                        class="mdi mdi-square-edit-outline"></i></a>
+                                                <a href="javascript:void(0);" class="action-icon"> <i
+                                                        class="mdi mdi-delete"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="dt-select dtr-control" tabindex="0"><input
+                                                    aria-label="Select row" class="form-check-input" type="checkbox">
+                                            </td>
+                                            <td class="table-user sorting_1">
+                                                <img src="assets/images/users/avatar-1.jpg" alt="table-user"
+                                                    class="me-2 rounded-circle">
+                                                <a href="javascript:void(0);" class="text-body fw-semibold">Labeeb
+                                                    Ghali</a>
+                                            </td>
+                                            <td>
+                                                050 414 8778
+                                            </td>
+                                            <td>
+                                                labebswad@teleworm.us
+                                            </td>
+                                            <td>
+                                                United Kingdom
+                                            </td>
+                                            <td>
+                                                06/19/2018
+                                            </td>
+                                            <td>
+                                                <span class="badge badge-success-lighten">Active</span>
+                                            </td>
+
+                                            <td>
+                                                <a href="javascript:void(0);" class="action-icon"> <i
+                                                        class="mdi mdi-square-edit-outline"></i></a>
+                                                <a href="javascript:void(0);" class="action-icon"> <i
+                                                        class="mdi mdi-delete"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="dt-select dtr-control" tabindex="0"><input
+                                                    aria-label="Select row" class="form-check-input" type="checkbox">
+                                            </td>
+                                            <td class="table-user sorting_1">
+                                                <img src="assets/images/users/avatar-4.jpg" alt="table-user"
+                                                    class="me-2 rounded-circle">
+                                                <a href="javascript:void(0);" class="text-body fw-semibold">Paul J.
+                                                    Friend</a>
+                                            </td>
+                                            <td>
+                                                937-330-1634
+                                            </td>
+                                            <td>
+                                                pauljfrnd@jourrapide.com
+                                            </td>
+                                            <td>
+                                                New York
+                                            </td>
+                                            <td>
+                                                07/07/2018
+                                            </td>
+                                            <td>
+                                                <span class="badge badge-success-lighten">Active</span>
+                                            </td>
+
+                                            <td>
+                                                <a href="javascript:void(0);" class="action-icon"> <i
+                                                        class="mdi mdi-square-edit-outline"></i></a>
+                                                <a href="javascript:void(0);" class="action-icon"> <i
+                                                        class="mdi mdi-delete"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="dt-select dtr-control" tabindex="0"><input
+                                                    aria-label="Select row" class="form-check-input" type="checkbox">
+                                            </td>
+                                            <td class="table-user sorting_1">
+                                                <img src="assets/images/users/avatar-2.jpg" alt="table-user"
+                                                    class="me-2 rounded-circle">
+                                                <a href="javascript:void(0);" class="text-body fw-semibold">Rory
+                                                    Seekamp</a>
+                                            </td>
+                                            <td>
+                                                078 5054 8877
+                                            </td>
+                                            <td>
+                                                roryamp@dayrep.com
+                                            </td>
+                                            <td>
+                                                United States
+                                            </td>
+                                            <td>
+                                                03/24/2018
+                                            </td>
+                                            <td>
+                                                <span class="badge badge-danger-lighten">Blocked</span>
+                                            </td>
+
+                                            <td>
+                                                <a href="javascript:void(0);" class="action-icon"> <i
+                                                        class="mdi mdi-square-edit-outline"></i></a>
+                                                <a href="javascript:void(0);" class="action-icon"> <i
+                                                        class="mdi mdi-delete"></i></a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot></tfoot>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="row mt-2 justify-content-between">
+                            <div
+                                class="d-md-flex justify-content-between align-items-center dt-layout-start col-md-auto me-auto">
+                                <div class="dt-info" aria-live="polite" id="customers-datatable_info" role="status">
+                                    Showing 1 to 10 of 12 entries</div>
+                            </div>
+                            <div
+                                class="d-md-flex justify-content-between align-items-center dt-layout-end col-md-auto ms-auto">
+                                <div class="dt-paging">
+                                    <nav aria-label="pagination">
+                                        <ul class="pagination">
+                                            <li class="dt-paging-button page-item disabled"><button
+                                                    class="page-link first" role="link" type="button"
+                                                    aria-controls="customers-datatable" aria-disabled="true"
+                                                    aria-label="First" data-dt-idx="first" tabindex="-1"><i
+                                                        class="ri-arrow-left-double-line"></i></button></li>
+                                            <li class="dt-paging-button page-item disabled"><button
+                                                    class="page-link previous" role="link" type="button"
+                                                    aria-controls="customers-datatable" aria-disabled="true"
+                                                    aria-label="Previous" data-dt-idx="previous" tabindex="-1"><i
+                                                        class="ri-arrow-left-s-line"></i></button></li>
+                                            <li class="dt-paging-button page-item active"><button class="page-link"
+                                                    role="link" type="button" aria-controls="customers-datatable"
+                                                    aria-current="page" data-dt-idx="0">1</button></li>
+                                            <li class="dt-paging-button page-item"><button class="page-link" role="link"
+                                                    type="button" aria-controls="customers-datatable"
+                                                    data-dt-idx="1">2</button></li>
+                                            <li class="dt-paging-button page-item"><button class="page-link next"
+                                                    role="link" type="button" aria-controls="customers-datatable"
+                                                    aria-label="Next" data-dt-idx="next"><i
+                                                        class="ri-arrow-right-s-line"></i></button></li>
+                                            <li class="dt-paging-button page-item"><button class="page-link last"
+                                                    role="link" type="button" aria-controls="customers-datatable"
+                                                    aria-label="Last" data-dt-idx="last"><i
+                                                        class="ri-arrow-right-double-line"></i></button></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dt-autosize" style="width: 100%; height: 0px;"></div>
+                    </div>
+                </div> <!-- end card-body-->
+            </div> <!-- end card-->
+        </div> <!-- end col -->
+    </div>
+    <!-- end row -->
+
+</div>

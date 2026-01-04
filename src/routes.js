@@ -3,7 +3,6 @@ import Router from '../js_modules/Router.js'
 
 // Lazy load
 // todo: incercat daca merge cu callback in loc de async
-const Dashboard = async () => (await import('./pages/dashboards/dashboard/dashboard.js')).Dashboard
 const Dashboard2 = async () => (await import('./pages/dashboards/dashboard-2/dashboard-2.js')).Dashboard2
 const AboutPage = async () => (await import('./AboutPage.js')).AboutPage
 const AboutPagee = async () => (await import('./AboutPagee.js')).AboutPagee
@@ -12,6 +11,7 @@ const Button = async () => (await import('./uikit/button/button.js')).Button
 const Input = async () => (await import('./pages/forms-basic-inputs/input.js')).Input
 const Login = async () => (await import('./pages/login/login.js')).Login
 const NotFound = async () => (await import('./pages/error-pages/404-not-found/404.js')).NotFound
+const Landing = async () => (await import('./pages/landing/landing.js')).Landing
 const Chat = async () => (await import('./pages/chat/chat.js')).Chat
 const Calendar = async () => (await import('./pages/calendar/calendar.js')).Calendar
 const FileManager = async () => (await import('./pages/file-manager/file-manager.js')).FileManager
@@ -30,16 +30,16 @@ const Email = async () => (await import('./pages/email/inbox/email.js')).Email
 const EmailDetails = async () => (await import('./pages/email/details/email-details.js')).EmailDetails
 const EmailCompose = async () => (await import('./pages/email/compose/email-compose.js')).EmailCompose
 const EmailTemplates = async () => (await import('./pages/email/templates/email-templates.js')).EmailTemplates
-const CrmContacts = async () => (await import('./pages/crm/contacts/crm-contacts.js')).CrmContacts
-const CrmOpportunities = async () => (await import('./pages/crm/opportunities/crm-opportunities.js')).CrmOpportunities
-const CrmDeals = async () => (await import('./pages/crm/deals/crm-deals.js')).CrmDeals
-const CrmLeads = async () => (await import('./pages/crm/leads/crm-leads.js')).CrmLeads
-const CrmPipeline = async () => (await import('./pages/crm/pipeline/crm-pipeline.js')).CrmPipeline
-const CrmCampaign = async () => (await import('./pages/crm/campaign/crm-campaign.js')).CrmCampaign
-const CrmProposals = async () => (await import('./pages/crm/proposals/crm-proposals.js')).CrmProposals
-const CrmEstimations = async () => (await import('./pages/crm/estimations/crm-estimations.js')).CrmEstimations
-const CrmCustomers = async () => (await import('./pages/crm/customers/crm-customers.js')).CrmCustomers
-const CrmActivities = async () => (await import('./pages/crm/activities/crm-activities.js')).CrmActivities
+const CrmContacts = async () => (await import('./pages/crm_o/contacts/crm-contacts.js')).CrmContacts
+const CrmOpportunities = async () => (await import('./pages/crm_o/opportunities/crm-opportunities.js')).CrmOpportunities
+const CrmDeals = async () => (await import('./pages/crm_o/deals/crm-deals.js')).CrmDeals
+const CrmLeads = async () => (await import('./pages/crm_o/leads/crm-leads.js')).CrmLeads
+const CrmPipeline = async () => (await import('./pages/crm_o/pipeline/crm-pipeline.js')).CrmPipeline
+const CrmCampaign = async () => (await import('./pages/crm_o/campaign/crm-campaign.js')).CrmCampaign
+const CrmProposals = async () => (await import('./pages/crm_o/proposals/crm-proposals.js')).CrmProposals
+const CrmEstimations = async () => (await import('./pages/crm_o/estimations/crm-estimations.js')).CrmEstimations
+const CrmCustomers = async () => (await import('./pages/crm_o/customers/crm-customers.js')).CrmCustomers
+const CrmActivities = async () => (await import('./pages/crm_o/activities/crm-activities.js')).CrmActivities
 const UsersContacts = async () => (await import('./pages/users/contacts/users-contacts.js')).UsersContacts
 const UsersProfile = async () => (await import('./pages/users/profile/users-profile.js')).UsersProfile
 const UsersRoles = async () => (await import('./pages/users/roles/users-roles.js')).UsersRoles
@@ -202,12 +202,57 @@ const MapsLeaflet = async () => (await import('./pages/maps/leaflet/maps-leaflet
 
 
 
+const DashboardAnalytics = async () => (await import('./pages/dashboards/analytics/dashboard-analytics.js')).DashboardAnalytics
+const Dashboard = async () => (await import('./pages/dashboards/dashboard/dashboard.js')).Dashboard
+const DashboardProjects = async () => (await import('./pages/dashboards/projects/dashboard-projects.js')).DashboardProjects
+const DashboardCrm = async () => (await import('./pages/dashboards/crm/dashboard-crm.js')).DashboardCrm
+const DashboardWallet = async () => (await import('./pages/dashboards/wallet/dashboard-wallet.js')).DashboardWallet
+const AppsCalendar = async () => (await import('./pages/apps/calendar/apps-calendar.js')).AppsCalendar
+const AppsChat = async () => (await import('./pages/apps/chat/apps-chat.js')).AppsChat
+const CrmProjects = async () => (await import('./pages/crm/projects/crm-projects.js')).CrmProjects
+const CrmOrdersList = async () => (await import('./pages/crm/orders-list/crm-orders-list.js')).CrmOrdersList
+const CrmClients = async () => (await import('./pages/crm/clients/crm-clients.js')).CrmClients
+const CrmManagement = async () => (await import('./pages/crm/management/crm-management.js')).CrmManagement
+const AppsEcommerceProducts = async () => (await import('./pages/apps/ecommerce/products/apps-ecommerce-products.js')).AppsEcommerceProducts
+const AppsEcommerceProductDetails = async () => (await import('./pages/apps/ecommerce/product-details/apps-ecommerce-product-details.js')).AppsEcommerceProductDetails
+const AppsEcommerceOrders = async () => (await import('./pages/apps/ecommerce/orders/apps-ecommerce-orders.js')).AppsEcommerceOrders
+const AppsEcommerceOrderDetails = async () => (await import('./pages/apps/ecommerce/order-details/apps-ecommerce-order-details.js')).AppsEcommerceOrderDetails
+const AppsEcommerceCustomers = async () => (await import('./pages/apps/ecommerce/customers/apps-ecommerce-customers.js')).AppsEcommerceCustomers
+const AppsEcommerceShoppingCart = async () => (await import('./pages/apps/ecommerce/shopping-cart/apps-ecommerce-shopping-cart.js')).AppsEcommerceShoppingCart
+const AppsEcommerceCheckout = async () => (await import('./pages/apps/ecommerce/checkout/apps-ecommerce-checkout.js')).AppsEcommerceCheckout
+const AppsEcommerceSellers = async () => (await import('./pages/apps/ecommerce/sellers/apps-ecommerce-sellers.js')).AppsEcommerceSellers
+const AppsEmailInbox = async () => (await import('./pages/apps/email/inbox/apps-email-inbox.js')).AppsEmailInbox
+
+
 const routes = [
     {
         path: '/',
         component: AppLayout,
         children: [
+            { path: '/dashboard-analytics', component: DashboardAnalytics },
             { path: '/', component: Dashboard },
+            { path: '/dashboard-projects', component: DashboardProjects },
+            { path: '/dashboard-crm', component: DashboardCrm },
+            { path: '/dashboard-wallet', component: DashboardWallet },
+            { path: '/apps-calendar', component: AppsCalendar },
+            { path: '/apps-chat', component: AppsChat },
+            { path: '/crm-projects', component: CrmProjects },
+            { path: '/crm-orders-list', component: CrmOrdersList },
+            { path: '/crm-clients', component: CrmClients },
+            { path: '/crm-management', component: CrmManagement },
+            { path: '/apps-ecommerce-products', component: AppsEcommerceProducts },
+            { path: '/apps-ecommerce-product-details', component: AppsEcommerceProductDetails },
+            { path: '/apps-ecommerce-orders', component: AppsEcommerceOrders },
+            { path: '/apps-ecommerce-order-details', component: AppsEcommerceOrderDetails },
+            { path: '/apps-ecommerce-customers', component: AppsEcommerceCustomers },
+            { path: '/apps-ecommerce-shopping-cart', component: AppsEcommerceShoppingCart },
+            { path: '/apps-ecommerce-checkout', component: AppsEcommerceCheckout },
+            { path: '/apps-ecommerce-sellers', component: AppsEcommerceSellers },
+            { path: '/apps-email-inbox', component: AppsEmailInbox },
+
+
+            
+
             { path: '/about', component: AboutPage },
             { path: '/users', component: Users },
             { path: '/uikit/button', component: Button },
@@ -380,6 +425,7 @@ const routes = [
 
         ]
     },
+    { path: '/landing', component: Landing },
     { path: '/about', component: AboutPagee },
     { path: '/pages-login', component: Login },
     { path: '/404', component: NotFound },

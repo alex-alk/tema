@@ -1,6 +1,6 @@
 import { Sidebar } from './sidebar/sidebar.js'
 import { Footer } from './footer/footer.js'
-import { Topbar } from './topbar.js'
+import { Topbar } from './topbar/topbar.js'
 
 export class AppLayout {
 
@@ -10,7 +10,7 @@ export class AppLayout {
     <top-bar></top-bar>
     <side-bar></side-bar>
     <div class="content-page">
-        <div class="container-fluid">
+        <div class="content">
             <router-view></router-view>
         </div>
         <admin-footer></admin-footer>

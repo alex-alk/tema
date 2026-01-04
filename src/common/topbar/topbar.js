@@ -1,5 +1,4 @@
-import { createComponent } from "../../js_modules/main.js"
-import { router } from "../routes.js"
+import { createComponent } from "../../../js_modules/main.js"
 
 export class Topbar {
 
@@ -18,7 +17,7 @@ export class Topbar {
     async getElement() {
         
 // `
-        const html = await this.fetchHTML('/src/common/topbar.html');
+        const html = await this.fetchHTML('/src/common/topbar/topbar.html');
         const component = createComponent(html)
 
 
