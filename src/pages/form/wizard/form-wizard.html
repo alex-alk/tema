@@ -1,1123 +1,633 @@
-<div class="page-title-head d-flex align-items-center">
-    <div class="flex-grow-1">
-        <h4 class="fs-xl fw-bold m-0">Wizard</h4>
-    </div>
+<div class="container-fluid">
 
-    <div class="text-end">
-        <ol class="breadcrumb m-0 py-0">
-            <li class="breadcrumb-item"><a href="javascript: void(0);">UBold</a></li>
-
-            <li class="breadcrumb-item"><a href="javascript: void(0);">Forms</a></li>
-
-            <li class="breadcrumb-item active">Wizard</li>
-        </ol>
-    </div>
-</div>
-
-<div class="row justify-content-center">
-    <div class="col-12">
-        <div class="card">
-            <div class="card-header justify-content-between">
-                <h4 class="card-title">Basic Wizard</h4>
-                <span class="badge badge-soft-success badge-label fs-xxs py-1">Exclusive</span>
-            </div>
-
-            <div class="card-body">
-
-                <div class="ins-wizard" data-wizard="">
-                    <!-- Navigation Tabs -->
-                    <ul class="nav nav-tabs wizard-tabs" data-wizard-nav="" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link active" data-bs-toggle="tab" href="#stuInfo" aria-selected="true"
-                                role="tab">
-                                <span class="d-flex align-items-center">
-                                    <i class="ti ti-user-circle fs-32"></i>
-                                    <span class="flex-grow-1 ms-2 text-truncate">
-                                        <span class="mb-0 lh-base d-block fw-semibold text-body">Student Info</span>
-                                        <span class="fs-xxs mb-0">Personal details</span>
-                                    </span>
-                                </span>
-                            </a>
-                        </li>
-
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link" data-bs-toggle="tab" href="#addrInfo" aria-selected="false"
-                                tabindex="-1" role="tab">
-                                <span class="d-flex align-items-center">
-                                    <i class="ti ti-map-pin fs-32"></i>
-                                    <span class="flex-grow-1 ms-2 text-truncate">
-                                        <span class="mb-0 lh-base d-block fw-semibold text-body">Address Info</span>
-                                        <span class="fs-xxs mb-0">Where you live</span>
-                                    </span>
-                                </span>
-                            </a>
-                        </li>
-
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link" data-bs-toggle="tab" href="#courseInfo" aria-selected="false"
-                                tabindex="-1" role="tab">
-                                <span class="d-flex align-items-center">
-                                    <i class="ti ti-book fs-32"></i>
-                                    <span class="flex-grow-1 ms-2 text-truncate">
-                                        <span class="mb-0 lh-base d-block fw-semibold text-body">Course Info</span>
-                                        <span class="fs-xxs mb-0">Select your course</span>
-                                    </span>
-                                </span>
-                            </a>
-                        </li>
-
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link" data-bs-toggle="tab" href="#parentInfo" aria-selected="false"
-                                tabindex="-1" role="tab">
-                                <span class="d-flex align-items-center">
-                                    <i class="ti ti-users fs-32"></i>
-                                    <span class="flex-grow-1 ms-2 text-truncate">
-                                        <span class="mb-0 lh-base d-block fw-semibold text-body">Parent Info</span>
-                                        <span class="fs-xxs mb-0">Guardian details</span>
-                                    </span>
-                                </span>
-                            </a>
-                        </li>
-
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link" data-bs-toggle="tab" href="#documents" aria-selected="false"
-                                tabindex="-1" role="tab">
-                                <span class="d-flex align-items-center">
-                                    <i class="ti ti-folder fs-32"></i>
-                                    <span class="flex-grow-1 ms-2 text-truncate">
-                                        <span class="mb-0 lh-base d-block fw-semibold text-body">Documents</span>
-                                        <span class="fs-xxs mb-0">Upload certificates</span>
-                                    </span>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-
-
-                    <!-- Content -->
-                    <div class="tab-content pt-3" data-wizard-content="">
-
-                        <!-- Step 1: Student Info -->
-                        <div class="tab-pane fade show active" id="stuInfo" role="tabpanel">
-                            <div class="row">
-                                <div class="col-xl-6">
-                                    <div class="mb-3">
-                                        <label class="form-label">Full Name</label>
-                                        <input type="text" class="form-control" placeholder="Enter your full name"
-                                            name="fullname" required="">
-                                    </div>
-                                </div>
-                                <div class="col-xl-6">
-                                    <div class="mb-3">
-                                        <label class="form-label">Email</label>
-                                        <input type="email" class="form-control" placeholder="Enter your email"
-                                            name="email" required="">
-                                    </div>
-                                </div>
-                                <div class="col-xl-6">
-                                    <div class="mb-3">
-                                        <label class="form-label">Phone Number</label>
-                                        <input type="tel" class="form-control" name="phone"
-                                            placeholder="Enter your phone number" required="">
-                                    </div>
-                                </div>
-                                <div class="col-xl-6">
-                                    <div class="mb-3">
-                                        <label class="form-label">Date of Birth</label>
-                                        <input type="text" data-provider="flatpickr" data-date-format="d M, Y"
-                                            placeholder="Select you DOB" class="form-control flatpickr-input" name="dob"
-                                            required="" readonly="readonly">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-end mt-3">
-                                <button type="button" class="btn btn-primary" data-wizard-next="">Next: Address Info
-                                    →</button>
-                            </div>
-                        </div>
-
-                        <!-- Step 2: Address Info -->
-                        <div class="tab-pane fade" id="addrInfo" role="tabpanel">
-                            <div class="row">
-                                <div class="col-xl-6">
-                                    <div class="mb-3">
-                                        <label class="form-label">Street Address</label>
-                                        <input type="text" class="form-control" name="street" placeholder="123 Main St"
-                                            required="">
-                                    </div>
-                                </div>
-                                <div class="col-xl-6">
-                                    <div class="mb-3">
-                                        <label class="form-label">City</label>
-                                        <input type="text" class="form-control" name="city" placeholder="e.g., New York"
-                                            required="">
-                                    </div>
-                                </div>
-                                <div class="col-xl-6">
-                                    <div class="mb-3">
-                                        <label class="form-label">State</label>
-                                        <input type="text" class="form-control" name="state"
-                                            placeholder="e.g., California" required="">
-                                    </div>
-                                </div>
-                                <div class="col-xl-6">
-                                    <div class="mb-3">
-                                        <label class="form-label">Zip Code</label>
-                                        <input type="text" class="form-control" name="zip" placeholder="e.g., 10001"
-                                            required="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-between mt-3">
-                                <button type="button" class="btn btn-secondary" data-wizard-prev="">← Back: Student
-                                    Info</button>
-                                <button type="button" class="btn btn-primary" data-wizard-next="">Next: Course Info
-                                    →</button>
-                            </div>
-                        </div>
-
-
-                        <!-- Step 3: Course Info -->
-                        <div class="tab-pane fade" id="courseInfo" role="tabpanel">
-                            <div class="row">
-                                <div class="col-xl-6">
-                                    <div class="mb-3">
-                                        <label class="form-label">Choose Course</label>
-                                        <select class="form-select" name="course" required="">
-                                            <option value="">Select</option>
-                                            <option value="Engineering">Engineering</option>
-                                            <option value="Medical">Medical</option>
-                                            <option value="Business">Business</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6">
-                                    <div class="mb-3">
-                                        <label class="form-label">Enrollment Type</label>
-                                        <select class="form-select" name="enrollment" required="">
-                                            <option value="">Select</option>
-                                            <option value="Full Time">Full Time</option>
-                                            <option value="Part Time">Part Time</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6">
-                                    <div class="mb-3">
-                                        <label class="form-label">Preferred Batch Time</label>
-                                        <select class="form-select" name="batch_time" required="">
-                                            <option value="">Select Time</option>
-                                            <option value="Morning">Morning (8am – 12pm)</option>
-                                            <option value="Afternoon">Afternoon (1pm – 5pm)</option>
-                                            <option value="Evening">Evening (6pm – 9pm)</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6">
-                                    <div class="mb-3">
-                                        <label class="form-label">Mode of Study</label>
-                                        <select class="form-select" name="mode" required="">
-                                            <option value="">Select Mode</option>
-                                            <option value="Offline">Offline</option>
-                                            <option value="Online">Online</option>
-                                            <option value="Hybrid">Hybrid</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-between mt-3">
-                                <button type="button" class="btn btn-secondary" data-wizard-prev="">← Back: Address
-                                    Info</button>
-                                <button type="button" class="btn btn-primary" data-wizard-next="">Next: Parent Info
-                                    →</button>
-                            </div>
-                        </div>
-
-
-                        <!-- Step 4: Parent Info -->
-                        <div class="tab-pane fade" id="parentInfo" role="tabpanel">
-                            <div class="row">
-                                <div class="col-xl-6">
-                                    <div class="mb-3">
-                                        <label class="form-label">Parent/Guardian Name</label>
-                                        <input type="text" class="form-control" name="parent_name"
-                                            placeholder="e.g., John Doe" required="">
-                                    </div>
-                                </div>
-                                <div class="col-xl-6">
-                                    <div class="mb-3">
-                                        <label class="form-label">Relation</label>
-                                        <input type="text" class="form-control" name="relation"
-                                            placeholder="e.g., Father, Mother" required="">
-                                    </div>
-                                </div>
-                                <div class="col-xl-6">
-                                    <div class="mb-3">
-                                        <label class="form-label">Parent Phone</label>
-                                        <input type="tel" class="form-control" name="parent_phone"
-                                            placeholder="e.g., +1 555 123 4567" required="">
-                                    </div>
-                                </div>
-                                <div class="col-xl-6">
-                                    <div class="mb-3">
-                                        <label class="form-label">Parent Email</label>
-                                        <input type="email" class="form-control" name="parent_email"
-                                            placeholder="e.g., parent@example.com" required="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-between mt-3">
-                                <button type="button" class="btn btn-secondary" data-wizard-prev="">← Back: Course
-                                    Info</button>
-                                <button type="button" class="btn btn-primary" data-wizard-next="">Next: Documents
-                                    →</button>
-                            </div>
-                        </div>
-
-
-                        <!-- Step 5: Documents -->
-                        <div class="tab-pane fade" id="documents" role="tabpanel">
-                            <div class="mb-3">
-                                <label class="form-label">Upload ID Proof</label>
-                                <input type="file" class="form-control" name="id_proof" required="">
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">Upload Previous Marksheet</label>
-                                <input type="file" class="form-control" name="marksheet" required="">
-                            </div>
-                            <div class="d-flex justify-content-between mt-3">
-                                <button type="button" class="btn btn-secondary" data-wizard-prev="">← Back: Parent
-                                    Info</button>
-                                <button type="submit" class="btn btn-success">Submit Application</button>
-                            </div>
-                        </div>
-
-                    </div> <!-- tab-content -->
-                </div> <!-- ins-wizard -->
-
-            </div> <!-- end card body-->
-        </div> <!-- end card-->
-
-        <div class="card">
-            <div class="card-header">
-                <div class="flex-grow-1">
-                    <h4 class="card-title">Validation Support</h4>
+    <!-- start page title -->
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box">
+                <div class="page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item"><a href="javascript: void(0);">Hyper</a></li>
+                        <li class="breadcrumb-item"><a href="javascript: void(0);">Forms</a></li>
+                        <li class="breadcrumb-item active">Form Wizard</li>
+                    </ol>
                 </div>
-                <span class="badge badge-soft-success badge-label fs-xxs py-1">Exclusive</span>
+                <h4 class="page-title">Form Wizard</h4>
             </div>
+        </div>
+    </div>
+    <!-- end page title -->
 
-            <div class="card-body">
+    <div class="row">
+        <div class="col-xl-6">
+            <div class="card">
+                <div class="card-body">
 
-                <form data-wizard-validation="">
-                    <div class="ins-wizard" data-wizard="">
-                        <!-- Navigation Tabs -->
-                        <ul class="nav nav-tabs wizard-tabs" data-wizard-nav="" role="tablist">
+                    <h4 class="header-title mb-3"> Basic Wizard</h4>
+
+                    <form>
+                        <div id="basicwizard">
+
+                            <ul class="nav nav-pills nav-justified form-wizard-header mb-4" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <a href="#basictab1" data-bs-toggle="tab" data-toggle="tab"
+                                        class="nav-link rounded-0 py-2 active" aria-selected="true" role="tab">
+                                        <i class="mdi mdi-account-circle font-18 align-middle me-1"></i>
+                                        <span class="d-none d-sm-inline">Account</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a href="#basictab2" data-bs-toggle="tab" data-toggle="tab"
+                                        class="nav-link rounded-0 py-2" aria-selected="false" tabindex="-1" role="tab">
+                                        <i class="mdi mdi-face-man-profile font-18 align-middle me-1"></i>
+                                        <span class="d-none d-sm-inline">Profile</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a href="#basictab3" data-bs-toggle="tab" data-toggle="tab"
+                                        class="nav-link rounded-0 py-2" aria-selected="false" tabindex="-1" role="tab">
+                                        <i class="mdi mdi-checkbox-marked-circle-outline font-18 align-middle me-1"></i>
+                                        <span class="d-none d-sm-inline">Finish</span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content b-0 mb-0">
+                                <div class="tab-pane active show" id="basictab1" role="tabpanel">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="row mb-3">
+                                                <label class="col-md-3 col-form-label" for="userName">User name</label>
+                                                <div class="col-md-9">
+                                                    <input type="text" class="form-control" id="userName"
+                                                        name="userName" value="hyper">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label class="col-md-3 col-form-label" for="password"> Password</label>
+                                                <div class="col-md-9">
+                                                    <input type="password" id="password" name="password"
+                                                        class="form-control" value="123456789">
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-3">
+                                                <label class="col-md-3 col-form-label" for="confirm">Re Password</label>
+                                                <div class="col-md-9">
+                                                    <input type="password" id="confirm" name="confirm"
+                                                        class="form-control" value="123456789">
+                                                </div>
+                                            </div>
+                                        </div> <!-- end col -->
+                                    </div> <!-- end row -->
+
+                                    <ul class="list-inline wizard mb-0">
+                                        <li class="next list-inline-item float-end">
+                                            <a href="javascript:void(0);" class="btn btn-info">Add More Info <i
+                                                    class="mdi mdi-arrow-right ms-1"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="tab-pane" id="basictab2" role="tabpanel">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="row mb-3">
+                                                <label class="col-md-3 col-form-label" for="name"> First name</label>
+                                                <div class="col-md-9">
+                                                    <input type="text" id="name" name="name" class="form-control"
+                                                        value="Francis">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label class="col-md-3 col-form-label" for="surname"> Last name</label>
+                                                <div class="col-md-9">
+                                                    <input type="text" id="surname" name="surname" class="form-control"
+                                                        value="Brinkman">
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-3">
+                                                <label class="col-md-3 col-form-label" for="email">Email</label>
+                                                <div class="col-md-9">
+                                                    <input type="email" id="email" name="email" class="form-control"
+                                                        value="cory1979@hotmail.com">
+                                                </div>
+                                            </div>
+                                        </div> <!-- end col -->
+                                    </div> <!-- end row -->
+
+                                    <ul class="pager wizard mb-0 list-inline">
+                                        <li class="previous list-inline-item disabled">
+                                            <button type="button" class="btn btn-light"><i
+                                                    class="mdi mdi-arrow-left me-1"></i> Back to Account</button>
+                                        </li>
+                                        <li class="next list-inline-item float-end">
+                                            <button type="button" class="btn btn-info">Add More Info <i
+                                                    class="mdi mdi-arrow-right ms-1"></i></button>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="tab-pane" id="basictab3" role="tabpanel">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="text-center">
+                                                <h2 class="mt-0"><i class="mdi mdi-check-all"></i></h2>
+                                                <h3 class="mt-0">Thank you !</h3>
+
+                                                <p class="w-75 mb-2 mx-auto">Quisque nec turpis at urna dictum luctus.
+                                                    Suspendisse convallis dignissim eros at volutpat. In egestas mattis
+                                                    dui. Aliquam
+                                                    mattis dictum aliquet.</p>
+
+                                                <div class="mb-3">
+                                                    <div class="form-check d-inline-block">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="customCheck1">
+                                                        <label class="form-check-label" for="customCheck1">I agree with
+                                                            the Terms and Conditions</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> <!-- end col -->
+                                    </div> <!-- end row -->
+
+                                    <ul class="pager wizard mb-0 list-inline mt-1">
+                                        <li class="previous list-inline-item disabled">
+                                            <button type="button" class="btn btn-light"><i
+                                                    class="mdi mdi-arrow-left me-1"></i> Back to Profile</button>
+                                        </li>
+                                        <li class="next list-inline-item float-end">
+                                            <button type="button" class="btn btn-info">Submit</button>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div> <!-- tab-content -->
+                        </div> <!-- end #basicwizard-->
+                    </form>
+
+                </div> <!-- end card-body -->
+            </div> <!-- end card-->
+        </div> <!-- end col -->
+
+        <div class="col-xl-6">
+            <div class="card">
+                <div class="card-body">
+
+                    <h4 class="header-title mb-3"> Button Wizard</h4>
+
+                    <div id="btnwizard">
+                        <ul class="nav nav-pills nav-justified form-wizard-header mb-4" role="tablist">
                             <li class="nav-item" role="presentation">
-                                <a class="nav-link active" data-bs-toggle="tab" href="#stepStudent" aria-selected="true"
-                                    role="tab">
-                                    <span class="d-flex align-items-center">
-                                        <i class="ti ti-user-circle fs-32"></i>
-                                        <span class="flex-grow-1 ms-2 text-truncate">
-                                            <span class="mb-0 lh-base d-block fw-semibold text-body">Student Info</span>
-                                            <span class="fs-xxs mb-0">Your basic details</span>
-                                        </span>
-                                    </span>
+                                <a href="#tab12" data-bs-toggle="tab" data-toggle="tab"
+                                    class="nav-link rounded-0 py-2 active" aria-selected="true" role="tab">
+                                    <i class="mdi mdi-account-circle font-18 align-middle me-1"></i>
+                                    <span class="d-none d-sm-inline">Account</span>
                                 </a>
                             </li>
-
                             <li class="nav-item" role="presentation">
-                                <a class="nav-link disabled" data-bs-toggle="tab" href="#stepAddress"
+                                <a href="#tab22" data-bs-toggle="tab" data-toggle="tab" class="nav-link rounded-0 py-2"
                                     aria-selected="false" tabindex="-1" role="tab">
-                                    <span class="d-flex align-items-center">
-                                        <i class="ti ti-map-pin fs-32"></i>
-                                        <span class="flex-grow-1 ms-2 text-truncate">
-                                            <span class="mb-0 lh-base d-block fw-semibold text-body">Address Info</span>
-                                            <span class="fs-xxs mb-0">Where you currently live</span>
-                                        </span>
-                                    </span>
+                                    <i class="mdi mdi-face-man-profile font-18 align-middle me-1"></i>
+                                    <span class="d-none d-sm-inline">Profile</span>
                                 </a>
                             </li>
-
                             <li class="nav-item" role="presentation">
-                                <a class="nav-link disabled" data-bs-toggle="tab" href="#stepCourse"
+                                <a href="#tab32" data-bs-toggle="tab" data-toggle="tab" class="nav-link rounded-0 py-2"
                                     aria-selected="false" tabindex="-1" role="tab">
-                                    <span class="d-flex align-items-center">
-                                        <i class="ti ti-book fs-32"></i>
-                                        <span class="flex-grow-1 ms-2 text-truncate">
-                                            <span class="mb-0 lh-base d-block fw-semibold text-body">Course Info</span>
-                                            <span class="fs-xxs mb-0">Program preferences</span>
-                                        </span>
-                                    </span>
-                                </a>
-                            </li>
-
-                            <li class="nav-item" role="presentation">
-                                <a class="nav-link disabled" data-bs-toggle="tab" href="#stepParent"
-                                    aria-selected="false" tabindex="-1" role="tab">
-                                    <span class="d-flex align-items-center">
-                                        <i class="ti ti-users fs-32"></i>
-                                        <span class="flex-grow-1 ms-2 text-truncate">
-                                            <span class="mb-0 lh-base d-block fw-semibold text-body">Parent Info</span>
-                                            <span class="fs-xxs mb-0">Guardian contact</span>
-                                        </span>
-                                    </span>
-                                </a>
-                            </li>
-
-                            <li class="nav-item" role="presentation">
-                                <a class="nav-link disabled" data-bs-toggle="tab" href="#stepDocs" aria-selected="false"
-                                    tabindex="-1" role="tab">
-                                    <span class="d-flex align-items-center">
-                                        <i class="ti ti-folder fs-32"></i>
-                                        <span class="flex-grow-1 ms-2 text-truncate">
-                                            <span class="mb-0 lh-base d-block fw-semibold text-body">Documents</span>
-                                            <span class="fs-xxs mb-0">Upload requirements</span>
-                                        </span>
-                                    </span>
+                                    <i class="mdi mdi-checkbox-marked-circle-outline font-18 align-middle me-1"></i>
+                                    <span class="d-none d-sm-inline">Finish</span>
                                 </a>
                             </li>
                         </ul>
 
-                        <!-- Content -->
-                        <div class="tab-content pt-3" data-wizard-content="">
+                        <div class="tab-content mb-0 b-0">
 
-                            <!-- Step 1 -->
-                            <div class="tab-pane fade show active" id="stepStudent" role="tabpanel">
+                            <div class="tab-pane fade active show" id="tab12" role="tabpanel">
                                 <div class="row">
-                                    <div class="col-xl-6">
-                                        <div class="mb-3">
-                                            <label class="form-label">Full Name</label>
-                                            <input type="text" class="form-control" placeholder="Enter your full name"
-                                                name="fullname" required="">
+                                    <div class="col-12">
+                                        <div class="row mb-3">
+                                            <label class="col-md-3 col-form-label" for="userName2">User name</label>
+                                            <div class="col-md-9">
+                                                <input type="text" class="form-control" id="userName2" name="userName2"
+                                                    value="hyper">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <div class="mb-3">
-                                            <label class="form-label">Email</label>
-                                            <input type="email" class="form-control"
-                                                placeholder="Enter your email address" name="email" required="">
+                                        <div class="row mb-3">
+                                            <label class="col-md-3 col-form-label" for="password2"> Password</label>
+                                            <div class="col-md-9">
+                                                <input type="password" id="password2" name="password2"
+                                                    class="form-control" value="123456789">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <div class="mb-3">
-                                            <label class="form-label">Phone Number</label>
-                                            <input type="tel" class="form-control" name="phone"
-                                                placeholder="e.g., +1 234 567 8901" required="">
+
+                                        <div class="row mb-3">
+                                            <label class="col-md-3 col-form-label" for="confirm2">Re Password</label>
+                                            <div class="col-md-9">
+                                                <input type="password" id="confirm2" name="confirm2"
+                                                    class="form-control" value="123456789">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <div class="mb-3">
-                                            <label class="form-label">Date of Birth</label>
-                                            <input type="text" data-provider="flatpickr" data-date-format="d M, Y"
-                                                placeholder="Select your birth date"
-                                                class="form-control flatpickr-input" name="dob" required=""
-                                                readonly="readonly">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-end mt-3">
-                                    <button type="button" class="btn btn-primary" data-wizard-next="">Next: Address Info
-                                        →</button>
-                                </div>
+                                    </div> <!-- end col -->
+                                </div> <!-- end row -->
                             </div>
 
-                            <!-- Step 2 -->
-                            <div class="tab-pane fade" id="stepAddress" role="tabpanel">
+                            <div class="tab-pane fade" id="tab22" role="tabpanel">
                                 <div class="row">
-                                    <div class="col-xl-6">
-                                        <div class="mb-3">
-                                            <label class="form-label">Street Address</label>
-                                            <input type="text" class="form-control" name="street"
-                                                placeholder="e.g., 123 Main Street" required="">
+                                    <div class="col-12">
+                                        <div class="row mb-3">
+                                            <label class="col-md-3 col-form-label" for="name2"> First name</label>
+                                            <div class="col-md-9">
+                                                <input type="text" id="name2" name="name2" class="form-control"
+                                                    value="Francis">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <div class="mb-3">
-                                            <label class="form-label">City</label>
-                                            <input type="text" class="form-control" name="city"
-                                                placeholder="e.g., New York" required="">
+                                        <div class="row mb-3">
+                                            <label class="col-md-3 col-form-label" for="surname2"> Last name</label>
+                                            <div class="col-md-9">
+                                                <input type="text" id="surname2" name="surname2" class="form-control"
+                                                    value="Brinkman">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <div class="mb-3">
-                                            <label class="form-label">State</label>
-                                            <input type="text" class="form-control" name="state"
-                                                placeholder="e.g., California" required="">
+
+                                        <div class="row mb-3">
+                                            <label class="col-md-3 col-form-label" for="email2">Email</label>
+                                            <div class="col-md-9">
+                                                <input type="email" id="email2" name="email2" class="form-control"
+                                                    value="cory1979@hotmail.com">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <div class="mb-3">
-                                            <label class="form-label">Zip Code</label>
-                                            <input type="text" class="form-control" name="zip" placeholder="e.g., 10001"
-                                                required="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-between mt-3">
-                                    <button type="button" class="btn btn-secondary" data-wizard-prev="">← Back: Student
-                                        Info</button>
-                                    <button type="button" class="btn btn-primary" data-wizard-next="">Next: Course Info
-                                        →</button>
-                                </div>
+                                    </div> <!-- end col -->
+                                </div> <!-- end row -->
                             </div>
 
-                            <!-- Step 3 -->
-                            <div class="tab-pane fade" id="stepCourse" role="tabpanel">
+                            <div class="tab-pane" id="tab32" role="tabpanel">
                                 <div class="row">
-                                    <div class="col-xl-6">
-                                        <div class="mb-3">
-                                            <label class="form-label">Choose Course</label>
-                                            <select class="form-select" name="course" required="">
-                                                <option value="">Select</option>
-                                                <option value="Engineering">Engineering</option>
-                                                <option value="Medical">Medical</option>
-                                                <option value="Business">Business</option>
-                                            </select>
+                                    <div class="col-12">
+                                        <div class="text-center">
+                                            <h2 class="mt-0"><i class="mdi mdi-check-all"></i></h2>
+                                            <h3 class="mt-0">Thank you !</h3>
+
+                                            <p class="w-75 mb-2 mx-auto">Quisque nec turpis at urna dictum luctus.
+                                                Suspendisse convallis dignissim eros at volutpat. In egestas mattis dui.
+                                                Aliquam
+                                                mattis dictum aliquet.</p>
+
+                                            <div class="mb-3">
+                                                <div class="form-check d-inline-block">
+                                                    <input type="checkbox" class="form-check-input" id="customCheck2">
+                                                    <label class="form-check-label" for="customCheck2">I agree with the
+                                                        Terms and Conditions</label>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <div class="mb-3">
-                                            <label class="form-label">Enrollment Type</label>
-                                            <select class="form-select" name="enrollment" required="">
-                                                <option value="">Select</option>
-                                                <option value="Full Time">Full Time</option>
-                                                <option value="Part Time">Part Time</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <div class="mb-3">
-                                            <label class="form-label">Preferred Batch Time</label>
-                                            <select class="form-select" name="batch_time" required="">
-                                                <option value="">Select Time</option>
-                                                <option value="Morning">Morning (8am – 12pm)</option>
-                                                <option value="Afternoon">Afternoon (1pm – 5pm)</option>
-                                                <option value="Evening">Evening (6pm – 9pm)</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <div class="mb-3">
-                                            <label class="form-label">Mode of Study</label>
-                                            <select class="form-select" name="mode" required="">
-                                                <option value="">Select Mode</option>
-                                                <option value="Offline">Offline</option>
-                                                <option value="Online">Online</option>
-                                                <option value="Hybrid">Hybrid</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-between mt-3">
-                                    <button type="button" class="btn btn-secondary" data-wizard-prev="">← Back: Address
-                                        Info</button>
-                                    <button type="button" class="btn btn-primary" data-wizard-next="">Next: Parent Info
-                                        →</button>
-                                </div>
+                                    </div> <!-- end col -->
+                                </div> <!-- end row -->
                             </div>
 
-                            <!-- Step 4 -->
-                            <div class="tab-pane fade" id="stepParent" role="tabpanel">
-                                <div class="row">
-                                    <div class="col-xl-6">
-                                        <div class="mb-3">
-                                            <label class="form-label">Parent/Guardian Name</label>
-                                            <input type="text" class="form-control" name="parent_name"
-                                                placeholder="e.g., John Doe" required="">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <div class="mb-3">
-                                            <label class="form-label">Relation</label>
-                                            <input type="text" class="form-control" name="relation"
-                                                placeholder="e.g., Father, Mother" required="">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <div class="mb-3">
-                                            <label class="form-label">Parent Phone</label>
-                                            <input type="tel" class="form-control" name="parent_phone"
-                                                placeholder="e.g., +1 555 123 4567" required="">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <div class="mb-3">
-                                            <label class="form-label">Parent Email</label>
-                                            <input type="email" class="form-control" name="parent_email"
-                                                placeholder="e.g., parent@example.com">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-between mt-3">
-                                    <button type="button" class="btn btn-secondary" data-wizard-prev="">← Back: Course
-                                        Info</button>
-                                    <button type="button" class="btn btn-primary" data-wizard-next="">Next: Documents
-                                        →</button>
-                                </div>
+                            <div class="float-end">
+                                <input type="button" class="btn btn-info button-next" name="next" value="Next">
+                                <input type="button" class="btn btn-info button-last" name="last" value="Last">
+                            </div>
+                            <div class="float-start">
+                                <input type="button" class="btn btn-info button-first" name="first" value="First">
+                                <input type="button" class="btn btn-info button-previous disabled" name="previous"
+                                    value="Previous">
                             </div>
 
-                            <!-- Step 5 -->
-                            <div class="tab-pane fade" id="stepDocs" role="tabpanel">
-                                <div class="mb-3">
-                                    <label class="form-label">Upload ID Proof</label>
-                                    <input type="file" class="form-control" name="id_proof" required="">
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label">Upload Previous Marksheet</label>
-                                    <input type="file" class="form-control" name="marksheet" required="">
-                                </div>
-                                <div class="d-flex justify-content-between mt-3">
-                                    <button type="button" class="btn btn-secondary" data-wizard-prev="">← Back: Parent
-                                        Info</button>
-                                    <button type="submit" class="btn btn-success">Submit Application</button>
-                                </div>
-                            </div>
+                            <div class="clearfix"></div>
 
                         </div> <!-- tab-content -->
-                    </div> <!-- ins-wizard -->
+                    </div> <!-- end #btnwizard-->
 
-                </form>
+                </div> <!-- end card-body -->
+            </div> <!-- end card-->
+        </div> <!-- end col -->
+    </div>
+    <!-- end row -->
 
-            </div>
-        </div> <!-- end card-->
 
-        <div class="card">
-            <div class="card-header">
-                <div class="flex-grow-1">
-                    <h4 class="card-title">Progressbar Support</h4>
-                </div>
-                <span class="badge badge-soft-success badge-label fs-xxs py-1">Exclusive</span>
-            </div>
+    <div class="row">
+        <div class="col-xl-6">
+            <div class="card">
+                <div class="card-body">
 
-            <div class="card-body">
+                    <h4 class="header-title mb-3">Wizard With Progress Bar</h4>
 
-                <form data-wizard-validation="">
-                    <div class="ins-wizard" data-wizard="">
-                        <!-- Progress bar -->
-                        <div class="progress mb-4" style="height: 6px;">
-                            <div class="progress-bar bg-primary" data-wizard-progress="" style="width: 0%;"></div>
-                        </div>
+                    <form>
+                        <div id="progressbarwizard">
 
-                        <!-- Navigation Tabs -->
-                        <ul class="nav nav-tabs wizard-tabs" data-wizard-nav="" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <a class="nav-link active" data-bs-toggle="tab" href="#progressStepStudent"
-                                    aria-selected="true" role="tab">
-                                    <span class="d-flex align-items-center">
-                                        <i class="ti ti-user-circle fs-32"></i>
-                                        <span class="flex-grow-1 ms-2 text-truncate">
-                                            <span class="mb-0 lh-base d-block fw-semibold text-body">Student Info</span>
-                                            <span class="fs-xxs mb-0">Your basic details</span>
-                                        </span>
-                                    </span>
+                            <ul class="nav nav-pills nav-justified form-wizard-header mb-3" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <a href="#account-2" data-bs-toggle="tab" data-toggle="tab"
+                                        class="nav-link rounded-0 py-2 active" aria-selected="true" role="tab">
+                                        <i class="mdi mdi-account-circle font-18 align-middle me-1"></i>
+                                        <span class="d-none d-sm-inline">Account</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a href="#profile-tab-2" data-bs-toggle="tab" data-toggle="tab"
+                                        class="nav-link rounded-0 py-2" aria-selected="false" tabindex="-1" role="tab">
+                                        <i class="mdi mdi-face-man-profile font-18 align-middle me-1"></i>
+                                        <span class="d-none d-sm-inline">Profile</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a href="#finish-2" data-bs-toggle="tab" data-toggle="tab"
+                                        class="nav-link rounded-0 py-2" aria-selected="false" tabindex="-1" role="tab">
+                                        <i class="mdi mdi-checkbox-marked-circle-outline font-18 align-middle me-1"></i>
+                                        <span class="d-none d-sm-inline">Finish</span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content b-0 mb-0">
+
+                                <div id="bar" class="progress mb-3" style="height: 7px;">
+                                    <div class="bar progress-bar progress-bar-striped progress-bar-animated bg-success"
+                                        style="width: 33.3333%;"></div>
+                                </div>
+
+                                <div class="tab-pane active show" id="account-2" role="tabpanel">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="row mb-3">
+                                                <label class="col-md-3 col-form-label" for="userName1">User name</label>
+                                                <div class="col-md-9">
+                                                    <input type="text" class="form-control" id="userName1"
+                                                        name="userName1" value="hyper">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label class="col-md-3 col-form-label" for="password1"> Password</label>
+                                                <div class="col-md-9">
+                                                    <input type="password" id="password1" name="password1"
+                                                        class="form-control" value="123456789">
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-3">
+                                                <label class="col-md-3 col-form-label" for="confirm1">Re
+                                                    Password</label>
+                                                <div class="col-md-9">
+                                                    <input type="password" id="confirm1" name="confirm1"
+                                                        class="form-control" value="123456789">
+                                                </div>
+                                            </div>
+                                        </div> <!-- end col -->
+                                    </div> <!-- end row -->
+
+                                    <ul class="list-inline wizard mb-0">
+                                        <li class="next list-inline-item float-end">
+                                            <a href="javascript:void(0);" class="btn btn-info">Add More Info <i
+                                                    class="mdi mdi-arrow-right ms-1"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="tab-pane" id="profile-tab-2" role="tabpanel">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="row mb-3">
+                                                <label class="col-md-3 col-form-label" for="name1"> First name</label>
+                                                <div class="col-md-9">
+                                                    <input type="text" id="name1" name="name1" class="form-control"
+                                                        value="Francis">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label class="col-md-3 col-form-label" for="surname1"> Last name</label>
+                                                <div class="col-md-9">
+                                                    <input type="text" id="surname1" name="surname1"
+                                                        class="form-control" value="Brinkman">
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-3">
+                                                <label class="col-md-3 col-form-label" for="email1">Email</label>
+                                                <div class="col-md-9">
+                                                    <input type="email" id="email1" name="email1" class="form-control"
+                                                        value="cory1979@hotmail.com">
+                                                </div>
+                                            </div>
+                                        </div> <!-- end col -->
+                                    </div> <!-- end row -->
+                                    <ul class="pager wizard mb-0 list-inline">
+                                        <li class="previous list-inline-item disabled">
+                                            <button type="button" class="btn btn-light"><i
+                                                    class="mdi mdi-arrow-left me-1"></i> Back to Account</button>
+                                        </li>
+                                        <li class="next list-inline-item float-end">
+                                            <button type="button" class="btn btn-info">Add More Info <i
+                                                    class="mdi mdi-arrow-right ms-1"></i></button>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="tab-pane" id="finish-2" role="tabpanel">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="text-center">
+                                                <h2 class="mt-0"><i class="mdi mdi-check-all"></i></h2>
+                                                <h3 class="mt-0">Thank you !</h3>
+
+                                                <p class="w-75 mb-2 mx-auto">Quisque nec turpis at urna dictum luctus.
+                                                    Suspendisse convallis dignissim eros at volutpat. In egestas mattis
+                                                    dui. Aliquam
+                                                    mattis dictum aliquet.</p>
+
+                                                <div class="mb-3">
+                                                    <div class="form-check d-inline-block">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="customCheck3">
+                                                        <label class="form-check-label" for="customCheck3">I agree with
+                                                            the Terms and Conditions</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> <!-- end col -->
+                                    </div> <!-- end row -->
+                                    <ul class="pager wizard mb-0 list-inline mt-1">
+                                        <li class="previous list-inline-item disabled">
+                                            <button type="button" class="btn btn-light"><i
+                                                    class="mdi mdi-arrow-left me-1"></i> Back to Profile</button>
+                                        </li>
+                                        <li class="next list-inline-item float-end">
+                                            <button type="button" class="btn btn-info">Submit</button>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div> <!-- tab-content -->
+                        </div> <!-- end #progressbarwizard-->
+                    </form>
+
+                </div> <!-- end card-body -->
+            </div> <!-- end card-->
+        </div> <!-- end col -->
+
+        <div class="col-xl-6">
+            <div class="card">
+                <div class="card-body">
+
+                    <h4 class="header-title mb-3"> Wizard With Form Validation</h4>
+
+                    <div id="rootwizard">
+                        <ul class="nav nav-pills nav-justified form-wizard-header mb-3" role="tablist">
+                            <li class="nav-item" data-target-form="#accountForm" role="presentation">
+                                <a href="#first" data-bs-toggle="tab" data-toggle="tab"
+                                    class="nav-link rounded-0 py-2 active" aria-selected="true" role="tab">
+                                    <i class="mdi mdi-account-circle font-18 align-middle me-1"></i>
+                                    <span class="d-none d-sm-inline">Account</span>
                                 </a>
                             </li>
-                            <li class="nav-item" role="presentation">
-                                <a class="nav-link disabled" data-bs-toggle="tab" href="#progressStepAddress"
+                            <li class="nav-item" data-target-form="#profileForm" role="presentation">
+                                <a href="#second" data-bs-toggle="tab" data-toggle="tab" class="nav-link rounded-0 py-2"
                                     aria-selected="false" tabindex="-1" role="tab">
-                                    <span class="d-flex align-items-center">
-                                        <i class="ti ti-map-pin fs-32"></i>
-                                        <span class="flex-grow-1 ms-2 text-truncate">
-                                            <span class="mb-0 lh-base d-block fw-semibold text-body">Address Info</span>
-                                            <span class="fs-xxs mb-0">Where you currently live</span>
-                                        </span>
-                                    </span>
+                                    <i class="mdi mdi-face-man-profile font-18 align-middle me-1"></i>
+                                    <span class="d-none d-sm-inline">Profile</span>
                                 </a>
                             </li>
-                            <li class="nav-item" role="presentation">
-                                <a class="nav-link disabled" data-bs-toggle="tab" href="#progressStepCourse"
+                            <li class="nav-item" data-target-form="#otherForm" role="presentation">
+                                <a href="#third" data-bs-toggle="tab" data-toggle="tab" class="nav-link rounded-0 py-2"
                                     aria-selected="false" tabindex="-1" role="tab">
-                                    <span class="d-flex align-items-center">
-                                        <i class="ti ti-book fs-32"></i>
-                                        <span class="flex-grow-1 ms-2 text-truncate">
-                                            <span class="mb-0 lh-base d-block fw-semibold text-body">Course Info</span>
-                                            <span class="fs-xxs mb-0">Program preferences</span>
-                                        </span>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <a class="nav-link disabled" data-bs-toggle="tab" href="#progressStepParent"
-                                    aria-selected="false" tabindex="-1" role="tab">
-                                    <span class="d-flex align-items-center">
-                                        <i class="ti ti-users fs-32"></i>
-                                        <span class="flex-grow-1 ms-2 text-truncate">
-                                            <span class="mb-0 lh-base d-block fw-semibold text-body">Parent Info</span>
-                                            <span class="fs-xxs mb-0">Guardian contact</span>
-                                        </span>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <a class="nav-link disabled" data-bs-toggle="tab" href="#progressStepDocs"
-                                    aria-selected="false" tabindex="-1" role="tab">
-                                    <span class="d-flex align-items-center">
-                                        <i class="ti ti-folder fs-32"></i>
-                                        <span class="flex-grow-1 ms-2 text-truncate">
-                                            <span class="mb-0 lh-base d-block fw-semibold text-body">Documents</span>
-                                            <span class="fs-xxs mb-0">Upload requirements</span>
-                                        </span>
-                                    </span>
+                                    <i class="mdi mdi-checkbox-marked-circle-outline font-18 align-middle me-1"></i>
+                                    <span class="d-none d-sm-inline">Finish</span>
                                 </a>
                             </li>
                         </ul>
 
-                        <!-- Tab Content -->
-                        <div class="tab-content pt-3" data-wizard-content="">
+                        <div class="tab-content mb-0 b-0">
 
-                            <div class="tab-pane fade show active" id="progressStepStudent" role="tabpanel">
-                                <div class="row">
-                                    <div class="col-xl-6 mb-3">
-                                        <label class="form-label">Full Name</label>
-                                        <input type="text" class="form-control" placeholder="Enter your full name"
-                                            name="fullname" required="">
-                                    </div>
-                                    <div class="col-xl-6 mb-3">
-                                        <label class="form-label">Email</label>
-                                        <input type="email" class="form-control" placeholder="Enter your email address"
-                                            name="email" required="">
-                                    </div>
-                                    <div class="col-xl-6 mb-3">
-                                        <label class="form-label">Phone Number</label>
-                                        <input type="tel" class="form-control" name="phone"
-                                            placeholder="e.g., +1 234 567 8901" required="">
-                                    </div>
-                                    <div class="col-xl-6 mb-3">
-                                        <label class="form-label">Date of Birth</label>
-                                        <input type="text" data-provider="flatpickr" data-date-format="d M, Y"
-                                            placeholder="Select your birth date" class="form-control flatpickr-input"
-                                            name="dob" required="" readonly="readonly">
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-end">
-                                    <button type="button" class="btn btn-primary" data-wizard-next="">Next: Address Info
-                                        →</button>
-                                </div>
-                            </div>
+                            <div class="tab-pane active show" id="first" role="tabpanel">
+                                <form id="accountForm" method="post" action="#" class="form-horizontal">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="row mb-3">
+                                                <label class="col-md-3 col-form-label" for="userName3">User name</label>
+                                                <div class="col-md-9">
+                                                    <input type="text" class="form-control" id="userName3"
+                                                        name="userName3" required="">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label class="col-md-3 col-form-label" for="password3"> Password</label>
+                                                <div class="col-md-9">
+                                                    <input type="password" id="password3" name="password3"
+                                                        class="form-control" required="">
+                                                </div>
+                                            </div>
 
-                            <div class="tab-pane fade" id="progressStepAddress" role="tabpanel">
-                                <div class="row">
-                                    <div class="col-xl-6 mb-3">
-                                        <label class="form-label">Street Address</label>
-                                        <input type="text" class="form-control" name="street"
-                                            placeholder="e.g., 123 Main Street" required="">
-                                    </div>
-                                    <div class="col-xl-6 mb-3">
-                                        <label class="form-label">City</label>
-                                        <input type="text" class="form-control" name="city" placeholder="e.g., New York"
-                                            required="">
-                                    </div>
-                                    <div class="col-xl-6 mb-3">
-                                        <label class="form-label">State</label>
-                                        <input type="text" class="form-control" name="state"
-                                            placeholder="e.g., California" required="">
-                                    </div>
-                                    <div class="col-xl-6 mb-3">
-                                        <label class="form-label">Zip Code</label>
-                                        <input type="text" class="form-control" name="zip" placeholder="e.g., 10001"
-                                            required="">
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-between">
-                                    <button type="button" class="btn btn-secondary" data-wizard-prev="">← Back: Student
-                                        Info</button>
-                                    <button type="button" class="btn btn-primary" data-wizard-next="">Next: Course Info
-                                        →</button>
-                                </div>
-                            </div>
-
-                            <div class="tab-pane fade" id="progressStepCourse" role="tabpanel">
-                                <div class="row">
-                                    <div class="col-xl-6 mb-3">
-                                        <label class="form-label">Choose Course</label>
-                                        <select class="form-select" name="course" required="">
-                                            <option value="">Select</option>
-                                            <option value="Engineering">Engineering</option>
-                                            <option value="Medical">Medical</option>
-                                            <option value="Business">Business</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-xl-6 mb-3">
-                                        <label class="form-label">Enrollment Type</label>
-                                        <select class="form-select" name="enrollment" required="">
-                                            <option value="">Select</option>
-                                            <option value="Full Time">Full Time</option>
-                                            <option value="Part Time">Part Time</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-xl-6 mb-3">
-                                        <label class="form-label">Preferred Batch Time</label>
-                                        <select class="form-select" name="batch_time" required="">
-                                            <option value="">Select Time</option>
-                                            <option value="Morning">Morning (8am – 12pm)</option>
-                                            <option value="Afternoon">Afternoon (1pm – 5pm)</option>
-                                            <option value="Evening">Evening (6pm – 9pm)</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-xl-6 mb-3">
-                                        <label class="form-label">Mode of Study</label>
-                                        <select class="form-select" name="mode" required="">
-                                            <option value="">Select Mode</option>
-                                            <option value="Offline">Offline</option>
-                                            <option value="Online">Online</option>
-                                            <option value="Hybrid">Hybrid</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-between">
-                                    <button type="button" class="btn btn-secondary" data-wizard-prev="">← Back: Address
-                                        Info</button>
-                                    <button type="button" class="btn btn-primary" data-wizard-next="">Next: Parent Info
-                                        →</button>
-                                </div>
-                            </div>
-
-                            <div class="tab-pane fade" id="progressStepParent" role="tabpanel">
-                                <div class="row">
-                                    <div class="col-xl-6 mb-3">
-                                        <label class="form-label">Parent/Guardian Name</label>
-                                        <input type="text" class="form-control" name="parent_name"
-                                            placeholder="e.g., John Doe" required="">
-                                    </div>
-                                    <div class="col-xl-6 mb-3">
-                                        <label class="form-label">Relation</label>
-                                        <input type="text" class="form-control" name="relation"
-                                            placeholder="e.g., Father, Mother" required="">
-                                    </div>
-                                    <div class="col-xl-6 mb-3">
-                                        <label class="form-label">Parent Phone</label>
-                                        <input type="tel" class="form-control" name="parent_phone"
-                                            placeholder="e.g., +1 555 123 4567" required="">
-                                    </div>
-                                    <div class="col-xl-6 mb-3">
-                                        <label class="form-label">Parent Email</label>
-                                        <input type="email" class="form-control" name="parent_email"
-                                            placeholder="e.g., parent@example.com" required="">
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-between">
-                                    <button type="button" class="btn btn-secondary" data-wizard-prev="">← Back: Course
-                                        Info</button>
-                                    <button type="button" class="btn btn-primary" data-wizard-next="">Next: Documents
-                                        →</button>
-                                </div>
-                            </div>
-
-                            <div class="tab-pane fade" id="progressStepDocs" role="tabpanel">
-                                <div class="mb-3">
-                                    <label class="form-label">Upload ID Proof</label>
-                                    <input type="file" class="form-control" name="id_proof" required="">
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label">Upload Previous Marksheet</label>
-                                    <input type="file" class="form-control" name="marksheet" required="">
-                                </div>
-                                <div class="d-flex justify-content-between">
-                                    <button type="button" class="btn btn-secondary" data-wizard-prev="">← Back: Parent
-                                        Info</button>
-                                    <button type="submit" class="btn btn-success">Submit Application</button>
-                                </div>
-                            </div>
-
-                        </div> <!-- tab-content -->
-                    </div>
-
-                </form>
-
-            </div> <!-- end card-body-->
-        </div> <!-- end card-->
-
-        <div class="card">
-            <div class="card-header">
-                <div class="flex-grow-1">
-                    <h4 class="card-title">Vertical Wizard</h4>
-                </div>
-                <span class="badge badge-soft-success badge-label fs-xxs py-1">Exclusive</span>
-            </div>
-
-            <div class="card-body">
-
-                <form data-wizard-validation="">
-                    <div class="ins-wizard" data-wizard="" data-wizard-animation="">
-                        <div class="row">
-                            <!-- Vertical Nav -->
-                            <div class="col-md-4">
-                                <!-- Navigation Tabs -->
-                                <ul class="nav flex-column wizard-bordered wizard-tabs nav-pills" data-wizard-nav=""
-                                    role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                        <a class="nav-link active" data-bs-toggle="tab" href="#verticalStepStudent"
-                                            aria-selected="true" role="tab">
-                                            <span class="d-flex align-items-center">
-                                                <i class="ti ti-user-circle fs-32"></i>
-                                                <span class="flex-grow-1 ms-2 text-truncate">
-                                                    <span class="mb-0 lh-base d-block fw-semibold text-body">Student
-                                                        Info</span>
-                                                    <span class="fs-xxs mb-0">Your personal details</span>
-                                                </span>
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <a class="nav-link disabled" data-bs-toggle="tab" href="#verticalStepAddress"
-                                            aria-selected="false" tabindex="-1" role="tab">
-                                            <span class="d-flex align-items-center">
-                                                <i class="ti ti-map-pin fs-32"></i>
-                                                <span class="flex-grow-1 ms-2 text-truncate">
-                                                    <span class="mb-0 lh-base d-block fw-semibold text-body">Address
-                                                        Info</span>
-                                                    <span class="fs-xxs mb-0">Current location</span>
-                                                </span>
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <a class="nav-link disabled" data-bs-toggle="tab" href="#verticalStepCourse"
-                                            aria-selected="false" tabindex="-1" role="tab">
-                                            <span class="d-flex align-items-center">
-                                                <i class="ti ti-book fs-32"></i>
-                                                <span class="flex-grow-1 ms-2 text-truncate">
-                                                    <span class="mb-0 lh-base d-block fw-semibold text-body">Course
-                                                        Info</span>
-                                                    <span class="fs-xxs mb-0">Your academic choices</span>
-                                                </span>
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <a class="nav-link disabled" data-bs-toggle="tab" href="#verticalStepParent"
-                                            aria-selected="false" tabindex="-1" role="tab">
-                                            <span class="d-flex align-items-center">
-                                                <i class="ti ti-users fs-32"></i>
-                                                <span class="flex-grow-1 ms-2 text-truncate">
-                                                    <span class="mb-0 lh-base d-block fw-semibold text-body">Parent
-                                                        Info</span>
-                                                    <span class="fs-xxs mb-0">Guardian details</span>
-                                                </span>
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <a class="nav-link disabled" data-bs-toggle="tab" href="#verticalStepDocs"
-                                            aria-selected="false" tabindex="-1" role="tab">
-                                            <span class="d-flex align-items-center">
-                                                <i class="ti ti-folder fs-32"></i>
-                                                <span class="flex-grow-1 ms-2 text-truncate">
-                                                    <span
-                                                        class="mb-0 lh-base d-block fw-semibold text-body">Documents</span>
-                                                    <span class="fs-xxs mb-0">Required uploads</span>
-                                                </span>
-                                            </span>
-                                        </a>
+                                            <div class="row mb-3">
+                                                <label class="col-md-3 col-form-label" for="confirm3">Re
+                                                    Password</label>
+                                                <div class="col-md-9">
+                                                    <input type="password" id="confirm3" name="confirm3"
+                                                        class="form-control" required="">
+                                                </div>
+                                            </div>
+                                        </div> <!-- end col -->
+                                    </div> <!-- end row -->
+                                </form>
+                                <ul class="list-inline wizard mb-0">
+                                    <li class="next list-inline-item float-end">
+                                        <a href="javascript:void(0);" class="btn btn-info">Add More Info <i
+                                                class="mdi mdi-arrow-right ms-1"></i></a>
                                     </li>
                                 </ul>
                             </div>
 
-                            <!-- Tab Content -->
-                            <div class="col-md-8">
-                                <!-- Content -->
-                                <div class="tab-content border border-dashed rounded p-4" data-wizard-content="">
+                            <div class="tab-pane fade" id="second" role="tabpanel">
+                                <form id="profileForm" method="post" action="#" class="form-horizontal">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="row mb-3">
+                                                <label class="col-md-3 col-form-label" for="name3"> First name</label>
+                                                <div class="col-md-9">
+                                                    <input type="text" id="name3" name="name3" class="form-control"
+                                                        required="">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label class="col-md-3 col-form-label" for="surname3"> Last name</label>
+                                                <div class="col-md-9">
+                                                    <input type="text" id="surname3" name="surname3"
+                                                        class="form-control" required="">
+                                                </div>
+                                            </div>
 
-                                    <!-- Step 1 -->
-                                    <div class="tab-pane fade show active" id="verticalStepStudent" role="tabpanel">
-                                        <div class="row">
-                                            <div class="col-xl-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Full Name</label>
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Enter full name" name="fullname" required="">
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Email</label>
-                                                    <input type="email" class="form-control"
-                                                        placeholder="Enter email address" name="email" required="">
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Phone Number</label>
-                                                    <input type="tel" class="form-control" name="phone"
-                                                        placeholder="e.g., +1 234 567 8901" required="">
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Date of Birth</label>
-                                                    <input type="text" data-provider="flatpickr"
-                                                        data-date-format="d M, Y" placeholder="Select birth date"
-                                                        class="form-control flatpickr-input" name="dob" required=""
-                                                        readonly="readonly">
+                                            <div class="row mb-3">
+                                                <label class="col-md-3 col-form-label" for="email3">Email</label>
+                                                <div class="col-md-9">
+                                                    <input type="email" id="email3" name="email3" class="form-control"
+                                                        required="">
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="d-flex justify-content-end mt-3">
-                                            <button type="button" class="btn btn-primary" data-wizard-next="">Next:
-                                                Address Info →</button>
-                                        </div>
+                                        <!-- end col -->
                                     </div>
-
-                                    <!-- Step 2 -->
-                                    <div class="tab-pane fade" id="verticalStepAddress" role="tabpanel">
-                                        <div class="row">
-                                            <div class="col-xl-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Street Address</label>
-                                                    <input type="text" class="form-control" name="street"
-                                                        placeholder="e.g., 123 Main St" required="">
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label">City</label>
-                                                    <input type="text" class="form-control" name="city"
-                                                        placeholder="e.g., New York" required="">
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label">State</label>
-                                                    <input type="text" class="form-control" name="state"
-                                                        placeholder="e.g., California" required="">
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Zip Code</label>
-                                                    <input type="text" class="form-control" name="zip"
-                                                        placeholder="e.g., 10001" required="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex justify-content-between mt-3">
-                                            <button type="button" class="btn btn-secondary" data-wizard-prev="">←
-                                                Back</button>
-                                            <button type="button" class="btn btn-primary" data-wizard-next="">Next:
-                                                Course Info →</button>
-                                        </div>
-                                    </div>
-
-                                    <!-- Step 3 -->
-                                    <div class="tab-pane fade" id="verticalStepCourse" role="tabpanel">
-                                        <div class="row">
-                                            <div class="col-xl-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Choose Course</label>
-                                                    <select class="form-select" name="course" required="">
-                                                        <option value="">Select</option>
-                                                        <option value="Engineering">Engineering</option>
-                                                        <option value="Medical">Medical</option>
-                                                        <option value="Business">Business</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Enrollment Type</label>
-                                                    <select class="form-select" name="enrollment" required="">
-                                                        <option value="">Select</option>
-                                                        <option value="Full Time">Full Time</option>
-                                                        <option value="Part Time">Part Time</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Preferred Batch Time</label>
-                                                    <select class="form-select" name="batch_time" required="">
-                                                        <option value="">Select Time</option>
-                                                        <option value="Morning">Morning</option>
-                                                        <option value="Afternoon">Afternoon</option>
-                                                        <option value="Evening">Evening</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Mode of Study</label>
-                                                    <select class="form-select" name="mode" required="">
-                                                        <option value="">Select Mode</option>
-                                                        <option value="Offline">Offline</option>
-                                                        <option value="Online">Online</option>
-                                                        <option value="Hybrid">Hybrid</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex justify-content-between mt-3">
-                                            <button type="button" class="btn btn-secondary" data-wizard-prev="">←
-                                                Back</button>
-                                            <button type="button" class="btn btn-primary" data-wizard-next="">Next:
-                                                Parent Info →</button>
-                                        </div>
-                                    </div>
-
-                                    <!-- Step 4 -->
-                                    <div class="tab-pane fade" id="verticalStepParent" role="tabpanel">
-                                        <div class="row">
-                                            <div class="col-xl-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Parent/Guardian Name</label>
-                                                    <input type="text" class="form-control" name="parent_name"
-                                                        placeholder="e.g., John Doe" required="">
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Relation</label>
-                                                    <input type="text" class="form-control" name="relation"
-                                                        placeholder="e.g., Father, Mother" required="">
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Parent Phone</label>
-                                                    <input type="tel" class="form-control" name="parent_phone"
-                                                        placeholder="e.g., +1 555 123 4567" required="">
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Parent Email</label>
-                                                    <input type="email" class="form-control" name="parent_email"
-                                                        placeholder="e.g., parent@example.com">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex justify-content-between mt-3">
-                                            <button type="button" class="btn btn-secondary" data-wizard-prev="">←
-                                                Back</button>
-                                            <button type="button" class="btn btn-primary" data-wizard-next="">Next:
-                                                Documents →</button>
-                                        </div>
-                                    </div>
-
-                                    <!-- Step 5 -->
-                                    <div class="tab-pane fade" id="verticalStepDocs" role="tabpanel">
-                                        <div class="mb-3">
-                                            <label class="form-label">Upload ID Proof</label>
-                                            <input type="file" class="form-control" name="id_proof" required="">
-                                        </div>
-                                        <div class="mb-3">
-                                            <label class="form-label">Upload Previous Marksheet</label>
-                                            <input type="file" class="form-control" name="marksheet" required="">
-                                        </div>
-                                        <div class="d-flex justify-content-between mt-3">
-                                            <button type="button" class="btn btn-secondary" data-wizard-prev="">←
-                                                Back</button>
-                                            <button type="submit" class="btn btn-success">Submit Application</button>
-                                        </div>
-                                    </div>
-
-                                </div> <!-- tab-content -->
+                                    <!-- end row -->
+                                </form>
+                                <ul class="pager wizard mb-0 list-inline">
+                                    <li class="previous list-inline-item disabled">
+                                        <button type="button" class="btn btn-light"><i
+                                                class="mdi mdi-arrow-left me-1"></i> Back to Account</button>
+                                    </li>
+                                    <li class="next list-inline-item float-end">
+                                        <button type="button" class="btn btn-info">Add More Info <i
+                                                class="mdi mdi-arrow-right ms-1"></i></button>
+                                    </li>
+                                </ul>
                             </div>
-                        </div> <!-- row -->
-                    </div>
-                </form>
+
+                            <div class="tab-pane fade" id="third" role="tabpanel">
+                                <form id="otherForm" method="post" action="#" class="form-horizontal"></form>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="text-center">
+                                            <h2 class="mt-0">
+                                                <i class="mdi mdi-check-all"></i>
+                                            </h2>
+                                            <h3 class="mt-0">Thank you !</h3>
+
+                                            <p class="w-75 mb-2 mx-auto">Quisque nec turpis at urna dictum luctus.
+                                                Suspendisse convallis dignissim eros at volutpat. In egestas mattis
+                                                dui. Aliquam mattis dictum aliquet.</p>
+
+                                            <div class="mb-3">
+                                                <div class="form-check d-inline-block">
+                                                    <input type="checkbox" class="form-check-input" id="customCheck4"
+                                                        required="">
+                                                    <label class="form-check-label" for="customCheck4">I agree with the
+                                                        Terms and Conditions</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end col -->
+                                </div>
+                                <!-- end row -->
+
+                                <ul class="pager wizard mb-0 list-inline mt-1">
+                                    <li class="previous list-inline-item disabled">
+                                        <button type="button" class="btn btn-light"><i
+                                                class="mdi mdi-arrow-left me-1"></i> Back to Profile</button>
+                                    </li>
+                                    <li class="next list-inline-item float-end">
+                                        <button type="button" class="btn btn-info">Submit</button>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div> <!-- tab-content -->
+                    </div> <!-- end #rootwizard-->
 
 
-            </div>
-        </div>
+                </div> <!-- end card-body -->
+            </div> <!-- end card-->
+        </div> <!-- end col -->
+    </div>
+    <!-- end row -->
 
-    </div> <!-- en col-->
-</div> <!-- end row -->
+</div>

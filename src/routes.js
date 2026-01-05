@@ -305,8 +305,35 @@ const IconsRemixicons = async () => (await import('./pages/icons/remixicons/icon
 const IconsMdi = async () => (await import('./pages/icons/mdi/icons-mdi.js')).IconsMdi
 const IconsUnicons = async () => (await import('./pages/icons/unicons/icons-unicons.js')).IconsUnicons
 const IconsLucide = async () => (await import('./pages/icons/lucide/icons-lucide.js')).IconsLucide
-
-
+const ChartsApexArea = async () => (await import('./pages/charts/apex/area/charts-apex-area.js')).ChartsApexArea
+const ChartsApexBar = async () => (await import('./pages/charts/apex/bar/charts-apex-bar.js')).ChartsApexBar
+const ChartsApexBubble = async () => (await import('./pages/charts/apex/bubble/charts-apex-bubble.js')).ChartsApexBubble
+const ChartsApexCandlestick = async () => (await import('./pages/charts/apex/candlestick/charts-apex-candlestick.js')).ChartsApexCandlestick
+const ChartsApexColumn = async () => (await import('./pages/charts/apex/column/charts-apex-column.js')).ChartsApexColumn
+const ChartsApexHeatmap = async () => (await import('./pages/charts/apex/heatmap/charts-apex-heatmap.js')).ChartsApexHeatmap
+const ChartsApexLine = async () => (await import('./pages/charts/apex/line/charts-apex-line.js')).ChartsApexLine
+const ChartsApexMixed = async () => (await import('./pages/charts/apex/mixed/charts-apex-mixed.js')).ChartsApexMixed
+const ChartsApexTimeline = async () => (await import('./pages/charts/apex/timeline/charts-apex-timeline.js')).ChartsApexTimeline
+const ChartsApexBoxplot = async () => (await import('./pages/charts/apex/boxplot/charts-apex-boxplot.js')).ChartsApexBoxplot
+const ChartsApexTreemap = async () => (await import('./pages/charts/apex/treemap/charts-apex-treemap.js')).ChartsApexTreemap
+const ChartsApexPie = async () => (await import('./pages/charts/apex/pie/charts-apex-pie.js')).ChartsApexPie
+const ChartsApexRadar = async () => (await import('./pages/charts/apex/radar/charts-apex-radar.js')).ChartsApexRadar
+const ChartsApexRadialbar = async () => (await import('./pages/charts/apex/radialbar/charts-apex-radialbar.js')).ChartsApexRadialbar
+const ChartsApexScatter = async () => (await import('./pages/charts/apex/scatter/charts-apex-scatter.js')).ChartsApexScatter
+const ChartsApexPolarArea = async () => (await import('./pages/charts/apex/polar-area/charts-apex-polar-area.js')).ChartsApexPolarArea
+const ChartsApexSparklines = async () => (await import('./pages/charts/apex/sparklines/charts-apex-sparklines.js')).ChartsApexSparklines
+const ChartsChartjsArea = async () => (await import('./pages/charts/chartjs/area/charts-chartjs-area.js')).ChartsChartjsArea
+const ChartsChartjsBar = async () => (await import('./pages/charts/chartjs/bar/charts-chartjs-bar.js')).ChartsChartjsBar
+const ChartsChartjsLine = async () => (await import('./pages/charts/chartjs/line/charts-chartjs-line.js')).ChartsChartjsLine
+const ChartsChartjsOther = async () => (await import('./pages/charts/chartjs/other/charts-chartjs-other.js')).ChartsChartjsOther
+const ChartsSparkline = async () => (await import('./pages/charts/sparkline/charts-sparkline.js')).ChartsSparkline
+const ChartsBrite = async () => (await import('./pages/charts/brite/charts-brite.js')).ChartsBrite
+const FormElements = async () => (await import('./pages/form/elements/form-elements.js')).FormElements
+const FormAdvanced = async () => (await import('./pages/form/advanced/form-advanced.js')).FormAdvanced
+const FormValidation = async () => (await import('./pages/form/validation/form-validation.js')).FormValidation
+const FormWizard = async () => (await import('./pages/form/wizard/form-wizard.js')).FormWizard
+const FormFileuploads = async () => (await import('./pages/form/fileuploads/form-fileuploads.js')).FormFileuploads
+const FormEditors = async () => (await import('./pages/form/editors/form-editors.js')).FormEditors
 
 const routes = [
     {
@@ -393,12 +420,40 @@ const routes = [
             { path: '/extended-scrollspy', component: ExtendedScrollspy },
             { path: '/extended-treeview', component: ExtendedTreeview },
             { path: '/widgets', component: Widgets },
-            //#endregion
             { path: '/icons-remixicons', component: IconsRemixicons },
             { path: '/icons-mdi', component: IconsMdi },
             { path: '/icons-unicons', component: IconsUnicons },
             { path: '/icons-lucide', component: IconsLucide },
-
+            { path: '/charts-apex-area', component: ChartsApexArea },
+            { path: '/charts-apex-bar', component: ChartsApexBar },
+            { path: '/charts-apex-bubble', component: ChartsApexBubble },
+            { path: '/charts-apex-candlestick', component: ChartsApexCandlestick },
+            { path: '/charts-apex-column', component: ChartsApexColumn },
+            { path: '/charts-apex-heatmap', component: ChartsApexHeatmap },
+            { path: '/charts-apex-line', component: ChartsApexLine },
+            { path: '/charts-apex-mixed', component: ChartsApexMixed },
+            { path: '/charts-apex-timeline', component: ChartsApexTimeline },
+            { path: '/charts-apex-boxplot', component: ChartsApexBoxplot },
+            { path: '/charts-apex-treemap', component: ChartsApexTreemap },
+            { path: '/charts-apex-pie', component: ChartsApexPie },
+            { path: '/charts-apex-radar', component: ChartsApexRadar },
+            { path: '/charts-apex-radialbar', component: ChartsApexRadialbar },
+            { path: '/charts-apex-scatter', component: ChartsApexScatter },
+            { path: '/charts-apex-polar-area', component: ChartsApexPolarArea },
+            //#endregion
+            { path: '/charts-apex-sparklines', component: ChartsApexSparklines },
+            { path: '/charts-chartjs-area', component: ChartsChartjsArea },
+            { path: '/charts-chartjs-bar', component: ChartsChartjsBar },
+            { path: '/charts-chartjs-line', component: ChartsChartjsLine },
+            { path: '/charts-chartjs-other', component: ChartsChartjsOther },
+            { path: '/charts-sparkline', component: ChartsSparkline },
+            { path: '/charts-brite', component: ChartsBrite },
+            { path: '/form-elements', component: FormElements },
+            { path: '/form-advanced', component: FormAdvanced },
+            { path: '/form-validation', component: FormValidation },
+            { path: '/form-wizard', component: FormWizard },
+            { path: '/form-fileuploads', component: FormFileuploads },
+            { path: '/form-editors', component: FormEditors },
             
             // old
             // { path: '/about', component: AboutPage },
@@ -587,7 +642,7 @@ const routes = [
     { path: '/pages-lock-screen-2', component: PagesLockScreen2 },
     { path: '/pages-confirm-mail', component: PagesConfirmMail },
     { path: '/pages-confirm-mail-2', component: PagesConfirmMail2 },
-    { path: '/pages-404', component: PagesError404 },
+    { path: '/404', component: PagesError404 },
     { path: '/pages-500', component: PagesError500 },
     { path: '/pages-preloader', component: PagesPreloader },
     { path: '/landing', component: Landing },

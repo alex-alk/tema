@@ -1,130 +1,126 @@
-<div class="page-title-head d-flex align-items-center">
-                    <div class="flex-grow-1">
-                        <h4 class="fs-xl fw-bold m-0">File Uploads</h4>
-                    </div>
+<div class="container-fluid">
 
-                    <div class="text-end">
-                        <ol class="breadcrumb m-0 py-0">
-                            <li class="breadcrumb-item"><a href="javascript: void(0);">UBold</a></li>
-                            
-                            <li class="breadcrumb-item"><a href="javascript: void(0);">Forms</a></li>
-                            
-                            <li class="breadcrumb-item active">File Uploads</li>
-                        </ol>
-                    </div>
+    <!-- start page title -->
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box">
+                <div class="page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item"><a href="javascript: void(0);">Hyper</a></li>
+                        <li class="breadcrumb-item"><a href="javascript: void(0);">Forms</a></li>
+                        <li class="breadcrumb-item active">File Uploads</li>
+                    </ol>
                 </div>
+                <h4 class="page-title">File Uploads</h4>
+            </div>
+        </div>
+    </div>
+    <!-- end page title -->
 
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="card-header d-block">
-                                <h4 class="card-title mb-1">Dropzone</h4>
-                                <p class="text-muted mb-0">
-                                    DropzoneJS is an open source library that provides drag’n’drop file uploads with image previews.
-                                </p>
-                            </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Dropzone File Upload</h4>
+                    <p class="text-muted font-14">
+                        DropzoneJS is an open source library that provides drag’n’drop file uploads with image previews.
+                    </p>
 
-                            <div class="card-body">
-                                <form action="/" method="post" class="dropzone dz-clickable" id="myAwesomeDropzone" data-plugin="dropzone" data-previews-container="#file-previews" data-upload-preview-template="#uploadPreviewTemplate">
-                                    
+                    <ul class="nav nav-tabs nav-bordered mb-3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a href="#file-upload-preview" data-bs-toggle="tab" aria-expanded="false"
+                                class="nav-link active" aria-selected="true" role="tab">
+                                Preview
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#file-upload-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link"
+                                aria-selected="false" tabindex="-1" role="tab">
+                                Code
+                            </a>
+                        </li>
+                    </ul> <!-- end nav-->
+                    <div class="tab-content">
+                        <div class="tab-pane show active" id="file-upload-preview" role="tabpanel">
+                            <form action="/" method="post" class="dropzone dz-clickable" id="myAwesomeDropzone"
+                                data-plugin="dropzone" data-previews-container="#file-previews"
+                                data-upload-preview-template="#uploadPreviewTemplate">
 
-                                    <div class="dz-message needsclick">
-                                        <div class="avatar-lg mx-auto mb-3">
-                                            <span class="avatar-title bg-success-subtle text-success rounded-circle">
-                                                <i class="fs-24 ti ti-cloud-upload"></i>
-                                            </span>
-                                        </div>
-                                        <h4 class="mb-2">Drop files here or click to upload.</h4>
-                                        <p class="text-muted fst-italic mb-3">You can drag images here, or browse files via the button below.</p>
-                                        <button type="button" class="btn btn-sm shadow btn-default">Browse Images</button>
-                                    </div>
-                                </form>
 
-                                <!-- Preview -->
-                                <div class="dropzone-previews mt-3" id="file-previews"></div>
-
-                                <!-- file preview template -->
-                                <div class="d-none" id="uploadPreviewTemplate">
-                                    <div class="card mt-1 mb-0 border-dashed border">
-                                        <div class="p-2">
-                                            <div class="row align-items-center">
-                                                <div class="col-auto">
-                                                    <img data-dz-thumbnail="" src="#" class="avatar-sm rounded bg-light" alt="">
-                                                </div>
-                                                <div class="col ps-0">
-                                                    <a href="javascript:void(0);" class="fw-semibold" data-dz-name=""></a>
-                                                    <p class="mb-0 text-muted" data-dz-size=""></p>
-                                                </div>
-                                                <div class="col-auto">
-                                                    <!-- Button -->
-                                                    <a href="" class="btn btn-link btn-lg text-danger" data-dz-remove="">
-                                                        <i class="ti ti-x"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="dz-message needsclick">
+                                    <i class="h1 text-muted ri-upload-cloud-2-line"></i>
+                                    <h3>Drop files here or click to upload.</h3>
+                                    <span class="text-muted font-13">(This is just a demo dropzone. Selected files are
+                                        <strong>not</strong> actually uploaded.)</span>
                                 </div>
-                                <!-- end file preview template -->
+                            </form>
 
-                            </div> <!-- end card-body -->
-                        </div> <!-- end card-->
+                            <!-- Preview -->
+                            <div class="dropzone-previews mt-3" id="file-previews"></div>
+                        </div> <!-- end preview-->
 
-                        <div class="card">
-                            <div class="card-header d-block">
-                                <h4 class="card-title mb-1">Filepond</h4>
-                                <p class="text-muted mb-0">
-                                    A JavaScript library that can upload anything you throw at it, optimizes images for faster uploads, and offers a great, accessible, silky smooth user experience.
-                                </p>
-                            </div>
+                        <div class="tab-pane code" id="file-upload-code" role="tabpanel">
+                            <p class="m-2">Make sure to include following js files at end of <code>body element</code>
+                            </p>
+                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                            <pre class="mb-0 language-markup"
+                                tabindex="0"><code class="language-markup"><span class="token comment">&lt;!-- plugin js --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>assets/vendor/dropzone/min/dropzone.min.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token comment">&lt;!-- init js --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>assets/js/ui/component.fileupload.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
 
-                            <div class="card-body">
+<span class="token comment">&lt;!-- File Upload --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">action</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>/<span class="token punctuation">"</span></span> <span class="token attr-name">method</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>post<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>dropzone<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>myAwesomeDropzone<span class="token punctuation">"</span></span> <span class="token attr-name">data-plugin</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>dropzone<span class="token punctuation">"</span></span> <span class="token attr-name">data-previews-container</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#file-previews<span class="token punctuation">"</span></span>
+    <span class="token attr-name">data-upload-preview-template</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#uploadPreviewTemplate<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>fallback<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>file<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>file<span class="token punctuation">"</span></span> <span class="token attr-name">multiple</span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 
-                                <div class="mb-3">
-                                    <h5 class="mb-3">Basic Example</h5>
-                                    <div class="filepond-uploader">
-                                        <div class="filepond--root filepond filepond-input-multiple filepond--hopper" data-style-button-remove-item-position="left" data-style-button-process-item-position="right" data-style-load-indicator-position="right" data-style-progress-indicator-position="right" data-style-button-remove-item-align="false" style="height: 76px;"><input class="filepond--browser" type="file" id="filepond--browser-uspzadim3" name="filepond" aria-controls="filepond--assistant-uspzadim3" aria-labelledby="filepond--drop-label-uspzadim3" multiple=""><a class="filepond--credits" href="https://pqina.nl/" tabindex="-1" target="_blank" rel="noopener noreferrer nofollow" style="transform: translateY(68px);">Powered by PQINA</a><div class="filepond--drop-label" style="transform: translate3d(0px, 0px, 0px); opacity: 1;"><label for="filepond--browser-uspzadim3" id="filepond--drop-label-uspzadim3">Drag &amp; Drop your files or <span class="filepond--label-action" tabindex="0">Browse</span></label></div><div class="filepond--list-scroller" style="transform: translate3d(0px, 60px, 0px);"><ul class="filepond--list" role="list"></ul></div><div class="filepond--panel filepond--panel-root" data-scalable="true"><div class="filepond--panel-top filepond--panel-root"></div><div class="filepond--panel-center filepond--panel-root" style="transform: translate3d(0px, 8px, 0px) scale3d(1, 0.6, 1);"></div><div class="filepond--panel-bottom filepond--panel-root" style="transform: translate3d(0px, 68px, 0px);"></div></div><span class="filepond--assistant" id="filepond--assistant-uspzadim3" role="alert" aria-live="polite" aria-relevant="additions"></span><div class="filepond--drip"></div><fieldset class="filepond--data"><legend>Files</legend></fieldset></div>
-                                    </div>
-                                </div>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>dz-message needsclick<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>h1 text-muted ri-upload-cloud-2-line<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span class="token punctuation">&gt;</span></span>Drop files here or click to upload.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text-muted font-13<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>(This is just a demo dropzone. Selected files are
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>strong</span><span class="token punctuation">&gt;</span></span>not<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>strong</span><span class="token punctuation">&gt;</span></span> actually uploaded.)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">&gt;</span></span>
 
-                                <div class="mb-3">
-                                    <h5 class="mb-3">Two Grid Example</h5>
-                                    <div class="filepond-uploader two-grid">
-                                        <div class="filepond--root filepond filepond-input-multiple filepond--hopper" data-style-button-remove-item-position="left" data-style-button-process-item-position="right" data-style-load-indicator-position="right" data-style-progress-indicator-position="right" data-style-button-remove-item-align="false" style="height: 76px;"><input class="filepond--browser" type="file" id="filepond--browser-nxjgq3ta9" name="filepond" aria-controls="filepond--assistant-nxjgq3ta9" aria-labelledby="filepond--drop-label-nxjgq3ta9" multiple=""><a class="filepond--credits" href="https://pqina.nl/" tabindex="-1" target="_blank" rel="noopener noreferrer nofollow" style="transform: translateY(68px);">Powered by PQINA</a><div class="filepond--drop-label" style="transform: translate3d(0px, 0px, 0px); opacity: 1;"><label for="filepond--browser-nxjgq3ta9" id="filepond--drop-label-nxjgq3ta9">Drag &amp; Drop your files or <span class="filepond--label-action" tabindex="0">Browse</span></label></div><div class="filepond--list-scroller" style="transform: translate3d(0px, 60px, 0px);"><ul class="filepond--list" role="list"></ul></div><div class="filepond--panel filepond--panel-root" data-scalable="true"><div class="filepond--panel-top filepond--panel-root"></div><div class="filepond--panel-center filepond--panel-root" style="transform: translate3d(0px, 8px, 0px) scale3d(1, 0.6, 1);"></div><div class="filepond--panel-bottom filepond--panel-root" style="transform: translate3d(0px, 68px, 0px);"></div></div><span class="filepond--assistant" id="filepond--assistant-nxjgq3ta9" role="alert" aria-live="polite" aria-relevant="additions"></span><div class="filepond--drip"></div><fieldset class="filepond--data"><legend>Files</legend></fieldset></div>
-                                    </div>
-                                </div>
+<span class="token comment">&lt;!-- Preview --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>dropzone-previews mt-3<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>file-previews<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 
-                                <div>
-                                    <h5 class="mb-3">Three Grid Example</h5>
-                                    <div class="filepond-uploader three-grid">
-                                        <div class="filepond--root filepond filepond-input-multiple filepond--hopper" data-style-button-remove-item-position="left" data-style-button-process-item-position="right" data-style-load-indicator-position="right" data-style-progress-indicator-position="right" data-style-button-remove-item-align="false" style="height: 76px;"><input class="filepond--browser" type="file" id="filepond--browser-6dq0gpipz" name="filepond" aria-controls="filepond--assistant-6dq0gpipz" aria-labelledby="filepond--drop-label-6dq0gpipz" multiple=""><a class="filepond--credits" href="https://pqina.nl/" tabindex="-1" target="_blank" rel="noopener noreferrer nofollow" style="transform: translateY(68px);">Powered by PQINA</a><div class="filepond--drop-label" style="transform: translate3d(0px, 0px, 0px); opacity: 1;"><label for="filepond--browser-6dq0gpipz" id="filepond--drop-label-6dq0gpipz">Drag &amp; Drop your files or <span class="filepond--label-action" tabindex="0">Browse</span></label></div><div class="filepond--list-scroller" style="transform: translate3d(0px, 60px, 0px);"><ul class="filepond--list" role="list"></ul></div><div class="filepond--panel filepond--panel-root" data-scalable="true"><div class="filepond--panel-top filepond--panel-root"></div><div class="filepond--panel-center filepond--panel-root" style="transform: translate3d(0px, 8px, 0px) scale3d(1, 0.6, 1);"></div><div class="filepond--panel-bottom filepond--panel-root" style="transform: translate3d(0px, 68px, 0px);"></div></div><span class="filepond--assistant" id="filepond--assistant-6dq0gpipz" role="alert" aria-live="polite" aria-relevant="additions"></span><div class="filepond--drip"></div><fieldset class="filepond--data"><legend>Files</legend></fieldset></div>
-                                    </div>
-                                </div>
-                            </div> <!-- end card body -->
-
-                            <div class="border-top border-dashed"></div>
-
-                            <div class="card-body">
-                                <h4 class="card-title mb-2">Profile Picture</h4>
-
-                                <p class="text-muted">FilePond is a JavaScript library with profile picture-shaped file upload variation.</p>
-                                
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="avatar-xxl">
-                                            <div class="filepond--root filepond filepond-input-circle filepond--hopper" data-style-panel-layout="compact circle" data-style-button-remove-item-position="left bottom" data-style-button-process-item-position="right bottom" data-style-load-indicator-position="center bottom" data-style-progress-indicator-position="right bottom" data-style-button-remove-item-align="false" style="height: 80px;"><input class="filepond--browser" type="file" id="filepond--browser-9omcqpj9z" name="filepond" aria-controls="filepond--assistant-9omcqpj9z" aria-labelledby="filepond--drop-label-9omcqpj9z"><a class="filepond--credits" href="https://pqina.nl/" tabindex="-1" target="_blank" rel="noopener noreferrer nofollow" style="transform: translateY(80px);">Powered by PQINA</a><div class="filepond--drop-label" style="transform: translate3d(0px, 0px, 0px); opacity: 1;"><label for="filepond--browser-9omcqpj9z" id="filepond--drop-label-9omcqpj9z"><i class="fs-32 text-muted ti ti-camera"></i></label></div><div class="filepond--list-scroller" style="transform: translate3d(0px, 0px, 0px);"><ul class="filepond--list" role="list"></ul></div><div class="filepond--panel filepond--panel-root" data-scalable="false"><div class="filepond--panel-top filepond--panel-root"></div><div class="filepond--panel-center filepond--panel-root" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 0.8, 1);"></div><div class="filepond--panel-bottom filepond--panel-root" style="transform: translate3d(0px, 80px, 0px);"></div></div><span class="filepond--assistant" id="filepond--assistant-9omcqpj9z" role="alert" aria-live="polite" aria-relevant="additions"></span><div class="filepond--drip"></div><fieldset class="filepond--data"><legend>Files</legend></fieldset></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="avatar-xxl">
-                                            <div class="filepond--root filepond filepond-input-circle rounded filepond--hopper" data-style-panel-layout="compact circle" data-style-button-remove-item-position="left bottom" data-style-button-process-item-position="right bottom" data-style-load-indicator-position="center bottom" data-style-progress-indicator-position="right bottom" data-style-button-remove-item-align="false" style="height: 80px;"><input class="filepond--browser" type="file" id="filepond--browser-lmckx89f8" name="filepond" aria-controls="filepond--assistant-lmckx89f8" aria-labelledby="filepond--drop-label-lmckx89f8"><a class="filepond--credits" href="https://pqina.nl/" tabindex="-1" target="_blank" rel="noopener noreferrer nofollow" style="transform: translateY(80px);">Powered by PQINA</a><div class="filepond--drop-label" style="transform: translate3d(0px, 0px, 0px); opacity: 1;"><label for="filepond--browser-lmckx89f8" id="filepond--drop-label-lmckx89f8"><i class="fs-32 text-muted ti ti-camera"></i></label></div><div class="filepond--list-scroller" style="transform: translate3d(0px, 0px, 0px);"><ul class="filepond--list" role="list"></ul></div><div class="filepond--panel filepond--panel-root" data-scalable="false"><div class="filepond--panel-top filepond--panel-root"></div><div class="filepond--panel-center filepond--panel-root" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 0.8, 1);"></div><div class="filepond--panel-bottom filepond--panel-root" style="transform: translate3d(0px, 80px, 0px);"></div></div><span class="filepond--assistant" id="filepond--assistant-lmckx89f8" role="alert" aria-live="polite" aria-relevant="additions"></span><div class="filepond--drip"></div><fieldset class="filepond--data"><legend>Files</legend></fieldset></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end card body -->
-                        </div> <!-- end card -->
+<span class="token comment">&lt;!-- file preview template --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>d-none<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>uploadPreviewTemplate<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>card mt-1 mb-0 shadow-none border<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>p-2<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row align-items-center<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col-auto<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">data-dz-thumbnail</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>avatar-sm rounded bg-light<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col ps-0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>javascript:void(0);<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text-muted fw-bold<span class="token punctuation">"</span></span> <span class="token attr-name">data-dz-name</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>mb-0<span class="token punctuation">"</span></span> <span class="token attr-name">data-dz-size</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col-auto<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token comment">&lt;!-- Button --&gt;</span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-link btn-lg text-muted<span class="token punctuation">"</span></span> <span class="token attr-name">data-dz-remove</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>ri-close-line<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                            <!-- end highlight-->
+                        </div> <!-- end preview code-->
+                    </div> <!-- end tab-content-->
 
 
-                    </div> <!-- end col -->
-                </div> <!-- end row -->
+                </div>
+                <!-- end card-body -->
+            </div>
+            <!-- end card-->
+        </div>
+        <!-- end col-->
+    </div>
+    <!-- end row -->
+
+</div>
