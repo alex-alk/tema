@@ -1,0 +1,549 @@
+<div class="container-fluid">
+
+    <!-- start page title -->
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box">
+                <div class="page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item"><a href="javascript: void(0);">Hyper</a></li>
+                        <li class="breadcrumb-item"><a href="javascript: void(0);">Extended UI</a></li>
+                        <li class="breadcrumb-item active">Ratings</li>
+                    </ol>
+                </div>
+                <h4 class="page-title">Ratings</h4>
+            </div>
+        </div>
+    </div>
+    <!-- end page title -->
+
+    <div class="row">
+        <div class="col-xl-6">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Default Ratings</h4>
+                    <p class="text-muted font-14"></p>
+
+                    <ul class="nav nav-tabs nav-bordered mb-3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a href="#default-ratings-preview" data-bs-toggle="tab" aria-expanded="false"
+                                class="nav-link active" aria-selected="true" role="tab">
+                                Preview
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#default-ratings-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link"
+                                aria-selected="false" tabindex="-1" role="tab">
+                                Code
+                            </a>
+                        </li>
+                    </ul> <!-- end nav-->
+                    <div class="tab-content">
+                        <div class="tab-pane show active" id="default-ratings-preview" role="tabpanel">
+                            <div class="rateit rateit-font" data-rateit-mode="font">
+                                <button id="rateit-reset-2" type="button" class="rateit-reset" aria-label="reset rating"
+                                    aria-controls="rateit-range-2"><span></span></button>
+                                <div id="rateit-range-2" class="rateit-range" tabindex="0" role="slider"
+                                    aria-label="rating" aria-owns="rateit-reset-2" aria-valuemin="0" aria-valuemax="5"
+                                    aria-valuenow="0" aria-readonly="false">
+                                    <div class="rateit-empty">★★★★★</div>
+                                    <div class="rateit-selected" style="width: 0px;">★★★★★</div>
+                                    <div class="rateit-hover" style="width: 0px; display: none;">★★★★★</div>
+                                </div>
+                            </div>
+                        </div> <!-- end preview-->
+
+                        <div class="tab-pane code" id="default-ratings-code" role="tabpanel">
+                            <p class="mt-3">Make sure to include following js files at end of <code>body element</code>
+                            </p>
+
+                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                            <pre class="mb-0 language-markup"
+                                tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>assets/vendor/jquery.rateit/scripts/jquery.rateit.min.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span></code></pre>
+                            <!-- end highlight-->
+
+                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                            <pre class="mb-0 language-markup"
+                                tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>rateit<span class="token punctuation">"</span></span> <span class="token attr-name">data-rateit-mode</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>font<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                            <!-- end highlight-->
+                        </div> <!-- end preview code-->
+                    </div> <!-- end tab-content-->
+                </div> <!-- end card-body -->
+            </div> <!-- end card-->
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Icon Font - Change icon</h4>
+                    <p class="text-muted font-14"></p>
+
+                    <ul class="nav nav-tabs nav-bordered mb-3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a href="#change-icon-preview" data-bs-toggle="tab" aria-expanded="false"
+                                class="nav-link active" aria-selected="true" role="tab">
+                                Preview
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#change-icon-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link"
+                                aria-selected="false" tabindex="-1" role="tab">
+                                Code
+                            </a>
+                        </li>
+                    </ul> <!-- end nav-->
+                    <div class="tab-content">
+                        <div class="tab-pane show active" id="change-icon-preview" role="tabpanel">
+                            <div class="rateit rateit-font" data-rateit-icon="@" data-rateit-mode="font">
+                                <button id="rateit-reset-3" type="button" class="rateit-reset" aria-label="reset rating"
+                                    aria-controls="rateit-range-3"><span></span></button>
+                                <div id="rateit-range-3" class="rateit-range" tabindex="0" role="slider"
+                                    aria-label="rating" aria-owns="rateit-reset-3" aria-valuemin="0" aria-valuemax="5"
+                                    aria-valuenow="0" aria-readonly="false">
+                                    <div class="rateit-empty">@@@@@</div>
+                                    <div class="rateit-selected" style="width: 0px;">@@@@@</div>
+                                    <div class="rateit-hover" style="width: 0px; display: none;">@@@@@</div>
+                                </div>
+                            </div>
+                        </div> <!-- end preview-->
+
+                        <div class="tab-pane code" id="change-icon-code" role="tabpanel">
+                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                            <pre class="mb-0 language-markup"
+                                tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>rateit<span class="token punctuation">"</span></span>  <span class="token attr-name">data-rateit-icon</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>@<span class="token punctuation">"</span></span> <span class="token attr-name">data-rateit-mode</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>font<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                            <!-- end highlight-->
+                        </div> <!-- end preview code-->
+                    </div> <!-- end tab-content-->
+                </div> <!-- end card-body -->
+            </div> <!-- end card-->
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Progressive enhancement (using select)</h4>
+                    <p class="text-muted font-14"></p>
+
+                    <ul class="nav nav-tabs nav-bordered mb-3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a href="#using-select-preview" data-bs-toggle="tab" aria-expanded="false"
+                                class="nav-link active" aria-selected="true" role="tab">
+                                Preview
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#using-select-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link"
+                                aria-selected="false" tabindex="-1" role="tab">
+                                Code
+                            </a>
+                        </li>
+                    </ul> <!-- end nav-->
+                    <div class="tab-content">
+                        <div class="tab-pane show active" id="using-select-preview" role="tabpanel">
+                            <select id="backing3b" style="display: none;">
+                                <option value="0">Bad</option>
+                                <option value="1" selected="selected">OK</option>
+                                <option value="2">Good</option>
+                                <option value="3">Great</option>
+                                <option value="4">Excellent</option>
+                            </select>
+                            <div class="rateit rateit-mdi rateit-font" data-rateit-backingfld="#backing3b"
+                                data-rateit-mode="font" data-rateit-icon="󰓒"><button id="rateit-reset-4" type="button"
+                                    class="rateit-reset" aria-label="reset rating"
+                                    aria-controls="rateit-range-4"><span></span></button>
+                                <div id="rateit-range-4" class="rateit-range" tabindex="0" role="slider"
+                                    aria-label="rating" aria-owns="rateit-reset-4" aria-valuemin="0" aria-valuemax="4"
+                                    aria-valuenow="1" aria-readonly="false">
+                                    <div class="rateit-empty">󰓒󰓒󰓒󰓒</div>
+                                    <div class="rateit-selected" style="width: 24px;">󰓒󰓒󰓒󰓒</div>
+                                    <div class="rateit-hover">󰓒󰓒󰓒󰓒</div>
+                                </div>
+                            </div>
+                        </div> <!-- end preview-->
+
+                        <div class="tab-pane code" id="using-select-code" role="tabpanel">
+                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                            <pre class="mb-0 language-markup"
+                                tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>select</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>backing3b<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Bad<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>1<span class="token punctuation">"</span></span> <span class="token attr-name">selected</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>selected<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>OK<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>2<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Good<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>3<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Great<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>4<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Excellent<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>rateit rateit-mdi<span class="token punctuation">"</span></span> <span class="token attr-name">data-rateit-backingfld</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#backing3b<span class="token punctuation">"</span></span> <span class="token attr-name">data-rateit-mode</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>font<span class="token punctuation">"</span></span> <span class="token attr-name">data-rateit-icon</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>󰓒<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                            <!-- end highlight-->
+                        </div> <!-- end preview code-->
+                    </div> <!-- end tab-content-->
+                </div> <!-- end card-body -->
+            </div> <!-- end card-->
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Javascript interaction</h4>
+                    <p class="text-muted font-14"></p>
+
+                    <ul class="nav nav-tabs nav-bordered mb-3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a href="#javascript-interaction-preview" data-bs-toggle="tab" aria-expanded="false"
+                                class="nav-link active" aria-selected="true" role="tab">
+                                Preview
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#javascript-interaction-code" data-bs-toggle="tab" aria-expanded="true"
+                                class="nav-link" aria-selected="false" tabindex="-1" role="tab">
+                                Code
+                            </a>
+                        </li>
+                    </ul> <!-- end nav-->
+                    <div class="tab-content">
+                        <div class="tab-pane show active" id="javascript-interaction-preview" role="tabpanel">
+                            <div class="rateit rateit-mdi rateit-font" id="js-interaction" data-rateit-min="2"
+                                data-rateit-mode="font" data-rateit-icon="󰓒">
+                                <button id="rateit-reset-5" type="button" class="rateit-reset" aria-label="reset rating"
+                                    aria-controls="rateit-range-5"><span></span></button>
+                                <div id="rateit-range-5" class="rateit-range" tabindex="0" role="slider"
+                                    aria-label="rating" aria-owns="rateit-reset-5" aria-valuemin="2" aria-valuemax="5"
+                                    aria-valuenow="2" aria-readonly="false">
+                                    <div class="rateit-empty">󰓒󰓒󰓒</div>
+                                    <div class="rateit-selected" style="width: 0px;">󰓒󰓒󰓒</div>
+                                    <div class="rateit-hover">󰓒󰓒󰓒</div>
+                                </div>
+                            </div>
+                            <div>
+                                <span id="jsvalue"></span>
+                                <span id="jshover"></span>
+                            </div>
+                        </div> <!-- end preview-->
+
+                        <div class="tab-pane code" id="javascript-interaction-code" role="tabpanel">
+                            <p class="mt-3">Make sure to include following js files at end of <code>body element</code>
+                            </p>
+
+                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                            <pre class="mb-0 language-markup"
+                                tabindex="0"><code class="language-markup"><span class="token comment">&lt;!-- Plgins only --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>assets/vendor/jquery.rateit/scripts/jquery.rateit.min.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>assets/js/ui/component.rating.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span></code></pre>
+                            <!-- end highlight-->
+
+                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                            <pre class="mb-0 language-markup"
+                                tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>rateit rateit-mdi<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>js-interaction<span class="token punctuation">"</span></span> <span class="token attr-name">data-rateit-min</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>2<span class="token punctuation">"</span></span> <span class="token attr-name">data-rateit-mode</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>font<span class="token punctuation">"</span></span> <span class="token attr-name">data-rateit-icon</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>󰓒<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>jsvalue<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>jshover<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                            <!-- end highlight-->
+                        </div> <!-- end preview code-->
+                    </div> <!-- end tab-content-->
+                </div> <!-- end card-body -->
+            </div> <!-- end card-->
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">RTL support</h4>
+                    <p class="text-muted font-14">Now we are in RTL mode. No changes needed to make this work</p>
+
+                    <ul class="nav nav-tabs nav-bordered mb-3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a href="#rtl-preview" data-bs-toggle="tab" aria-expanded="false" class="nav-link active"
+                                aria-selected="true" role="tab">
+                                Preview
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#rtl-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link"
+                                aria-selected="false" tabindex="-1" role="tab">
+                                Code
+                            </a>
+                        </li>
+                    </ul> <!-- end nav-->
+                    <div class="tab-content">
+                        <div class="tab-pane show active" id="rtl-preview" role="tabpanel">
+                            <div style="direction: rtl">
+                                <div class="rateit rateit-mdi rateit-font" data-rateit-mode="font"
+                                    data-rateit-icon="󰓒">
+                                    <button id="rateit-reset-6" type="button" class="rateit-reset"
+                                        aria-label="reset rating" aria-controls="rateit-range-6"
+                                        style="float: right;"><span></span></button>
+                                    <div id="rateit-range-6" class="rateit-range" tabindex="0" role="slider"
+                                        aria-label="rating" aria-owns="rateit-reset-6" aria-valuemin="0"
+                                        aria-valuemax="5" aria-valuenow="0" aria-readonly="false">
+                                        <div class="rateit-empty">󰓒󰓒󰓒󰓒󰓒</div>
+                                        <div class="rateit-selected rateit-selected-rtl" style="width: 0px;">󰓒󰓒󰓒󰓒󰓒
+                                        </div>
+                                        <div class="rateit-hover rateit-hover-rtl">󰓒󰓒󰓒󰓒󰓒</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- end preview-->
+
+                        <div class="tab-pane code" id="rtl-code" role="tabpanel">
+                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                            <pre class="mb-0 language-markup"
+                                tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token value css language-css"><span class="token property">direction</span><span class="token punctuation">:</span> rtl</span><span class="token punctuation">"</span></span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>rateit rateit-mdi<span class="token punctuation">"</span></span> <span class="token attr-name">data-rateit-mode</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>font<span class="token punctuation">"</span></span> <span class="token attr-name">data-rateit-icon</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>󰓒<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                            <!-- end highlight-->
+                        </div> <!-- end preview code-->
+                    </div> <!-- end tab-content-->
+                </div> <!-- end card-body -->
+            </div> <!-- end card-->
+
+        </div> <!-- end col -->
+
+        <div class="col-xl-6">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Material Design Icons</h4>
+                    <p class="text-muted font-14"></p>
+
+                    <ul class="nav nav-tabs nav-bordered mb-3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a href="#mdi-ratings-preview" data-bs-toggle="tab" aria-expanded="false"
+                                class="nav-link active" aria-selected="true" role="tab">
+                                Preview
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#mdi-ratings-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link"
+                                aria-selected="false" tabindex="-1" role="tab">
+                                Code
+                            </a>
+                        </li>
+                    </ul> <!-- end nav-->
+                    <div class="tab-content">
+                        <div class="tab-pane show active" id="mdi-ratings-preview" role="tabpanel">
+                            <div class="rateit rateit-mdi rateit-font" data-rateit-mode="font" data-rateit-icon="󰓒">
+                                <button id="rateit-reset-7" type="button" class="rateit-reset" aria-label="reset rating"
+                                    aria-controls="rateit-range-7"><span></span></button>
+                                <div id="rateit-range-7" class="rateit-range" tabindex="0" role="slider"
+                                    aria-label="rating" aria-owns="rateit-reset-7" aria-valuemin="0" aria-valuemax="5"
+                                    aria-valuenow="0" aria-readonly="false">
+                                    <div class="rateit-empty">󰓒󰓒󰓒󰓒󰓒</div>
+                                    <div class="rateit-selected" style="width: 0px;">󰓒󰓒󰓒󰓒󰓒</div>
+                                    <div class="rateit-hover" style="width: 0px; display: none;">󰓒󰓒󰓒󰓒󰓒</div>
+                                </div>
+                            </div>
+
+                            <br>
+
+                            <div class="rateit rateit-mdi mt-3 rateit-font" data-rateit-mode="font"
+                                data-rateit-icon="󰋕">
+                                <button id="rateit-reset-8" type="button" class="rateit-reset" aria-label="reset rating"
+                                    aria-controls="rateit-range-8"><span></span></button>
+                                <div id="rateit-range-8" class="rateit-range" tabindex="0" role="slider"
+                                    aria-label="rating" aria-owns="rateit-reset-8" aria-valuemin="0" aria-valuemax="5"
+                                    aria-valuenow="0" aria-readonly="false">
+                                    <div class="rateit-empty">󰋕󰋕󰋕󰋕󰋕</div>
+                                    <div class="rateit-selected" style="width: 0px;">󰋕󰋕󰋕󰋕󰋕</div>
+                                    <div class="rateit-hover" style="width: 0px; display: none;">󰋕󰋕󰋕󰋕󰋕</div>
+                                </div>
+                            </div>
+                        </div> <!-- end preview-->
+
+                        <div class="tab-pane code" id="mdi-ratings-code" role="tabpanel">
+                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                            <pre class="mb-0 language-markup"
+                                tabindex="0"><code class="language-markup"><span class="token comment">&lt;!-- Star --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>rateit rateit-mdi<span class="token punctuation">"</span></span> <span class="token attr-name">data-rateit-mode</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>font<span class="token punctuation">"</span></span> <span class="token attr-name">data-rateit-icon</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>󰓒<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- Heart --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>rateit rateit-mdi mt-3<span class="token punctuation">"</span></span> <span class="token attr-name">data-rateit-mode</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>font<span class="token punctuation">"</span></span> <span class="token attr-name">data-rateit-icon</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>󰋕<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                            <!-- end highlight-->
+                        </div> <!-- end preview code-->
+                    </div> <!-- end tab-content-->
+                </div> <!-- end card-body -->
+            </div> <!-- end card-->
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Icon Font - Sizing</h4>
+                    <p class="text-muted font-14"></p>
+
+                    <ul class="nav nav-tabs nav-bordered mb-3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a href="#icon-font-preview" data-bs-toggle="tab" aria-expanded="false"
+                                class="nav-link active" aria-selected="true" role="tab">
+                                Preview
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#icon-font-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link"
+                                aria-selected="false" tabindex="-1" role="tab">
+                                Code
+                            </a>
+                        </li>
+                    </ul> <!-- end nav-->
+                    <div class="tab-content">
+                        <div class="tab-pane show active" id="icon-font-preview" role="tabpanel">
+                            <div class="rateit rateit-mdi rateit-font" data-rateit-mode="font" data-rateit-icon="󰓒"
+                                style="font-size: 36px;">
+                                <button id="rateit-reset-9" type="button" class="rateit-reset" aria-label="reset rating"
+                                    aria-controls="rateit-range-9"><span></span></button>
+                                <div id="rateit-range-9" class="rateit-range" tabindex="0" role="slider"
+                                    aria-label="rating" aria-owns="rateit-reset-9" aria-valuemin="0" aria-valuemax="5"
+                                    aria-valuenow="0" aria-readonly="false">
+                                    <div class="rateit-empty">󰓒󰓒󰓒󰓒󰓒</div>
+                                    <div class="rateit-selected" style="width: 0px;">󰓒󰓒󰓒󰓒󰓒</div>
+                                    <div class="rateit-hover">󰓒󰓒󰓒󰓒󰓒</div>
+                                </div>
+                            </div>
+                        </div> <!-- end preview-->
+
+                        <div class="tab-pane code" id="icon-font-code" role="tabpanel">
+                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                            <pre class="mb-0 language-markup"
+                                tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>rateit rateit-mdi<span class="token punctuation">"</span></span> <span class="token attr-name">data-rateit-mode</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>font<span class="token punctuation">"</span></span> <span class="token attr-name">data-rateit-icon</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>󰓒<span class="token punctuation">"</span></span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token value css language-css"><span class="token property">font-size</span><span class="token punctuation">:</span> 36px<span class="token punctuation">;</span></span><span class="token punctuation">"</span></span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                            <!-- end highlight-->
+                        </div> <!-- end preview code-->
+                    </div> <!-- end tab-content-->
+                </div> <!-- end card-body -->
+            </div> <!-- end card-->
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Readonly and preset value</h4>
+                    <p class="text-muted font-14"></p>
+
+                    <ul class="nav nav-tabs nav-bordered mb-3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a href="#readonly-preview" data-bs-toggle="tab" aria-expanded="false"
+                                class="nav-link active" aria-selected="true" role="tab">
+                                Preview
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#readonly-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link"
+                                aria-selected="false" tabindex="-1" role="tab">
+                                Code
+                            </a>
+                        </li>
+                    </ul> <!-- end nav-->
+                    <div class="tab-content">
+                        <div class="tab-pane show active" id="readonly-preview" role="tabpanel">
+                            <div class="rateit rateit-mdi rateit-font" data-rateit-mode="font" data-rateit-icon="󰓒"
+                                data-rateit-value="2.5" data-rateit-ispreset="true" data-rateit-readonly="true">
+                                <button id="rateit-reset-10" type="button" class="rateit-reset"
+                                    aria-label="reset rating" aria-controls="rateit-range-10"
+                                    style="display: none;"><span></span></button>
+                                <div id="rateit-range-10" class="rateit-range" role="slider" aria-label="rating"
+                                    aria-owns="rateit-reset-10" aria-valuemin="0" aria-valuemax="5" aria-valuenow="2.5"
+                                    aria-readonly="true">
+                                    <div class="rateit-empty">󰓒󰓒󰓒󰓒󰓒</div>
+                                    <div class="rateit-selected rateit-preset" style="width: 60px;">󰓒󰓒󰓒󰓒󰓒</div>
+                                    <div class="rateit-hover">󰓒󰓒󰓒󰓒󰓒</div>
+                                </div>
+                            </div>
+                        </div> <!-- end preview-->
+
+                        <div class="tab-pane code" id="readonly-code" role="tabpanel">
+                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                            <pre class="mb-0 language-markup"
+                                tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>rateit rateit-mdi<span class="token punctuation">"</span></span> <span class="token attr-name">data-rateit-mode</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>font<span class="token punctuation">"</span></span> <span class="token attr-name">data-rateit-icon</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>󰓒<span class="token punctuation">"</span></span>  <span class="token attr-name">data-rateit-value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>2.5<span class="token punctuation">"</span></span> <span class="token attr-name">data-rateit-ispreset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token attr-name">data-rateit-readonly</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                            <!-- end highlight-->
+                        </div> <!-- end preview code-->
+                    </div> <!-- end tab-content-->
+                </div> <!-- end card-body -->
+            </div> <!-- end card-->
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Setting and Getting values</h4>
+                    <p class="text-muted font-14">All properties can also be set on the fly. Here are a few examples:
+                    </p>
+
+                    <ul class="nav nav-tabs nav-bordered mb-3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a href="#getting-values-preview" data-bs-toggle="tab" aria-expanded="false"
+                                class="nav-link active" aria-selected="true" role="tab">
+                                Preview
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#getting-values-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link"
+                                aria-selected="false" tabindex="-1" role="tab">
+                                Code
+                            </a>
+                        </li>
+                    </ul> <!-- end nav-->
+                    <div class="tab-content">
+                        <div class="tab-pane show active" id="getting-values-preview" role="tabpanel">
+                            <div class="rateit rateit-mdi rateit-font" data-rateit-mode="font" data-rateit-icon="󰓒"
+                                id="getting-values">
+                                <button id="rateit-reset-11" type="button" class="rateit-reset"
+                                    aria-label="reset rating" aria-controls="rateit-range-11"><span></span></button>
+                                <div id="rateit-range-11" class="rateit-range" tabindex="0" role="slider"
+                                    aria-label="rating" aria-owns="rateit-reset-11" aria-valuemin="0" aria-valuemax="5"
+                                    aria-valuenow="0" aria-readonly="false">
+                                    <div class="rateit-empty">󰓒󰓒󰓒󰓒󰓒</div>
+                                    <div class="rateit-selected" style="width: 0px;">󰓒󰓒󰓒󰓒󰓒</div>
+                                    <div class="rateit-hover">󰓒󰓒󰓒󰓒󰓒</div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-wrap gap-2 mt-3">
+                                <button class="btn btn-sm btn-primary"
+                                    onclick="alert($('#getting-values').rateit('value'))">Get value</button>
+                                <button class="btn btn-sm btn-primary"
+                                    onclick="$('#getting-values').rateit('value', prompt('Input numerical value'))">Set
+                                    value</button>
+                                <button class="btn btn-sm btn-primary"
+                                    onclick="alert($('#getting-values').rateit('max'))">Get max value</button>
+                                <button class="btn btn-sm btn-primary"
+                                    onclick="$('#getting-values').rateit('max', prompt('Input numerical value'))">Set
+                                    max value</button>
+                                <button class="btn btn-sm btn-primary"
+                                    onclick="alert($('#getting-values').rateit('step'))">Get step size</button>
+                                <button class="btn btn-sm btn-primary"
+                                    onclick="$('#getting-values').rateit('step', prompt('Input numerical value'))">Set
+                                    step size</button>
+                                <button class="btn btn-sm btn-primary"
+                                    onclick="alert($('#getting-values').rateit('readonly'))">Get readonly value</button>
+                                <button class="btn btn-sm btn-primary"
+                                    onclick="$('#getting-values').rateit('readonly',!$('#getting-values').rateit('readonly'))">Toggle
+                                    readonly</button>
+                                <button class="btn btn-sm btn-primary"
+                                    onclick="alert($('#getting-values').rateit('ispreset'))">Get ispreset value</button>
+                                <button class="btn btn-sm btn-primary"
+                                    onclick="$('#getting-values').rateit('ispreset',!$('#getting-values').rateit('ispreset'))">Toggle
+                                    ispreset</button>
+                                <button class="btn btn-sm btn-primary"
+                                    onclick="$('#getting-values').rateit('reset')">Reset</button>
+                            </div>
+                        </div> <!-- end preview-->
+
+                        <div class="tab-pane code" id="getting-values-code" role="tabpanel">
+                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                            <pre class="mb-0 language-markup"
+                                tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>rateit rateit-mdi<span class="token punctuation">"</span></span> <span class="token attr-name">data-rateit-mode</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>font<span class="token punctuation">"</span></span> <span class="token attr-name">data-rateit-icon</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>󰓒<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>getting-values<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- Onclick events --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-sm btn-primary<span class="token punctuation">"</span></span> <span class="token special-attr"><span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token value javascript language-javascript"><span class="token function">alert</span><span class="token punctuation">(</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#getting-values'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">rateit</span><span class="token punctuation">(</span><span class="token string">'value'</span><span class="token punctuation">)</span><span class="token punctuation">)</span></span><span class="token punctuation">"</span></span></span><span class="token punctuation">&gt;</span></span>Get value<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-sm btn-primary<span class="token punctuation">"</span></span> <span class="token special-attr"><span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token value javascript language-javascript"><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#getting-values'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">rateit</span><span class="token punctuation">(</span><span class="token string">'value'</span><span class="token punctuation">,</span> <span class="token function">prompt</span><span class="token punctuation">(</span><span class="token string">'Input numerical value'</span><span class="token punctuation">)</span><span class="token punctuation">)</span></span><span class="token punctuation">"</span></span></span><span class="token punctuation">&gt;</span></span>Set value<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-sm btn-primary<span class="token punctuation">"</span></span> <span class="token special-attr"><span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token value javascript language-javascript"><span class="token function">alert</span><span class="token punctuation">(</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#getting-values'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">rateit</span><span class="token punctuation">(</span><span class="token string">'max'</span><span class="token punctuation">)</span><span class="token punctuation">)</span></span><span class="token punctuation">"</span></span></span><span class="token punctuation">&gt;</span></span>Get max value<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-sm btn-primary<span class="token punctuation">"</span></span> <span class="token special-attr"><span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token value javascript language-javascript"><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#getting-values'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">rateit</span><span class="token punctuation">(</span><span class="token string">'max'</span><span class="token punctuation">,</span> <span class="token function">prompt</span><span class="token punctuation">(</span><span class="token string">'Input numerical value'</span><span class="token punctuation">)</span><span class="token punctuation">)</span></span><span class="token punctuation">"</span></span></span><span class="token punctuation">&gt;</span></span>Set max value<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-sm btn-primary<span class="token punctuation">"</span></span> <span class="token special-attr"><span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token value javascript language-javascript"><span class="token function">alert</span><span class="token punctuation">(</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#getting-values'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">rateit</span><span class="token punctuation">(</span><span class="token string">'step'</span><span class="token punctuation">)</span><span class="token punctuation">)</span></span><span class="token punctuation">"</span></span></span><span class="token punctuation">&gt;</span></span>Get step size<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-sm btn-primary<span class="token punctuation">"</span></span> <span class="token special-attr"><span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token value javascript language-javascript"><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#getting-values'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">rateit</span><span class="token punctuation">(</span><span class="token string">'step'</span><span class="token punctuation">,</span> <span class="token function">prompt</span><span class="token punctuation">(</span><span class="token string">'Input numerical value'</span><span class="token punctuation">)</span><span class="token punctuation">)</span></span><span class="token punctuation">"</span></span></span><span class="token punctuation">&gt;</span></span>Set step size<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-sm btn-primary<span class="token punctuation">"</span></span> <span class="token special-attr"><span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token value javascript language-javascript"><span class="token function">alert</span><span class="token punctuation">(</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#getting-values'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">rateit</span><span class="token punctuation">(</span><span class="token string">'readonly'</span><span class="token punctuation">)</span><span class="token punctuation">)</span></span><span class="token punctuation">"</span></span></span><span class="token punctuation">&gt;</span></span>Get readonly value<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-sm btn-primary<span class="token punctuation">"</span></span> <span class="token special-attr"><span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token value javascript language-javascript"><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#getting-values'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">rateit</span><span class="token punctuation">(</span><span class="token string">'readonly'</span><span class="token punctuation">,</span><span class="token operator">!</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#getting-values'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">rateit</span><span class="token punctuation">(</span><span class="token string">'readonly'</span><span class="token punctuation">)</span><span class="token punctuation">)</span></span><span class="token punctuation">"</span></span></span><span class="token punctuation">&gt;</span></span>Toggle readonly<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-sm btn-primary<span class="token punctuation">"</span></span> <span class="token special-attr"><span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token value javascript language-javascript"><span class="token function">alert</span><span class="token punctuation">(</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#getting-values'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">rateit</span><span class="token punctuation">(</span><span class="token string">'ispreset'</span><span class="token punctuation">)</span><span class="token punctuation">)</span></span><span class="token punctuation">"</span></span></span><span class="token punctuation">&gt;</span></span>Get ispreset value<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-sm btn-primary<span class="token punctuation">"</span></span> <span class="token special-attr"><span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token value javascript language-javascript"><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#getting-values'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">rateit</span><span class="token punctuation">(</span><span class="token string">'ispreset'</span><span class="token punctuation">,</span><span class="token operator">!</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#getting-values'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">rateit</span><span class="token punctuation">(</span><span class="token string">'ispreset'</span><span class="token punctuation">)</span><span class="token punctuation">)</span></span><span class="token punctuation">"</span></span></span><span class="token punctuation">&gt;</span></span>Toggle ispreset<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-sm btn-primary<span class="token punctuation">"</span></span> <span class="token special-attr"><span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token value javascript language-javascript"><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#getting-values'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">rateit</span><span class="token punctuation">(</span><span class="token string">'reset'</span><span class="token punctuation">)</span></span><span class="token punctuation">"</span></span></span><span class="token punctuation">&gt;</span></span>Reset<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span></code></pre>
+                            <!-- end highlight-->
+                        </div> <!-- end preview code-->
+                    </div> <!-- end tab-content-->
+                </div> <!-- end card-body -->
+            </div> <!-- end card-->
+
+        </div> <!-- end col -->
+    </div>
+    <!-- end row -->
+
+</div>

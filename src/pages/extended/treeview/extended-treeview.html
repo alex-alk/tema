@@ -1,0 +1,768 @@
+<div class="container-fluid">
+
+    <!-- start page title -->
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box">
+                <div class="page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item"><a href="javascript: void(0);">Hyper</a></li>
+                        <li class="breadcrumb-item"><a href="javascript: void(0);">Extended UI</a></li>
+                        <li class="breadcrumb-item active">Treeview</li>
+                    </ol>
+                </div>
+                <h4 class="page-title">Treeview</h4>
+            </div>
+        </div>
+    </div>
+    <!-- end page title -->
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Basic Treeview</h4>
+                    <ul class="nav nav-tabs nav-bordered mb-3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a href="#jstree-1-preview" data-bs-toggle="tab" aria-expanded="false"
+                                class="nav-link active" aria-selected="true" role="tab">
+                                Preview
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#jstree-1-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link"
+                                aria-selected="false" tabindex="-1" role="tab">
+                                Code
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- end nav-->
+                    <div class="tab-content">
+                        <div class="tab-pane show active" id="jstree-1-preview" role="tabpanel">
+                            <div id="jstree-1" class="jstree jstree-1 jstree-default" role="tree"
+                                aria-multiselectable="true" tabindex="0" aria-activedescendant="j1_1" aria-busy="false">
+                                <ul class="jstree-container-ul jstree-children" role="presentation">
+                                    <li role="none" id="j1_1" class="jstree-node  jstree-open"><i
+                                            class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                            class="jstree-anchor" href="#" tabindex="-1" role="treeitem"
+                                            aria-selected="false" aria-level="1" aria-expanded="true"
+                                            id="j1_1_anchor"><i
+                                                class="jstree-icon jstree-themeicon ri-folder-line jstree-themeicon-custom"
+                                                role="presentation"></i>
+                                            Root node 1
+                                        </a>
+                                        <ul role="group" class="jstree-children">
+                                            <li role="none" data-jstree="{ &quot;selected&quot; : true }" id="j1_2"
+                                                class="jstree-node  jstree-leaf"><i class="jstree-icon jstree-ocl"
+                                                    role="presentation"></i><a class="jstree-anchor  jstree-clicked"
+                                                    href="javascript:;" tabindex="-1" role="treeitem"
+                                                    aria-selected="true" aria-level="2" id="j1_2_anchor"><i
+                                                        class="jstree-icon jstree-themeicon ri-folder-line jstree-themeicon-custom"
+                                                        role="presentation"></i> Initially selected </a></li>
+                                            <li role="none"
+                                                data-jstree="{ &quot;icon&quot; : &quot;ri-home-4-line text-success &quot; }"
+                                                id="j1_3" class="jstree-node  jstree-leaf"><i
+                                                    class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                    class="jstree-anchor" href="#" tabindex="-1" role="treeitem"
+                                                    aria-selected="false" aria-level="2" id="j1_3_anchor"><i
+                                                        class="jstree-icon jstree-themeicon ri-home-4-line text-success  jstree-themeicon-custom"
+                                                        role="presentation"></i>
+                                                    custom icon URL
+                                                </a></li>
+                                            <li role="none" data-jstree="{ &quot;opened&quot; : true }" id="j1_4"
+                                                class="jstree-node  jstree-open"><i class="jstree-icon jstree-ocl"
+                                                    role="presentation"></i><a class="jstree-anchor" href="#"
+                                                    tabindex="-1" role="treeitem" aria-selected="false" aria-level="2"
+                                                    aria-expanded="true" id="j1_4_anchor"><i
+                                                        class="jstree-icon jstree-themeicon ri-folder-line jstree-themeicon-custom"
+                                                        role="presentation"></i>
+                                                    initially open
+                                                </a>
+                                                <ul role="group" class="jstree-children">
+                                                    <li role="none" data-jstree="{ &quot;disabled&quot; : true }"
+                                                        id="j1_5" class="jstree-node  jstree-leaf"><i
+                                                            class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                            class="jstree-anchor  jstree-disabled" href="#"
+                                                            tabindex="-1" role="treeitem" aria-selected="false"
+                                                            aria-level="3" aria-disabled="true" id="j1_5_anchor"><i
+                                                                class="jstree-icon jstree-themeicon ri-folder-line jstree-themeicon-custom"
+                                                                role="presentation"></i>
+                                                            Disabled Node
+                                                        </a></li>
+                                                    <li role="none"
+                                                        data-jstree="{ &quot;type&quot; : &quot;file&quot; }" id="j1_6"
+                                                        class="jstree-node  jstree-leaf jstree-last"><i
+                                                            class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                            class="jstree-anchor" href="#" tabindex="-1" role="treeitem"
+                                                            aria-selected="false" aria-level="3" id="j1_6_anchor"><i
+                                                                class="jstree-icon jstree-themeicon ri-article-line jstree-themeicon-custom"
+                                                                role="presentation"></i>
+                                                            Another node
+                                                        </a></li>
+                                                </ul>
+                                            </li>
+                                            <li role="none"
+                                                data-jstree="{ &quot;icon&quot; : &quot;ri-vip-diamond-line text-danger&quot; }"
+                                                id="j1_7" class="jstree-node  jstree-leaf jstree-last"><i
+                                                    class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                    class="jstree-anchor" href="#" tabindex="-1" role="treeitem"
+                                                    aria-selected="false" aria-level="2" id="j1_7_anchor"><i
+                                                        class="jstree-icon jstree-themeicon ri-vip-diamond-line text-danger jstree-themeicon-custom"
+                                                        role="presentation"></i>
+                                                    Custom icon class (bootstrap)
+                                                </a></li>
+                                        </ul>
+                                    </li>
+                                    <li role="none" data-jstree="{ &quot;type&quot; : &quot;link&quot; }" id="j1_8"
+                                        class="jstree-node  jstree-leaf jstree-last"><i class="jstree-icon jstree-ocl"
+                                            role="presentation"></i><a class="jstree-anchor"
+                                            href="http://www.coderthemes.com" tabindex="-1" role="treeitem"
+                                            aria-selected="false" aria-level="1" id="j1_8_anchor"><i
+                                                class="jstree-icon jstree-themeicon ri-folder-line jstree-themeicon-custom"
+                                                role="presentation"></i> Clickable link node </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-pane code" id="jstree-1-code" role="tabpanel">
+                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                            <pre class="mb-0 language-markup"
+                                tabindex="0"><code class="language-markup"><span class="token comment">&lt;!-- jstree css --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>assets/vendor/jstree/themes/default/style.min.css<span class="token punctuation">"</span></span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text/css<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></code><code class="language-markup"><span class="token comment">&lt;!-- jstree js --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>assets/vendor/jstree/jstree.min.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>assets/js/pages/demo.jstree.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span></code><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>jstree-1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>
+            Root node 1
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">data-jstree</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>{ "selected" : true }<span class="token punctuation">'</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>javascript:;<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                    Initially selected <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">data-jstree</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>{ "icon" : "ri-home-4-line text-success " }<span class="token punctuation">'</span></span><span class="token punctuation">&gt;</span></span>
+                    custom icon URL
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">data-jstree</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>{ "opened" : true }<span class="token punctuation">'</span></span><span class="token punctuation">&gt;</span></span>
+                    initially open
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">data-jstree</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>{ "disabled" : true }<span class="token punctuation">'</span></span><span class="token punctuation">&gt;</span></span>
+                            Disabled Node
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">data-jstree</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>{ "type" : "file" }<span class="token punctuation">'</span></span><span class="token punctuation">&gt;</span></span>
+                            Another node
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">data-jstree</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>{ "icon" : "ri-vip-diamond-line text-danger" }<span class="token punctuation">'</span></span><span class="token punctuation">&gt;</span></span>
+                    Custom icon class (bootstrap)
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">data-jstree</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>{ "type" : "link" }<span class="token punctuation">'</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.coderthemes.com<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            Clickable link node <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Custom Icons &amp; Clickable Nodes</h4>
+                    <ul class="nav nav-tabs nav-bordered mb-3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a href="#jstree-2-preview" data-bs-toggle="tab" aria-expanded="false"
+                                class="nav-link active" aria-selected="true" role="tab">
+                                Preview
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#jstree-2-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link"
+                                aria-selected="false" tabindex="-1" role="tab">
+                                Code
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- end nav-->
+                    <div class="tab-content">
+                        <div class="tab-pane show active" id="jstree-2-preview" role="tabpanel">
+                            <div id="jstree-2" class="jstree jstree-2 jstree-default" role="tree"
+                                aria-multiselectable="true" tabindex="0" aria-activedescendant="j2_8" aria-busy="false">
+                                <ul class="jstree-container-ul jstree-children" role="presentation">
+                                    <li role="none" id="j2_1" class="jstree-node  jstree-open"><i
+                                            class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                            class="jstree-anchor" href="#" tabindex="-1" role="treeitem"
+                                            aria-selected="false" aria-level="1" aria-expanded="true"
+                                            id="j2_1_anchor"><i
+                                                class="jstree-icon jstree-themeicon ri-folder-line text-warning jstree-themeicon-custom"
+                                                role="presentation"></i>
+                                            Root node 1
+                                        </a>
+                                        <ul role="group" class="jstree-children">
+                                            <li role="none" data-jstree="{ &quot;selected&quot; : true }" id="j2_2"
+                                                class="jstree-node  jstree-leaf"><i class="jstree-icon jstree-ocl"
+                                                    role="presentation"></i><a class="jstree-anchor  jstree-clicked"
+                                                    href="javascript:;" tabindex="-1" role="treeitem"
+                                                    aria-selected="true" aria-level="2" id="j2_2_anchor"><i
+                                                        class="jstree-icon jstree-themeicon ri-folder-line text-warning jstree-themeicon-custom"
+                                                        role="presentation"></i> Initially selected </a></li>
+                                            <li role="none"
+                                                data-jstree="{ &quot;icon&quot; : &quot;ri-article-line text-success &quot; }"
+                                                id="j2_3" class="jstree-node  jstree-leaf"><i
+                                                    class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                    class="jstree-anchor" href="#" tabindex="-1" role="treeitem"
+                                                    aria-selected="false" aria-level="2" id="j2_3_anchor"><i
+                                                        class="jstree-icon jstree-themeicon ri-article-line text-success  jstree-themeicon-custom"
+                                                        role="presentation"></i>
+                                                    custom icon URL
+                                                </a></li>
+                                            <li role="none" data-jstree="{ &quot;opened&quot; : true }" id="j2_4"
+                                                class="jstree-node  jstree-open"><i class="jstree-icon jstree-ocl"
+                                                    role="presentation"></i><a class="jstree-anchor" href="#"
+                                                    tabindex="-1" role="treeitem" aria-selected="false" aria-level="2"
+                                                    aria-expanded="true" id="j2_4_anchor"><i
+                                                        class="jstree-icon jstree-themeicon ri-folder-line text-warning jstree-themeicon-custom"
+                                                        role="presentation"></i>
+                                                    initially open
+                                                </a>
+                                                <ul role="group" class="jstree-children">
+                                                    <li role="none" data-jstree="{ &quot;disabled&quot; : true }"
+                                                        id="j2_5" class="jstree-node  jstree-leaf"><i
+                                                            class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                            class="jstree-anchor  jstree-disabled" href="#"
+                                                            tabindex="-1" role="treeitem" aria-selected="false"
+                                                            aria-level="3" aria-disabled="true" id="j2_5_anchor"><i
+                                                                class="jstree-icon jstree-themeicon ri-folder-line text-warning jstree-themeicon-custom"
+                                                                role="presentation"></i>
+                                                            Disabled Node
+                                                        </a></li>
+                                                    <li role="none"
+                                                        data-jstree="{ &quot;type&quot; : &quot;file&quot; }" id="j2_6"
+                                                        class="jstree-node  jstree-leaf jstree-last"><i
+                                                            class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                            class="jstree-anchor" href="#" tabindex="-1" role="treeitem"
+                                                            aria-selected="false" aria-level="3" id="j2_6_anchor"><i
+                                                                class="jstree-icon jstree-themeicon ri-article-line  text-warning jstree-themeicon-custom"
+                                                                role="presentation"></i>
+                                                            Another node
+                                                        </a></li>
+                                                </ul>
+                                            </li>
+                                            <li role="none"
+                                                data-jstree="{ &quot;icon&quot; : &quot;ri-user-line text-danger&quot; }"
+                                                id="j2_7" class="jstree-node  jstree-leaf jstree-last"><i
+                                                    class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                    class="jstree-anchor" href="#" tabindex="-1" role="treeitem"
+                                                    aria-selected="false" aria-level="2" id="j2_7_anchor"><i
+                                                        class="jstree-icon jstree-themeicon ri-user-line text-danger jstree-themeicon-custom"
+                                                        role="presentation"></i>
+                                                    Custom icon class (bootstrap)
+                                                </a></li>
+                                        </ul>
+                                    </li>
+                                    <li role="none" data-jstree="{ &quot;type&quot; : &quot;link&quot; }" id="j2_8"
+                                        class="jstree-node  jstree-leaf jstree-last"><i class="jstree-icon jstree-ocl"
+                                            role="presentation"></i><a class="jstree-anchor"
+                                            href="https://1.envato.market/coderthemes" tabindex="-1" role="treeitem"
+                                            aria-selected="false" aria-level="1" target="_blank" id="j2_8_anchor"><i
+                                                class="jstree-icon jstree-themeicon ri-folder-line text-warning jstree-themeicon-custom"
+                                                role="presentation"></i> Clickable link node </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-pane code" id="jstree-2-code" role="tabpanel">
+                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                            <pre class="mb-0 language-markup"
+                                tabindex="0"><code class="language-markup"><span class="token comment">&lt;!-- jstree css --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>assets/vendor/jstree/themes/default/style.min.css<span class="token punctuation">"</span></span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text/css<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></code><code class="language-markup"><span class="token comment">&lt;!-- jstree js --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>assets/vendor/jstree/jstree.min.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>assets/js/pages/demo.jstree.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span></code><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>jstree-2<span class="token punctuation">"</span></span>
+    <span class="token attr-name">&lt;ul</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>
+            Root node 1
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">data-jstree</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>{ "selected" : true }<span class="token punctuation">'</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>javascript:;<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                        Initially selected <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">data-jstree</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>{ "icon" : "ri-article-line text-success " }<span class="token punctuation">'</span></span><span class="token punctuation">&gt;</span></span>
+                    custom icon URL
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">data-jstree</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>{ "opened" : true }<span class="token punctuation">'</span></span><span class="token punctuation">&gt;</span></span>
+                    initially open
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">data-jstree</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>{ "disabled" : true }<span class="token punctuation">'</span></span><span class="token punctuation">&gt;</span></span>
+                            Disabled Node
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">data-jstree</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>{ "type" : "file" }<span class="token punctuation">'</span></span><span class="token punctuation">&gt;</span></span>
+                            Another node
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">data-jstree</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>{ "icon" : "ri-user-line text-danger" }<span class="token punctuation">'</span></span><span class="token punctuation">&gt;</span></span>
+                    Custom icon class (bootstrap)
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">data-jstree</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>{ "type" : "link" }<span class="token punctuation">'</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://coderthemes.com/<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                Clickable link node <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Checkable Tree</h4>
+                    <ul class="nav nav-tabs nav-bordered mb-3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a href="#jstree-3-preview" data-bs-toggle="tab" aria-expanded="false"
+                                class="nav-link active" aria-selected="true" role="tab">
+                                Preview
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#jstree-3-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link"
+                                aria-selected="false" tabindex="-1" role="tab">
+                                Code
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- end nav-->
+                    <div class="tab-content">
+                        <div class="tab-pane show active" id="jstree-3-preview" role="tabpanel">
+                            <div id="jstree-3" class="jstree jstree-3 jstree-default jstree-checkbox-selection"
+                                role="tree" aria-multiselectable="true" tabindex="0" aria-activedescendant="j3_1"
+                                aria-busy="false">
+                                <ul class="jstree-container-ul jstree-children jstree-wholerow-ul jstree-no-dots"
+                                    role="presentation">
+                                    <li role="none" id="j3_1" class="jstree-node  jstree-open">
+                                        <div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div>
+                                        <i class="jstree-icon jstree-ocl" role="presentation"
+                                            aria-expanded="true"></i><a class="jstree-anchor" href="#" tabindex="-1"
+                                            role="treeitem" aria-selected="false" aria-level="1" aria-expanded="false"
+                                            id="j3_1_anchor"><i class="jstree-icon jstree-checkbox jstree-undetermined"
+                                                role="presentation"></i><i
+                                                class="jstree-icon jstree-themeicon ri-folder-line text-warning jstree-themeicon-custom"
+                                                role="presentation"></i>Same but with checkboxes</a>
+                                        <ul role="group" class="jstree-children">
+                                            <li role="none" id="j3_2" class="jstree-node  jstree-leaf">
+                                                <div unselectable="on" role="presentation"
+                                                    class="jstree-wholerow jstree-wholerow-clicked">&nbsp;</div><i
+                                                    class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                    class="jstree-anchor  jstree-clicked" href="#" tabindex="-1"
+                                                    role="treeitem" aria-selected="true" aria-level="2"
+                                                    id="j3_2_anchor"><i class="jstree-icon jstree-checkbox"
+                                                        role="presentation"></i><i
+                                                        class="jstree-icon jstree-themeicon ri-folder-line text-warning jstree-themeicon-custom"
+                                                        role="presentation"></i>initially selected</a>
+                                            </li>
+                                            <li role="none" id="j3_3" class="jstree-node  jstree-leaf">
+                                                <div unselectable="on" role="presentation" class="jstree-wholerow">
+                                                    &nbsp;</div><i class="jstree-icon jstree-ocl"
+                                                    role="presentation"></i><a class="jstree-anchor" href="#"
+                                                    tabindex="-1" role="treeitem" aria-selected="false" aria-level="2"
+                                                    id="j3_3_anchor"><i class="jstree-icon jstree-checkbox"
+                                                        role="presentation"></i><i
+                                                        class="jstree-icon jstree-themeicon ri-feedback-line text-danger jstree-themeicon-custom"
+                                                        role="presentation"></i>custom icon</a>
+                                            </li>
+                                            <li role="none" id="j3_4" class="jstree-node  jstree-open">
+                                                <div unselectable="on" role="presentation" class="jstree-wholerow">
+                                                    &nbsp;</div><i class="jstree-icon jstree-ocl"
+                                                    role="presentation"></i><a class="jstree-anchor" href="#"
+                                                    tabindex="-1" role="treeitem" aria-selected="false" aria-level="2"
+                                                    aria-expanded="true" id="j3_4_anchor"><i
+                                                        class="jstree-icon jstree-checkbox" role="presentation"></i><i
+                                                        class="jstree-icon jstree-themeicon ri-folder-line text-default jstree-themeicon-custom"
+                                                        role="presentation"></i>initially open</a>
+                                                <ul role="group" class="jstree-children">
+                                                    <li role="none" id="j3_5"
+                                                        class="jstree-node  jstree-leaf jstree-last">
+                                                        <div unselectable="on" role="presentation"
+                                                            class="jstree-wholerow">&nbsp;</div><i
+                                                            class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                            class="jstree-anchor" href="#" tabindex="-1" role="treeitem"
+                                                            aria-selected="false" aria-level="3" id="j3_5_anchor"><i
+                                                                class="jstree-icon jstree-checkbox"
+                                                                role="presentation"></i><i
+                                                                class="jstree-icon jstree-themeicon ri-folder-line text-warning jstree-themeicon-custom"
+                                                                role="presentation"></i>Another node</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li role="none" id="j3_6" class="jstree-node  jstree-leaf">
+                                                <div unselectable="on" role="presentation" class="jstree-wholerow">
+                                                    &nbsp;</div><i class="jstree-icon jstree-ocl"
+                                                    role="presentation"></i><a class="jstree-anchor" href="#"
+                                                    tabindex="-1" role="treeitem" aria-selected="false" aria-level="2"
+                                                    id="j3_6_anchor"><i class="jstree-icon jstree-checkbox"
+                                                        role="presentation"></i><i
+                                                        class="jstree-icon jstree-themeicon ri-article-line text-warning jstree-themeicon-custom"
+                                                        role="presentation"></i>custom icon</a>
+                                            </li>
+                                            <li role="none" id="j3_7" class="jstree-node  jstree-leaf jstree-last">
+                                                <div unselectable="on" role="presentation" class="jstree-wholerow">
+                                                    &nbsp;</div><i class="jstree-icon jstree-ocl"
+                                                    role="presentation"></i><a class="jstree-anchor  jstree-disabled"
+                                                    href="#" tabindex="-1" role="treeitem" aria-selected="false"
+                                                    aria-level="2" aria-disabled="true" id="j3_7_anchor"><i
+                                                        class="jstree-icon jstree-checkbox" role="presentation"></i><i
+                                                        class="jstree-icon jstree-themeicon ri-close-circle-line text-success jstree-themeicon-custom"
+                                                        role="presentation"></i>disabled node</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li role="none" id="j3_8" class="jstree-node  jstree-leaf jstree-last">
+                                        <div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div>
+                                        <i class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                            class="jstree-anchor" href="#" tabindex="-1" role="treeitem"
+                                            aria-selected="false" aria-level="1" id="j3_8_anchor"><i
+                                                class="jstree-icon jstree-checkbox" role="presentation"></i><i
+                                                class="jstree-icon jstree-themeicon ri-folder-line text-warning jstree-themeicon-custom"
+                                                role="presentation"></i>And wholerow selection</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-pane code" id="jstree-3-code" role="tabpanel">
+                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                            <pre class="mb-0 language-markup"
+                                tabindex="0"><code class="language-markup"><span class="token comment">&lt;!-- jstree css --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>assets/vendor/jstree/themes/default/style.min.css<span class="token punctuation">"</span></span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text/css<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></code><code class="language-markup"><span class="token comment">&lt;!-- jstree js --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>assets/vendor/jstree/jstree.min.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>assets/js/pages/demo.jstree.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span></code><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>jstree-3<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Contextual Menu</h4>
+                    <ul class="nav nav-tabs nav-bordered mb-3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a href="#jstree-4-preview" data-bs-toggle="tab" aria-expanded="false"
+                                class="nav-link active" aria-selected="true" role="tab">
+                                Preview
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#jstree-4-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link"
+                                aria-selected="false" tabindex="-1" role="tab">
+                                Code
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- end nav-->
+                    <div class="tab-content">
+                        <div class="tab-pane show active" id="jstree-4-preview" role="tabpanel">
+                            <div id="jstree-4" class="jstree jstree-4 jstree-default" role="tree"
+                                aria-multiselectable="true" tabindex="0" aria-activedescendant="j4_1" aria-busy="false">
+                                <ul class="jstree-container-ul jstree-children jstree-contextmenu" role="presentation">
+                                    <li role="none" id="j4_1" class="jstree-node  jstree-open"><i
+                                            class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                            class="jstree-anchor" href="#" tabindex="-1" role="treeitem"
+                                            aria-selected="false" aria-level="1" aria-expanded="true"
+                                            id="j4_1_anchor"><i
+                                                class="jstree-icon jstree-themeicon ri-folder-line text-primary jstree-themeicon-custom"
+                                                role="presentation"></i>Parent Node</a>
+                                        <ul role="group" class="jstree-children">
+                                            <li role="none" id="j4_2" class="jstree-node  jstree-leaf"><i
+                                                    class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                    class="jstree-anchor  jstree-clicked" href="#" tabindex="-1"
+                                                    role="treeitem" aria-selected="true" aria-level="2"
+                                                    id="j4_2_anchor"><i
+                                                        class="jstree-icon jstree-themeicon ri-folder-line text-primary jstree-themeicon-custom"
+                                                        role="presentation"></i>Initially selected</a></li>
+                                            <li role="none" id="j4_3" class="jstree-node  jstree-leaf"><i
+                                                    class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                    class="jstree-anchor" href="#" tabindex="-1" role="treeitem"
+                                                    aria-selected="false" aria-level="2" id="j4_3_anchor"><i
+                                                        class="jstree-icon jstree-themeicon ri-feedback-line text-danger jstree-themeicon-custom"
+                                                        role="presentation"></i>Custom Icon</a></li>
+                                            <li role="none" id="j4_4" class="jstree-node  jstree-open"><i
+                                                    class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                    class="jstree-anchor" href="#" tabindex="-1" role="treeitem"
+                                                    aria-selected="false" aria-level="2" aria-expanded="true"
+                                                    id="j4_4_anchor"><i
+                                                        class="jstree-icon jstree-themeicon ri-folder-line text-success jstree-themeicon-custom"
+                                                        role="presentation"></i>Initially open</a>
+                                                <ul role="group" class="jstree-children">
+                                                    <li role="none" id="j4_5"
+                                                        class="jstree-node  jstree-leaf jstree-last"><i
+                                                            class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                            class="jstree-anchor" href="#" tabindex="-1" role="treeitem"
+                                                            aria-selected="false" aria-level="3" id="j4_5_anchor"><i
+                                                                class="jstree-icon jstree-themeicon ri-article-line text-warning jstree-themeicon-custom"
+                                                                role="presentation"></i>Another node</a></li>
+                                                </ul>
+                                            </li>
+                                            <li role="none" id="j4_6" class="jstree-node  jstree-leaf"><i
+                                                    class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                    class="jstree-anchor" href="#" tabindex="-1" role="treeitem"
+                                                    aria-selected="false" aria-level="2" id="j4_6_anchor"><i
+                                                        class="jstree-icon jstree-themeicon ri-article-line text-warning jstree-themeicon-custom"
+                                                        role="presentation"></i>Another Custom Icon</a></li>
+                                            <li role="none" id="j4_7" class="jstree-node  jstree-leaf"><i
+                                                    class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                    class="jstree-anchor  jstree-disabled" href="#" tabindex="-1"
+                                                    role="treeitem" aria-selected="false" aria-level="2"
+                                                    aria-disabled="true" id="j4_7_anchor"><i
+                                                        class="jstree-icon jstree-themeicon ri-close-circle-line text-success jstree-themeicon-custom"
+                                                        role="presentation"></i>Disabled Node</a></li>
+                                            <li role="none" id="j4_8" class="jstree-node  jstree-closed jstree-last"><i
+                                                    class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                    class="jstree-anchor" href="#" tabindex="-1" role="treeitem"
+                                                    aria-selected="false" aria-level="2" aria-expanded="false"
+                                                    id="j4_8_anchor"><i
+                                                        class="jstree-icon jstree-themeicon ri-folder-line text-danger jstree-themeicon-custom"
+                                                        role="presentation"></i>Sub Nodes</a></li>
+                                        </ul>
+                                    </li>
+                                    <li role="none" id="j4_14" class="jstree-node  jstree-leaf jstree-last"><i
+                                            class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                            class="jstree-anchor" href="#" tabindex="-1" role="treeitem"
+                                            aria-selected="false" aria-level="1" id="j4_14_anchor"><i
+                                                class="jstree-icon jstree-themeicon ri-folder-line text-primary jstree-themeicon-custom"
+                                                role="presentation"></i>Another Node</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-pane code" id="jstree-4-code" role="tabpanel">
+                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                            <pre class="mb-0 language-markup"
+                                tabindex="0"><code class="language-markup"><span class="token comment">&lt;!-- jstree css --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>assets/vendor/jstree/themes/default/style.min.css<span class="token punctuation">"</span></span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text/css<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></code><code class="language-markup"><span class="token comment">&lt;!-- jstree js --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>assets/vendor/jstree/jstree.min.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>assets/js/pages/demo.jstree.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span></code><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>jstree-4<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Drag &amp; Drop</h4>
+                    <ul class="nav nav-tabs nav-bordered mb-3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a href="#jstree-5-preview" data-bs-toggle="tab" aria-expanded="false"
+                                class="nav-link active" aria-selected="true" role="tab">
+                                Preview
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#jstree-5-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link"
+                                aria-selected="false" tabindex="-1" role="tab">
+                                Code
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- end nav-->
+                    <div class="tab-content">
+                        <div class="tab-pane show active" id="jstree-5-preview" role="tabpanel">
+                            <div id="jstree-5" class="jstree jstree-5 jstree-default" role="tree"
+                                aria-multiselectable="true" tabindex="0" aria-activedescendant="j5_1" aria-busy="false">
+                                <ul class="jstree-container-ul jstree-children" role="presentation">
+                                    <li role="none" id="j5_1" class="jstree-node  jstree-open"><i
+                                            class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                            class="jstree-anchor" href="#" tabindex="-1" role="treeitem"
+                                            aria-selected="false" aria-level="1" aria-expanded="true"
+                                            id="j5_1_anchor"><i
+                                                class="jstree-icon jstree-themeicon ri-folder-line text-success jstree-themeicon-custom"
+                                                role="presentation"></i>Parent Node</a>
+                                        <ul role="group" class="jstree-children">
+                                            <li role="none" id="j5_2" class="jstree-node  jstree-leaf"><i
+                                                    class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                    class="jstree-anchor  jstree-clicked" href="#" tabindex="-1"
+                                                    role="treeitem" aria-selected="true" aria-level="2"
+                                                    id="j5_2_anchor"><i
+                                                        class="jstree-icon jstree-themeicon ri-folder-line text-success jstree-themeicon-custom"
+                                                        role="presentation"></i>Initially selected</a></li>
+                                            <li role="none" id="j5_3" class="jstree-node  jstree-leaf"><i
+                                                    class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                    class="jstree-anchor" href="#" tabindex="-1" role="treeitem"
+                                                    aria-selected="false" aria-level="2" id="j5_3_anchor"><i
+                                                        class="jstree-icon jstree-themeicon ri-article-line text-danger jstree-themeicon-custom"
+                                                        role="presentation"></i>Custom Icon</a></li>
+                                            <li role="none" id="j5_4" class="jstree-node  jstree-open"><i
+                                                    class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                    class="jstree-anchor" href="#" tabindex="-1" role="treeitem"
+                                                    aria-selected="false" aria-level="2" aria-expanded="true"
+                                                    id="j5_4_anchor"><i
+                                                        class="jstree-icon jstree-themeicon ri-folder-line text-success jstree-themeicon-custom"
+                                                        role="presentation"></i>Initially open</a>
+                                                <ul role="group" class="jstree-children">
+                                                    <li role="none" id="j5_5"
+                                                        class="jstree-node  jstree-leaf jstree-last"><i
+                                                            class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                            class="jstree-anchor" href="#" tabindex="-1" role="treeitem"
+                                                            aria-selected="false" aria-level="3" id="j5_5_anchor"><i
+                                                                class="jstree-icon jstree-themeicon ri-article-line text-warning jstree-themeicon-custom"
+                                                                role="presentation"></i>Another node</a></li>
+                                                </ul>
+                                            </li>
+                                            <li role="none" id="j5_6" class="jstree-node  jstree-leaf"><i
+                                                    class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                    class="jstree-anchor" href="#" tabindex="-1" role="treeitem"
+                                                    aria-selected="false" aria-level="2" id="j5_6_anchor"><i
+                                                        class="jstree-icon jstree-themeicon ri-line-chart-line text-warning jstree-themeicon-custom"
+                                                        role="presentation"></i>Another Custom Icon</a></li>
+                                            <li role="none" id="j5_7" class="jstree-node  jstree-leaf"><i
+                                                    class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                    class="jstree-anchor  jstree-disabled" href="#" tabindex="-1"
+                                                    role="treeitem" aria-selected="false" aria-level="2"
+                                                    aria-disabled="true" id="j5_7_anchor"><i
+                                                        class="jstree-icon jstree-themeicon ri-close-circle-line text-success jstree-themeicon-custom"
+                                                        role="presentation"></i>Disabled Node</a></li>
+                                            <li role="none" id="j5_8" class="jstree-node  jstree-closed jstree-last"><i
+                                                    class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                    class="jstree-anchor" href="#" tabindex="-1" role="treeitem"
+                                                    aria-selected="false" aria-level="2" aria-expanded="false"
+                                                    id="j5_8_anchor"><i
+                                                        class="jstree-icon jstree-themeicon ri-folder-line text-danger jstree-themeicon-custom"
+                                                        role="presentation"></i>Sub Nodes</a></li>
+                                        </ul>
+                                    </li>
+                                    <li role="none" id="j5_14" class="jstree-node  jstree-leaf jstree-last"><i
+                                            class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                            class="jstree-anchor" href="#" tabindex="-1" role="treeitem"
+                                            aria-selected="false" aria-level="1" id="j5_14_anchor"><i
+                                                class="jstree-icon jstree-themeicon ri-folder-line text-success jstree-themeicon-custom"
+                                                role="presentation"></i>Another Node</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-pane code" id="jstree-5-code" role="tabpanel">
+                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                            <pre class="mb-0 language-markup"
+                                tabindex="0"><code class="language-markup"><span class="token comment">&lt;!-- jstree css --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>assets/vendor/jstree/themes/default/style.min.css<span class="token punctuation">"</span></span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text/css<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></code><code class="language-markup"><span class="token comment">&lt;!-- jstree js --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>assets/vendor/jstree/jstree.min.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>assets/js/pages/demo.jstree.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span></code><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>jstree-5<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Ajax Data</h4>
+                    <ul class="nav nav-tabs nav-bordered mb-3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a href="#jstree-6-preview" data-bs-toggle="tab" aria-expanded="false"
+                                class="nav-link active" aria-selected="true" role="tab">
+                                Preview
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#jstree-6-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link"
+                                aria-selected="false" tabindex="-1" role="tab">
+                                Code
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- end nav-->
+                    <div class="tab-content">
+                        <div class="tab-pane show active" id="jstree-6-preview" role="tabpanel">
+                            <div id="jstree-6" class="jstree jstree-6 jstree-default" role="tree"
+                                aria-multiselectable="true" tabindex="0" aria-activedescendant="node_1"
+                                aria-busy="false">
+                                <ul class="jstree-container-ul jstree-children" role="presentation">
+                                    <li role="none" id="node_1" class="jstree-node  jstree-open"><i
+                                            class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                            class="jstree-anchor" href="#" tabindex="-1" role="treeitem"
+                                            aria-selected="false" aria-level="1" aria-expanded="true"
+                                            id="node_1_anchor"><i
+                                                class="jstree-icon jstree-themeicon ri-folder-line icon-lg text-success jstree-themeicon-custom"
+                                                role="presentation"></i>Node - 1</a>
+                                        <ul role="group" class="jstree-children">
+                                            <li role="none" id="node_4" class="jstree-node  jstree-leaf"><i
+                                                    class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                    class="jstree-anchor" href="#" tabindex="-1" role="treeitem"
+                                                    aria-selected="false" aria-level="2" id="node_4_anchor"><i
+                                                        class="jstree-icon jstree-themeicon ri-article-line icon-lg text-warning jstree-themeicon-custom"
+                                                        role="presentation"></i>Node - 1.1</a></li>
+                                            <li role="none" id="node_5" class="jstree-node  jstree-leaf"><i
+                                                    class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                    class="jstree-anchor" href="#" tabindex="-1" role="treeitem"
+                                                    aria-selected="false" aria-level="2" id="node_5_anchor"><i
+                                                        class="jstree-icon jstree-themeicon ri-article-line icon-lg text-warning jstree-themeicon-custom"
+                                                        role="presentation"></i>Node - 1.2</a></li>
+                                            <li role="none" id="node_6" class="jstree-node  jstree-open jstree-last"><i
+                                                    class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                    class="jstree-anchor jstree-clicked" href="#" tabindex="-1"
+                                                    role="treeitem" aria-selected="true" aria-level="2"
+                                                    aria-expanded="true" id="node_6_anchor"><i
+                                                        class="jstree-icon jstree-themeicon ri-folder-line icon-lg text-success jstree-themeicon-custom"
+                                                        role="presentation"></i>Node - 1.3</a>
+                                                <ul role="group" class="jstree-children">
+                                                    <li role="none" id="node_13" class="jstree-node  jstree-leaf"><i
+                                                            class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                            class="jstree-anchor" href="#" tabindex="-1" role="treeitem"
+                                                            aria-selected="false" aria-level="3" id="node_13_anchor"><i
+                                                                class="jstree-icon jstree-themeicon ri-article-line icon-lg text-warning jstree-themeicon-custom"
+                                                                role="presentation"></i>Node - 1.3.1</a></li>
+                                                    <li role="none" id="node_15"
+                                                        class="jstree-node  jstree-leaf jstree-last"><i
+                                                            class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                                            class="jstree-anchor" href="#" tabindex="-1" role="treeitem"
+                                                            aria-selected="false" aria-level="3" id="node_15_anchor"><i
+                                                                class="jstree-icon jstree-themeicon ri-article-line icon-lg text-warning jstree-themeicon-custom"
+                                                                role="presentation"></i>Node - 1.3.2</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li role="none" id="node_2" class="jstree-node  jstree-closed"><i
+                                            class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                            class="jstree-anchor" href="#" tabindex="-1" role="treeitem"
+                                            aria-selected="false" aria-level="1" aria-expanded="false"
+                                            id="node_2_anchor"><i
+                                                class="jstree-icon jstree-themeicon ri-folder-line icon-lg text-success jstree-themeicon-custom"
+                                                role="presentation"></i>Node - 2</a></li>
+                                    <li role="none" id="node_3" class="jstree-node  jstree-closed jstree-last"><i
+                                            class="jstree-icon jstree-ocl" role="presentation"></i><a
+                                            class="jstree-anchor" href="#" tabindex="-1" role="treeitem"
+                                            aria-selected="false" aria-level="1" aria-expanded="false"
+                                            id="node_3_anchor"><i
+                                                class="jstree-icon jstree-themeicon ri-folder-line icon-lg text-success jstree-themeicon-custom"
+                                                role="presentation"></i>Node - 3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-pane code" id="jstree-6-code" role="tabpanel">
+                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                            <pre class="mb-0 language-markup"
+                                tabindex="0"><code class="language-markup"><span class="token comment">&lt;!-- jstree css --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>assets/vendor/jstree/themes/default/style.min.css<span class="token punctuation">"</span></span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text/css<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></code><code class="language-markup"><span class="token comment">&lt;!-- jstree js --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>assets/vendor/jstree/jstree.min.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>assets/js/pages/demo.jstree.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span></code><code class="language-markup"><span class="token comment">&lt;!-- jstree json --&gt;</span>
+[{
+    "id": "node_1",
+    "icon": "ri-folder-line icon-lg text-success",
+    "text": "Node - 1",
+    "children": false
+}, {
+    "id": "node_2",
+    "icon": "ri-folder-line icon-lg text-success",
+    "text": "Node - 2",
+    "children": false
+}, {
+    "id": "node_3",
+    "icon": "ri-folder-line icon-lg text-success",
+    "text": "Node - 3",
+    "children": false
+}]</code><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>jstree-6<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

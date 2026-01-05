@@ -1,0 +1,386 @@
+<div class="container-fluid">
+
+    <!-- start page title -->
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box">
+                <div class="page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item"><a href="javascript: void(0);">Hyper</a></li>
+                        <li class="breadcrumb-item"><a href="javascript: void(0);">Extended UI</a></li>
+                        <li class="breadcrumb-item active">Scrollbar</li>
+                    </ol>
+                </div>
+                <h4 class="page-title">Scrollbar</h4>
+            </div>
+        </div>
+    </div>
+    <!-- end page title -->
+
+    <div class="row">
+        <div class="col-xl-6">
+            <div class="card">
+                <div class="card-body pb-0">
+                    <h4 class="header-title">Default Scroll</h4>
+                    <p class="text-muted font-14">Just use data attribute <code>data-simplebar</code>
+                        and add <code>max-height: **px</code> oh fix height</p>
+
+                    <ul class="nav nav-tabs nav-bordered mb-3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a href="#default-scroll-preview" data-bs-toggle="tab" aria-expanded="false"
+                                class="nav-link active" aria-selected="true" role="tab">
+                                Preview
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#default-scroll-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link"
+                                aria-selected="false" tabindex="-1" role="tab">
+                                Code
+                            </a>
+                        </li>
+                    </ul> <!-- end nav-->
+                </div> <!-- end card-body -->
+
+                <div class="tab-content">
+                    <div class="tab-pane show active" id="default-scroll-preview" role="tabpanel">
+                        <div class="card-body py-0 mb-3 simplebar-scrollable-y" data-simplebar="init"
+                            style="max-height: 250px;">
+                            <div class="simplebar-wrapper" style="margin: 0px -24px;">
+                                <div class="simplebar-height-auto-observer-wrapper">
+                                    <div class="simplebar-height-auto-observer"></div>
+                                </div>
+                                <div class="simplebar-mask">
+                                    <div class="simplebar-offset" style="right: 0px; bottom: 0px;">
+                                        <div class="simplebar-content-wrapper" tabindex="0" role="region"
+                                            aria-label="scrollable content"
+                                            style="height: auto; overflow: hidden scroll;">
+                                            <div class="simplebar-content" style="padding: 0px 24px;">
+                                                SimpleBar does only one thing: replace the browser's default scrollbar
+                                                with a custom CSS-styled one without losing performances.
+                                                Unlike some popular plugins, SimpleBar doesn't mimic scroll with
+                                                Javascript, causing janks and strange scrolling behaviours...
+                                                You keep the awesomeness of native scrolling...with a custom scrollbar!
+                                                <p>SimpleBar <strong>does NOT implement a custom scroll
+                                                        behaviour</strong>. It keeps the <strong>native</strong>
+                                                    <code>overflow: auto</code> scroll and <strong>only</strong> replace
+                                                    the scrollbar visual appearance.
+                                                </p>
+                                                <h5>Design it as you want</h5>
+                                                <p>SimpleBar uses pure CSS to style the scrollbar. You can easily
+                                                    customize it as you want! Or even have multiple style on the same
+                                                    page...or just keep the default style ("Mac OS" scrollbar style).
+                                                </p>
+                                                <h5>Lightweight and performant</h5>
+                                                <p>Only 6kb minified. SimpleBar doesn't use Javascript to handle
+                                                    scrolling. You keep the performances/behaviours of the native
+                                                    scroll.</p>
+                                                <h5>Supported everywhere</h5>
+                                                <p class="mb-0">SimpleBar has been tested on the following browsers:
+                                                    Chrome,
+                                                    Firefox,
+                                                    Safari, Edge, IE11.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="simplebar-placeholder" style="width: 594px; height: 408px;"></div>
+                            </div>
+                            <div class="simplebar-track simplebar-horizontal" style="visibility: hidden;">
+                                <div class="simplebar-scrollbar" style="width: 0px; display: none;"></div>
+                            </div>
+                            <div class="simplebar-track simplebar-vertical" style="visibility: visible;">
+                                <div class="simplebar-scrollbar"
+                                    style="height: 153px; transform: translate3d(0px, 0px, 0px); display: block;"></div>
+                            </div>
+                        </div>
+                    </div> <!-- end preview-->
+
+                    <div class="tab-pane m-3 pt-0 code" id="default-scroll-code" role="tabpanel">
+                        <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                        <pre class="mb-0 language-markup"
+                            tabindex="0"><code class="language-markup"><span class="token comment">&lt;!-- HTML --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>card-body py-0<span class="token punctuation">"</span></span> <span class="token attr-name">data-simplebar</span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token value css language-css"><span class="token property">max-height</span><span class="token punctuation">:</span> 250px<span class="token punctuation">;</span></span><span class="token punctuation">"</span></span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                        <!-- end highlight-->
+                    </div> <!-- end preview code-->
+                </div> <!-- end tab-content-->
+            </div> <!-- end card-->
+        </div> <!-- end col -->
+
+        <div class="col-xl-6">
+            <div class="card">
+                <div class="card-body pb-0">
+                    <h4 class="header-title">RTL Position</h4>
+                    <p class="text-muted font-14">Just use data attribute
+                        <code>data-simplebar data-simplebar-direction='rtl'</code>
+                        and add <code>max-height: **px</code> oh fix height
+                    </p>
+
+                    <ul class="nav nav-tabs nav-bordered mb-3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a href="#left-scroll-preview" data-bs-toggle="tab" aria-expanded="false"
+                                class="nav-link active" aria-selected="true" role="tab">
+                                Preview
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#left-scroll-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link"
+                                aria-selected="false" tabindex="-1" role="tab">
+                                Code
+                            </a>
+                        </li>
+                    </ul> <!-- end nav-->
+                </div> <!-- end card-body -->
+
+                <div class="tab-content">
+                    <div class="tab-pane show active" id="left-scroll-preview" role="tabpanel">
+                        <div class="card-body py-0 mb-3 simplebar-scrollable-y" data-simplebar="init"
+                            data-simplebar-direction="rtl" style="max-height: 250px;">
+                            <div class="simplebar-wrapper" style="margin: 0px -24px;">
+                                <div class="simplebar-height-auto-observer-wrapper">
+                                    <div class="simplebar-height-auto-observer"></div>
+                                </div>
+                                <div class="simplebar-mask">
+                                    <div class="simplebar-offset" style="right: 0px; bottom: 0px;">
+                                        <div class="simplebar-content-wrapper" tabindex="0" role="region"
+                                            aria-label="scrollable content"
+                                            style="height: auto; overflow: hidden scroll;">
+                                            <div class="simplebar-content" style="padding: 0px 24px;">
+                                                SimpleBar does only one thing: replace the browser's default scrollbar
+                                                with a custom CSS-styled one without losing performances.
+                                                Unlike some popular plugins, SimpleBar doesn't mimic scroll with
+                                                Javascript, causing janks and strange scrolling behaviours...
+                                                You keep the awesomeness of native scrolling...with a custom scrollbar!
+                                                <p>SimpleBar <strong>does NOT implement a custom scroll
+                                                        behaviour</strong>. It keeps the <strong>native</strong>
+                                                    <code>overflow: auto</code> scroll and <strong>only</strong> replace
+                                                    the scrollbar visual appearance.
+                                                </p>
+                                                <h5>Design it as you want</h5>
+                                                <p>SimpleBar uses pure CSS to style the scrollbar. You can easily
+                                                    customize it as you want! Or even have multiple style on the same
+                                                    page...or just keep the default style ("Mac OS" scrollbar style).
+                                                </p>
+                                                <h5>Lightweight and performant</h5>
+                                                <p>Only 6kb minified. SimpleBar doesn't use Javascript to handle
+                                                    scrolling. You keep the performances/behaviours of the native
+                                                    scroll.</p>
+                                                <h5>Supported everywhere</h5>
+                                                <p class="mb-0">SimpleBar has been tested on the following browsers:
+                                                    Chrome,
+                                                    Firefox,
+                                                    Safari, Edge, IE11.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="simplebar-placeholder" style="width: 594px; height: 408px;"></div>
+                            </div>
+                            <div class="simplebar-track simplebar-horizontal" style="visibility: hidden;">
+                                <div class="simplebar-scrollbar" style="width: 0px; display: none;"></div>
+                            </div>
+                            <div class="simplebar-track simplebar-vertical" style="visibility: visible;">
+                                <div class="simplebar-scrollbar"
+                                    style="height: 153px; transform: translate3d(0px, 0px, 0px); display: block;"></div>
+                            </div>
+                        </div>
+                    </div> <!-- end preview-->
+
+                    <div class="tab-pane m-3 pt-0 code" id="left-scroll-code" role="tabpanel">
+                        <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                        <pre class="mb-0 language-markup"
+                            tabindex="0"><code class="language-markup"><span class="token comment">&lt;!-- HTML --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>card-body py-0<span class="token punctuation">"</span></span> <span class="token attr-name">data-simplebar</span> <span class="token attr-name">data-simplebar-direction</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>rtl<span class="token punctuation">'</span></span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token value css language-css"><span class="token property">max-height</span><span class="token punctuation">:</span> 250px<span class="token punctuation">;</span></span><span class="token punctuation">"</span></span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                        <!-- end highlight-->
+                    </div> <!-- end preview code-->
+                </div> <!-- end tab-content-->
+
+            </div> <!-- end card-->
+        </div> <!-- end col -->
+    </div>
+    <!-- end row -->
+
+    <div class="row">
+        <div class="col-xl-6">
+            <div class="card">
+                <div class="card-body pb-0">
+                    <h4 class="header-title">Scroll Size</h4>
+                    <p class="text-muted font-14">Just use data attribute <code>data-simplebar</code>
+                        and add <code>max-height: **px</code> oh fix height</p>
+
+                    <ul class="nav nav-tabs nav-bordered mb-3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a href="#size-scroll-preview" data-bs-toggle="tab" aria-expanded="false"
+                                class="nav-link active" aria-selected="true" role="tab">
+                                Preview
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#size-scroll-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link"
+                                aria-selected="false" tabindex="-1" role="tab">
+                                Code
+                            </a>
+                        </li>
+                    </ul> <!-- end nav-->
+                </div> <!-- end card-body -->
+
+                <div class="tab-content">
+                    <div class="tab-pane show active" id="size-scroll-preview" role="tabpanel">
+                        <div class="card-body py-0 mb-3 simplebar-scrollable-y" data-simplebar="init"
+                            data-simplebar-lg="" style="max-height: 250px;">
+                            <div class="simplebar-wrapper" style="margin: 0px -24px;">
+                                <div class="simplebar-height-auto-observer-wrapper">
+                                    <div class="simplebar-height-auto-observer"></div>
+                                </div>
+                                <div class="simplebar-mask">
+                                    <div class="simplebar-offset" style="right: 0px; bottom: 0px;">
+                                        <div class="simplebar-content-wrapper" tabindex="0" role="region"
+                                            aria-label="scrollable content"
+                                            style="height: auto; overflow: hidden scroll;">
+                                            <div class="simplebar-content" style="padding: 0px 24px;">
+                                                SimpleBar does only one thing: replace the browser's default scrollbar
+                                                with a custom CSS-styled one without losing performances.
+                                                Unlike some popular plugins, SimpleBar doesn't mimic scroll with
+                                                Javascript, causing janks and strange scrolling behaviours...
+                                                You keep the awesomeness of native scrolling...with a custom scrollbar!
+                                                <p>SimpleBar <strong>does NOT implement a custom scroll
+                                                        behaviour</strong>. It keeps the <strong>native</strong>
+                                                    <code>overflow: auto</code> scroll and <strong>only</strong> replace
+                                                    the scrollbar visual appearance.
+                                                </p>
+                                                <h5>Design it as you want</h5>
+                                                <p>SimpleBar uses pure CSS to style the scrollbar. You can easily
+                                                    customize it as you want! Or even have multiple style on the same
+                                                    page...or just keep the default style ("Mac OS" scrollbar style).
+                                                </p>
+                                                <h5>Lightweight and performant</h5>
+                                                <p>Only 6kb minified. SimpleBar doesn't use Javascript to handle
+                                                    scrolling. You keep the performances/behaviours of the native
+                                                    scroll.</p>
+                                                <h5>Supported everywhere</h5>
+                                                <p class="mb-0">SimpleBar has been tested on the following browsers:
+                                                    Chrome,
+                                                    Firefox,
+                                                    Safari, Edge, IE11.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="simplebar-placeholder" style="width: 594px; height: 408px;"></div>
+                            </div>
+                            <div class="simplebar-track simplebar-horizontal" style="visibility: hidden;">
+                                <div class="simplebar-scrollbar" style="width: 0px; display: none;"></div>
+                            </div>
+                            <div class="simplebar-track simplebar-vertical" style="visibility: visible;">
+                                <div class="simplebar-scrollbar"
+                                    style="height: 153px; transform: translate3d(0px, 0px, 0px); display: block;"></div>
+                            </div>
+                        </div>
+                    </div> <!-- end preview-->
+
+                    <div class="tab-pane m-3 pt-0 code" id="size-scroll-code" role="tabpanel">
+                        <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                        <pre class="mb-0 language-markup"
+                            tabindex="0"><code class="language-markup"><span class="token comment">&lt;!-- HTML --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>card-body py-0<span class="token punctuation">"</span></span> <span class="token attr-name">data-simplebar</span> <span class="token attr-name">data-simplebar-lg</span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token value css language-css"><span class="token property">max-height</span><span class="token punctuation">:</span> 250px<span class="token punctuation">;</span></span><span class="token punctuation">"</span></span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                        <!-- end highlight-->
+                    </div> <!-- end preview code-->
+                </div> <!-- end tab-content-->
+            </div> <!-- end card-->
+        </div> <!-- end col -->
+
+        <div class="col-xl-6">
+            <div class="card">
+                <div class="card-body pb-0">
+                    <h4 class="header-title">Scroll Color</h4>
+                    <p class="text-muted font-14">Just use data attribute
+                        <code>data-simplebar data-simplebar-primary</code>
+                        and add <code>max-height: **px</code> oh fix height
+                    </p>
+
+                    <ul class="nav nav-tabs nav-bordered mb-3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a href="#color-scroll-preview" data-bs-toggle="tab" aria-expanded="false"
+                                class="nav-link active" aria-selected="true" role="tab">
+                                Preview
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#color-scroll-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link"
+                                aria-selected="false" tabindex="-1" role="tab">
+                                Code
+                            </a>
+                        </li>
+                    </ul> <!-- end nav-->
+                </div> <!-- end card-body -->
+                <div class="tab-content">
+                    <div class="tab-pane show active" id="color-scroll-preview" role="tabpanel">
+                        <div class="card-body py-0 mb-3 simplebar-scrollable-y" data-simplebar="init"
+                            data-simplebar-primary="" style="max-height: 250px;">
+                            <div class="simplebar-wrapper" style="margin: 0px -24px;">
+                                <div class="simplebar-height-auto-observer-wrapper">
+                                    <div class="simplebar-height-auto-observer"></div>
+                                </div>
+                                <div class="simplebar-mask">
+                                    <div class="simplebar-offset" style="right: 0px; bottom: 0px;">
+                                        <div class="simplebar-content-wrapper" tabindex="0" role="region"
+                                            aria-label="scrollable content"
+                                            style="height: auto; overflow: hidden scroll;">
+                                            <div class="simplebar-content" style="padding: 0px 24px;">
+                                                SimpleBar does only one thing: replace the browser's default scrollbar
+                                                with a custom CSS-styled one without losing performances.
+                                                Unlike some popular plugins, SimpleBar doesn't mimic scroll with
+                                                Javascript, causing janks and strange scrolling behaviours...
+                                                You keep the awesomeness of native scrolling...with a custom scrollbar!
+                                                <p>SimpleBar <strong>does NOT implement a custom scroll
+                                                        behaviour</strong>. It keeps the <strong>native</strong>
+                                                    <code>overflow: auto</code> scroll and <strong>only</strong> replace
+                                                    the scrollbar visual appearance.
+                                                </p>
+                                                <h5>Design it as you want</h5>
+                                                <p>SimpleBar uses pure CSS to style the scrollbar. You can easily
+                                                    customize it as you want! Or even have multiple style on the same
+                                                    page...or just keep the default style ("Mac OS" scrollbar style).
+                                                </p>
+                                                <h5>Lightweight and performant</h5>
+                                                <p>Only 6kb minified. SimpleBar doesn't use Javascript to handle
+                                                    scrolling. You keep the performances/behaviours of the native
+                                                    scroll.</p>
+                                                <h5>Supported everywhere</h5>
+                                                <p class="mb-0">SimpleBar has been tested on the following browsers:
+                                                    Chrome,
+                                                    Firefox,
+                                                    Safari, Edge, IE11.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="simplebar-placeholder" style="width: 594px; height: 408px;"></div>
+                            </div>
+                            <div class="simplebar-track simplebar-horizontal" style="visibility: hidden;">
+                                <div class="simplebar-scrollbar" style="width: 0px; display: none;"></div>
+                            </div>
+                            <div class="simplebar-track simplebar-vertical" style="visibility: visible;">
+                                <div class="simplebar-scrollbar"
+                                    style="height: 153px; transform: translate3d(0px, 0px, 0px); display: block;"></div>
+                            </div>
+                        </div>
+                    </div> <!-- end preview-->
+
+                    <div class="tab-pane m-3 pt-0 code" id="color-scroll-code" role="tabpanel">
+                        <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                        <pre class="mb-0 language-markup"
+                            tabindex="0"><code class="language-markup"><span class="token comment">&lt;!-- HTML --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>card-body py-0<span class="token punctuation">"</span></span> <span class="token attr-name">data-simplebar</span> <span class="token attr-name">data-simplebar-primary</span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token value css language-css"><span class="token property">max-height</span><span class="token punctuation">:</span> 250px<span class="token punctuation">;</span></span><span class="token punctuation">"</span></span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                        <!-- end highlight-->
+                    </div> <!-- end preview code-->
+                </div> <!-- end tab-content-->
+            </div> <!-- end card-->
+        </div> <!-- end col -->
+    </div>
+    <!-- end row -->
+
+</div>

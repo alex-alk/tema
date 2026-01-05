@@ -1,0 +1,871 @@
+<div class="container-fluid">
+
+    <!-- start page title -->
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box">
+                <div class="page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item"><a href="javascript: void(0);">Hyper</a></li>
+                        <li class="breadcrumb-item"><a href="javascript: void(0);">Extended UI</a></li>
+                        <li class="breadcrumb-item active">Range Slider</li>
+                    </ol>
+                </div>
+                <h4 class="page-title">Range Slider</h4>
+            </div>
+        </div>
+    </div>
+    <!-- end page title -->
+
+    <div class="row">
+        <div class="col-xl-6">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Default</h4>
+                    <p class="text-muted font-14">Start with default options</p>
+
+                    <ul class="nav nav-tabs nav-bordered mb-3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a href="#default-range-preview" data-bs-toggle="tab" aria-expanded="false"
+                                class="nav-link active" aria-selected="true" role="tab">
+                                Preview
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#default-range-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link"
+                                aria-selected="false" tabindex="-1" role="tab">
+                                Code
+                            </a>
+                        </li>
+                    </ul> <!-- end nav-->
+                    <div class="tab-content">
+                        <div class="tab-pane show active" id="default-range-preview" dir="ltr" role="tabpanel">
+                            <span class="irs irs--flat js-irs-0"><span class="irs"><span class="irs-line"
+                                        tabindex="0"></span><span class="irs-min"
+                                        style="visibility: hidden;">10</span><span class="irs-max"
+                                        style="visibility: visible;">100</span><span class="irs-from"
+                                        style="visibility: hidden;">0</span><span class="irs-to"
+                                        style="visibility: hidden;">0</span><span class="irs-single"
+                                        style="left: -0.549048%;">10</span></span><span class="irs-grid"></span><span
+                                    class="irs-bar irs-bar--single" style="left: 0px; width: 1.46413%;"></span><span
+                                    class="irs-shadow shadow-single" style="display: none;"></span><span
+                                    class="irs-handle single"
+                                    style="left: 0%;"><i></i><i></i><i></i></span></span><input type="text"
+                                id="range_01" data-plugin="range-slider" class="irs-hidden-input" tabindex="-1"
+                                readonly="">
+                        </div> <!-- end preview-->
+
+                        <div class="tab-pane code" id="default-range-code" role="tabpanel">
+                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                            <pre class="mb-0 language-markup"
+                                tabindex="0"><code class="language-markup"><span class="token comment">&lt;!-- Range Silder --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>range_01<span class="token punctuation">"</span></span> <span class="token attr-name">data-plugin</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>range-slider<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span></code></pre>
+                            <!-- end highlight-->
+                        </div> <!-- end preview code-->
+                    </div> <!-- end tab-content-->
+                </div> <!-- end card-body -->
+            </div> <!-- end card-->
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Prefix</h4>
+                    <p class="text-muted font-14">Showing grid and adding prefix "$"</p>
+
+                    <ul class="nav nav-tabs nav-bordered mb-3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a href="#prefix-range-preview" data-bs-toggle="tab" aria-expanded="false"
+                                class="nav-link active" aria-selected="true" role="tab">
+                                Preview
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#prefix-range-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link"
+                                aria-selected="false" tabindex="-1" role="tab">
+                                Code
+                            </a>
+                        </li>
+                    </ul> <!-- end nav-->
+                    <div class="tab-content">
+                        <div class="tab-pane show active" id="prefix-range-preview" dir="ltr" role="tabpanel">
+                            <span class="irs irs--flat js-irs-1 irs-with-grid"><span class="irs"><span class="irs-line"
+                                        tabindex="0"></span><span class="irs-min"
+                                        style="visibility: visible;">$0</span><span class="irs-max"
+                                        style="visibility: visible;">$1 000</span><span class="irs-from"
+                                        style="visibility: visible; left: 17.7672%;">$200</span><span class="irs-to"
+                                        style="visibility: visible; left: 76.0102%;">$800</span><span class="irs-single"
+                                        style="visibility: hidden; left: 43.305%;">$200 — $800</span></span><span
+                                    class="irs-grid" style="width: 97.0717%; left: 1.36413%;"><span class="irs-grid-pol"
+                                        style="left: 0%"></span><span class="irs-grid-text js-grid-text-0"
+                                        style="left: 0%; margin-left: -1.04319%;">0</span><span
+                                        class="irs-grid-pol small" style="left: 20%"></span><span
+                                        class="irs-grid-pol small" style="left: 15%"></span><span
+                                        class="irs-grid-pol small" style="left: 10%"></span><span
+                                        class="irs-grid-pol small" style="left: 5%"></span><span class="irs-grid-pol"
+                                        style="left: 25%"></span><span class="irs-grid-text js-grid-text-1"
+                                        style="left: 25%; visibility: visible; margin-left: -2.03148%;">250</span><span
+                                        class="irs-grid-pol small" style="left: 45%"></span><span
+                                        class="irs-grid-pol small" style="left: 40%"></span><span
+                                        class="irs-grid-pol small" style="left: 35%"></span><span
+                                        class="irs-grid-pol small" style="left: 30%"></span><span class="irs-grid-pol"
+                                        style="left: 50%"></span><span class="irs-grid-text js-grid-text-2"
+                                        style="left: 50%; visibility: visible; margin-left: -2.03148%;">500</span><span
+                                        class="irs-grid-pol small" style="left: 70%"></span><span
+                                        class="irs-grid-pol small" style="left: 65%"></span><span
+                                        class="irs-grid-pol small" style="left: 60%"></span><span
+                                        class="irs-grid-pol small" style="left: 55%"></span><span class="irs-grid-pol"
+                                        style="left: 75%"></span><span class="irs-grid-text js-grid-text-3"
+                                        style="left: 75%; visibility: visible; margin-left: -2.03148%;">750</span><span
+                                        class="irs-grid-pol small" style="left: 95%"></span><span
+                                        class="irs-grid-pol small" style="left: 90%"></span><span
+                                        class="irs-grid-pol small" style="left: 85%"></span><span
+                                        class="irs-grid-pol small" style="left: 80%"></span><span class="irs-grid-pol"
+                                        style="left: 100%"></span><span class="irs-grid-text js-grid-text-4"
+                                        style="left: 100%; margin-left: -2.73838%;">1 000</span></span><span
+                                    class="irs-bar" style="left: 20.8785%; width: 58.243%;"></span><span
+                                    class="irs-shadow shadow-from" style="display: none;"></span><span
+                                    class="irs-shadow shadow-to" style="display: none;"></span><span
+                                    class="irs-handle from" style="left: 19.4143%;"><i></i><i></i><i></i></span><span
+                                    class="irs-handle to type_last"
+                                    style="left: 77.6574%;"><i></i><i></i><i></i></span></span><input type="text"
+                                id="range_03" data-plugin="range-slider" data-type="double" data-grid="true"
+                                data-min="0" data-max="1000" data-from="200" data-to="800" data-prefix="$"
+                                class="irs-hidden-input" tabindex="-1" readonly="">
+                        </div> <!-- end preview-->
+
+                        <div class="tab-pane code" id="prefix-range-code" role="tabpanel">
+                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                            <pre class="mb-0 language-markup"
+                                tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>range_03<span class="token punctuation">"</span></span> <span class="token attr-name">data-plugin</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>range-slider<span class="token punctuation">"</span></span> <span class="token attr-name">data-type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>double<span class="token punctuation">"</span></span>
+    <span class="token attr-name">data-grid</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token attr-name">data-min</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span> <span class="token attr-name">data-max</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>1000<span class="token punctuation">"</span></span> <span class="token attr-name">data-from</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>200<span class="token punctuation">"</span></span> <span class="token attr-name">data-to"800"</span>
+    <span class="token attr-name">data-prefix</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>$<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span></code></pre>
+                            <!-- end highlight-->
+                        </div> <!-- end preview code-->
+                    </div> <!-- end tab-content-->
+                </div> <!-- end card-body -->
+            </div> <!-- end card-->
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Step</h4>
+                    <p class="text-muted font-14">Increment with specific value only (step)</p>
+
+                    <ul class="nav nav-tabs nav-bordered mb-3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a href="#step-range-preview" data-bs-toggle="tab" aria-expanded="false"
+                                class="nav-link active" aria-selected="true" role="tab">
+                                Preview
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#step-range-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link"
+                                aria-selected="false" tabindex="-1" role="tab">
+                                Code
+                            </a>
+                        </li>
+                    </ul> <!-- end nav-->
+                    <div class="tab-content">
+                        <div class="tab-pane show active" id="step-range-preview" dir="ltr" role="tabpanel">
+                            <span class="irs irs--flat js-irs-2 irs-with-grid"><span class="irs"><span class="irs-line"
+                                        tabindex="0"></span><span class="irs-min" style="visibility: visible;">-1
+                                        000</span><span class="irs-max" style="visibility: visible;">1 000</span><span
+                                        class="irs-from" style="visibility: visible; left: 22.7809%;">-500</span><span
+                                        class="irs-to" style="visibility: visible; left: 71.7057%;">500</span><span
+                                        class="irs-single" style="visibility: hidden; left: 43.8209%;">-500 —
+                                        500</span></span><span class="irs-grid"
+                                    style="width: 97.0717%; left: 1.36413%;"><span class="irs-grid-pol"
+                                        style="left: 0%"></span><span class="irs-grid-text js-grid-text-0"
+                                        style="left: 0%; margin-left: -3.0884%;">-1 000</span><span
+                                        class="irs-grid-pol small" style="left: 20%"></span><span
+                                        class="irs-grid-pol small" style="left: 15%"></span><span
+                                        class="irs-grid-pol small" style="left: 10%"></span><span
+                                        class="irs-grid-pol small" style="left: 5%"></span><span class="irs-grid-pol"
+                                        style="left: 25%"></span><span class="irs-grid-text js-grid-text-1"
+                                        style="left: 25%; visibility: visible; margin-left: -2.3815%;">-500</span><span
+                                        class="irs-grid-pol small" style="left: 45%"></span><span
+                                        class="irs-grid-pol small" style="left: 40%"></span><span
+                                        class="irs-grid-pol small" style="left: 35%"></span><span
+                                        class="irs-grid-pol small" style="left: 30%"></span><span class="irs-grid-pol"
+                                        style="left: 50%"></span><span class="irs-grid-text js-grid-text-2"
+                                        style="left: 50%; visibility: visible; margin-left: -1.04319%;">0</span><span
+                                        class="irs-grid-pol small" style="left: 70%"></span><span
+                                        class="irs-grid-pol small" style="left: 65%"></span><span
+                                        class="irs-grid-pol small" style="left: 60%"></span><span
+                                        class="irs-grid-pol small" style="left: 55%"></span><span class="irs-grid-pol"
+                                        style="left: 75%"></span><span class="irs-grid-text js-grid-text-3"
+                                        style="left: 75%; visibility: visible; margin-left: -2.03148%;">500</span><span
+                                        class="irs-grid-pol small" style="left: 95%"></span><span
+                                        class="irs-grid-pol small" style="left: 90%"></span><span
+                                        class="irs-grid-pol small" style="left: 85%"></span><span
+                                        class="irs-grid-pol small" style="left: 80%"></span><span class="irs-grid-pol"
+                                        style="left: 100%"></span><span class="irs-grid-text js-grid-text-4"
+                                        style="left: 100%; margin-left: -2.73838%;">1 000</span></span><span
+                                    class="irs-bar" style="left: 25.7321%; width: 48.5359%;"></span><span
+                                    class="irs-shadow shadow-from" style="display: none;"></span><span
+                                    class="irs-shadow shadow-to" style="display: none;"></span><span
+                                    class="irs-handle from" style="left: 24.2679%;"><i></i><i></i><i></i></span><span
+                                    class="irs-handle to type_last"
+                                    style="left: 72.8038%;"><i></i><i></i><i></i></span></span><input type="text"
+                                id="range_05" data-plugin="range-slider" data-type="double" data-grid="true"
+                                data-min="-1000" data-max="1000" data-from="-500" data-to="500" data-step="250"
+                                class="irs-hidden-input" tabindex="-1" readonly="">
+                        </div> <!-- end preview-->
+
+                        <div class="tab-pane code" id="step-range-code" role="tabpanel">
+                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                            <pre class="mb-0 language-markup"
+                                tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>range_05<span class="token punctuation">"</span></span> <span class="token attr-name">data-plugin</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>range-slider<span class="token punctuation">"</span></span>
+    <span class="token attr-name">data-type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>double<span class="token punctuation">"</span></span> <span class="token attr-name">data-grid</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token attr-name">data-min</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>-1000<span class="token punctuation">"</span></span> <span class="token attr-name">data-max</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>1000<span class="token punctuation">"</span></span>
+    <span class="token attr-name">data-from</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>-500<span class="token punctuation">"</span></span> <span class="token attr-name">data-to</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>500<span class="token punctuation">"</span></span> <span class="token attr-name">data-step</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>250<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span></code></pre>
+                            <!-- end highlight-->
+                        </div> <!-- end preview code-->
+                    </div> <!-- end tab-content-->
+                </div> <!-- end card-body -->
+            </div> <!-- end card-->
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Prettify Numbers</h4>
+                    <p class="text-muted font-14">Prettify enabled. Much better!</p>
+
+                    <ul class="nav nav-tabs nav-bordered mb-3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a href="#prettify-range-preview" data-bs-toggle="tab" aria-expanded="false"
+                                class="nav-link active" aria-selected="true" role="tab">
+                                Preview
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#prettify-range-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link"
+                                aria-selected="false" tabindex="-1" role="tab">
+                                Code
+                            </a>
+                        </li>
+                    </ul> <!-- end nav-->
+                    <div class="tab-content">
+                        <div class="tab-pane show active" id="prettify-range-preview" dir="ltr" role="tabpanel">
+                            <span class="irs irs--flat js-irs-3 irs-with-grid"><span class="irs"><span class="irs-line"
+                                        tabindex="0"></span><span class="irs-min" style="visibility: visible;">1
+                                        000</span><span class="irs-max" style="visibility: visible;">1 000
+                                        000</span><span class="irs-from" style="visibility: hidden;">0</span><span
+                                        class="irs-to" style="visibility: hidden;">0</span><span class="irs-single"
+                                        style="left: 16.3546%;">200 000</span></span><span class="irs-grid"
+                                    style="width: 97.0717%; left: 1.36413%;"><span class="irs-grid-pol"
+                                        style="left: 0%"></span><span class="irs-grid-text js-grid-text-0"
+                                        style="left: 0%; margin-left: -2.73838%;">1 000</span><span
+                                        class="irs-grid-pol small" style="left: 20%"></span><span
+                                        class="irs-grid-pol small" style="left: 15%"></span><span
+                                        class="irs-grid-pol small" style="left: 10%"></span><span
+                                        class="irs-grid-pol small" style="left: 5%"></span><span class="irs-grid-pol"
+                                        style="left: 25%"></span><span class="irs-grid-text js-grid-text-1"
+                                        style="left: 25%; visibility: visible; margin-left: -3.72667%;">250
+                                        750</span><span class="irs-grid-pol small" style="left: 45%"></span><span
+                                        class="irs-grid-pol small" style="left: 40%"></span><span
+                                        class="irs-grid-pol small" style="left: 35%"></span><span
+                                        class="irs-grid-pol small" style="left: 30%"></span><span class="irs-grid-pol"
+                                        style="left: 50%"></span><span class="irs-grid-text js-grid-text-2"
+                                        style="left: 50%; visibility: visible; margin-left: -3.72667%;">500
+                                        500</span><span class="irs-grid-pol small" style="left: 70%"></span><span
+                                        class="irs-grid-pol small" style="left: 65%"></span><span
+                                        class="irs-grid-pol small" style="left: 60%"></span><span
+                                        class="irs-grid-pol small" style="left: 55%"></span><span class="irs-grid-pol"
+                                        style="left: 75%"></span><span class="irs-grid-text js-grid-text-3"
+                                        style="left: 75%; visibility: visible; margin-left: -3.72667%;">750
+                                        250</span><span class="irs-grid-pol small" style="left: 95%"></span><span
+                                        class="irs-grid-pol small" style="left: 90%"></span><span
+                                        class="irs-grid-pol small" style="left: 85%"></span><span
+                                        class="irs-grid-pol small" style="left: 80%"></span><span class="irs-grid-pol"
+                                        style="left: 100%"></span><span class="irs-grid-text js-grid-text-4"
+                                        style="left: 100%; margin-left: -4.43357%;">1 000 000</span></span><span
+                                    class="irs-bar irs-bar--single" style="left: 0px; width: 20.8007%;"></span><span
+                                    class="irs-shadow shadow-single" style="display: none;"></span><span
+                                    class="irs-handle single"
+                                    style="left: 19.3366%;"><i></i><i></i><i></i></span></span><input type="text"
+                                id="range_07" data-plugin="range-slider" data-grid="true" data-min="1000"
+                                data-max="1000000" data-step="1000" data-from="200000" data-to="1000"
+                                data-prettify_enabled="true" class="irs-hidden-input" tabindex="-1" readonly="">
+                        </div> <!-- end preview-->
+
+                        <div class="tab-pane code" id="prettify-range-code" role="tabpanel">
+                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                            <pre class="mb-0 language-markup" tabindex="0"><code class="language-markup">&lt;input type="text" id="range_07" data-plugin="range-slider"
+    data-grid="true" data-min="1000" data-max="1000000"
+    data-step="1000" data-from="200000" data-to="1000" data-prettify_enabled="true" /&lt;</code></pre>
+                            <!-- end highlight-->
+                        </div> <!-- end preview code-->
+                    </div> <!-- end tab-content-->
+                </div> <!-- end card-body -->
+            </div> <!-- end card-->
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Extra Example</h4>
+                    <p class="text-muted font-14">Want to show that max number is not the biggest one?</p>
+
+                    <ul class="nav nav-tabs nav-bordered mb-3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a href="#biggest-range-preview" data-bs-toggle="tab" aria-expanded="false"
+                                class="nav-link active" aria-selected="true" role="tab">
+                                Preview
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#biggest-range-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link"
+                                aria-selected="false" tabindex="-1" role="tab">
+                                Code
+                            </a>
+                        </li>
+                    </ul> <!-- end nav-->
+                    <div class="tab-content">
+                        <div class="tab-pane show active" id="biggest-range-preview" dir="ltr" role="tabpanel">
+                            <span class="irs irs--flat js-irs-4 irs-with-grid"><span class="irs"><span class="irs-line"
+                                        tabindex="0"></span><span class="irs-min"
+                                        style="visibility: visible;">Age18</span><span class="irs-max"
+                                        style="visibility: visible;">Age70+</span><span class="irs-from"
+                                        style="visibility: hidden;">0</span><span class="irs-to"
+                                        style="visibility: hidden;">0</span><span class="irs-single"
+                                        style="left: 20.1661%;">Age30</span></span><span class="irs-grid"
+                                    style="width: 97.0717%; left: 1.36413%;"><span class="irs-grid-pol"
+                                        style="left: 0%"></span><span class="irs-grid-text js-grid-text-0"
+                                        style="left: 0%; margin-left: -1.53734%;">18</span><span
+                                        class="irs-grid-pol small" style="left: 20%"></span><span
+                                        class="irs-grid-pol small" style="left: 15%"></span><span
+                                        class="irs-grid-pol small" style="left: 10%"></span><span
+                                        class="irs-grid-pol small" style="left: 5%"></span><span class="irs-grid-pol"
+                                        style="left: 25%"></span><span class="irs-grid-text js-grid-text-1"
+                                        style="left: 25%; visibility: visible; margin-left: -1.53734%;">31</span><span
+                                        class="irs-grid-pol small" style="left: 45%"></span><span
+                                        class="irs-grid-pol small" style="left: 40%"></span><span
+                                        class="irs-grid-pol small" style="left: 35%"></span><span
+                                        class="irs-grid-pol small" style="left: 30%"></span><span class="irs-grid-pol"
+                                        style="left: 50%"></span><span class="irs-grid-text js-grid-text-2"
+                                        style="left: 50%; visibility: visible; margin-left: -1.53734%;">44</span><span
+                                        class="irs-grid-pol small" style="left: 70%"></span><span
+                                        class="irs-grid-pol small" style="left: 65%"></span><span
+                                        class="irs-grid-pol small" style="left: 60%"></span><span
+                                        class="irs-grid-pol small" style="left: 55%"></span><span class="irs-grid-pol"
+                                        style="left: 75%"></span><span class="irs-grid-text js-grid-text-3"
+                                        style="left: 75%; visibility: visible; margin-left: -1.53734%;">57</span><span
+                                        class="irs-grid-pol small" style="left: 95%"></span><span
+                                        class="irs-grid-pol small" style="left: 90%"></span><span
+                                        class="irs-grid-pol small" style="left: 85%"></span><span
+                                        class="irs-grid-pol small" style="left: 80%"></span><span class="irs-grid-pol"
+                                        style="left: 100%"></span><span class="irs-grid-text js-grid-text-4"
+                                        style="left: 100%; margin-left: -1.53734%;">70</span></span><span
+                                    class="irs-bar irs-bar--single" style="left: 0px; width: 23.8653%;"></span><span
+                                    class="irs-shadow shadow-single" style="display: none;"></span><span
+                                    class="irs-handle single"
+                                    style="left: 22.4012%;"><i></i><i></i><i></i></span></span><input type="text"
+                                id="range_09" data-plugin="range-slider" data-grid="true" data-min="18" data-max="70"
+                                data-prefix="Age" data-max_postfix="+" data-from="30" data-to="1000"
+                                class="irs-hidden-input" tabindex="-1" readonly="">
+                        </div> <!-- end preview-->
+
+                        <div class="tab-pane code" id="biggest-range-code" role="tabpanel">
+                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                            <pre class="mb-0 language-markup"
+                                tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>range_09<span class="token punctuation">"</span></span> <span class="token attr-name">data-plugin</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>range-slider<span class="token punctuation">"</span></span>
+    <span class="token attr-name">data-grid</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token attr-name">data-min</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>18<span class="token punctuation">"</span></span> <span class="token attr-name">data-max</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>70<span class="token punctuation">"</span></span> <span class="token attr-name">data-prefix</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Age<span class="token punctuation">"</span></span>
+    <span class="token attr-name">data-max_postfix</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>+<span class="token punctuation">"</span></span> <span class="token attr-name">data-from</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>30<span class="token punctuation">"</span></span> <span class="token attr-name">data-to</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>1000<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span></code></pre>
+                            <!-- end highlight-->
+                        </div> <!-- end preview code-->
+                    </div> <!-- end tab-content-->
+                </div> <!-- end card-body -->
+            </div> <!-- end card-->
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Postfixes</h4>
+                    <p class="text-muted font-14">Using postfixes</p>
+
+                    <ul class="nav nav-tabs nav-bordered mb-3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a href="#postfixes-range-preview" data-bs-toggle="tab" aria-expanded="false"
+                                class="nav-link active" aria-selected="true" role="tab">
+                                Preview
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#postfixes-range-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link"
+                                aria-selected="false" tabindex="-1" role="tab">
+                                Code
+                            </a>
+                        </li>
+                    </ul> <!-- end nav-->
+                    <div class="tab-content">
+                        <div class="tab-pane show active" id="postfixes-range-preview" dir="ltr" role="tabpanel">
+                            <span class="irs irs--flat js-irs-5 irs-with-grid"><span class="irs"><span class="irs-line"
+                                        tabindex="0"></span><span class="irs-min" style="visibility: visible;">-90
+                                        Â°</span><span class="irs-max" style="visibility: visible;">90 Â°</span><span
+                                        class="irs-from" style="visibility: hidden;">0</span><span class="irs-to"
+                                        style="visibility: hidden;">0</span><span class="irs-single"
+                                        style="left: 47.368%;">0 Â°</span></span><span class="irs-grid"
+                                    style="width: 97.0717%; left: 1.36413%;"><span class="irs-grid-pol"
+                                        style="left: 0%"></span><span class="irs-grid-text js-grid-text-0"
+                                        style="left: 0%; margin-left: -1.88735%;">-90</span><span
+                                        class="irs-grid-pol small" style="left: 20%"></span><span
+                                        class="irs-grid-pol small" style="left: 15%"></span><span
+                                        class="irs-grid-pol small" style="left: 10%"></span><span
+                                        class="irs-grid-pol small" style="left: 5%"></span><span class="irs-grid-pol"
+                                        style="left: 25%"></span><span class="irs-grid-text js-grid-text-1"
+                                        style="left: 25%; visibility: visible; margin-left: -1.88735%;">-45</span><span
+                                        class="irs-grid-pol small" style="left: 45%"></span><span
+                                        class="irs-grid-pol small" style="left: 40%"></span><span
+                                        class="irs-grid-pol small" style="left: 35%"></span><span
+                                        class="irs-grid-pol small" style="left: 30%"></span><span class="irs-grid-pol"
+                                        style="left: 50%"></span><span class="irs-grid-text js-grid-text-2"
+                                        style="left: 50%; visibility: visible; margin-left: -1.04319%;">0</span><span
+                                        class="irs-grid-pol small" style="left: 70%"></span><span
+                                        class="irs-grid-pol small" style="left: 65%"></span><span
+                                        class="irs-grid-pol small" style="left: 60%"></span><span
+                                        class="irs-grid-pol small" style="left: 55%"></span><span class="irs-grid-pol"
+                                        style="left: 75%"></span><span class="irs-grid-text js-grid-text-3"
+                                        style="left: 75%; visibility: visible; margin-left: -1.53734%;">45</span><span
+                                        class="irs-grid-pol small" style="left: 95%"></span><span
+                                        class="irs-grid-pol small" style="left: 90%"></span><span
+                                        class="irs-grid-pol small" style="left: 85%"></span><span
+                                        class="irs-grid-pol small" style="left: 80%"></span><span class="irs-grid-pol"
+                                        style="left: 100%"></span><span class="irs-grid-text js-grid-text-4"
+                                        style="left: 100%; margin-left: -1.53734%;">90</span></span><span
+                                    class="irs-bar irs-bar--single" style="left: 0px; width: 50%;"></span><span
+                                    class="irs-shadow shadow-single" style="display: none;"></span><span
+                                    class="irs-handle single"
+                                    style="left: 48.5359%;"><i></i><i></i><i></i></span></span><input type="text"
+                                id="range_11" data-plugin="range-slider" data-type="single" data-grid="true"
+                                data-min="-90" data-max="90" data-postfix=" Â°" data-from="0" class="irs-hidden-input"
+                                tabindex="-1" readonly="">
+                        </div> <!-- end preview-->
+
+                        <div class="tab-pane code" id="postfixes-range-code" role="tabpanel">
+                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                            <pre class="mb-0 language-markup"
+                                tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>range_11<span class="token punctuation">"</span></span> <span class="token attr-name">data-plugin</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>range-slider<span class="token punctuation">"</span></span>
+    <span class="token attr-name">data-type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>single<span class="token punctuation">"</span></span> <span class="token attr-name">data-grid</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token attr-name">data-min</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>-90<span class="token punctuation">"</span></span> <span class="token attr-name">data-max</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>90<span class="token punctuation">"</span></span>
+    <span class="token attr-name">data-postfix</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span> Â°<span class="token punctuation">"</span></span> <span class="token attr-name">data-from</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span></code></pre>
+                            <!-- end highlight-->
+                        </div> <!-- end preview code-->
+                    </div> <!-- end tab-content-->
+                </div> <!-- end card-body -->
+            </div> <!-- end card-->
+
+        </div> <!-- end col -->
+
+        <div class="col-xl-6">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Min-Max</h4>
+                    <p class="text-muted font-14">Set min value, max value and start point</p>
+
+                    <ul class="nav nav-tabs nav-bordered mb-3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a href="#max-range-preview" data-bs-toggle="tab" aria-expanded="false"
+                                class="nav-link active" aria-selected="true" role="tab">
+                                Preview
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#max-range-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link"
+                                aria-selected="false" tabindex="-1" role="tab">
+                                Code
+                            </a>
+                        </li>
+                    </ul> <!-- end nav-->
+                    <div class="tab-content">
+                        <div class="tab-pane show active" id="max-range-preview" dir="ltr" role="tabpanel">
+                            <span class="irs irs--flat js-irs-6"><span class="irs"><span class="irs-line"
+                                        tabindex="0"></span><span class="irs-min"
+                                        style="visibility: visible;">100</span><span class="irs-max"
+                                        style="visibility: visible;">1 000</span><span class="irs-from"
+                                        style="visibility: hidden;">0</span><span class="irs-to"
+                                        style="visibility: hidden;">0</span><span class="irs-single"
+                                        style="left: 47.4378%;">550</span></span><span class="irs-grid"></span><span
+                                    class="irs-bar irs-bar--single" style="left: 0px; width: 50%;"></span><span
+                                    class="irs-shadow shadow-single" style="display: none;"></span><span
+                                    class="irs-handle single"
+                                    style="left: 48.5359%;"><i></i><i></i><i></i></span></span><input type="text"
+                                id="range_02" data-plugin="range-slider" data-min="100" data-max="1000" data-from="550"
+                                class="irs-hidden-input" tabindex="-1" readonly="">
+                        </div> <!-- end preview-->
+
+                        <div class="tab-pane code" id="max-range-code" role="tabpanel">
+                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                            <pre class="mb-0 language-markup"
+                                tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>range_02<span class="token punctuation">"</span></span> <span class="token attr-name">data-plugin</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>range-slider<span class="token punctuation">"</span></span>
+    <span class="token attr-name">data-min</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>100<span class="token punctuation">"</span></span> <span class="token attr-name">data-max</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>1000<span class="token punctuation">"</span></span> <span class="token attr-name">data-from</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>550<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span></code></pre>
+                            <!-- end highlight-->
+                        </div> <!-- end preview code-->
+                    </div> <!-- end tab-content-->
+                </div> <!-- end card-body -->
+            </div> <!-- end card-->
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Range</h4>
+                    <p class="text-muted font-14">Set up range with negative values</p>
+
+                    <ul class="nav nav-tabs nav-bordered mb-3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a href="#negative-range-preview" data-bs-toggle="tab" aria-expanded="false"
+                                class="nav-link active" aria-selected="true" role="tab">
+                                Preview
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#negative-range-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link"
+                                aria-selected="false" tabindex="-1" role="tab">
+                                Code
+                            </a>
+                        </li>
+                    </ul> <!-- end nav-->
+                    <div class="tab-content">
+                        <div class="tab-pane show active" id="negative-range-preview" dir="ltr" role="tabpanel">
+                            <span class="irs irs--flat js-irs-7 irs-with-grid"><span class="irs"><span class="irs-line"
+                                        tabindex="0"></span><span class="irs-min" style="visibility: visible;">-1
+                                        000</span><span class="irs-max" style="visibility: visible;">1 000</span><span
+                                        class="irs-from" style="visibility: visible; left: 22.7809%;">-500</span><span
+                                        class="irs-to" style="visibility: visible; left: 71.7057%;">500</span><span
+                                        class="irs-single" style="visibility: hidden; left: 43.8209%;">-500 —
+                                        500</span></span><span class="irs-grid"
+                                    style="width: 97.0717%; left: 1.36413%;"><span class="irs-grid-pol"
+                                        style="left: 0%"></span><span class="irs-grid-text js-grid-text-0"
+                                        style="left: 0%; margin-left: -3.0884%;">-1 000</span><span
+                                        class="irs-grid-pol small" style="left: 20%"></span><span
+                                        class="irs-grid-pol small" style="left: 15%"></span><span
+                                        class="irs-grid-pol small" style="left: 10%"></span><span
+                                        class="irs-grid-pol small" style="left: 5%"></span><span class="irs-grid-pol"
+                                        style="left: 25%"></span><span class="irs-grid-text js-grid-text-1"
+                                        style="left: 25%; visibility: visible; margin-left: -2.3815%;">-500</span><span
+                                        class="irs-grid-pol small" style="left: 45%"></span><span
+                                        class="irs-grid-pol small" style="left: 40%"></span><span
+                                        class="irs-grid-pol small" style="left: 35%"></span><span
+                                        class="irs-grid-pol small" style="left: 30%"></span><span class="irs-grid-pol"
+                                        style="left: 50%"></span><span class="irs-grid-text js-grid-text-2"
+                                        style="left: 50%; visibility: visible; margin-left: -1.04319%;">0</span><span
+                                        class="irs-grid-pol small" style="left: 70%"></span><span
+                                        class="irs-grid-pol small" style="left: 65%"></span><span
+                                        class="irs-grid-pol small" style="left: 60%"></span><span
+                                        class="irs-grid-pol small" style="left: 55%"></span><span class="irs-grid-pol"
+                                        style="left: 75%"></span><span class="irs-grid-text js-grid-text-3"
+                                        style="left: 75%; visibility: visible; margin-left: -2.03148%;">500</span><span
+                                        class="irs-grid-pol small" style="left: 95%"></span><span
+                                        class="irs-grid-pol small" style="left: 90%"></span><span
+                                        class="irs-grid-pol small" style="left: 85%"></span><span
+                                        class="irs-grid-pol small" style="left: 80%"></span><span class="irs-grid-pol"
+                                        style="left: 100%"></span><span class="irs-grid-text js-grid-text-4"
+                                        style="left: 100%; margin-left: -2.73838%;">1 000</span></span><span
+                                    class="irs-bar" style="left: 25.7321%; width: 48.5359%;"></span><span
+                                    class="irs-shadow shadow-from" style="display: none;"></span><span
+                                    class="irs-shadow shadow-to" style="display: none;"></span><span
+                                    class="irs-handle from" style="left: 24.2679%;"><i></i><i></i><i></i></span><span
+                                    class="irs-handle to type_last"
+                                    style="left: 72.8038%;"><i></i><i></i><i></i></span></span><input type="text"
+                                id="range_04" data-plugin="range-slider" data-min="-1000" data-max="1000"
+                                data-from="-500" data-to="500" data-type="double" data-grid="true"
+                                class="irs-hidden-input" tabindex="-1" readonly="">
+                        </div> <!-- end preview-->
+
+                        <div class="tab-pane code" id="negative-range-code" role="tabpanel">
+                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                            <pre class="mb-0 language-markup"
+                                tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>range_04<span class="token punctuation">"</span></span> <span class="token attr-name">data-plugin</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>range-slider<span class="token punctuation">"</span></span>
+    <span class="token attr-name">data-min</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>-1000<span class="token punctuation">"</span></span> <span class="token attr-name">data-max</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>1000<span class="token punctuation">"</span></span> <span class="token attr-name">data-from</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>-500<span class="token punctuation">"</span></span> <span class="token attr-name">data-to</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>500<span class="token punctuation">"</span></span>
+    <span class="token attr-name">data-type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>double<span class="token punctuation">"</span></span> <span class="token attr-name">data-grid</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span></code></pre>
+                            <!-- end highlight-->
+                        </div> <!-- end preview code-->
+                    </div> <!-- end tab-content-->
+                </div> <!-- end card-body -->
+            </div> <!-- end card-->
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Custom Values</h4>
+                    <p class="text-muted font-14">Using any strings as values</p>
+
+                    <ul class="nav nav-tabs nav-bordered mb-3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a href="#values-range-preview" data-bs-toggle="tab" aria-expanded="false"
+                                class="nav-link active" aria-selected="true" role="tab">
+                                Preview
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#values-range-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link"
+                                aria-selected="false" tabindex="-1" role="tab">
+                                Code
+                            </a>
+                        </li>
+                    </ul> <!-- end nav-->
+                    <div class="tab-content">
+                        <div class="tab-pane show active" id="values-range-preview" dir="ltr" role="tabpanel">
+                            <span class="irs irs--flat js-irs-8 irs-with-grid"><span class="irs"><span class="irs-line"
+                                        tabindex="0"></span><span class="irs-min"
+                                        style="visibility: visible;">January</span><span class="irs-max"
+                                        style="visibility: visible;">December</span><span class="irs-from"
+                                        style="visibility: hidden;">0</span><span class="irs-to"
+                                        style="visibility: hidden;">0</span><span class="irs-single"
+                                        style="left: 25.0111%;">April</span></span><span class="irs-grid"
+                                    style="width: 97.0717%; left: 1.36413%;"><span class="irs-grid-pol"
+                                        style="left: 0%"></span><span class="irs-grid-text js-grid-text-0"
+                                        style="left: 0%; margin-left: -3.36178%;">January</span><span
+                                        class="irs-grid-pol small" style="left: 6.0606060606060606%"></span><span
+                                        class="irs-grid-pol small" style="left: 3.0303030303030303%"></span><span
+                                        class="irs-grid-pol" style="left: 9.090909090909092%"></span><span
+                                        class="irs-grid-text js-grid-text-1"
+                                        style="left: 9.09091%; visibility: visible; margin-left: -3.83991%;">February</span><span
+                                        class="irs-grid-pol small" style="left: 15.151515151515152%"></span><span
+                                        class="irs-grid-pol small" style="left: 12.121212121212121%"></span><span
+                                        class="irs-grid-pol" style="left: 18.181818181818183%"></span><span
+                                        class="irs-grid-text js-grid-text-2"
+                                        style="left: 18.1818%; visibility: visible; margin-left: -2.82874%;">March</span><span
+                                        class="irs-grid-pol small" style="left: 24.242424242424242%"></span><span
+                                        class="irs-grid-pol small" style="left: 21.212121212121215%"></span><span
+                                        class="irs-grid-pol" style="left: 27.272727272727273%"></span><span
+                                        class="irs-grid-text js-grid-text-3"
+                                        style="left: 27.2727%; visibility: visible; margin-left: -2.35976%;">April</span><span
+                                        class="irs-grid-pol small" style="left: 33.333333333333336%"></span><span
+                                        class="irs-grid-pol small" style="left: 30.303030303030305%"></span><span
+                                        class="irs-grid-pol" style="left: 36.36363636363637%"></span><span
+                                        class="irs-grid-text js-grid-text-4"
+                                        style="left: 36.3636%; margin-left: -2.10926%;">May</span><span
+                                        class="irs-grid-pol small" style="left: 42.42424242424243%"></span><span
+                                        class="irs-grid-pol small" style="left: 39.3939393939394%"></span><span
+                                        class="irs-grid-pol" style="left: 45.45454545454546%"></span><span
+                                        class="irs-grid-text js-grid-text-5"
+                                        style="left: 45.4545%; visibility: visible; margin-left: -2.18475%;">June</span><span
+                                        class="irs-grid-pol small" style="left: 51.515151515151516%"></span><span
+                                        class="irs-grid-pol small" style="left: 48.48484848484849%"></span><span
+                                        class="irs-grid-pol" style="left: 54.54545454545455%"></span><span
+                                        class="irs-grid-text js-grid-text-6"
+                                        style="left: 54.5455%; visibility: visible; margin-left: -1.93654%;">July</span><span
+                                        class="irs-grid-pol small" style="left: 60.60606060606061%"></span><span
+                                        class="irs-grid-pol small" style="left: 57.57575757575758%"></span><span
+                                        class="irs-grid-pol" style="left: 63.63636363636364%"></span><span
+                                        class="irs-grid-text js-grid-text-7"
+                                        style="left: 63.6364%; visibility: visible; margin-left: -3.67519%;">Auguest</span><span
+                                        class="irs-grid-pol small" style="left: 69.6969696969697%"></span><span
+                                        class="irs-grid-pol small" style="left: 66.66666666666667%"></span><span
+                                        class="irs-grid-pol" style="left: 72.72727272727273%"></span><span
+                                        class="irs-grid-text js-grid-text-8"
+                                        style="left: 72.7273%; margin-left: -4.61086%;">September</span><span
+                                        class="irs-grid-pol small" style="left: 78.7878787878788%"></span><span
+                                        class="irs-grid-pol small" style="left: 75.75757575757576%"></span><span
+                                        class="irs-grid-pol" style="left: 81.81818181818183%"></span><span
+                                        class="irs-grid-text js-grid-text-9"
+                                        style="left: 81.8182%; visibility: visible; margin-left: -3.51848%;">October</span><span
+                                        class="irs-grid-pol small" style="left: 87.87878787878789%"></span><span
+                                        class="irs-grid-pol small" style="left: 84.84848484848486%"></span><span
+                                        class="irs-grid-pol" style="left: 90.90909090909092%"></span><span
+                                        class="irs-grid-text js-grid-text-10"
+                                        style="left: 90.9091%; visibility: visible; margin-left: -4.38552%;">November</span><span
+                                        class="irs-grid-pol small" style="left: 96.96969696969697%"></span><span
+                                        class="irs-grid-pol small" style="left: 93.93939393939395%"></span><span
+                                        class="irs-grid-pol" style="left: 100%"></span><span
+                                        class="irs-grid-text js-grid-text-11"
+                                        style="left: 100%; visibility: visible; margin-left: -4.32833%;">December</span></span><span
+                                    class="irs-bar irs-bar--single" style="left: 0px; width: 27.9382%;"></span><span
+                                    class="irs-shadow shadow-single" style="display: none;"></span><span
+                                    class="irs-handle single"
+                                    style="left: 26.4741%;"><i></i><i></i><i></i></span></span><input type="text"
+                                id="range_06" data-plugin="range-slider" data-grid="true" data-from="3"
+                                data-values="January,February,March,April,May,June,July,Auguest,September,October,November,December"
+                                class="irs-hidden-input" tabindex="-1" readonly="">
+                        </div> <!-- end preview-->
+
+                        <div class="tab-pane code" id="values-range-code" role="tabpanel">
+                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                            <pre class="mb-0 language-markup"
+                                tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>range_06<span class="token punctuation">"</span></span> <span class="token attr-name">data-plugin</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>range-slider<span class="token punctuation">"</span></span>
+    <span class="token attr-name">data-grid</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token attr-name">data-from</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>3<span class="token punctuation">"</span></span>
+    <span class="token attr-name">data-values</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>January,February,March,April,May,June,July,Auguest,September,October,November,December<span class="token punctuation">'</span></span> <span class="token punctuation">/&gt;</span></span></code></pre>
+                            <!-- end highlight-->
+                        </div> <!-- end preview code-->
+                    </div> <!-- end tab-content-->
+                </div> <!-- end card-body -->
+            </div> <!-- end card-->
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Disabled</h4>
+                    <p class="text-muted font-14">Lock slider by using disable option</p>
+
+                    <ul class="nav nav-tabs nav-bordered mb-3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a href="#disable-range-preview" data-bs-toggle="tab" aria-expanded="false"
+                                class="nav-link active" aria-selected="true" role="tab">
+                                Preview
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#disable-range-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link"
+                                aria-selected="false" tabindex="-1" role="tab">
+                                Code
+                            </a>
+                        </li>
+                    </ul> <!-- end nav-->
+                    <div class="tab-content">
+                        <div class="tab-pane show active" id="disable-range-preview" dir="ltr" role="tabpanel">
+                            <span class="irs irs--flat js-irs-9 irs-disabled"><span class="irs"><span class="irs-line"
+                                        tabindex="0"></span><span class="irs-min"
+                                        style="visibility: visible;">100</span><span class="irs-max"
+                                        style="visibility: visible;">1 000</span><span class="irs-from"
+                                        style="visibility: hidden;">0</span><span class="irs-to"
+                                        style="visibility: hidden;">0</span><span class="irs-single"
+                                        style="left: 47.4378%;">550</span></span><span class="irs-grid"></span><span
+                                    class="irs-bar irs-bar--single" style="left: 0px; width: 50%;"></span><span
+                                    class="irs-shadow shadow-single" style="display: none;"></span><span
+                                    class="irs-handle single" style="left: 48.5359%;"><i></i><i></i><i></i></span><span
+                                    class="irs-disable-mask"></span></span><input type="text" id="range_08"
+                                data-plugin="range-slider" data-min="100" data-max="1000" data-from="550"
+                                data-disable="true" class="irs-hidden-input" tabindex="-1" readonly="" disabled="">
+                        </div> <!-- end preview-->
+
+                        <div class="tab-pane code" id="disable-range-code" role="tabpanel">
+                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                            <pre class="mb-0 language-markup"
+                                tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>range_08<span class="token punctuation">"</span></span> <span class="token attr-name">data-plugin</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>range-slider<span class="token punctuation">"</span></span>
+    <span class="token attr-name">data-min</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>100<span class="token punctuation">"</span></span> <span class="token attr-name">data-max</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>1000<span class="token punctuation">"</span></span> <span class="token attr-name">data-from</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>550<span class="token punctuation">"</span></span> <span class="token attr-name">data-disable</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span></code></pre>
+                            <!-- end highlight-->
+                        </div> <!-- end preview code-->
+                    </div> <!-- end tab-content-->
+                </div> <!-- end card-body -->
+            </div> <!-- end card-->
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Use Decorate Both option</h4>
+                    <p class="text-muted font-14">Use decorate_both option</p>
+
+                    <ul class="nav nav-tabs nav-bordered mb-3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a href="#decorate-range-preview" data-bs-toggle="tab" aria-expanded="false"
+                                class="nav-link active" aria-selected="true" role="tab">
+                                Preview
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#decorate-range-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link"
+                                aria-selected="false" tabindex="-1" role="tab">
+                                Code
+                            </a>
+                        </li>
+                    </ul> <!-- end nav-->
+                    <div class="tab-content">
+                        <div class="tab-pane show active" id="decorate-range-preview" dir="ltr" role="tabpanel">
+                            <span class="irs irs--flat js-irs-10"><span class="irs"><span class="irs-line"
+                                        tabindex="0"></span><span class="irs-min" style="visibility: visible;">Weight
+                                        100 million pounds</span><span class="irs-max"
+                                        style="visibility: visible;">Weight 200 million pounds</span><span
+                                        class="irs-from" style="visibility: hidden; left: 33.0193%;">Weight 145 million
+                                        pounds</span><span class="irs-to"
+                                        style="visibility: hidden; left: 42.7265%;">Weight 155 million
+                                        pounds</span><span class="irs-single"
+                                        style="visibility: visible; left: 25.2734%;">Weight 145 million pounds — Weight
+                                        155 million pounds</span></span><span class="irs-grid"></span><span
+                                    class="irs-bar" style="left: 45.1464%; width: 9.70717%;"></span><span
+                                    class="irs-shadow shadow-from" style="display: none;"></span><span
+                                    class="irs-shadow shadow-to" style="display: none;"></span><span
+                                    class="irs-handle from" style="left: 43.6823%;"><i></i><i></i><i></i></span><span
+                                    class="irs-handle to type_last"
+                                    style="left: 53.3895%;"><i></i><i></i><i></i></span></span><input type="text"
+                                id="range_10" data-plugin="range-slider" data-type="double" data-min="100"
+                                data-max="200" data-from="145" data-to="155" data-prefix="Weight "
+                                data-postfix=" million pounds" data-decorate_both="true" class="irs-hidden-input"
+                                tabindex="-1" readonly="">
+                        </div> <!-- end preview-->
+
+                        <div class="tab-pane code" id="decorate-range-code" role="tabpanel">
+                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                            <pre class="mb-0 language-markup"
+                                tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>range_10<span class="token punctuation">"</span></span> <span class="token attr-name">data-plugin</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>range-slider<span class="token punctuation">"</span></span>
+    <span class="token attr-name">data-type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>double<span class="token punctuation">"</span></span> <span class="token attr-name">data-min</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>100<span class="token punctuation">"</span></span> <span class="token attr-name">data-max</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>200<span class="token punctuation">"</span></span> <span class="token attr-name">data-from</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>145<span class="token punctuation">"</span></span>
+    <span class="token attr-name">data-to</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>155<span class="token punctuation">"</span></span> <span class="token attr-name">data-prefix</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Weight <span class="token punctuation">"</span></span> <span class="token attr-name">data-postfix</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span> million pounds<span class="token punctuation">"</span></span>
+    <span class="token attr-name">data-decorate_both</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span></code></pre>
+                            <!-- end highlight-->
+                        </div> <!-- end preview code-->
+                    </div> <!-- end tab-content-->
+                </div> <!-- end card-body -->
+            </div> <!-- end card-->
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Hide</h4>
+                    <p class="text-muted font-14">Or hide any part you wish</p>
+
+                    <ul class="nav nav-tabs nav-bordered mb-3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a href="#hide-range-preview" data-bs-toggle="tab" aria-expanded="false"
+                                class="nav-link active" aria-selected="true" role="tab">
+                                Preview
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#hide-range-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link"
+                                aria-selected="false" tabindex="-1" role="tab">
+                                Code
+                            </a>
+                        </li>
+                    </ul> <!-- end nav-->
+                    <div class="tab-content">
+                        <div class="tab-pane show active" id="hide-range-preview" dir="ltr" role="tabpanel">
+                            <span class="irs irs--flat js-irs-11 irs-with-grid"><span class="irs"><span class="irs-line"
+                                        tabindex="0"></span><span class="irs-min" style="display: none;">0</span><span
+                                        class="irs-max" style="display: none;">1</span><span class="irs-from"
+                                        style="display: none; left: 0%;">0</span><span class="irs-to"
+                                        style="display: none; left: 0%;">0</span><span class="irs-single"
+                                        style="display: none; left: 0%;">0</span></span><span class="irs-grid"
+                                    style="width: 97.0717%; left: 1.36413%;"><span class="irs-grid-pol"
+                                        style="left: 0%"></span><span class="irs-grid-text js-grid-text-0"
+                                        style="left: 0%; margin-left: -2.73838%;">1 000</span><span
+                                        class="irs-grid-pol small" style="left: 20%"></span><span
+                                        class="irs-grid-pol small" style="left: 15%"></span><span
+                                        class="irs-grid-pol small" style="left: 10%"></span><span
+                                        class="irs-grid-pol small" style="left: 5%"></span><span class="irs-grid-pol"
+                                        style="left: 25%"></span><span class="irs-grid-text js-grid-text-1"
+                                        style="left: 25%; visibility: visible; margin-left: -2.73838%;">1
+                                        250</span><span class="irs-grid-pol small" style="left: 45%"></span><span
+                                        class="irs-grid-pol small" style="left: 40%"></span><span
+                                        class="irs-grid-pol small" style="left: 35%"></span><span
+                                        class="irs-grid-pol small" style="left: 30%"></span><span class="irs-grid-pol"
+                                        style="left: 50%"></span><span class="irs-grid-text js-grid-text-2"
+                                        style="left: 50%; visibility: visible; margin-left: -2.73838%;">1
+                                        500</span><span class="irs-grid-pol small" style="left: 70%"></span><span
+                                        class="irs-grid-pol small" style="left: 65%"></span><span
+                                        class="irs-grid-pol small" style="left: 60%"></span><span
+                                        class="irs-grid-pol small" style="left: 55%"></span><span class="irs-grid-pol"
+                                        style="left: 75%"></span><span class="irs-grid-text js-grid-text-3"
+                                        style="left: 75%; visibility: visible; margin-left: -2.73838%;">1
+                                        750</span><span class="irs-grid-pol small" style="left: 95%"></span><span
+                                        class="irs-grid-pol small" style="left: 90%"></span><span
+                                        class="irs-grid-pol small" style="left: 85%"></span><span
+                                        class="irs-grid-pol small" style="left: 80%"></span><span class="irs-grid-pol"
+                                        style="left: 100%"></span><span class="irs-grid-text js-grid-text-4"
+                                        style="left: 100%; margin-left: -2.73838%;">2 000</span></span><span
+                                    class="irs-bar" style="left: 20.8785%; width: 58.243%;"></span><span
+                                    class="irs-shadow shadow-from" style="display: none;"></span><span
+                                    class="irs-shadow shadow-to" style="display: none;"></span><span
+                                    class="irs-handle from" style="left: 19.4143%;"><i></i><i></i><i></i></span><span
+                                    class="irs-handle to type_last"
+                                    style="left: 77.6574%;"><i></i><i></i><i></i></span></span><input type="text"
+                                id="range_12" data-plugin="range-slider" data-type="double" data-min="1000"
+                                data-max="2000" data-from="1200" data-to="1800" data-hide_min_max="true"
+                                data-hide_from_to="true" data-grid="true" class="irs-hidden-input" tabindex="-1"
+                                readonly="">
+                        </div> <!-- end preview-->
+
+                        <div class="tab-pane code" id="hide-range-code" role="tabpanel">
+                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                            <pre class="mb-0 language-markup"
+                                tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>range_12<span class="token punctuation">"</span></span> <span class="token attr-name">data-plugin</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>range-slider<span class="token punctuation">"</span></span>
+    <span class="token attr-name">data-type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>double<span class="token punctuation">"</span></span> <span class="token attr-name">data-min</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>1000<span class="token punctuation">"</span></span> <span class="token attr-name">data-max</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>2000<span class="token punctuation">"</span></span> <span class="token attr-name">data-from</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>1200<span class="token punctuation">"</span></span>
+    <span class="token attr-name">data-to</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>1800<span class="token punctuation">"</span></span> <span class="token attr-name">data-hide_min_max</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token attr-name">data-hide_from_to</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span>
+    <span class="token attr-name">data-grid</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span></code></pre>
+                            <!-- end highlight-->
+                        </div> <!-- end preview code-->
+                    </div> <!-- end tab-content-->
+                </div> <!-- end card-body -->
+            </div> <!-- end card-->
+
+        </div> <!-- end col -->
+    </div>
+    <!-- end row -->
+
+</div>

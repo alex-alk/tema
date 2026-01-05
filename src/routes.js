@@ -295,6 +295,17 @@ const UILinks = async () => (await import('./pages/ui/links/ui-links.js')).UILin
 const UITypography = async () => (await import('./pages/ui/typography/ui-typography.js')).UITypography
 const UIUtilities = async () => (await import('./pages/ui/utilities/ui-utilities.js')).UIUtilities
 const ExtendedDragula = async () => (await import('./pages/extended/dragula/extended-dragula.js')).ExtendedDragula
+const ExtendedRangeSlider = async () => (await import('./pages/extended/range-slider/extended-range-slider.js')).ExtendedRangeSlider
+const ExtendedRatings = async () => (await import('./pages/extended/ratings/extended-ratings.js')).ExtendedRatings
+const ExtendedScrollbar = async () => (await import('./pages/extended/scrollbar/extended-scrollbar.js')).ExtendedScrollbar
+const ExtendedScrollspy = async () => (await import('./pages/extended/scrollspy/extended-scrollspy.js')).ExtendedScrollspy
+const ExtendedTreeview = async () => (await import('./pages/extended/treeview/extended-treeview.js')).ExtendedTreeview
+const Widgets = async () => (await import('./pages/widgets/widgets.js')).Widgets
+const IconsRemixicons = async () => (await import('./pages/icons/remixicons/icons-remixicons.js')).IconsRemixicons
+const IconsMdi = async () => (await import('./pages/icons/mdi/icons-mdi.js')).IconsMdi
+const IconsUnicons = async () => (await import('./pages/icons/unicons/icons-unicons.js')).IconsUnicons
+const IconsLucide = async () => (await import('./pages/icons/lucide/icons-lucide.js')).IconsLucide
+
 
 
 const routes = [
@@ -303,6 +314,7 @@ const routes = [
         component: AppLayout,
         children: [
             // new
+            //#region 
             { path: '/dashboard-analytics', component: DashboardAnalytics },
             { path: '/', component: Dashboard },
             { path: '/dashboard-projects', component: DashboardProjects },
@@ -375,6 +387,17 @@ const routes = [
             { path: '/ui-typography', component: UITypography },
             { path: '/ui-utilities', component: UIUtilities },
             { path: '/extended-dragula', component: ExtendedDragula },
+            { path: '/extended-range-slider', component: ExtendedRangeSlider },
+            { path: '/extended-ratings', component: ExtendedRatings },
+            { path: '/extended-scrollbar', component: ExtendedScrollbar },
+            { path: '/extended-scrollspy', component: ExtendedScrollspy },
+            { path: '/extended-treeview', component: ExtendedTreeview },
+            { path: '/widgets', component: Widgets },
+            //#endregion
+            { path: '/icons-remixicons', component: IconsRemixicons },
+            { path: '/icons-mdi', component: IconsMdi },
+            { path: '/icons-unicons', component: IconsUnicons },
+            { path: '/icons-lucide', component: IconsLucide },
 
             
             // old
