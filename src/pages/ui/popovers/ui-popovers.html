@@ -1,168 +1,377 @@
-<div class="page-title-head d-flex align-items-center">
-                    <div class="flex-grow-1">
-                        <h4 class="fs-xl fw-bold m-0">Popovers</h4>
-                    </div>
+<div class="container-fluid">
 
-                    <div class="text-end">
-                        <ol class="breadcrumb m-0 py-0">
-                            <li class="breadcrumb-item"><a href="javascript: void(0);">UBold</a></li>
-                            
-                            <li class="breadcrumb-item"><a href="javascript: void(0);">UI</a></li>
-                            
-                            <li class="breadcrumb-item active">Popovers</li>
-                        </ol>
-                    </div>
+    <!-- start page title -->
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box">
+                <div class="page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item"><a href="javascript: void(0);">Hyper</a></li>
+                        <li class="breadcrumb-item"><a href="javascript: void(0);">Base UI</a></li>
+                        <li class="breadcrumb-item active">Popovers</li>
+                    </ol>
                 </div>
+                <h4 class="page-title">Popovers</h4>
+            </div>
+        </div>
+    </div>
+    <!-- end page title -->
 
-                <div class="row">
-                    <div class="col-xl-6">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Simple Popover</h4>
-                                <div class="card-action">
-                                    <a href="#!" class="card-action-item" data-action="card-toggle"><i class="ti ti-chevron-up"></i></a>
+    <div class="row">
+        <div class="col-xl-6">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Simple Popover</h4>
+                    <p class="text-muted font-14">
+                        Popover is a component which displays a box with a content after a click on an
+                        element - similar to the tooltip but can contain more content.
+                    </p>
+
+                    <ul class="nav nav-tabs nav-bordered mb-3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a href="#simple-popover-preview" data-bs-toggle="tab" aria-expanded="false"
+                                class="nav-link active" aria-selected="true" role="tab">
+                                Preview
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#simple-popover-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link"
+                                aria-selected="false" tabindex="-1" role="tab">
+                                Code
+                            </a>
+                        </li>
+                    </ul> <!-- end nav-->
+                    <div class="tab-content">
+                        <div class="tab-pane show active" id="simple-popover-preview" role="tabpanel">
+                            <button type="button" class="btn btn-danger" data-bs-toggle="popover"
+                                data-bs-content="And here's some amazing content. It's very engaging. Right?"
+                                data-bs-container="#simple-popover-preview" data-bs-original-title="Popover title"
+                                aria-describedby="popover770549">Click to toggle
+                                popover</button>
+                            <div class="popover bs-popover-auto fade show" role="tooltip" id="popover770549"
+                                data-popper-placement="right"
+                                style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(212px, 142.4px, 0px);">
+                                <div class="popover-arrow"
+                                    style="position: absolute; top: 0px; transform: translate3d(0px, 40.8px, 0px);">
+                                </div>
+                                <h3 class="popover-header">Popover title</h3>
+                                <div class="popover-body">And here's some amazing content. It's very engaging. Right?
                                 </div>
                             </div>
+                        </div> <!-- end preview-->
 
-                            <div class="card-body">
-                                <button type="button" class="btn btn-info" data-bs-toggle="popover" data-bs-content="Click here to get support from our team. We're here 24/7 to assist you." data-bs-original-title="Need Help?">
-                                    Get Support Info
+                        <div class="tab-pane code" id="simple-popover-code" role="tabpanel">
+                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                            <pre class="mb-0 language-markup"
+                                tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-danger<span class="token punctuation">"</span></span> <span class="token attr-name">data-bs-toggle</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>popover<span class="token punctuation">"</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Popover title<span class="token punctuation">"</span></span> <span class="token attr-name">data-bs-content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>And here's some amazing content. It's very engaging. Right?<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Click to toggle popover<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span></code></pre>
+                            <!-- end highlight-->
+                        </div> <!-- end preview code-->
+                    </div> <!-- end tab-content-->
+                </div> <!-- end card-body -->
+            </div> <!-- end card-->
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Dismiss on Next Click</h4>
+                    <p class="text-muted font-14">Use the <code>focus</code> trigger to dismiss popovers
+                        on the user’s next click of a different element than the toggle element.</p>
+
+                    <ul class="nav nav-tabs nav-bordered mb-3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a href="#dismiss-popover-preview" data-bs-toggle="tab" aria-expanded="false"
+                                class="nav-link active" aria-selected="true" role="tab">
+                                Preview
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#dismiss-popover-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link"
+                                aria-selected="false" tabindex="-1" role="tab">
+                                Code
+                            </a>
+                        </li>
+                    </ul> <!-- end nav-->
+                    <div class="tab-content">
+                        <div class="tab-pane show active" id="dismiss-popover-preview" role="tabpanel">
+                            <button type="button" tabindex="0" class="btn btn-success" data-bs-toggle="popover"
+                                data-bs-trigger="focus"
+                                data-bs-content="And here's some amazing content. It's very engaging. Right?"
+                                data-bs-container="#dismiss-popover-preview"
+                                data-bs-original-title="Dismissible popover">
+                                Dismissible popover
+                            </button>
+                        </div> <!-- end preview-->
+
+                        <div class="tab-pane code" id="dismiss-popover-code" role="tabpanel">
+                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                            <pre class="mb-0 language-markup"
+                                tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">tabindex</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-success<span class="token punctuation">"</span></span> <span class="token attr-name">data-bs-toggle</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>popover<span class="token punctuation">"</span></span> <span class="token attr-name">data-bs-trigger</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>focus<span class="token punctuation">"</span></span> <span class="token attr-name">data-bs-content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>And here's some amazing content. It's very engaging. Right?<span class="token punctuation">"</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Dismissible popover<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    Dismissible popover
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span></code></pre>
+                            <!-- end highlight-->
+                        </div> <!-- end preview code-->
+                    </div> <!-- end tab-content-->
+                </div> <!-- end card-body -->
+            </div> <!-- end card-->
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Hover</h4>
+                    <p class="text-muted font-14">Use the attribute <code>data-bs-trigger="hover"</code>
+                        to show the popover on hovering the element.</p>
+
+                    <ul class="nav nav-tabs nav-bordered mb-3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a href="#hover-popover-preview" data-bs-toggle="tab" aria-expanded="false"
+                                class="nav-link active" aria-selected="true" role="tab">
+                                Preview
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#hover-popover-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link"
+                                aria-selected="false" tabindex="-1" role="tab">
+                                Code
+                            </a>
+                        </li>
+                    </ul> <!-- end nav-->
+                    <div class="tab-content">
+                        <div class="tab-pane show active" id="hover-popover-preview" role="tabpanel">
+                            <button type="button" tabindex="0" class="btn btn-dark" data-bs-toggle="popover"
+                                data-bs-trigger="hover"
+                                data-bs-content="And here's some amazing content. It's very engaging. Right?"
+                                data-bs-original-title="Ohh Wow !">
+                                Please Hover Me
+                            </button>
+                        </div> <!-- end preview-->
+
+                        <div class="tab-pane code" id="hover-popover-code" role="tabpanel">
+                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                            <pre class="mb-0 language-markup"
+                                tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">tabindex</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-dark<span class="token punctuation">"</span></span> <span class="token attr-name">data-bs-toggle</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>popover<span class="token punctuation">"</span></span> <span class="token attr-name">data-bs-trigger</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>hover<span class="token punctuation">"</span></span> <span class="token attr-name">data-bs-content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>And here's some amazing content. It's very engaging. Right?<span class="token punctuation">"</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Ohh Wow !<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    Please Hover Me
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span></code></pre>
+                            <!-- end highlight-->
+                        </div> <!-- end preview code-->
+                    </div> <!-- end tab-content-->
+                </div> <!-- end card-body -->
+            </div> <!-- end card-->
+        </div> <!-- end col -->
+
+        <div class="col-xl-6">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Four Directions</h4>
+                    <p class="text-muted font-14">Four options are available: top, right, bottom, and
+                        left aligned.</p>
+
+                    <ul class="nav nav-tabs nav-bordered mb-3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a href="#extras-popover-preview" data-bs-toggle="tab" aria-expanded="false"
+                                class="nav-link active" aria-selected="true" role="tab">
+                                Preview
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#extras-popover-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link"
+                                aria-selected="false" tabindex="-1" role="tab">
+                                Code
+                            </a>
+                        </li>
+                    </ul> <!-- end nav-->
+                    <div class="tab-content">
+                        <div class="tab-pane show active" id="extras-popover-preview" role="tabpanel">
+                            <div class="d-flex flex-wrap gap-2">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="popover"
+                                    data-bs-container="body" data-bs-placement="top"
+                                    data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                                    Popover on top
                                 </button>
-                            </div> <!-- end card-body -->
-                        </div> <!-- end card-->
-                    </div>
 
-                    <div class="col-xl-6">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Dismiss on Next Click</h4>
-                                <div class="card-action">
-                                    <a href="#!" class="card-action-item" data-action="card-toggle"><i class="ti ti-chevron-up"></i></a>
-                                </div>
-                            </div>
-
-                            <div class="card-body">
-                                <button type="button" tabindex="0" class="btn btn-primary" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-content="Get quick tips and tricks to improve your workflow instantly." data-bs-original-title="Quick Tips">
-                                    Show Tips
+                                <button type="button" class="btn btn-primary" data-bs-toggle="popover"
+                                    data-bs-container="body" data-bs-placement="bottom"
+                                    data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                                    Popover on bottom
                                 </button>
-                            </div> <!-- end card-body -->
-                        </div> <!-- end card-->
-                    </div>
 
-                    <div class="col-xl-6">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Hover</h4>
-                                <div class="card-action">
-                                    <a href="#!" class="card-action-item" data-action="card-toggle"><i class="ti ti-chevron-up"></i></a>
-                                </div>
-                            </div>
-
-                            <div class="card-body">
-                                <button type="button" tabindex="0" class="btn btn-dark" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Discover features you didn’t know existed. Hover to explore more!" data-bs-original-title="Exciting Features!">
-                                    Please Hover Me
+                                <button type="button" class="btn btn-primary" data-bs-toggle="popover"
+                                    data-bs-container="body" data-bs-placement="right"
+                                    data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                                    Popover on right
                                 </button>
-                            </div> <!-- end card-body -->
-                        </div> <!-- end card-->
-                    </div> <!-- end col -->
 
-                    <div class="col-xl-6">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Four Directions</h4>
-                                <div class="card-action">
-                                    <a href="#!" class="card-action-item" data-action="card-toggle"><i class="ti ti-chevron-up"></i></a>
-                                </div>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="popover"
+                                    data-bs-container="body" data-bs-placement="left"
+                                    data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+                                    data-bs-original-title="Popover title">
+                                    Popover on left
+                                </button>
                             </div>
+                        </div> <!-- end preview-->
 
-                            <div class="card-body">
-                                <div class="d-flex flex-wrap gap-2">
-                                    <!-- Popover on top -->
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="This popover appears above the button. Great for tips or info." data-bs-original-title="Top Popover">
-                                        Popover on top
-                                    </button>
+                        <div class="tab-pane code" id="extras-popover-code" role="tabpanel">
+                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                            <pre class="mb-0 language-markup"
+                                tabindex="0"><code class="language-markup"><span class="token comment">&lt;!-- Top Position --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-primary<span class="token punctuation">"</span></span> <span class="token attr-name">data-bs-container</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>body<span class="token punctuation">"</span></span> <span class="token attr-name">data-bs-toggle</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>popover<span class="token punctuation">"</span></span> <span class="token attr-name">data-bs-placement</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>top<span class="token punctuation">"</span></span> <span class="token attr-name">data-bs-content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Vivamus sagittis lacus vel augue laoreet rutrum faucibus.<span class="token punctuation">"</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    Popover on top
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
 
-                                    <!-- Popover on bottom -->
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="This popover shows below. Perfect for additional details." data-bs-original-title="Bottom Popover">
-                                        Popover on bottom
-                                    </button>
+<span class="token comment">&lt;!-- Bottom Position --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-primary<span class="token punctuation">"</span></span> <span class="token attr-name">data-bs-container</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>body<span class="token punctuation">"</span></span> <span class="token attr-name">data-bs-toggle</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>popover<span class="token punctuation">"</span></span> <span class="token attr-name">data-bs-placement</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>bottom<span class="token punctuation">"</span></span> <span class="token attr-name">data-bs-content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Vivamus
+sagittis lacus vel augue laoreet rutrum faucibus.<span class="token punctuation">"</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    Popover on bottom
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
 
-                                    <!-- Popover on right -->
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Slide in from the right to provide quick insights." data-bs-original-title="Right Popover">
-                                        Popover on right
-                                    </button>
+<span class="token comment">&lt;!-- Right Position --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-primary<span class="token punctuation">"</span></span> <span class="token attr-name">data-bs-container</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>body<span class="token punctuation">"</span></span> <span class="token attr-name">data-bs-toggle</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>popover<span class="token punctuation">"</span></span> <span class="token attr-name">data-bs-placement</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>right<span class="token punctuation">"</span></span> <span class="token attr-name">data-bs-content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Vivamus sagittis lacus vel augue laoreet rutrum faucibus.<span class="token punctuation">"</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    Popover on right
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
 
-                                    <!-- Popover on left -->
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Appears on the left side. Great for tooltips or notes." data-bs-original-title="Left Popover">
-                                        Popover on left
-                                    </button>
-                                </div>
-                            </div> <!-- end card-body -->
-                        </div> <!-- end card-->
-                    </div>
+<span class="token comment">&lt;!-- Left Position --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-primary<span class="token punctuation">"</span></span> <span class="token attr-name">data-bs-container</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>body<span class="token punctuation">"</span></span> <span class="token attr-name">data-bs-toggle</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>popover<span class="token punctuation">"</span></span> <span class="token attr-name">data-bs-placement</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>left<span class="token punctuation">"</span></span> <span class="token attr-name">data-bs-content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Vivamus sagittis lacus vel augue laoreet rutrum faucibus.<span class="token punctuation">"</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Popover title<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    Popover on left
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span></code></pre>
+                            <!-- end highlight-->
+                        </div> <!-- end preview code-->
+                    </div> <!-- end tab-content-->
+                </div> <!-- end card-body -->
+            </div> <!-- end card-->
 
-                    <div class="col-xl-6">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Custom Popovers </h4>
-                                <div class="card-action">
-                                    <a href="#!" class="card-action-item" data-action="card-toggle"><i class="ti ti-chevron-up"></i></a>
-                                </div>
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Custom Popovers </h4>
+                    <p class="text-muted font-14">You can customize the appearance of popovers using CSS variables. We
+                        set a custom class with
+                        <code>data-bs-custom-class="primary-popover"</code> to scope our custom appearance and use it to
+                        override some of the
+                        local CSS variables.
+                    </p>
+
+                    <ul class="nav nav-tabs nav-bordered mb-3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a href="#custom-popover-preview" data-bs-toggle="tab" aria-expanded="false"
+                                class="nav-link active" aria-selected="true" role="tab">
+                                Preview
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#custom-popover-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link"
+                                aria-selected="false" tabindex="-1" role="tab">
+                                Code
+                            </a>
+                        </li>
+                    </ul> <!-- end nav-->
+                    <div class="tab-content">
+
+                        <div class="tab-pane show active" id="custom-popover-preview" role="tabpanel">
+                            <div class="d-flex flex-wrap gap-2">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="popover"
+                                    data-bs-placement="right" data-bs-custom-class="primary-popover"
+                                    data-bs-title="Primary popover"
+                                    data-bs-content="This popover is themed via CSS variables.">
+                                    Primary popover
+                                </button>
+
+                                <button type="button" class="btn btn-success" data-bs-toggle="popover"
+                                    data-bs-placement="right" data-bs-custom-class="success-popover"
+                                    data-bs-title="Success popover"
+                                    data-bs-content="This popover is themed via CSS variables.">
+                                    Success popover
+                                </button>
+
+                                <button type="button" class="btn btn-danger" data-bs-toggle="popover"
+                                    data-bs-placement="right" data-bs-custom-class="danger-popover"
+                                    data-bs-title="Danger popover"
+                                    data-bs-content="This popover is themed via CSS variables.">
+                                    Danger popover
+                                </button>
+
+                                <button type="button" class="btn btn-info" data-bs-toggle="popover"
+                                    data-bs-placement="right" data-bs-custom-class="info-popover"
+                                    data-bs-title="Info popover"
+                                    data-bs-content="This popover is themed via CSS variables.">
+                                    Info popover
+                                </button>
                             </div>
+                        </div> <!-- end preview-->
 
-                            <div class="card-body">
-                                <div class="d-flex flex-wrap gap-2">
-                                    <!-- Primary Popover -->
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="popover" data-bs-placement="right" data-bs-custom-class="popover-primary" data-bs-title="Primary Popover" data-bs-content="This is a primary-themed popover styled using CSS variables.">
-                                        Primary Popover
-                                    </button>
+                        <div class="tab-pane code" id="custom-popover-code" role="tabpanel">
+                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                            <pre class="mb-0 language-markup"
+                                tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-primary<span class="token punctuation">"</span></span> <span class="token attr-name">data-bs-toggle</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>popover<span class="token punctuation">"</span></span> <span class="token attr-name">data-bs-placement</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>right<span class="token punctuation">"</span></span>
+    <span class="token attr-name">data-bs-custom-class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>primary-popover<span class="token punctuation">"</span></span> <span class="token attr-name">data-bs-title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Primary popover<span class="token punctuation">"</span></span>
+    <span class="token attr-name">data-bs-content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>This popover is themed via CSS variables.<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    Primary popover
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
 
-                                    <!-- Success Popover -->
-                                    <button type="button" class="btn btn-success" data-bs-toggle="popover" data-bs-placement="right" data-bs-custom-class="popover-success" data-bs-title="Success Popover" data-bs-content="This is a success-themed popover styled using CSS variables.">
-                                        Success Popover
-                                    </button>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-success<span class="token punctuation">"</span></span> <span class="token attr-name">data-bs-toggle</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>popover<span class="token punctuation">"</span></span> <span class="token attr-name">data-bs-placement</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>right<span class="token punctuation">"</span></span>
+    <span class="token attr-name">data-bs-custom-class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>success-popover<span class="token punctuation">"</span></span> <span class="token attr-name">data-bs-title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Success popover<span class="token punctuation">"</span></span>
+    <span class="token attr-name">data-bs-content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>This popover is themed via CSS variables.<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    Success popover
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
 
-                                    <!-- Danger Popover -->
-                                    <button type="button" class="btn btn-danger" data-bs-toggle="popover" data-bs-placement="right" data-bs-custom-class="popover-danger" data-bs-title="Danger Popover" data-bs-content="This is a danger-themed popover styled using CSS variables.">
-                                        Danger Popover
-                                    </button>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-danger<span class="token punctuation">"</span></span> <span class="token attr-name">data-bs-toggle</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>popover<span class="token punctuation">"</span></span> <span class="token attr-name">data-bs-placement</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>right<span class="token punctuation">"</span></span>
+    <span class="token attr-name">data-bs-custom-class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>danger-popover<span class="token punctuation">"</span></span> <span class="token attr-name">data-bs-title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Danger popover<span class="token punctuation">"</span></span>
+    <span class="token attr-name">data-bs-content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>This popover is themed via CSS variables.<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    Danger popover
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
 
-                                    <!-- Info Popover -->
-                                    <button type="button" class="btn btn-info" data-bs-toggle="popover" data-bs-placement="right" data-bs-custom-class="popover-info" data-bs-title="Info Popover" data-bs-content="This is an info-themed popover styled using CSS variables.">
-                                        Info Popover
-                                    </button>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-info<span class="token punctuation">"</span></span> <span class="token attr-name">data-bs-toggle</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>popover<span class="token punctuation">"</span></span> <span class="token attr-name">data-bs-placement</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>right<span class="token punctuation">"</span></span>
+    <span class="token attr-name">data-bs-custom-class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>info-popover<span class="token punctuation">"</span></span> <span class="token attr-name">data-bs-title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Info popover<span class="token punctuation">"</span></span>
+    <span class="token attr-name">data-bs-content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>This popover is themed via CSS variables.<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    Info popover
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span></code></pre>
+                            <!-- end highlight-->
+                        </div> <!-- end preview code-->
+                    </div> <!-- end tab-content-->
+                </div> <!-- end card-body -->
+            </div> <!-- end card-->
 
-                                    <!-- Dark Popover -->
-                                    <button type="button" class="btn btn-dark" data-bs-toggle="popover" data-bs-placement="right" data-bs-custom-class="popover-dark" data-bs-title="Dark Popover" data-bs-content="This is a dark-themed popover styled using CSS variables.">
-                                        Dark Popover
-                                    </button>
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Disabled Elements</h4>
+                    <p class="text-muted font-14">Elements with the <code>disabled</code> attribute
+                        aren’t interactive, meaning users cannot hover or click them to trigger a
+                        popover (or tooltip). As a workaround, you’ll want to trigger the popover from a
+                        wrapper <code>&lt;div&gt;</code> or <code>&lt;span&gt;</code> and override the
+                        <code>pointer-events</code> on the disabled element.
+                    </p>
 
-                                    <!-- Secondary Popover -->
-                                    <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-placement="right" data-bs-custom-class="popover-secondary" data-bs-title="Secondary Popover" data-bs-content="This is a secondary-themed popover styled using CSS variables.">
-                                        Secondary Popover
-                                    </button>
-                                </div>
+                    <ul class="nav nav-tabs nav-bordered mb-3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a href="#disabled-popover-preview" data-bs-toggle="tab" aria-expanded="false"
+                                class="nav-link active" aria-selected="true" role="tab">
+                                Preview
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#disabled-popover-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link"
+                                aria-selected="false" tabindex="-1" role="tab">
+                                Code
+                            </a>
+                        </li>
+                    </ul> <!-- end nav-->
+                    <div class="tab-content">
+                        <div class="tab-pane show active" id="disabled-popover-preview" role="tabpanel">
+                            <span class="d-inline-block" data-bs-toggle="popover" data-bs-content="Disabled popover"
+                                data-bs-container="#disabled-popover-preview">
+                                <button class="btn btn-primary" style="pointer-events: none;" type="button"
+                                    disabled="">Disabled button</button>
+                            </span>
+                        </div> <!-- end preview-->
 
-                            </div> <!-- end card-body -->
-                        </div> <!-- end card-->
-                    </div>
+                        <div class="tab-pane code" id="disabled-popover-code" role="tabpanel">
+                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                            <pre class="mb-0 language-markup"
+                                tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>d-inline-block<span class="token punctuation">"</span></span> <span class="token attr-name">data-bs-toggle</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>popover<span class="token punctuation">"</span></span> <span class="token attr-name">data-bs-content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Disabled popover<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-primary<span class="token punctuation">"</span></span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token value css language-css"><span class="token property">pointer-events</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span></span><span class="token punctuation">"</span></span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">disabled</span><span class="token punctuation">&gt;</span></span>Disabled button<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span></code></pre>
+                            <!-- end highlight-->
+                        </div> <!-- end preview code-->
+                    </div> <!-- end tab-content-->
+                </div> <!-- end card-body -->
+            </div> <!-- end card-->
+        </div> <!-- end col -->
+    </div>
+    <!-- end row -->
 
-                    <div class="col-xl-6">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Disabled Elements</h4>
-                                <div class="card-action">
-                                    <a href="#!" class="card-action-item" data-action="card-toggle"><i class="ti ti-chevron-up"></i></a>
-                                </div>
-                            </div>
-
-                            <div class="card-body">
-                                <span class="d-inline-block" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="This button is disabled, but the popover still works.">
-                                    <button class="btn btn-primary" type="button" disabled="" style="pointer-events: none;">
-                                        Disabled Button
-                                    </button>
-                                </span>
-                            </div> <!-- end card-body -->
-                        </div> <!-- end card-->
-                    </div> <!-- end col -->
-                </div> <!-- end row -->
+</div>

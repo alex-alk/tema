@@ -1,311 +1,357 @@
-<div class="page-title-head d-flex align-items-center">
-    <div class="flex-grow-1">
-        <h4 class="fs-xl fw-bold m-0">Badges</h4>
+<div class="container-fluid">
+
+    <!-- start page title -->
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box">
+                <div class="page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item"><a href="javascript: void(0);">Hyper</a></li>
+                        <li class="breadcrumb-item"><a href="javascript: void(0);">Base UI</a></li>
+                        <li class="breadcrumb-item active">Badges</li>
+                    </ol>
+                </div>
+                <h4 class="page-title">Badges</h4>
+            </div>
+        </div>
     </div>
+    <!-- end page title -->
 
-    <div class="text-end">
-        <ol class="breadcrumb m-0 py-0">
-            <li class="breadcrumb-item"><a href="javascript: void(0);">UBold</a></li>
+    <div class="row">
+        <div class="col-xl-6">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Default</h4>
+                    <p class="text-muted font-14 mb-3">
+                        A simple labeling component. Badges scale to match the size of the immediate parent element by
+                        using relative font sizing and <code>em</code> units.
+                    </p>
 
-            <li class="breadcrumb-item"><a href="javascript: void(0);">UI</a></li>
+                    <ul class="nav nav-tabs nav-bordered mb-3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a href="#default-sizes-preview" data-bs-toggle="tab" aria-expanded="false"
+                                class="nav-link active" aria-selected="true" role="tab">
+                                Preview
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#default-sizes-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link"
+                                aria-selected="false" tabindex="-1" role="tab">
+                                Code
+                            </a>
+                        </li>
+                    </ul> <!-- end nav-->
 
-            <li class="breadcrumb-item active">Badges</li>
-        </ol>
+                    <div class="tab-content">
+                        <div class="tab-pane show active" id="default-sizes-preview" role="tabpanel">
+                            <h1>h1.Example heading <span class="badge text-bg-secondary">New</span></h1>
+                            <h2>h2.Example heading <span class="badge badge-success-lighten">New</span></h2>
+                            <h3>h2.Example heading <span class="badge bg-primary">New</span></h3>
+                            <h4>h4.Example heading <a href="#" class="badge badge-info-lighten">Info Link</a></h4>
+                            <h5>h5.Example heading <span class="badge badge-outline-warning">New</span></h5>
+                            <h6>h6.Example heading <span class="badge bg-danger">New</span></h6>
+                        </div> <!-- end preview-->
+
+                        <div class="tab-pane code" id="default-sizes-code" role="tabpanel">
+                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                            <pre class="mb-0 language-markup"
+                                tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>h1.Example heading <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge text-bg-secondary<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>New<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;</span></span>h2.Example heading <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge badge-success-lighten<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>New<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span class="token punctuation">&gt;</span></span>h2.Example heading <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge bg-primary<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>New<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h4</span><span class="token punctuation">&gt;</span></span>h4.Example heading <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge badge-info-lighten<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Info Link<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h4</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h5</span><span class="token punctuation">&gt;</span></span>h5.Example heading <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge badge-outline-warning<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>New<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h5</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h6</span><span class="token punctuation">&gt;</span></span>h6.Example heading <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge bg-danger<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>New<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h6</span><span class="token punctuation">&gt;</span></span></code></pre>
+                            <!-- end highlight-->
+                        </div> <!-- end preview code-->
+                    </div> <!-- end tab-content-->
+
+                </div> <!-- end card-body -->
+            </div> <!-- end card-->
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Pill Badges</h4>
+                    <p class="text-muted font-14 mb-3">
+                        Use the <code>.rounded-pill</code> modifier class to make badges more rounded.
+                    </p>
+
+                    <ul class="nav nav-tabs nav-bordered mb-3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a href="#pill-badges-preview" data-bs-toggle="tab" aria-expanded="false"
+                                class="nav-link active" aria-selected="true" role="tab">
+                                Preview
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#pill-badges-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link"
+                                aria-selected="false" tabindex="-1" role="tab">
+                                Code
+                            </a>
+                        </li>
+                    </ul> <!-- end nav-->
+
+                    <div class="tab-content">
+                        <div class="tab-pane show active" id="pill-badges-preview" role="tabpanel">
+
+                            <span class="badge bg-primary rounded-pill">Primary</span>
+                            <span class="badge text-bg-secondary rounded-pill">Secondary</span>
+                            <span class="badge bg-success rounded-pill">Success</span>
+                            <span class="badge bg-danger rounded-pill">Danger</span>
+                            <span class="badge bg-warning rounded-pill">Warning</span>
+                            <span class="badge bg-info rounded-pill">Info</span>
+                            <span class="badge bg-light text-dark rounded-pill">Light</span>
+                            <span class="badge bg-dark text-light rounded-pill">Dark</span>
+
+                            <h5 class="mt-4">Lighten Badges</h5>
+                            <p class="text-muted font-14 mb-3">
+                                Use the <code>.badge-*-lighten</code> modifier class to make badges lighten.
+                            </p>
+
+                            <span class="badge badge-primary-lighten rounded-pill">Primary</span>
+                            <span class="badge badge-secondary-lighten rounded-pill">Secondary</span>
+                            <span class="badge badge-success-lighten rounded-pill">Success</span>
+                            <span class="badge badge-danger-lighten rounded-pill">Danger</span>
+                            <span class="badge badge-warning-lighten rounded-pill">Warning</span>
+                            <span class="badge badge-info-lighten rounded-pill">Info</span>
+                            <span class="badge badge-dark-lighten rounded-pill">Dark</span>
+
+                            <h5 class="mt-4">Outline Badges</h5>
+                            <p class="text-muted font-14 mb-3">
+                                Using the <code>.badge-outline-*</code> to quickly create a bordered badges.
+                            </p>
+
+                            <span class="badge badge-outline-primary rounded-pill">Primary</span>
+                            <span class="badge badge-outline-secondary rounded-pill">Secondary</span>
+                            <span class="badge badge-outline-success rounded-pill">Success</span>
+                            <span class="badge badge-outline-danger rounded-pill">Danger</span>
+                            <span class="badge badge-outline-warning rounded-pill">Warning</span>
+                            <span class="badge badge-outline-info rounded-pill">Info</span>
+                            <span class="badge badge-outline-dark rounded-pill">Dark</span>
+
+                        </div> <!-- end preview-->
+
+                        <div class="tab-pane code" id="pill-badges-code" role="tabpanel">
+                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                            <pre class="mb-0 language-markup"
+                                tabindex="0"><code class="language-markup"><span class="token comment">&lt;!-- Default Badges --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge bg-primary rounded-pill<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Primary<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge text-bg-secondary rounded-pill<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Secondary<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge bg-success rounded-pill<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Success<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge bg-danger rounded-pill<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Danger<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge bg-warning rounded-pill<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Warning<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge bg-info rounded-pill<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Info<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge bg-light text-dark rounded-pill<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Light<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge bg-dark text-light rounded-pill<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Dark<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- Lighten Badges --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge badge-primary-lighten rounded-pill<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Primary<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge badge-secondary-lighten rounded-pill<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Secondary<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge badge-success-lighten rounded-pill<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Success<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge badge-danger-lighten rounded-pill<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Danger<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge badge-warning-lighten rounded-pill<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Warning<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge badge-info-lighten rounded-pill<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Info<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge badge-dark-lighten rounded-pill<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Dark<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- Outline Badges --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge badge-outline-primary rounded-pill<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Primary<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge badge-outline-secondary rounded-pill<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Secondary<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge badge-outline-success rounded-pill<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Success<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge badge-outline-danger rounded-pill<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Danger<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge badge-outline-warning rounded-pill<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Warning<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge badge-outline-info rounded-pill<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Info<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge badge-outline-dark rounded-pill<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Dark<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span></code></pre>
+                            <!-- end highlight-->
+                        </div> <!-- end preview code-->
+                    </div> <!-- end tab-content-->
+
+                </div> <!-- end card-body -->
+            </div> <!-- end card -->
+        </div> <!-- end col-->
+        <div class="col-xl-6">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Contextual variations</h4>
+                    <p class="text-muted font-14 mb-3">
+                        Add any of the below mentioned modifier classes to change the appearance of a badge.
+                        Badge can be more contextual as well. Just use regular convention e.g.
+                        <code>badge-*color</code>, <code>bg-primary</code>
+                        to have badge with different background.
+                    </p>
+
+                    <ul class="nav nav-tabs nav-bordered mb-3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a href="#contextual-badges-preview" data-bs-toggle="tab" aria-expanded="false"
+                                class="nav-link active" aria-selected="true" role="tab">
+                                Preview
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#contextual-badges-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link"
+                                aria-selected="false" tabindex="-1" role="tab">
+                                Code
+                            </a>
+                        </li>
+                    </ul> <!-- end nav-->
+
+                    <div class="tab-content">
+                        <div class="tab-pane show active" id="contextual-badges-preview" role="tabpanel">
+                            <span class="badge bg-primary">Primary</span>
+                            <span class="badge text-bg-secondary">Secondary</span>
+                            <span class="badge bg-success">Success</span>
+                            <span class="badge bg-danger">Danger</span>
+                            <span class="badge bg-warning">Warning</span>
+                            <span class="badge bg-info">Info</span>
+                            <span class="badge bg-light text-dark">Light</span>
+                            <span class="badge bg-dark text-light">Dark</span>
+
+                            <h5 class="mt-4">Lighten Badges</h5>
+                            <p class="text-muted font-14 mb-3">
+                                Using the <code>.badge-*-lighten</code> modifier class, you can have more soften
+                                variation.
+                            </p>
+
+                            <span class="badge badge-primary-lighten">Primary</span>
+                            <span class="badge badge-secondary-lighten">Secondary</span>
+                            <span class="badge badge-success-lighten">Success</span>
+                            <span class="badge badge-danger-lighten">Danger</span>
+                            <span class="badge badge-warning-lighten">Warning</span>
+                            <span class="badge badge-info-lighten">Info</span>
+                            <span class="badge badge-dark-lighten">Dark</span>
+
+                            <h5 class="mt-4">Outline Badges</h5>
+                            <p class="text-muted font-14 mb-3">
+                                Using the <code>.badge-outline-*</code> to quickly create a bordered badges.
+                            </p>
+
+                            <span class="badge badge-outline-primary">Primary</span>
+                            <span class="badge badge-outline-secondary">Secondary</span>
+                            <span class="badge badge-outline-success">Success</span>
+                            <span class="badge badge-outline-danger">Danger</span>
+                            <span class="badge badge-outline-warning">Warning</span>
+                            <span class="badge badge-outline-info">Info</span>
+                            <span class="badge badge-outline-dark">Dark</span>
+
+                        </div> <!-- end preview-->
+
+                        <div class="tab-pane code" id="contextual-badges-code" role="tabpanel">
+                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                            <pre class="mb-0 language-markup"
+                                tabindex="0"><code class="language-markup"><span class="token comment">&lt;!-- Default Badges --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge bg-primary<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Primary<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge text-bg-secondary<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Secondary<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge bg-success<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Success<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge bg-danger<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Danger<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge bg-warning<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Warning<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge bg-info<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Info<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge bg-light text-dark<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Light<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge bg-dark text-light<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Dark<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- Lighten Badges --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge badge-primary-lighten<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Primary<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge badge-secondary-lighten<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Secondary<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge badge-success-lighten<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Success<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge badge-danger-lighten<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Danger<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge badge-warning-lighten<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Warning<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge badge-info-lighten<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Info<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge badge-dark-lighten<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Dark<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- Outline Badges --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge badge-outline-primary<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Primary<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge badge-outline-secondary<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Secondary<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge badge-outline-success<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Success<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge badge-outline-danger<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Danger<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge badge-outline-warning<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Warning<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge badge-outline-info<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Info<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge badge-outline-dark<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Dark<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span></code></pre>
+                            <!-- end highlight-->
+                        </div> <!-- end preview code-->
+                    </div> <!-- end tab-content-->
+
+                </div> <!-- end card-body -->
+            </div> <!-- end card-->
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Badge Positioned</h4>
+                    <p class="text-muted font-14 mb-3">
+                        Use utilities to modify a <code>.badge</code> and position it in the corner of a
+                        link or button.
+                    </p>
+
+                    <ul class="nav nav-tabs nav-bordered mb-3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a href="#contextual-badges-positioned-preview" data-bs-toggle="tab" aria-expanded="false"
+                                class="nav-link active" aria-selected="true" role="tab">
+                                Preview
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#contextual-badges-positioned-code" data-bs-toggle="tab" aria-expanded="true"
+                                class="nav-link" aria-selected="false" tabindex="-1" role="tab">
+                                Code
+                            </a>
+                        </li>
+                    </ul> <!-- end nav-->
+
+                    <div class="tab-content">
+                        <div class="tab-pane show active" id="contextual-badges-positioned-preview" role="tabpanel">
+                            <div class="row">
+                                <div class="col-6">
+                                    <button type="button" class="btn btn-primary position-relative">
+                                        Inbox
+                                        <span
+                                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                            99+
+                                            <span class="visually-hidden">unread messages</span>
+                                        </span>
+                                    </button>
+                                </div>
+                                <div class="col-6">
+                                    <button type="button" class="btn btn-primary position-relative">
+                                        Profile
+                                        <span
+                                            class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle">
+                                            <span class="visually-hidden">New alerts</span>
+                                        </span>
+                                    </button>
+                                </div>
+                                <div class="col-6">
+                                    <button type="button" class="btn btn-success mt-4">
+                                        Notifications <span class="badge bg-light text-dark ms-1">4</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane code" id="contextual-badges-positioned-code" role="tabpanel">
+                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                            <pre class="mb-0 language-markup"
+                                tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-primary position-relative<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    Inbox
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span>
+        <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+        99+
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>visually-hidden<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>unread messages<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-primary position-relative<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    Profile
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>visually-hidden<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>New alerts<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-success mt-4<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    Notifications <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge bg-light text-dark ms-1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>4<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span></code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- end col -->
     </div>
+    <!-- end row -->
+
 </div>
-
-<div class="row">
-    <div class="col-xl-6">
-        <div class="card">
-            <div class="card-header">
-                <h4 class="card-title">Basic Badges</h4>
-                <div class="card-action">
-                    <a href="#!" class="card-action-item" data-action="card-toggle"><i class="ti ti-chevron-up"></i></a>
-                </div>
-            </div>
-
-            <div class="card-body">
-                <p class="text-muted">
-                    Use the <code>.badge</code> &amp; <code>.text-bg-*</code> classes to make badges.
-                </p>
-
-                <span class="badge badge-default">Default</span>
-                <span class="badge text-bg-primary">Primary</span>
-                <span class="badge text-bg-secondary">Secondary</span>
-                <span class="badge text-bg-success">Success</span>
-                <span class="badge text-bg-danger">Danger</span>
-                <span class="badge text-bg-warning">Warning</span>
-                <span class="badge text-bg-info">Info</span>
-                <span class="badge text-bg-light">Light</span>
-                <span class="badge text-bg-dark">Dark</span>
-            </div> <!-- end card-body -->
-        </div> <!-- end card -->
-    </div> <!-- end col-->
-
-    <div class="col-xl-6">
-        <div class="card">
-            <div class="card-header">
-                <h4 class="card-title">Basic Pill Badges</h4>
-                <div class="card-action">
-                    <a href="#!" class="card-action-item" data-action="card-toggle"><i class="ti ti-chevron-up"></i></a>
-                </div>
-            </div>
-
-            <div class="card-body">
-                <p class="text-muted">
-                    Use the <code>.rounded-pill</code> modifier class to make badges more rounded.
-                </p>
-
-                <span class="badge badge-default rounded-pill">Default</span>
-                <span class="badge text-bg-primary rounded-pill">Primary</span>
-                <span class="badge text-bg-secondary rounded-pill">Secondary</span>
-                <span class="badge text-bg-success rounded-pill">Success</span>
-                <span class="badge text-bg-danger rounded-pill">Danger</span>
-                <span class="badge text-bg-warning rounded-pill">Warning</span>
-                <span class="badge text-bg-info rounded-pill">Info</span>
-                <span class="badge text-bg-light rounded-pill">Light</span>
-                <span class="badge text-bg-dark rounded-pill">Dark</span>
-            </div> <!-- end card-body -->
-        </div> <!-- end card -->
-    </div> <!-- end col-->
-
-    <div class="col-xl-6">
-        <div class="card">
-            <div class="card-header">
-                <h4 class="card-title">Outline Badges</h4>
-                <div class="card-action">
-                    <a href="#!" class="card-action-item" data-action="card-toggle"><i class="ti ti-chevron-up"></i></a>
-                </div>
-            </div>
-
-            <div class="card-body">
-                <p class="text-muted">
-                    Using the <code>.badge-outline-*</code> to quickly create a bordered badges.
-                </p>
-
-                <span class="badge badge-outline-primary">Primary</span>
-                <span class="badge badge-outline-secondary">Secondary</span>
-                <span class="badge badge-outline-success">Success</span>
-                <span class="badge badge-outline-danger">Danger</span>
-                <span class="badge badge-outline-warning">Warning</span>
-                <span class="badge badge-outline-info">Info</span>
-                <span class="badge badge-outline-dark">Dark</span>
-            </div> <!-- end card body -->
-        </div>
-    </div> <!-- end col-->
-
-    <div class="col-xl-6">
-        <div class="card">
-            <div class="card-header">
-                <h4 class="card-title">Outline Pill Badges</h4>
-                <div class="card-action">
-                    <a href="#!" class="card-action-item" data-action="card-toggle"><i class="ti ti-chevron-up"></i></a>
-                </div>
-            </div>
-
-            <div class="card-body">
-                <p class="text-muted">
-                    Use the <code>.rounded-pill</code> modifier class to make badges more rounded.
-                </p>
-
-                <span class="badge badge-outline-primary rounded-pill">Primary</span>
-                <span class="badge badge-outline-secondary rounded-pill">Secondary</span>
-                <span class="badge badge-outline-success rounded-pill">Success</span>
-                <span class="badge badge-outline-danger rounded-pill">Danger</span>
-                <span class="badge badge-outline-warning rounded-pill">Warning</span>
-                <span class="badge badge-outline-info rounded-pill">Info</span>
-                <span class="badge badge-outline-dark rounded-pill">Dark</span>
-            </div> <!-- end card body-->
-        </div>
-    </div> <!-- end col-->
-
-    <div class="col-xl-6">
-        <div class="card">
-            <div class="card-header">
-                <h4 class="card-title">Lighten Badges</h4>
-                <div class="card-action">
-                    <a href="#!" class="card-action-item" data-action="card-toggle"><i class="ti ti-chevron-up"></i></a>
-                </div>
-            </div>
-
-            <div class="card-body">
-                <p class="text-muted">
-                    Use the <code>.badge-soft--*</code> modifier class to make badges lighten.
-                </p>
-
-                <span class="badge badge-soft-primary">Primary</span>
-                <span class="badge badge-soft-secondary">Secondary</span>
-                <span class="badge badge-soft-success">Success</span>
-                <span class="badge badge-soft-danger">Danger</span>
-                <span class="badge badge-soft-warning">Warning</span>
-                <span class="badge badge-soft-info">Info</span>
-                <span class="badge badge-soft-dark">Dark</span>
-            </div> <!-- end card body-->
-        </div>
-    </div> <!-- end col-->
-
-    <div class="col-xl-6">
-        <div class="card">
-            <div class="card-header">
-                <h4 class="card-title">Lighten Pill Badges</h4>
-                <div class="card-action">
-                    <a href="#!" class="card-action-item" data-action="card-toggle"><i class="ti ti-chevron-up"></i></a>
-                </div>
-            </div>
-
-            <div class="card-body">
-                <p class="text-muted">
-                    Use the <code>.badge-soft--*</code> modifier class to make badges lighten.
-                </p>
-
-                <span class="badge badge-soft-primary rounded-pill">Primary</span>
-                <span class="badge badge-soft-secondary rounded-pill">Secondary</span>
-                <span class="badge badge-soft-success rounded-pill">Success</span>
-                <span class="badge badge-soft-danger rounded-pill">Danger</span>
-                <span class="badge badge-soft-warning rounded-pill">Warning</span>
-                <span class="badge badge-soft-info rounded-pill">Info</span>
-                <span class="badge badge-soft-dark rounded-pill">Dark</span>
-            </div> <!-- end card body -->
-        </div>
-    </div> <!-- end col-->
-
-    <div class="col-xl-6">
-        <div class="card">
-            <div class="card-header">
-                <h4 class="card-title">Label Badges</h4>
-                <div class="card-action">
-                    <a href="#!" class="card-action-item" data-action="card-toggle"><i class="ti ti-chevron-up"></i></a>
-                </div>
-            </div>
-
-            <div class="card-body">
-                <p class="text-muted">
-                    Using the <code>.badge-label</code> to quickly create a square based badges.
-                </p>
-
-                <span class="badge badge-label badge-default">Default</span>
-                <span class="badge badge-label text-bg-primary">Primary</span>
-                <span class="badge badge-label text-bg-secondary">Secondary</span>
-                <span class="badge badge-label text-bg-success">Success</span>
-                <span class="badge badge-label text-bg-danger">Danger</span>
-                <span class="badge badge-label text-bg-warning">Warning</span>
-                <span class="badge badge-label text-bg-info">Info</span>
-                <span class="badge badge-label text-bg-light">Light</span>
-                <span class="badge badge-label text-bg-dark">Dark</span>
-            </div> <!-- end card body -->
-        </div>
-    </div> <!-- end col-->
-
-    <div class="col-xl-6">
-        <div class="card">
-            <div class="card-header">
-                <h4 class="card-title">Square Badges</h4>
-                <div class="card-action">
-                    <a href="#!" class="card-action-item" data-action="card-toggle"><i class="ti ti-chevron-up"></i></a>
-                </div>
-            </div>
-
-            <div class="card-body">
-                <p class="text-muted">
-                    Using the <code>.badge-square</code> to quickly create a square based badges.
-                </p>
-
-                <span class="badge badge-square badge-default">0</span>
-                <span class="badge badge-square text-bg-primary">1</span>
-                <span class="badge badge-square text-bg-secondary">2</span>
-                <span class="badge badge-square text-bg-success">3</span>
-                <span class="badge badge-square text-bg-danger">4</span>
-                <span class="badge badge-square text-bg-warning">5</span>
-                <span class="badge badge-square text-bg-info">6</span>
-                <span class="badge badge-square text-bg-light">7</span>
-                <span class="badge badge-square text-bg-dark">8</span>
-            </div> <!-- end  card body-->
-        </div>
-    </div> <!-- end col-->
-
-    <div class="col-xl-6">
-        <div class="card">
-            <div class="card-header">
-                <h4 class="card-title">Circle Badges</h4>
-                <div class="card-action">
-                    <a href="#!" class="card-action-item" data-action="card-toggle"><i class="ti ti-chevron-up"></i></a>
-                </div>
-            </div>
-
-            <div class="card-body">
-                <p class="text-muted">
-                    Using the <code>.badge-circle</code> to quickly create a circle based badges.
-                </p>
-
-                <span class="badge badge-circle badge-default">0</span>
-                <span class="badge badge-circle text-bg-primary">1</span>
-                <span class="badge badge-circle text-bg-secondary">2</span>
-                <span class="badge badge-circle text-bg-success">3</span>
-                <span class="badge badge-circle text-bg-danger">4</span>
-                <span class="badge badge-circle text-bg-warning">5</span>
-                <span class="badge badge-circle text-bg-info">6</span>
-                <span class="badge badge-circle text-bg-light">7</span>
-                <span class="badge badge-circle text-bg-dark">8</span>
-            </div> <!-- end card body -->
-        </div> <!-- end card-->
-
-        <div class="card">
-            <div class="card-header">
-                <h4 class="card-title">Positioned</h4>
-                <div class="card-action">
-                    <a href="#!" class="card-action-item" data-action="card-toggle"><i class="ti ti-chevron-up"></i></a>
-                </div>
-            </div>
-
-            <div class="card-body">
-                <p class="text-muted">
-                    Use utilities to modify a <code>.badge</code> and position it in the corner of a
-                    link or button.
-                </p>
-
-                <div class="d-flex flex-wrap gap-3">
-                    <button type="button" class="btn btn-primary position-relative">
-                        Inbox
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                            99+
-                            <span class="visually-hidden">unread messages</span>
-                        </span>
-                    </button>
-
-                    <button type="button" class="btn btn-primary position-relative">
-                        Profile
-                        <span
-                            class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle">
-                            <span class="visually-hidden">New alerts</span>
-                        </span>
-                    </button>
-
-                    <button type="button" class="btn btn-success">
-                        Notifications <span class="badge text-bg-light ms-1">4</span>
-                    </button>
-                </div>
-            </div> <!-- end card body -->
-        </div>
-
-    </div> <!-- end col-->
-
-    <div class="col-xl-6">
-        <div class="card">
-            <div class="card-header">
-                <h4 class="card-title">Headings with Badges</h4>
-                <div class="card-action">
-                    <a href="#!" class="card-action-item" data-action="card-toggle"><i class="ti ti-chevron-up"></i></a>
-                </div>
-            </div>
-
-            <div class="card-body">
-                <h1>h1.Example heading <span class="badge text-bg-primary">New</span></h1>
-                <h2>h2.Example heading <span class="badge text-bg-primary">New</span></h2>
-                <h3>h3.Example heading <span class="badge text-bg-primary">New</span></h3>
-                <h4>h4.Example heading <span class="badge text-bg-primary">New</span></h4>
-                <h5>h5.Example heading <span class="badge text-bg-primary">New</span></h5>
-                <h6>h6.Example heading <span class="badge text-bg-primary">New</span></h6>
-            </div> <!-- end card-body -->
-        </div> <!-- end card-->
-    </div> <!-- end col-->
-</div> <!-- end row-->
