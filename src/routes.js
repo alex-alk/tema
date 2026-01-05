@@ -334,6 +334,11 @@ const FormValidation = async () => (await import('./pages/form/validation/form-v
 const FormWizard = async () => (await import('./pages/form/wizard/form-wizard.js')).FormWizard
 const FormFileuploads = async () => (await import('./pages/form/fileuploads/form-fileuploads.js')).FormFileuploads
 const FormEditors = async () => (await import('./pages/form/editors/form-editors.js')).FormEditors
+const TablesBasic = async () => (await import('./pages/tables/basic/tables-basic.js')).TablesBasic
+const TablesDatatable = async () => (await import('./pages/tables/datatable/tables-datatable.js')).TablesDatatable
+const MapsGoogle = async () => (await import('./pages/maps/google/maps-google.js')).MapsGoogle
+const MapsVector = async () => (await import('./pages/maps/vector/maps-vector.js')).MapsVector
+
 
 const routes = [
     {
@@ -454,6 +459,10 @@ const routes = [
             { path: '/form-wizard', component: FormWizard },
             { path: '/form-fileuploads', component: FormFileuploads },
             { path: '/form-editors', component: FormEditors },
+            { path: '/tables-basic', component: TablesBasic },
+            { path: '/tables-datatable', component: TablesDatatable },
+            { path: '/maps-google', component: MapsGoogle },
+            { path: '/maps-vector', component: MapsVector },
             
             // old
             // { path: '/about', component: AboutPage },

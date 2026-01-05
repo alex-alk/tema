@@ -1,0 +1,1965 @@
+<div class="container-fluid">
+
+    <!-- start page title -->
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box">
+                <div class="page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item"><a href="javascript: void(0);">Hyper</a></li>
+                        <li class="breadcrumb-item"><a href="javascript: void(0);">Tables</a></li>
+                        <li class="breadcrumb-item active">Data Tables</li>
+                    </ol>
+                </div>
+                <h4 class="page-title">Data Tables</h4>
+            </div>
+        </div>
+    </div>
+    <!-- end page title -->
+
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Basic Data Table</h4>
+                    <p class="text-muted font-14 mb-4">
+                        DataTables has most features enabled by default, so all you need to do to use it with your own
+                        tables is to call the construction
+                        function:
+                        <code>$().DataTable();</code>. KeyTable provides Excel like cell navigation on any table. Events
+                        (focus, blur, action etc) can be assigned to individual
+                        cells, columns, rows or all cells.
+                    </p>
+
+                    <div id="basic-datatable_wrapper" class="dt-container dt-bootstrap5 dt-empty-footer">
+                        <div class="row mt-2 justify-content-between">
+                            <div
+                                class="d-md-flex justify-content-between align-items-center dt-layout-start col-md-auto me-auto">
+                                <div class="dt-length"><select aria-controls="basic-datatable"
+                                        class="form-select form-select-sm" id="dt-length-0">
+                                        <option value="10">10</option>
+                                        <option value="25">25</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                    </select><label for="dt-length-0"> entries per page</label></div>
+                            </div>
+                            <div
+                                class="d-md-flex justify-content-between align-items-center dt-layout-end col-md-auto ms-auto">
+                                <div class="dt-search"><label for="dt-search-0">Search:</label><input type="search"
+                                        class="form-control form-control-sm" id="dt-search-0" placeholder=""
+                                        aria-controls="basic-datatable"></div>
+                            </div>
+                        </div>
+                        <div class="row mt-2 justify-content-between dt-layout-table">
+                            <div
+                                class="d-md-flex justify-content-between align-items-center col-12 dt-layout-full col-md">
+                                <table id="basic-datatable"
+                                    class="table table-striped dt-responsive nowrap w-100 mb-0 dataTable dtr-inline"
+                                    aria-describedby="basic-datatable_info" style="width: 100%;">
+                                    <colgroup>
+                                        <col data-dt-column="0" style="width: 194.6px;">
+                                        <col data-dt-column="1" style="width: 279.212px;">
+                                        <col data-dt-column="2" style="width: 166.488px;">
+                                        <col data-dt-column="3" style="width: 150.688px;">
+                                        <col data-dt-column="4" style="width: 202.663px;">
+                                        <col data-dt-column="5" style="width: 171.15px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th data-dt-column="0" rowspan="1" colspan="1"
+                                                class="dt-orderable-asc dt-orderable-desc dt-ordering-asc"
+                                                aria-sort="ascending">
+                                                <div class="dt-column-header"><span
+                                                        class="dt-column-title">Name</span><span class="dt-column-order"
+                                                        role="button" aria-label="Name: Activate to invert sorting"
+                                                        tabindex="0"></span></div>
+                                            </th>
+                                            <th data-dt-column="1" rowspan="1" colspan="1"
+                                                class="dt-orderable-asc dt-orderable-desc">
+                                                <div class="dt-column-header"><span
+                                                        class="dt-column-title">Position</span><span
+                                                        class="dt-column-order" role="button"
+                                                        aria-label="Position: Activate to sort" tabindex="0"></span>
+                                                </div>
+                                            </th>
+                                            <th data-dt-column="2" rowspan="1" colspan="1"
+                                                class="dt-orderable-asc dt-orderable-desc">
+                                                <div class="dt-column-header"><span
+                                                        class="dt-column-title">Office</span><span
+                                                        class="dt-column-order" role="button"
+                                                        aria-label="Office: Activate to sort" tabindex="0"></span></div>
+                                            </th>
+                                            <th data-dt-column="3" rowspan="1" colspan="1"
+                                                class="dt-type-numeric dt-orderable-asc dt-orderable-desc">
+                                                <div class="dt-column-header"><span
+                                                        class="dt-column-title">Age</span><span class="dt-column-order"
+                                                        role="button" aria-label="Age: Activate to sort"
+                                                        tabindex="0"></span></div>
+                                            </th>
+                                            <th data-dt-column="4" rowspan="1" colspan="1"
+                                                class="dt-type-date dt-orderable-asc dt-orderable-desc">
+                                                <div class="dt-column-header"><span class="dt-column-title">Start
+                                                        date</span><span class="dt-column-order" role="button"
+                                                        aria-label="Start date: Activate to sort" tabindex="0"></span>
+                                                </div>
+                                            </th>
+                                            <th data-dt-column="5" rowspan="1" colspan="1"
+                                                class="dt-type-numeric dt-orderable-asc dt-orderable-desc">
+                                                <div class="dt-column-header"><span
+                                                        class="dt-column-title">Salary</span><span
+                                                        class="dt-column-order" role="button"
+                                                        aria-label="Salary: Activate to sort" tabindex="0"></span></div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <td class="sorting_1 dtr-control" tabindex="0">Airi Satou</td>
+                                            <td>Accountant</td>
+                                            <td>Tokyo</td>
+                                            <td class="dt-type-numeric">33</td>
+                                            <td class="dt-type-date">2008/11/28</td>
+                                            <td class="dt-type-numeric">$162,700</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sorting_1 dtr-control" tabindex="0">Angelica Ramos</td>
+                                            <td>Chief Executive Officer (CEO)</td>
+                                            <td>London</td>
+                                            <td class="dt-type-numeric">47</td>
+                                            <td class="dt-type-date">2009/10/09</td>
+                                            <td class="dt-type-numeric">$1,200,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sorting_1 dtr-control" tabindex="0">Ashton Cox</td>
+                                            <td>Junior Technical Author</td>
+                                            <td>San Francisco</td>
+                                            <td class="dt-type-numeric">66</td>
+                                            <td class="dt-type-date">2009/01/12</td>
+                                            <td class="dt-type-numeric">$86,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sorting_1 dtr-control" tabindex="0">Bradley Greer</td>
+                                            <td>Software Engineer</td>
+                                            <td>London</td>
+                                            <td class="dt-type-numeric">41</td>
+                                            <td class="dt-type-date">2012/10/13</td>
+                                            <td class="dt-type-numeric">$132,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sorting_1 dtr-control" tabindex="0">Brenden Wagner</td>
+                                            <td>Software Engineer</td>
+                                            <td>San Francisco</td>
+                                            <td class="dt-type-numeric">28</td>
+                                            <td class="dt-type-date">2011/06/07</td>
+                                            <td class="dt-type-numeric">$206,850</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sorting_1 dtr-control" tabindex="0">Brielle Williamson</td>
+                                            <td>Integration Specialist</td>
+                                            <td>New York</td>
+                                            <td class="dt-type-numeric">61</td>
+                                            <td class="dt-type-date">2012/12/02</td>
+                                            <td class="dt-type-numeric">$372,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sorting_1 dtr-control" tabindex="0">Bruno Nash</td>
+                                            <td>Software Engineer</td>
+                                            <td>London</td>
+                                            <td class="dt-type-numeric">38</td>
+                                            <td class="dt-type-date">2011/05/03</td>
+                                            <td class="dt-type-numeric">$163,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sorting_1 dtr-control" tabindex="0">Caesar Vance</td>
+                                            <td>Pre-Sales Support</td>
+                                            <td>New York</td>
+                                            <td class="dt-type-numeric">21</td>
+                                            <td class="dt-type-date">2011/12/12</td>
+                                            <td class="dt-type-numeric">$106,450</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sorting_1 dtr-control" tabindex="0">Cara Stevens</td>
+                                            <td>Sales Assistant</td>
+                                            <td>New York</td>
+                                            <td class="dt-type-numeric">46</td>
+                                            <td class="dt-type-date">2011/12/06</td>
+                                            <td class="dt-type-numeric">$145,600</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sorting_1 dtr-control" tabindex="0">Cedric Kelly</td>
+                                            <td>Senior Javascript Developer</td>
+                                            <td>Edinburgh</td>
+                                            <td class="dt-type-numeric">22</td>
+                                            <td class="dt-type-date">2012/03/29</td>
+                                            <td class="dt-type-numeric">$433,060</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot></tfoot>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="row mt-2 justify-content-between">
+                            <div
+                                class="d-md-flex justify-content-between align-items-center dt-layout-start col-md-auto me-auto">
+                                <div class="dt-info" aria-live="polite" id="basic-datatable_info" role="status">Showing
+                                    1 to 10 of 57 entries</div>
+                            </div>
+                            <div
+                                class="d-md-flex justify-content-between align-items-center dt-layout-end col-md-auto ms-auto">
+                                <div class="dt-paging">
+                                    <nav aria-label="pagination">
+                                        <ul class="pagination">
+                                            <li class="dt-paging-button page-item disabled"><button
+                                                    class="page-link first" role="link" type="button"
+                                                    aria-controls="basic-datatable" aria-disabled="true"
+                                                    aria-label="First" data-dt-idx="first" tabindex="-1"><i
+                                                        class="ri-arrow-left-double-line align-middle"></i></button>
+                                            </li>
+                                            <li class="dt-paging-button page-item disabled"><button
+                                                    class="page-link previous" role="link" type="button"
+                                                    aria-controls="basic-datatable" aria-disabled="true"
+                                                    aria-label="Previous" data-dt-idx="previous" tabindex="-1"><i
+                                                        class="ri-arrow-left-s-line align-middle"></i></button></li>
+                                            <li class="dt-paging-button page-item active"><button class="page-link"
+                                                    role="link" type="button" aria-controls="basic-datatable"
+                                                    aria-current="page" data-dt-idx="0">1</button></li>
+                                            <li class="dt-paging-button page-item"><button class="page-link" role="link"
+                                                    type="button" aria-controls="basic-datatable"
+                                                    data-dt-idx="1">2</button></li>
+                                            <li class="dt-paging-button page-item"><button class="page-link" role="link"
+                                                    type="button" aria-controls="basic-datatable"
+                                                    data-dt-idx="2">3</button></li>
+                                            <li class="dt-paging-button page-item"><button class="page-link" role="link"
+                                                    type="button" aria-controls="basic-datatable"
+                                                    data-dt-idx="3">4</button></li>
+                                            <li class="dt-paging-button page-item"><button class="page-link" role="link"
+                                                    type="button" aria-controls="basic-datatable"
+                                                    data-dt-idx="4">5</button></li>
+                                            <li class="dt-paging-button page-item"><button class="page-link" role="link"
+                                                    type="button" aria-controls="basic-datatable"
+                                                    data-dt-idx="5">6</button></li>
+                                            <li class="dt-paging-button page-item"><button class="page-link next"
+                                                    role="link" type="button" aria-controls="basic-datatable"
+                                                    aria-label="Next" data-dt-idx="next"><i
+                                                        class="ri-arrow-right-s-line align-middle"></i></button></li>
+                                            <li class="dt-paging-button page-item"><button class="page-link last"
+                                                    role="link" type="button" aria-controls="basic-datatable"
+                                                    aria-label="Last" data-dt-idx="last"><i
+                                                        class="ri-arrow-right-double-line align-middle"></i></button>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dt-autosize" style="width: 100%; height: 0px;"></div>
+                    </div>
+
+                </div> <!-- end card body-->
+            </div> <!-- end card -->
+        </div><!-- end col-->
+    </div> <!-- end row-->
+
+
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+
+                    <h4 class="header-title">Buttons example</h4>
+                    <p class="text-muted font-14 mb-4">
+                        The Buttons extension for DataTables provides a common set of options, API methods and styling
+                        to display buttons on a page
+                        that will interact with a DataTable. The core library provides the based framework upon which
+                        plug-ins can built.
+                    </p>
+
+                    <div id="datatable-buttons_wrapper" class="dt-container dt-bootstrap5 dt-empty-footer">
+                        <div id="" class="d-md-flex justify-content-between align-items-center my-2">
+                            <div class="dt-buttons btn-group flex-wrap"> <button
+                                    class="btn btn-secondary buttons-copy buttons-html5 btn-sm" tabindex="0"
+                                    aria-controls="datatable-buttons" type="button"><span>Copy</span></button> <button
+                                    class="btn btn-secondary buttons-csv buttons-html5 btn-sm active" tabindex="0"
+                                    aria-controls="datatable-buttons" type="button"><span>CSV</span></button> <button
+                                    class="btn btn-secondary buttons-excel buttons-html5 btn-sm" tabindex="0"
+                                    aria-controls="datatable-buttons" type="button"><span>Excel</span></button> <button
+                                    class="btn btn-secondary buttons-print btn-sm active" tabindex="0"
+                                    aria-controls="datatable-buttons" type="button"><span>Print</span></button> <button
+                                    class="btn btn-secondary buttons-pdf buttons-html5 btn-sm" tabindex="0"
+                                    aria-controls="datatable-buttons" type="button"><span>PDF</span></button> </div>
+                            <div class="dt-search"><label for="dt-search-2">Search:</label><input type="search"
+                                    class="form-control form-control-sm" id="dt-search-2" placeholder=""
+                                    aria-controls="datatable-buttons"></div>
+                        </div>
+                        <table id="datatable-buttons"
+                            class="table table-striped dt-responsive nowrap w-100 mb-0 dataTable dtr-inline"
+                            aria-describedby="datatable-buttons_info" style="width: 100%;">
+                            <colgroup>
+                                <col data-dt-column="0" style="width: 194.6px;">
+                                <col data-dt-column="1" style="width: 279.212px;">
+                                <col data-dt-column="2" style="width: 166.488px;">
+                                <col data-dt-column="3" style="width: 150.688px;">
+                                <col data-dt-column="4" style="width: 202.663px;">
+                                <col data-dt-column="5" style="width: 171.15px;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th data-dt-column="0" rowspan="1" colspan="1"
+                                        class="dt-orderable-asc dt-orderable-desc dt-ordering-asc"
+                                        aria-sort="ascending">
+                                        <div class="dt-column-header"><span class="dt-column-title">Name</span><span
+                                                class="dt-column-order" role="button"
+                                                aria-label="Name: Activate to invert sorting" tabindex="0"></span></div>
+                                    </th>
+                                    <th data-dt-column="1" rowspan="1" colspan="1"
+                                        class="dt-orderable-asc dt-orderable-desc">
+                                        <div class="dt-column-header"><span class="dt-column-title">Position</span><span
+                                                class="dt-column-order" role="button"
+                                                aria-label="Position: Activate to sort" tabindex="0"></span></div>
+                                    </th>
+                                    <th data-dt-column="2" rowspan="1" colspan="1"
+                                        class="dt-orderable-asc dt-orderable-desc">
+                                        <div class="dt-column-header"><span class="dt-column-title">Office</span><span
+                                                class="dt-column-order" role="button"
+                                                aria-label="Office: Activate to sort" tabindex="0"></span></div>
+                                    </th>
+                                    <th data-dt-column="3" rowspan="1" colspan="1"
+                                        class="dt-type-numeric dt-orderable-asc dt-orderable-desc">
+                                        <div class="dt-column-header"><span class="dt-column-title">Age</span><span
+                                                class="dt-column-order" role="button" aria-label="Age: Activate to sort"
+                                                tabindex="0"></span></div>
+                                    </th>
+                                    <th data-dt-column="4" rowspan="1" colspan="1"
+                                        class="dt-type-date dt-orderable-asc dt-orderable-desc">
+                                        <div class="dt-column-header"><span class="dt-column-title">Start
+                                                date</span><span class="dt-column-order" role="button"
+                                                aria-label="Start date: Activate to sort" tabindex="0"></span></div>
+                                    </th>
+                                    <th data-dt-column="5" rowspan="1" colspan="1"
+                                        class="dt-type-numeric dt-orderable-asc dt-orderable-desc">
+                                        <div class="dt-column-header"><span class="dt-column-title">Salary</span><span
+                                                class="dt-column-order" role="button"
+                                                aria-label="Salary: Activate to sort" tabindex="0"></span></div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="sorting_1 dtr-control" tabindex="0">Airi Satou</td>
+                                    <td>Accountant</td>
+                                    <td>Tokyo</td>
+                                    <td class="dt-type-numeric">33</td>
+                                    <td class="dt-type-date">2008/11/28</td>
+                                    <td class="dt-type-numeric">$162,700</td>
+                                </tr>
+                                <tr>
+                                    <td class="sorting_1 dtr-control" tabindex="0">Angelica Ramos</td>
+                                    <td>Chief Executive Officer (CEO)</td>
+                                    <td>London</td>
+                                    <td class="dt-type-numeric">47</td>
+                                    <td class="dt-type-date">2009/10/09</td>
+                                    <td class="dt-type-numeric">$1,200,000</td>
+                                </tr>
+                                <tr>
+                                    <td class="sorting_1 dtr-control" tabindex="0">Ashton Cox</td>
+                                    <td>Junior Technical Author</td>
+                                    <td>San Francisco</td>
+                                    <td class="dt-type-numeric">66</td>
+                                    <td class="dt-type-date">2009/01/12</td>
+                                    <td class="dt-type-numeric">$86,000</td>
+                                </tr>
+                                <tr>
+                                    <td class="sorting_1 dtr-control" tabindex="0">Bradley Greer</td>
+                                    <td>Software Engineer</td>
+                                    <td>London</td>
+                                    <td class="dt-type-numeric">41</td>
+                                    <td class="dt-type-date">2012/10/13</td>
+                                    <td class="dt-type-numeric">$132,000</td>
+                                </tr>
+                                <tr>
+                                    <td class="sorting_1 dtr-control" tabindex="0">Brenden Wagner</td>
+                                    <td>Software Engineer</td>
+                                    <td>San Francisco</td>
+                                    <td class="dt-type-numeric">28</td>
+                                    <td class="dt-type-date">2011/06/07</td>
+                                    <td class="dt-type-numeric">$206,850</td>
+                                </tr>
+                                <tr>
+                                    <td class="sorting_1 dtr-control" tabindex="0">Brielle Williamson</td>
+                                    <td>Integration Specialist</td>
+                                    <td>New York</td>
+                                    <td class="dt-type-numeric">61</td>
+                                    <td class="dt-type-date">2012/12/02</td>
+                                    <td class="dt-type-numeric">$372,000</td>
+                                </tr>
+                                <tr>
+                                    <td class="sorting_1 dtr-control" tabindex="0">Bruno Nash</td>
+                                    <td>Software Engineer</td>
+                                    <td>London</td>
+                                    <td class="dt-type-numeric">38</td>
+                                    <td class="dt-type-date">2011/05/03</td>
+                                    <td class="dt-type-numeric">$163,500</td>
+                                </tr>
+                                <tr>
+                                    <td class="sorting_1 dtr-control" tabindex="0">Caesar Vance</td>
+                                    <td>Pre-Sales Support</td>
+                                    <td>New York</td>
+                                    <td class="dt-type-numeric">21</td>
+                                    <td class="dt-type-date">2011/12/12</td>
+                                    <td class="dt-type-numeric">$106,450</td>
+                                </tr>
+                                <tr>
+                                    <td class="sorting_1 dtr-control" tabindex="0">Cara Stevens</td>
+                                    <td>Sales Assistant</td>
+                                    <td>New York</td>
+                                    <td class="dt-type-numeric">46</td>
+                                    <td class="dt-type-date">2011/12/06</td>
+                                    <td class="dt-type-numeric">$145,600</td>
+                                </tr>
+                                <tr>
+                                    <td class="sorting_1 dtr-control" tabindex="0">Cedric Kelly</td>
+                                    <td>Senior Javascript Developer</td>
+                                    <td>Edinburgh</td>
+                                    <td class="dt-type-numeric">22</td>
+                                    <td class="dt-type-date">2012/03/29</td>
+                                    <td class="dt-type-numeric">$433,060</td>
+                                </tr>
+                            </tbody>
+                            <tfoot></tfoot>
+                        </table>
+                        <div id="" class="d-md-flex justify-content-between align-items-center mt-2">
+                            <div class="dt-info" aria-live="polite" id="datatable-buttons_info" role="status">Showing 1
+                                to 10 of 57 entries</div>
+                            <div class="dt-paging">
+                                <nav aria-label="pagination">
+                                    <ul class="pagination">
+                                        <li class="dt-paging-button page-item disabled"><button class="page-link first"
+                                                role="link" type="button" aria-controls="datatable-buttons"
+                                                aria-disabled="true" aria-label="First" data-dt-idx="first"
+                                                tabindex="-1"><i
+                                                    class="ri-arrow-left-double-line align-middle"></i></button></li>
+                                        <li class="dt-paging-button page-item disabled"><button
+                                                class="page-link previous" role="link" type="button"
+                                                aria-controls="datatable-buttons" aria-disabled="true"
+                                                aria-label="Previous" data-dt-idx="previous" tabindex="-1"><i
+                                                    class="ri-arrow-left-s-line align-middle"></i></button></li>
+                                        <li class="dt-paging-button page-item active"><button class="page-link"
+                                                role="link" type="button" aria-controls="datatable-buttons"
+                                                aria-current="page" data-dt-idx="0">1</button></li>
+                                        <li class="dt-paging-button page-item"><button class="page-link" role="link"
+                                                type="button" aria-controls="datatable-buttons"
+                                                data-dt-idx="1">2</button></li>
+                                        <li class="dt-paging-button page-item"><button class="page-link" role="link"
+                                                type="button" aria-controls="datatable-buttons"
+                                                data-dt-idx="2">3</button></li>
+                                        <li class="dt-paging-button page-item"><button class="page-link" role="link"
+                                                type="button" aria-controls="datatable-buttons"
+                                                data-dt-idx="3">4</button></li>
+                                        <li class="dt-paging-button page-item"><button class="page-link" role="link"
+                                                type="button" aria-controls="datatable-buttons"
+                                                data-dt-idx="4">5</button></li>
+                                        <li class="dt-paging-button page-item"><button class="page-link" role="link"
+                                                type="button" aria-controls="datatable-buttons"
+                                                data-dt-idx="5">6</button></li>
+                                        <li class="dt-paging-button page-item"><button class="page-link next"
+                                                role="link" type="button" aria-controls="datatable-buttons"
+                                                aria-label="Next" data-dt-idx="next"><i
+                                                    class="ri-arrow-right-s-line align-middle"></i></button></li>
+                                        <li class="dt-paging-button page-item"><button class="page-link last"
+                                                role="link" type="button" aria-controls="datatable-buttons"
+                                                aria-label="Last" data-dt-idx="last"><i
+                                                    class="ri-arrow-right-double-line align-middle"></i></button></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="dt-autosize" style="width: 100%; height: 0px;"></div>
+                    </div>
+
+                </div> <!-- end card body-->
+            </div> <!-- end card -->
+        </div><!-- end col-->
+    </div> <!-- end row-->
+
+
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+
+                    <h4 class="header-title">Multi item selection</h4>
+                    <p class="text-muted font-14 mb-4">
+                        This example shows the multi option. Note how a click on a row will toggle its selected state
+                        without effecting other rows,
+                        unlike the os and single options shown in other examples.
+                    </p>
+
+                    <div id="selection-datatable_wrapper" class="dt-container dt-bootstrap5 dt-empty-footer">
+                        <div class="row mt-2 justify-content-between">
+                            <div
+                                class="d-md-flex justify-content-between align-items-center dt-layout-start col-md-auto me-auto">
+                                <div class="dt-length"><select aria-controls="selection-datatable"
+                                        class="form-select form-select-sm" id="dt-length-2">
+                                        <option value="7">7</option>
+                                        <option value="10">10</option>
+                                        <option value="25">25</option>
+                                        <option value="50">50</option>
+                                        <option value="-1">All</option>
+                                    </select><label for="dt-length-2"> Items per page</label></div>
+                            </div>
+                            <div
+                                class="d-md-flex justify-content-between align-items-center dt-layout-end col-md-auto ms-auto">
+                                <div class="dt-search"><label for="dt-search-3">Search:</label><input type="search"
+                                        class="form-control form-control-sm" id="dt-search-3" placeholder=""
+                                        aria-controls="selection-datatable"></div>
+                            </div>
+                        </div>
+                        <div class="row mt-2 justify-content-between dt-layout-table">
+                            <div
+                                class="d-md-flex justify-content-between align-items-center col-12 dt-layout-full col-md">
+                                <table id="selection-datatable"
+                                    class="table dt-responsive nowrap w-100 mb-0 dataTable dtr-inline"
+                                    aria-describedby="selection-datatable_info" style="width: 100%;">
+                                    <colgroup>
+                                        <col data-dt-column="0" style="width: 194.6px;">
+                                        <col data-dt-column="1" style="width: 279.212px;">
+                                        <col data-dt-column="2" style="width: 166.488px;">
+                                        <col data-dt-column="3" style="width: 150.688px;">
+                                        <col data-dt-column="4" style="width: 202.663px;">
+                                        <col data-dt-column="5" style="width: 171.15px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th data-dt-column="0" rowspan="1" colspan="1"
+                                                class="dt-orderable-asc dt-orderable-desc dt-ordering-asc"
+                                                aria-sort="ascending">
+                                                <div class="dt-column-header"><span
+                                                        class="dt-column-title">Name</span><span class="dt-column-order"
+                                                        role="button" aria-label="Name: Activate to invert sorting"
+                                                        tabindex="0"></span></div>
+                                            </th>
+                                            <th data-dt-column="1" rowspan="1" colspan="1"
+                                                class="dt-orderable-asc dt-orderable-desc">
+                                                <div class="dt-column-header"><span
+                                                        class="dt-column-title">Position</span><span
+                                                        class="dt-column-order" role="button"
+                                                        aria-label="Position: Activate to sort" tabindex="0"></span>
+                                                </div>
+                                            </th>
+                                            <th data-dt-column="2" rowspan="1" colspan="1"
+                                                class="dt-orderable-asc dt-orderable-desc">
+                                                <div class="dt-column-header"><span
+                                                        class="dt-column-title">Office</span><span
+                                                        class="dt-column-order" role="button"
+                                                        aria-label="Office: Activate to sort" tabindex="0"></span></div>
+                                            </th>
+                                            <th data-dt-column="3" rowspan="1" colspan="1"
+                                                class="dt-type-numeric dt-orderable-asc dt-orderable-desc">
+                                                <div class="dt-column-header"><span
+                                                        class="dt-column-title">Age</span><span class="dt-column-order"
+                                                        role="button" aria-label="Age: Activate to sort"
+                                                        tabindex="0"></span></div>
+                                            </th>
+                                            <th data-dt-column="4" rowspan="1" colspan="1"
+                                                class="dt-type-date dt-orderable-asc dt-orderable-desc">
+                                                <div class="dt-column-header"><span class="dt-column-title">Start
+                                                        date</span><span class="dt-column-order" role="button"
+                                                        aria-label="Start date: Activate to sort" tabindex="0"></span>
+                                                </div>
+                                            </th>
+                                            <th data-dt-column="5" rowspan="1" colspan="1"
+                                                class="dt-type-numeric dt-orderable-asc dt-orderable-desc">
+                                                <div class="dt-column-header"><span
+                                                        class="dt-column-title">Salary</span><span
+                                                        class="dt-column-order" role="button"
+                                                        aria-label="Salary: Activate to sort" tabindex="0"></span></div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="sorting_1 dtr-control" tabindex="0">Airi Satou</td>
+                                            <td>Accountant</td>
+                                            <td>Tokyo</td>
+                                            <td class="dt-type-numeric">33</td>
+                                            <td class="dt-type-date">2008/11/28</td>
+                                            <td class="dt-type-numeric">$162,700</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sorting_1 dtr-control" tabindex="0">Angelica Ramos</td>
+                                            <td>Chief Executive Officer (CEO)</td>
+                                            <td>London</td>
+                                            <td class="dt-type-numeric">47</td>
+                                            <td class="dt-type-date">2009/10/09</td>
+                                            <td class="dt-type-numeric">$1,200,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sorting_1 dtr-control" tabindex="0">Ashton Cox</td>
+                                            <td>Junior Technical Author</td>
+                                            <td>San Francisco</td>
+                                            <td class="dt-type-numeric">66</td>
+                                            <td class="dt-type-date">2009/01/12</td>
+                                            <td class="dt-type-numeric">$86,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sorting_1 dtr-control" tabindex="0">Bradley Greer</td>
+                                            <td>Software Engineer</td>
+                                            <td>London</td>
+                                            <td class="dt-type-numeric">41</td>
+                                            <td class="dt-type-date">2012/10/13</td>
+                                            <td class="dt-type-numeric">$132,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sorting_1 dtr-control" tabindex="0">Brenden Wagner</td>
+                                            <td>Software Engineer</td>
+                                            <td>San Francisco</td>
+                                            <td class="dt-type-numeric">28</td>
+                                            <td class="dt-type-date">2011/06/07</td>
+                                            <td class="dt-type-numeric">$206,850</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sorting_1 dtr-control" tabindex="0">Brielle Williamson</td>
+                                            <td>Integration Specialist</td>
+                                            <td>New York</td>
+                                            <td class="dt-type-numeric">61</td>
+                                            <td class="dt-type-date">2012/12/02</td>
+                                            <td class="dt-type-numeric">$372,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sorting_1 dtr-control" tabindex="0">Bruno Nash</td>
+                                            <td>Software Engineer</td>
+                                            <td>London</td>
+                                            <td class="dt-type-numeric">38</td>
+                                            <td class="dt-type-date">2011/05/03</td>
+                                            <td class="dt-type-numeric">$163,500</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot></tfoot>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="row mt-2 justify-content-between">
+                            <div
+                                class="d-md-flex justify-content-between align-items-center dt-layout-start col-md-auto me-auto">
+                                <div class="dt-info" aria-live="polite" id="selection-datatable_info" role="status">
+                                    Showing <span class="fw-semibold">1</span> to <span class="fw-semibold">7</span> of
+                                    <span class="fw-semibold">57</span> Items</div>
+                            </div>
+                            <div
+                                class="d-md-flex justify-content-between align-items-center dt-layout-end col-md-auto ms-auto">
+                                <div class="dt-paging">
+                                    <nav aria-label="pagination">
+                                        <ul class="pagination">
+                                            <li class="dt-paging-button page-item disabled"><button
+                                                    class="page-link first" role="link" type="button"
+                                                    aria-controls="selection-datatable" aria-disabled="true"
+                                                    aria-label="First" data-dt-idx="first" tabindex="-1"><i
+                                                        class="ri-arrow-left-double-line align-middle"></i></button>
+                                            </li>
+                                            <li class="dt-paging-button page-item disabled"><button
+                                                    class="page-link previous" role="link" type="button"
+                                                    aria-controls="selection-datatable" aria-disabled="true"
+                                                    aria-label="Previous" data-dt-idx="previous" tabindex="-1"><i
+                                                        class="ri-arrow-left-s-line align-middle"></i></button></li>
+                                            <li class="dt-paging-button page-item active"><button class="page-link"
+                                                    role="link" type="button" aria-controls="selection-datatable"
+                                                    aria-current="page" data-dt-idx="0">1</button></li>
+                                            <li class="dt-paging-button page-item"><button class="page-link" role="link"
+                                                    type="button" aria-controls="selection-datatable"
+                                                    data-dt-idx="1">2</button></li>
+                                            <li class="dt-paging-button page-item"><button class="page-link" role="link"
+                                                    type="button" aria-controls="selection-datatable"
+                                                    data-dt-idx="2">3</button></li>
+                                            <li class="dt-paging-button page-item"><button class="page-link" role="link"
+                                                    type="button" aria-controls="selection-datatable"
+                                                    data-dt-idx="3">4</button></li>
+                                            <li class="dt-paging-button page-item"><button class="page-link" role="link"
+                                                    type="button" aria-controls="selection-datatable"
+                                                    data-dt-idx="4">5</button></li>
+                                            <li class="dt-paging-button page-item"><button class="page-link ellipsis"
+                                                    role="link" type="button" aria-controls="selection-datatable"
+                                                    data-dt-idx="ellipsis">…</button></li>
+                                            <li class="dt-paging-button page-item"><button class="page-link" role="link"
+                                                    type="button" aria-controls="selection-datatable"
+                                                    data-dt-idx="8">9</button></li>
+                                            <li class="dt-paging-button page-item"><button class="page-link next"
+                                                    role="link" type="button" aria-controls="selection-datatable"
+                                                    aria-label="Next" data-dt-idx="next"><i
+                                                        class="ri-arrow-right-s-line align-middle"></i></button></li>
+                                            <li class="dt-paging-button page-item"><button class="page-link last"
+                                                    role="link" type="button" aria-controls="selection-datatable"
+                                                    aria-label="Last" data-dt-idx="last"><i
+                                                        class="ri-arrow-right-double-line align-middle"></i></button>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dt-autosize" style="width: 100%; height: 0px;"></div>
+                    </div>
+
+                </div> <!-- end card body-->
+            </div> <!-- end card -->
+        </div><!-- end col-->
+    </div> <!-- end row-->
+
+
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Scroll</h4>
+                    <p class="text-muted font-14 mb-4">
+                        This example shows the DataTables table body scrolling in the vertical direction. This can
+                        generally be seen as an
+                        alternative method to pagination for displaying a large table in a fairly small vertical area,
+                        and as such
+                        pagination has been disabled here (note that this is not mandatory, it will work just fine with
+                        pagination enabled
+                        as well!).
+                    </p>
+
+                    <div id="scroll-datatable_wrapper" class="dt-container dt-bootstrap5 dt-empty-footer">
+                        <div class="row mt-2 justify-content-between">
+                            <div
+                                class="d-md-flex justify-content-between align-items-center dt-layout-start col-md-auto me-auto">
+                            </div>
+                            <div
+                                class="d-md-flex justify-content-between align-items-center dt-layout-end col-md-auto ms-auto">
+                                <div class="dt-search"><label for="dt-search-4">Search:</label><input type="search"
+                                        class="form-control form-control-sm" id="dt-search-4" placeholder=""
+                                        aria-controls="scroll-datatable"></div>
+                            </div>
+                        </div>
+                        <div class="row mt-2 justify-content-between dt-layout-table">
+                            <div
+                                class="d-md-flex justify-content-between align-items-center col-12 dt-layout-full col-md">
+                                <div class="dt-scroll">
+                                    <div class="dt-scroll-head"
+                                        style="overflow: hidden; position: relative; border: 0px; width: 100%;">
+                                        <div class="dt-scroll-headInner"
+                                            style="box-sizing: content-box; width: 1149.6px; padding-right: 15px;">
+                                            <table class="table table-striped dt-responsive nowrap w-100 mb-0 dataTable"
+                                                aria-describedby="scroll-datatable_info"
+                                                style="margin-left: 0px; width: 1149.6px;">
+                                                <thead>
+                                                    <tr>
+                                                        <th data-dt-column="0" rowspan="1" colspan="1"
+                                                            class="dt-orderable-asc dt-orderable-desc dt-ordering-asc"
+                                                            aria-sort="ascending">
+                                                            <div class="dt-column-header"><span
+                                                                    class="dt-column-title">Name</span><span
+                                                                    class="dt-column-order" role="button"
+                                                                    aria-label="Name: Activate to invert sorting"
+                                                                    tabindex="0"></span></div>
+                                                        </th>
+                                                        <th data-dt-column="1" rowspan="1" colspan="1"
+                                                            class="dt-orderable-asc dt-orderable-desc">
+                                                            <div class="dt-column-header"><span
+                                                                    class="dt-column-title">Position</span><span
+                                                                    class="dt-column-order" role="button"
+                                                                    aria-label="Position: Activate to sort"
+                                                                    tabindex="0"></span></div>
+                                                        </th>
+                                                        <th data-dt-column="2" rowspan="1" colspan="1"
+                                                            class="dt-orderable-asc dt-orderable-desc">
+                                                            <div class="dt-column-header"><span
+                                                                    class="dt-column-title">Office</span><span
+                                                                    class="dt-column-order" role="button"
+                                                                    aria-label="Office: Activate to sort"
+                                                                    tabindex="0"></span></div>
+                                                        </th>
+                                                        <th data-dt-column="3" rowspan="1" colspan="1"
+                                                            class="dt-type-numeric dt-orderable-asc dt-orderable-desc">
+                                                            <div class="dt-column-header"><span
+                                                                    class="dt-column-title">Age</span><span
+                                                                    class="dt-column-order" role="button"
+                                                                    aria-label="Age: Activate to sort"
+                                                                    tabindex="0"></span></div>
+                                                        </th>
+                                                        <th data-dt-column="4" rowspan="1" colspan="1"
+                                                            class="dt-type-date dt-orderable-asc dt-orderable-desc">
+                                                            <div class="dt-column-header"><span
+                                                                    class="dt-column-title">Start date</span><span
+                                                                    class="dt-column-order" role="button"
+                                                                    aria-label="Start date: Activate to sort"
+                                                                    tabindex="0"></span></div>
+                                                        </th>
+                                                        <th data-dt-column="5" rowspan="1" colspan="1"
+                                                            class="dt-type-numeric dt-orderable-asc dt-orderable-desc">
+                                                            <div class="dt-column-header"><span
+                                                                    class="dt-column-title">Salary</span><span
+                                                                    class="dt-column-order" role="button"
+                                                                    aria-label="Salary: Activate to sort"
+                                                                    tabindex="0"></span></div>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <colgroup>
+                                                    <col data-dt-column="0" style="width: 232.688px;">
+                                                    <col data-dt-column="1" style="width: 333.862px;">
+                                                    <col data-dt-column="2" style="width: 182.25px;">
+                                                    <col data-dt-column="3" style="width: 73.1px;">
+                                                    <col data-dt-column="4" style="width: 165.05px;">
+                                                    <col data-dt-column="5" style="width: 162.65px;">
+                                                </colgroup>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="dt-scroll-body"
+                                        style="position: relative; overflow: auto; max-height: 320px;">
+                                        <table id="scroll-datatable"
+                                            class="table table-striped dt-responsive nowrap w-100 mb-0 dataTable dtr-inline"
+                                            aria-describedby="scroll-datatable_info" style="width: 100%;">
+                                            <colgroup>
+                                                <col data-dt-column="0" style="width: 232.688px;">
+                                                <col data-dt-column="1" style="width: 333.862px;">
+                                                <col data-dt-column="2" style="width: 182.25px;">
+                                                <col data-dt-column="3" style="width: 73.1px;">
+                                                <col data-dt-column="4" style="width: 165.05px;">
+                                                <col data-dt-column="5" style="width: 162.65px;">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th data-dt-column="0" rowspan="1" colspan="1"
+                                                        class="dt-orderable-asc dt-orderable-desc dt-ordering-asc"
+                                                        aria-sort="ascending">
+                                                        <div class="dt-scroll-sizing">
+                                                            <div class="dt-column-header"><span
+                                                                    class="dt-column-title">Name</span><span
+                                                                    class="dt-column-order" role="button"
+                                                                    aria-label="Name: Activate to invert sorting"
+                                                                    tabindex="0"></span></div>
+                                                        </div>
+                                                    </th>
+                                                    <th data-dt-column="1" rowspan="1" colspan="1"
+                                                        class="dt-orderable-asc dt-orderable-desc">
+                                                        <div class="dt-scroll-sizing">
+                                                            <div class="dt-column-header"><span
+                                                                    class="dt-column-title">Position</span><span
+                                                                    class="dt-column-order" role="button"
+                                                                    aria-label="Position: Activate to sort"
+                                                                    tabindex="0"></span></div>
+                                                        </div>
+                                                    </th>
+                                                    <th data-dt-column="2" rowspan="1" colspan="1"
+                                                        class="dt-orderable-asc dt-orderable-desc">
+                                                        <div class="dt-scroll-sizing">
+                                                            <div class="dt-column-header"><span
+                                                                    class="dt-column-title">Office</span><span
+                                                                    class="dt-column-order" role="button"
+                                                                    aria-label="Office: Activate to sort"
+                                                                    tabindex="0"></span></div>
+                                                        </div>
+                                                    </th>
+                                                    <th data-dt-column="3" rowspan="1" colspan="1"
+                                                        class="dt-type-numeric dt-orderable-asc dt-orderable-desc">
+                                                        <div class="dt-scroll-sizing">
+                                                            <div class="dt-column-header"><span
+                                                                    class="dt-column-title">Age</span><span
+                                                                    class="dt-column-order" role="button"
+                                                                    aria-label="Age: Activate to sort"
+                                                                    tabindex="0"></span></div>
+                                                        </div>
+                                                    </th>
+                                                    <th data-dt-column="4" rowspan="1" colspan="1"
+                                                        class="dt-type-date dt-orderable-asc dt-orderable-desc">
+                                                        <div class="dt-scroll-sizing">
+                                                            <div class="dt-column-header"><span
+                                                                    class="dt-column-title">Start date</span><span
+                                                                    class="dt-column-order" role="button"
+                                                                    aria-label="Start date: Activate to sort"
+                                                                    tabindex="0"></span></div>
+                                                        </div>
+                                                    </th>
+                                                    <th data-dt-column="5" rowspan="1" colspan="1"
+                                                        class="dt-type-numeric dt-orderable-asc dt-orderable-desc">
+                                                        <div class="dt-scroll-sizing">
+                                                            <div class="dt-column-header"><span
+                                                                    class="dt-column-title">Salary</span><span
+                                                                    class="dt-column-order" role="button"
+                                                                    aria-label="Salary: Activate to sort"
+                                                                    tabindex="0"></span></div>
+                                                        </div>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+
+
+
+                                            <tbody>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Airi Satou</td>
+                                                    <td>Accountant</td>
+                                                    <td>Tokyo</td>
+                                                    <td class="dt-type-numeric">33</td>
+                                                    <td class="dt-type-date">2008/11/28</td>
+                                                    <td class="dt-type-numeric">$162,700</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Angelica Ramos</td>
+                                                    <td>Chief Executive Officer (CEO)</td>
+                                                    <td>London</td>
+                                                    <td class="dt-type-numeric">47</td>
+                                                    <td class="dt-type-date">2009/10/09</td>
+                                                    <td class="dt-type-numeric">$1,200,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Ashton Cox</td>
+                                                    <td>Junior Technical Author</td>
+                                                    <td>San Francisco</td>
+                                                    <td class="dt-type-numeric">66</td>
+                                                    <td class="dt-type-date">2009/01/12</td>
+                                                    <td class="dt-type-numeric">$86,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Bradley Greer</td>
+                                                    <td>Software Engineer</td>
+                                                    <td>London</td>
+                                                    <td class="dt-type-numeric">41</td>
+                                                    <td class="dt-type-date">2012/10/13</td>
+                                                    <td class="dt-type-numeric">$132,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Brenden Wagner</td>
+                                                    <td>Software Engineer</td>
+                                                    <td>San Francisco</td>
+                                                    <td class="dt-type-numeric">28</td>
+                                                    <td class="dt-type-date">2011/06/07</td>
+                                                    <td class="dt-type-numeric">$206,850</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Brielle Williamson
+                                                    </td>
+                                                    <td>Integration Specialist</td>
+                                                    <td>New York</td>
+                                                    <td class="dt-type-numeric">61</td>
+                                                    <td class="dt-type-date">2012/12/02</td>
+                                                    <td class="dt-type-numeric">$372,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Bruno Nash</td>
+                                                    <td>Software Engineer</td>
+                                                    <td>London</td>
+                                                    <td class="dt-type-numeric">38</td>
+                                                    <td class="dt-type-date">2011/05/03</td>
+                                                    <td class="dt-type-numeric">$163,500</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Caesar Vance</td>
+                                                    <td>Pre-Sales Support</td>
+                                                    <td>New York</td>
+                                                    <td class="dt-type-numeric">21</td>
+                                                    <td class="dt-type-date">2011/12/12</td>
+                                                    <td class="dt-type-numeric">$106,450</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Cara Stevens</td>
+                                                    <td>Sales Assistant</td>
+                                                    <td>New York</td>
+                                                    <td class="dt-type-numeric">46</td>
+                                                    <td class="dt-type-date">2011/12/06</td>
+                                                    <td class="dt-type-numeric">$145,600</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Cedric Kelly</td>
+                                                    <td>Senior Javascript Developer</td>
+                                                    <td>Edinburgh</td>
+                                                    <td class="dt-type-numeric">22</td>
+                                                    <td class="dt-type-date">2012/03/29</td>
+                                                    <td class="dt-type-numeric">$433,060</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Charde Marshall</td>
+                                                    <td>Regional Director</td>
+                                                    <td>San Francisco</td>
+                                                    <td class="dt-type-numeric">36</td>
+                                                    <td class="dt-type-date">2008/10/16</td>
+                                                    <td class="dt-type-numeric">$470,600</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Colleen Hurst</td>
+                                                    <td>Javascript Developer</td>
+                                                    <td>San Francisco</td>
+                                                    <td class="dt-type-numeric">39</td>
+                                                    <td class="dt-type-date">2009/09/15</td>
+                                                    <td class="dt-type-numeric">$205,500</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Dai Rios</td>
+                                                    <td>Personnel Lead</td>
+                                                    <td>Edinburgh</td>
+                                                    <td class="dt-type-numeric">35</td>
+                                                    <td class="dt-type-date">2012/09/26</td>
+                                                    <td class="dt-type-numeric">$217,500</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Donna Snider</td>
+                                                    <td>Customer Support</td>
+                                                    <td>New York</td>
+                                                    <td class="dt-type-numeric">27</td>
+                                                    <td class="dt-type-date">2011/01/25</td>
+                                                    <td class="dt-type-numeric">$112,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Doris Wilder</td>
+                                                    <td>Sales Assistant</td>
+                                                    <td>Sidney</td>
+                                                    <td class="dt-type-numeric">23</td>
+                                                    <td class="dt-type-date">2010/09/20</td>
+                                                    <td class="dt-type-numeric">$85,600</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Finn Camacho</td>
+                                                    <td>Support Engineer</td>
+                                                    <td>San Francisco</td>
+                                                    <td class="dt-type-numeric">47</td>
+                                                    <td class="dt-type-date">2009/07/07</td>
+                                                    <td class="dt-type-numeric">$87,500</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Fiona Green</td>
+                                                    <td>Chief Operating Officer (COO)</td>
+                                                    <td>San Francisco</td>
+                                                    <td class="dt-type-numeric">48</td>
+                                                    <td class="dt-type-date">2010/03/11</td>
+                                                    <td class="dt-type-numeric">$850,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Garrett Winters</td>
+                                                    <td>Accountant</td>
+                                                    <td>Tokyo</td>
+                                                    <td class="dt-type-numeric">63</td>
+                                                    <td class="dt-type-date">2011/07/25</td>
+                                                    <td class="dt-type-numeric">$170,750</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Gavin Cortez</td>
+                                                    <td>Team Leader</td>
+                                                    <td>San Francisco</td>
+                                                    <td class="dt-type-numeric">22</td>
+                                                    <td class="dt-type-date">2008/10/26</td>
+                                                    <td class="dt-type-numeric">$235,500</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Gavin Joyce</td>
+                                                    <td>Developer</td>
+                                                    <td>Edinburgh</td>
+                                                    <td class="dt-type-numeric">42</td>
+                                                    <td class="dt-type-date">2010/12/22</td>
+                                                    <td class="dt-type-numeric">$92,575</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Gloria Little</td>
+                                                    <td>Systems Administrator</td>
+                                                    <td>New York</td>
+                                                    <td class="dt-type-numeric">59</td>
+                                                    <td class="dt-type-date">2009/04/10</td>
+                                                    <td class="dt-type-numeric">$237,500</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Haley Kennedy</td>
+                                                    <td>Senior Marketing Designer</td>
+                                                    <td>London</td>
+                                                    <td class="dt-type-numeric">43</td>
+                                                    <td class="dt-type-date">2012/12/18</td>
+                                                    <td class="dt-type-numeric">$313,500</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Hermione Butler</td>
+                                                    <td>Regional Director</td>
+                                                    <td>London</td>
+                                                    <td class="dt-type-numeric">47</td>
+                                                    <td class="dt-type-date">2011/03/21</td>
+                                                    <td class="dt-type-numeric">$356,250</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Herrod Chandler</td>
+                                                    <td>Sales Assistant</td>
+                                                    <td>San Francisco</td>
+                                                    <td class="dt-type-numeric">59</td>
+                                                    <td class="dt-type-date">2012/08/06</td>
+                                                    <td class="dt-type-numeric">$137,500</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Hope Fuentes</td>
+                                                    <td>Secretary</td>
+                                                    <td>San Francisco</td>
+                                                    <td class="dt-type-numeric">41</td>
+                                                    <td class="dt-type-date">2010/02/12</td>
+                                                    <td class="dt-type-numeric">$109,850</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Howard Hatfield</td>
+                                                    <td>Office Manager</td>
+                                                    <td>San Francisco</td>
+                                                    <td class="dt-type-numeric">51</td>
+                                                    <td class="dt-type-date">2008/12/16</td>
+                                                    <td class="dt-type-numeric">$164,500</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Jackson Bradshaw</td>
+                                                    <td>Director</td>
+                                                    <td>New York</td>
+                                                    <td class="dt-type-numeric">65</td>
+                                                    <td class="dt-type-date">2008/09/26</td>
+                                                    <td class="dt-type-numeric">$645,750</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Jena Gaines</td>
+                                                    <td>Office Manager</td>
+                                                    <td>London</td>
+                                                    <td class="dt-type-numeric">30</td>
+                                                    <td class="dt-type-date">2008/12/19</td>
+                                                    <td class="dt-type-numeric">$90,560</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Jenette Caldwell</td>
+                                                    <td>Development Lead</td>
+                                                    <td>New York</td>
+                                                    <td class="dt-type-numeric">30</td>
+                                                    <td class="dt-type-date">2011/09/03</td>
+                                                    <td class="dt-type-numeric">$345,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Jennifer Acosta</td>
+                                                    <td>Junior Javascript Developer</td>
+                                                    <td>Edinburgh</td>
+                                                    <td class="dt-type-numeric">43</td>
+                                                    <td class="dt-type-date">2013/02/01</td>
+                                                    <td class="dt-type-numeric">$75,650</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Jennifer Chang</td>
+                                                    <td>Regional Director</td>
+                                                    <td>Singapore</td>
+                                                    <td class="dt-type-numeric">28</td>
+                                                    <td class="dt-type-date">2010/11/14</td>
+                                                    <td class="dt-type-numeric">$357,650</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Jonas Alexander</td>
+                                                    <td>Developer</td>
+                                                    <td>San Francisco</td>
+                                                    <td class="dt-type-numeric">30</td>
+                                                    <td class="dt-type-date">2010/07/14</td>
+                                                    <td class="dt-type-numeric">$86,500</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Lael Greer</td>
+                                                    <td>Systems Administrator</td>
+                                                    <td>London</td>
+                                                    <td class="dt-type-numeric">21</td>
+                                                    <td class="dt-type-date">2009/02/27</td>
+                                                    <td class="dt-type-numeric">$103,500</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Martena Mccray</td>
+                                                    <td>Post-Sales support</td>
+                                                    <td>Edinburgh</td>
+                                                    <td class="dt-type-numeric">46</td>
+                                                    <td class="dt-type-date">2011/03/09</td>
+                                                    <td class="dt-type-numeric">$324,050</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Michael Bruce</td>
+                                                    <td>Javascript Developer</td>
+                                                    <td>Singapore</td>
+                                                    <td class="dt-type-numeric">29</td>
+                                                    <td class="dt-type-date">2011/06/27</td>
+                                                    <td class="dt-type-numeric">$183,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Michael Silva</td>
+                                                    <td>Marketing Designer</td>
+                                                    <td>London</td>
+                                                    <td class="dt-type-numeric">66</td>
+                                                    <td class="dt-type-date">2012/11/27</td>
+                                                    <td class="dt-type-numeric">$198,500</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Michelle House</td>
+                                                    <td>Integration Specialist</td>
+                                                    <td>Sidney</td>
+                                                    <td class="dt-type-numeric">37</td>
+                                                    <td class="dt-type-date">2011/06/02</td>
+                                                    <td class="dt-type-numeric">$95,400</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Olivia Liang</td>
+                                                    <td>Support Engineer</td>
+                                                    <td>Singapore</td>
+                                                    <td class="dt-type-numeric">64</td>
+                                                    <td class="dt-type-date">2011/02/03</td>
+                                                    <td class="dt-type-numeric">$234,500</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Paul Byrd</td>
+                                                    <td>Chief Financial Officer (CFO)</td>
+                                                    <td>New York</td>
+                                                    <td class="dt-type-numeric">64</td>
+                                                    <td class="dt-type-date">2010/06/09</td>
+                                                    <td class="dt-type-numeric">$725,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Prescott Bartlett
+                                                    </td>
+                                                    <td>Technical Author</td>
+                                                    <td>London</td>
+                                                    <td class="dt-type-numeric">27</td>
+                                                    <td class="dt-type-date">2011/05/07</td>
+                                                    <td class="dt-type-numeric">$145,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Quinn Flynn</td>
+                                                    <td>Support Lead</td>
+                                                    <td>Edinburgh</td>
+                                                    <td class="dt-type-numeric">22</td>
+                                                    <td class="dt-type-date">2013/03/03</td>
+                                                    <td class="dt-type-numeric">$342,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Rhona Davidson</td>
+                                                    <td>Integration Specialist</td>
+                                                    <td>Tokyo</td>
+                                                    <td class="dt-type-numeric">55</td>
+                                                    <td class="dt-type-date">2010/10/14</td>
+                                                    <td class="dt-type-numeric">$327,900</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Sakura Yamamoto</td>
+                                                    <td>Support Engineer</td>
+                                                    <td>Tokyo</td>
+                                                    <td class="dt-type-numeric">37</td>
+                                                    <td class="dt-type-date">2009/08/19</td>
+                                                    <td class="dt-type-numeric">$139,575</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Serge Baldwin</td>
+                                                    <td>Data Coordinator</td>
+                                                    <td>Singapore</td>
+                                                    <td class="dt-type-numeric">64</td>
+                                                    <td class="dt-type-date">2012/04/09</td>
+                                                    <td class="dt-type-numeric">$138,575</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Shad Decker</td>
+                                                    <td>Regional Director</td>
+                                                    <td>Edinburgh</td>
+                                                    <td class="dt-type-numeric">51</td>
+                                                    <td class="dt-type-date">2008/11/13</td>
+                                                    <td class="dt-type-numeric">$183,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Shou Itou</td>
+                                                    <td>Regional Marketing</td>
+                                                    <td>Tokyo</td>
+                                                    <td class="dt-type-numeric">20</td>
+                                                    <td class="dt-type-date">2011/08/14</td>
+                                                    <td class="dt-type-numeric">$163,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Sonya Frost</td>
+                                                    <td>Software Engineer</td>
+                                                    <td>Edinburgh</td>
+                                                    <td class="dt-type-numeric">23</td>
+                                                    <td class="dt-type-date">2008/12/13</td>
+                                                    <td class="dt-type-numeric">$103,600</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Suki Burks</td>
+                                                    <td>Developer</td>
+                                                    <td>London</td>
+                                                    <td class="dt-type-numeric">53</td>
+                                                    <td class="dt-type-date">2009/10/22</td>
+                                                    <td class="dt-type-numeric">$114,500</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Tatyana Fitzpatrick
+                                                    </td>
+                                                    <td>Regional Director</td>
+                                                    <td>London</td>
+                                                    <td class="dt-type-numeric">19</td>
+                                                    <td class="dt-type-date">2010/03/17</td>
+                                                    <td class="dt-type-numeric">$385,750</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Thor Walton</td>
+                                                    <td>Developer</td>
+                                                    <td>New York</td>
+                                                    <td class="dt-type-numeric">61</td>
+                                                    <td class="dt-type-date">2013/08/11</td>
+                                                    <td class="dt-type-numeric">$98,540</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Tiger Nixon</td>
+                                                    <td>System Architect</td>
+                                                    <td>Edinburgh</td>
+                                                    <td class="dt-type-numeric">61</td>
+                                                    <td class="dt-type-date">2011/04/25</td>
+                                                    <td class="dt-type-numeric">$320,800</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Timothy Mooney</td>
+                                                    <td>Office Manager</td>
+                                                    <td>London</td>
+                                                    <td class="dt-type-numeric">37</td>
+                                                    <td class="dt-type-date">2008/12/11</td>
+                                                    <td class="dt-type-numeric">$136,200</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Unity Butler</td>
+                                                    <td>Marketing Designer</td>
+                                                    <td>San Francisco</td>
+                                                    <td class="dt-type-numeric">47</td>
+                                                    <td class="dt-type-date">2009/12/09</td>
+                                                    <td class="dt-type-numeric">$85,675</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Vivian Harrell</td>
+                                                    <td>Financial Controller</td>
+                                                    <td>San Francisco</td>
+                                                    <td class="dt-type-numeric">62</td>
+                                                    <td class="dt-type-date">2009/02/14</td>
+                                                    <td class="dt-type-numeric">$452,500</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Yuri Berry</td>
+                                                    <td>Chief Marketing Officer (CMO)</td>
+                                                    <td>New York</td>
+                                                    <td class="dt-type-numeric">40</td>
+                                                    <td class="dt-type-date">2009/06/25</td>
+                                                    <td class="dt-type-numeric">$675,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Zenaida Frank</td>
+                                                    <td>Software Engineer</td>
+                                                    <td>New York</td>
+                                                    <td class="dt-type-numeric">63</td>
+                                                    <td class="dt-type-date">2010/01/04</td>
+                                                    <td class="dt-type-numeric">$125,250</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="sorting_1 dtr-control" tabindex="0">Zorita Serrano</td>
+                                                    <td>Software Engineer</td>
+                                                    <td>San Francisco</td>
+                                                    <td class="dt-type-numeric">56</td>
+                                                    <td class="dt-type-date">2012/06/01</td>
+                                                    <td class="dt-type-numeric">$115,000</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="dt-scroll-foot" style="overflow: hidden; border: 0px; width: 100%;">
+                                        <div class="dt-scroll-footInner">
+                                            <table class="table table-striped dt-responsive nowrap w-100 mb-0 dataTable"
+                                                aria-describedby="scroll-datatable_info" style="margin-left: 0px;">
+                                                <tfoot></tfoot>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-2 justify-content-between">
+                            <div
+                                class="d-md-flex justify-content-between align-items-center dt-layout-start col-md-auto me-auto">
+                                <div class="dt-info" aria-live="polite" id="scroll-datatable_info" role="status">Showing
+                                    1 to 57 of 57 entries</div>
+                            </div>
+                            <div
+                                class="d-md-flex justify-content-between align-items-center dt-layout-end col-md-auto ms-auto">
+                            </div>
+                        </div>
+                        <div class="dt-autosize" style="width: 100%; height: 0px;"></div>
+                    </div>
+
+                </div> <!-- end card body-->
+            </div> <!-- end card -->
+        </div><!-- end col-->
+    </div><!-- end row-->
+
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Complex headers with column visibility</h4>
+                    <p class="text-muted font-14 mb-4">
+                        Complex headers (using <code>colspan</code> / <code>rowspan</code>) can be used to group columns
+                        of similar information in DataTables, creating a very powerful visual effect.
+                    </p>
+
+                    <div id="complex-header-datatable_wrapper" class="dt-container dt-bootstrap5">
+                        <div class="row mt-2 justify-content-between">
+                            <div
+                                class="d-md-flex justify-content-between align-items-center dt-layout-start col-md-auto me-auto">
+                                <div class="dt-length"><select aria-controls="complex-header-datatable"
+                                        class="form-select form-select-sm" id="dt-length-1">
+                                        <option value="10">10</option>
+                                        <option value="25">25</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                    </select><label for="dt-length-1"> entries per page</label></div>
+                            </div>
+                            <div
+                                class="d-md-flex justify-content-between align-items-center dt-layout-end col-md-auto ms-auto">
+                                <div class="dt-search"><label for="dt-search-1">Search:</label><input type="search"
+                                        class="form-control form-control-sm" id="dt-search-1" placeholder=""
+                                        aria-controls="complex-header-datatable"></div>
+                            </div>
+                        </div>
+                        <div class="row mt-2 justify-content-between dt-layout-table">
+                            <div
+                                class="d-md-flex justify-content-between align-items-center col-12 dt-layout-full col-md">
+                                <table id="complex-header-datatable"
+                                    class="table table-striped dt-responsive nowrap mb-0 w-100 dataTable dtr-inline"
+                                    aria-describedby="complex-header-datatable_info" style="width: 100%;">
+                                    <colgroup>
+                                        <col data-dt-column="0" style="width: 183.137px;">
+                                        <col data-dt-column="1" style="width: 262.775px;">
+                                        <col data-dt-column="2" style="width: 161.05px;">
+                                        <col data-dt-column="3" style="width: 156.688px;">
+                                        <col data-dt-column="4" style="width: 150.062px;">
+                                        <col data-dt-column="5" style="width: 251.088px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th rowspan="2"
+                                                class="align-middle dt-orderable-asc dt-orderable-desc dt-ordering-asc"
+                                                data-dt-column="0" colspan="1" aria-sort="ascending">
+                                                <div class="dt-column-header"><span
+                                                        class="dt-column-title">Name</span><span class="dt-column-order"
+                                                        role="button" aria-label="Name: Activate to invert sorting"
+                                                        tabindex="0"></span></div>
+                                            </th>
+                                            <th colspan="2" data-dt-column="1,2" rowspan="1"
+                                                class="dt-orderable-asc dt-orderable-desc">
+                                                <div class="dt-column-header"><span class="dt-column-title">HR
+                                                        Information</span><span class="dt-column-order" role="button"
+                                                        aria-label="Position: Activate to sort" tabindex="0"></span>
+                                                </div>
+                                            </th>
+                                            <th colspan="3" data-dt-column="3,4,5" rowspan="1"
+                                                class="dt-orderable-asc dt-orderable-desc">
+                                                <div class="dt-column-header"><span
+                                                        class="dt-column-title">Contact</span><span
+                                                        class="dt-column-order" role="button"
+                                                        aria-label="Office: Activate to sort" tabindex="0"></span></div>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th data-dt-column="1" rowspan="1" colspan="1"
+                                                class="dt-orderable-asc dt-orderable-desc">
+                                                <div class="dt-column-header"><span
+                                                        class="dt-column-title">Position</span><span
+                                                        class="dt-column-order" role="button"
+                                                        aria-label="Position: Activate to sort" tabindex="0"></span>
+                                                </div>
+                                            </th>
+                                            <th data-dt-column="2" rowspan="1" colspan="1"
+                                                class="dt-type-numeric dt-orderable-asc dt-orderable-desc">
+                                                <div class="dt-column-header"><span
+                                                        class="dt-column-title">Salary</span><span
+                                                        class="dt-column-order" role="button"
+                                                        aria-label="Salary: Activate to sort" tabindex="0"></span></div>
+                                            </th>
+                                            <th data-dt-column="3" rowspan="1" colspan="1"
+                                                class="dt-orderable-asc dt-orderable-desc">
+                                                <div class="dt-column-header"><span
+                                                        class="dt-column-title">Office</span><span
+                                                        class="dt-column-order" role="button"
+                                                        aria-label="Office: Activate to sort" tabindex="0"></span></div>
+                                            </th>
+                                            <th data-dt-column="4" rowspan="1" colspan="1"
+                                                class="dt-type-numeric dt-orderable-asc dt-orderable-desc">
+                                                <div class="dt-column-header"><span
+                                                        class="dt-column-title">Extn.</span><span
+                                                        class="dt-column-order" role="button"
+                                                        aria-label="Extn.: Activate to sort" tabindex="0"></span></div>
+                                            </th>
+                                            <th data-dt-column="5" rowspan="1" colspan="1"
+                                                class="dt-orderable-asc dt-orderable-desc">
+                                                <div class="dt-column-header"><span
+                                                        class="dt-column-title">E-mail</span><span
+                                                        class="dt-column-order" role="button"
+                                                        aria-label="E-mail: Activate to sort" tabindex="0"></span></div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="sorting_1 dtr-control" tabindex="0">Airi Satou</td>
+                                            <td>Accountant</td>
+                                            <td class="dt-type-numeric">$162,700</td>
+                                            <td>Tokyo</td>
+                                            <td class="dt-type-numeric">5407</td>
+                                            <td>a.satou@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sorting_1 dtr-control" tabindex="0">Angelica Ramos</td>
+                                            <td>Chief Executive Officer (CEO)</td>
+                                            <td class="dt-type-numeric">$1,200,000</td>
+                                            <td>London</td>
+                                            <td class="dt-type-numeric">5797</td>
+                                            <td>a.ramos@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sorting_1 dtr-control" tabindex="0">Ashton Cox</td>
+                                            <td>Junior Technical Author</td>
+                                            <td class="dt-type-numeric">$86,000</td>
+                                            <td>San Francisco</td>
+                                            <td class="dt-type-numeric">1562</td>
+                                            <td>a.cox@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sorting_1 dtr-control" tabindex="0">Bradley Greer</td>
+                                            <td>Software Engineer</td>
+                                            <td class="dt-type-numeric">$132,000</td>
+                                            <td>London</td>
+                                            <td class="dt-type-numeric">2558</td>
+                                            <td>b.greer@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sorting_1 dtr-control" tabindex="0">Brenden Wagner</td>
+                                            <td>Software Engineer</td>
+                                            <td class="dt-type-numeric">$206,850</td>
+                                            <td>San Francisco</td>
+                                            <td class="dt-type-numeric">1314</td>
+                                            <td>b.wagner@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sorting_1 dtr-control" tabindex="0">Brielle Williamson</td>
+                                            <td>Integration Specialist</td>
+                                            <td class="dt-type-numeric">$372,000</td>
+                                            <td>New York</td>
+                                            <td class="dt-type-numeric">4804</td>
+                                            <td>b.williamson@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sorting_1 dtr-control" tabindex="0">Bruno Nash</td>
+                                            <td>Software Engineer</td>
+                                            <td class="dt-type-numeric">$163,500</td>
+                                            <td>London</td>
+                                            <td class="dt-type-numeric">6222</td>
+                                            <td>b.nash@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sorting_1 dtr-control" tabindex="0">Caesar Vance</td>
+                                            <td>Pre-Sales Support</td>
+                                            <td class="dt-type-numeric">$106,450</td>
+                                            <td>New York</td>
+                                            <td class="dt-type-numeric">8330</td>
+                                            <td>c.vance@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sorting_1 dtr-control" tabindex="0">Cara Stevens</td>
+                                            <td>Sales Assistant</td>
+                                            <td class="dt-type-numeric">$145,600</td>
+                                            <td>New York</td>
+                                            <td class="dt-type-numeric">3990</td>
+                                            <td>c.stevens@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sorting_1 dtr-control" tabindex="0">Cedric Kelly</td>
+                                            <td>Senior Javascript Developer</td>
+                                            <td class="dt-type-numeric">$433,060</td>
+                                            <td>Edinburgh</td>
+                                            <td class="dt-type-numeric">6224</td>
+                                            <td>c.kelly@datatables.net</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th data-dt-column="0" rowspan="1" colspan="1">
+                                                <div class="dt-column-footer"><span class="dt-column-title">Name</span>
+                                                </div>
+                                            </th>
+                                            <th data-dt-column="1" rowspan="1" colspan="1">
+                                                <div class="dt-column-footer"><span
+                                                        class="dt-column-title">Position</span></div>
+                                            </th>
+                                            <th data-dt-column="2" rowspan="1" colspan="1" class="dt-type-numeric">
+                                                <div class="dt-column-footer"><span
+                                                        class="dt-column-title">Salary</span></div>
+                                            </th>
+                                            <th data-dt-column="3" rowspan="1" colspan="1">
+                                                <div class="dt-column-footer"><span
+                                                        class="dt-column-title">Office</span></div>
+                                            </th>
+                                            <th data-dt-column="4" rowspan="1" colspan="1" class="dt-type-numeric">
+                                                <div class="dt-column-footer"><span class="dt-column-title">Extn.</span>
+                                                </div>
+                                            </th>
+                                            <th data-dt-column="5" rowspan="1" colspan="1">
+                                                <div class="dt-column-footer"><span
+                                                        class="dt-column-title">E-mail</span></div>
+                                            </th>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="row mt-2 justify-content-between">
+                            <div
+                                class="d-md-flex justify-content-between align-items-center dt-layout-start col-md-auto me-auto">
+                                <div class="dt-info" aria-live="polite" id="complex-header-datatable_info"
+                                    role="status">Showing 1 to 10 of 57 entries</div>
+                            </div>
+                            <div
+                                class="d-md-flex justify-content-between align-items-center dt-layout-end col-md-auto ms-auto">
+                                <div class="dt-paging">
+                                    <nav aria-label="pagination">
+                                        <ul class="pagination">
+                                            <li class="dt-paging-button page-item disabled"><button
+                                                    class="page-link first" role="link" type="button"
+                                                    aria-controls="complex-header-datatable" aria-disabled="true"
+                                                    aria-label="First" data-dt-idx="first" tabindex="-1"><i
+                                                        class="ri-arrow-left-double-line align-middle"></i></button>
+                                            </li>
+                                            <li class="dt-paging-button page-item disabled"><button
+                                                    class="page-link previous" role="link" type="button"
+                                                    aria-controls="complex-header-datatable" aria-disabled="true"
+                                                    aria-label="Previous" data-dt-idx="previous" tabindex="-1"><i
+                                                        class="ri-arrow-left-s-line align-middle"></i></button></li>
+                                            <li class="dt-paging-button page-item active"><button class="page-link"
+                                                    role="link" type="button" aria-controls="complex-header-datatable"
+                                                    aria-current="page" data-dt-idx="0">1</button></li>
+                                            <li class="dt-paging-button page-item"><button class="page-link" role="link"
+                                                    type="button" aria-controls="complex-header-datatable"
+                                                    data-dt-idx="1">2</button></li>
+                                            <li class="dt-paging-button page-item"><button class="page-link" role="link"
+                                                    type="button" aria-controls="complex-header-datatable"
+                                                    data-dt-idx="2">3</button></li>
+                                            <li class="dt-paging-button page-item"><button class="page-link" role="link"
+                                                    type="button" aria-controls="complex-header-datatable"
+                                                    data-dt-idx="3">4</button></li>
+                                            <li class="dt-paging-button page-item"><button class="page-link" role="link"
+                                                    type="button" aria-controls="complex-header-datatable"
+                                                    data-dt-idx="4">5</button></li>
+                                            <li class="dt-paging-button page-item"><button class="page-link" role="link"
+                                                    type="button" aria-controls="complex-header-datatable"
+                                                    data-dt-idx="5">6</button></li>
+                                            <li class="dt-paging-button page-item"><button class="page-link next"
+                                                    role="link" type="button" aria-controls="complex-header-datatable"
+                                                    aria-label="Next" data-dt-idx="next"><i
+                                                        class="ri-arrow-right-s-line align-middle"></i></button></li>
+                                            <li class="dt-paging-button page-item"><button class="page-link last"
+                                                    role="link" type="button" aria-controls="complex-header-datatable"
+                                                    aria-label="Last" data-dt-idx="last"><i
+                                                        class="ri-arrow-right-double-line align-middle"></i></button>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dt-autosize" style="width: 100%; height: 0px;"></div>
+                    </div>
+
+                </div> <!-- end card body-->
+            </div> <!-- end card -->
+        </div><!-- end col-->
+    </div> <!-- end row-->
+
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Fixed Header</h4>
+                    <p class="text-muted font-14 mb-4">
+                        The FixedHeader will freeze in place the header and/or footer in a DataTable, ensuring that
+                        title information will remain always visible.
+                    </p>
+
+                    <div id="fixed-header-datatable_wrapper" class="dt-container dt-bootstrap5">
+                        <div class="row mt-2 justify-content-between">
+                            <div
+                                class="d-md-flex justify-content-between align-items-center dt-layout-start col-md-auto me-auto">
+                                <div class="dt-length"><select aria-controls="fixed-header-datatable"
+                                        class="form-select form-select-sm" id="dt-length-3">
+                                        <option value="10">10</option>
+                                        <option value="25">25</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                    </select><label for="dt-length-3"> entries per page</label></div>
+                            </div>
+                            <div
+                                class="d-md-flex justify-content-between align-items-center dt-layout-end col-md-auto ms-auto">
+                                <div class="dt-search"><label for="dt-search-5">Search:</label><input type="search"
+                                        class="form-control form-control-sm" id="dt-search-5" placeholder=""
+                                        aria-controls="fixed-header-datatable"></div>
+                            </div>
+                        </div>
+                        <div class="row mt-2 justify-content-between dt-layout-table">
+                            <div
+                                class="d-md-flex justify-content-between align-items-center col-12 dt-layout-full col-md">
+                                <table id="fixed-header-datatable"
+                                    class="table table-striped dt-responsive nowrap mb-0 table-striped w-100 dataTable dtr-inline"
+                                    aria-describedby="fixed-header-datatable_info" style="width: 100%;">
+                                    <colgroup>
+                                        <col data-dt-column="0" style="width: 194.6px;">
+                                        <col data-dt-column="1" style="width: 279.212px;">
+                                        <col data-dt-column="2" style="width: 166.488px;">
+                                        <col data-dt-column="3" style="width: 150.688px;">
+                                        <col data-dt-column="4" style="width: 202.663px;">
+                                        <col data-dt-column="5" style="width: 171.15px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th data-dt-column="0" rowspan="1" colspan="1"
+                                                class="dt-orderable-asc dt-orderable-desc dt-ordering-asc"
+                                                aria-sort="ascending">
+                                                <div class="dt-column-header"><span
+                                                        class="dt-column-title">Name</span><span class="dt-column-order"
+                                                        role="button" aria-label="Name: Activate to invert sorting"
+                                                        tabindex="0"></span></div>
+                                            </th>
+                                            <th data-dt-column="1" rowspan="1" colspan="1"
+                                                class="dt-orderable-asc dt-orderable-desc">
+                                                <div class="dt-column-header"><span
+                                                        class="dt-column-title">Position</span><span
+                                                        class="dt-column-order" role="button"
+                                                        aria-label="Position: Activate to sort" tabindex="0"></span>
+                                                </div>
+                                            </th>
+                                            <th data-dt-column="2" rowspan="1" colspan="1"
+                                                class="dt-orderable-asc dt-orderable-desc">
+                                                <div class="dt-column-header"><span
+                                                        class="dt-column-title">Office</span><span
+                                                        class="dt-column-order" role="button"
+                                                        aria-label="Office: Activate to sort" tabindex="0"></span></div>
+                                            </th>
+                                            <th data-dt-column="3" rowspan="1" colspan="1"
+                                                class="dt-type-numeric dt-orderable-asc dt-orderable-desc">
+                                                <div class="dt-column-header"><span
+                                                        class="dt-column-title">Age</span><span class="dt-column-order"
+                                                        role="button" aria-label="Age: Activate to sort"
+                                                        tabindex="0"></span></div>
+                                            </th>
+                                            <th data-dt-column="4" rowspan="1" colspan="1"
+                                                class="dt-type-date dt-orderable-asc dt-orderable-desc">
+                                                <div class="dt-column-header"><span class="dt-column-title">Start
+                                                        date</span><span class="dt-column-order" role="button"
+                                                        aria-label="Start date: Activate to sort" tabindex="0"></span>
+                                                </div>
+                                            </th>
+                                            <th data-dt-column="5" rowspan="1" colspan="1"
+                                                class="dt-type-numeric dt-orderable-asc dt-orderable-desc">
+                                                <div class="dt-column-header"><span
+                                                        class="dt-column-title">Salary</span><span
+                                                        class="dt-column-order" role="button"
+                                                        aria-label="Salary: Activate to sort" tabindex="0"></span></div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <td class="sorting_1 dtr-control" tabindex="0">Airi Satou</td>
+                                            <td>Accountant</td>
+                                            <td>Tokyo</td>
+                                            <td class="dt-type-numeric">33</td>
+                                            <td class="dt-type-date">2008/11/28</td>
+                                            <td class="dt-type-numeric">$162,700</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sorting_1 dtr-control" tabindex="0">Angelica Ramos</td>
+                                            <td>Chief Executive Officer (CEO)</td>
+                                            <td>London</td>
+                                            <td class="dt-type-numeric">47</td>
+                                            <td class="dt-type-date">2009/10/09</td>
+                                            <td class="dt-type-numeric">$1,200,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sorting_1 dtr-control" tabindex="0">Ashton Cox</td>
+                                            <td>Junior Technical Author</td>
+                                            <td>San Francisco</td>
+                                            <td class="dt-type-numeric">66</td>
+                                            <td class="dt-type-date">2009/01/12</td>
+                                            <td class="dt-type-numeric">$86,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sorting_1 dtr-control" tabindex="0">Bradley Greer</td>
+                                            <td>Software Engineer</td>
+                                            <td>London</td>
+                                            <td class="dt-type-numeric">41</td>
+                                            <td class="dt-type-date">2012/10/13</td>
+                                            <td class="dt-type-numeric">$132,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sorting_1 dtr-control" tabindex="0">Brenden Wagner</td>
+                                            <td>Software Engineer</td>
+                                            <td>San Francisco</td>
+                                            <td class="dt-type-numeric">28</td>
+                                            <td class="dt-type-date">2011/06/07</td>
+                                            <td class="dt-type-numeric">$206,850</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sorting_1 dtr-control" tabindex="0">Brielle Williamson</td>
+                                            <td>Integration Specialist</td>
+                                            <td>New York</td>
+                                            <td class="dt-type-numeric">61</td>
+                                            <td class="dt-type-date">2012/12/02</td>
+                                            <td class="dt-type-numeric">$372,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sorting_1 dtr-control" tabindex="0">Bruno Nash</td>
+                                            <td>Software Engineer</td>
+                                            <td>London</td>
+                                            <td class="dt-type-numeric">38</td>
+                                            <td class="dt-type-date">2011/05/03</td>
+                                            <td class="dt-type-numeric">$163,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sorting_1 dtr-control" tabindex="0">Caesar Vance</td>
+                                            <td>Pre-Sales Support</td>
+                                            <td>New York</td>
+                                            <td class="dt-type-numeric">21</td>
+                                            <td class="dt-type-date">2011/12/12</td>
+                                            <td class="dt-type-numeric">$106,450</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sorting_1 dtr-control" tabindex="0">Cara Stevens</td>
+                                            <td>Sales Assistant</td>
+                                            <td>New York</td>
+                                            <td class="dt-type-numeric">46</td>
+                                            <td class="dt-type-date">2011/12/06</td>
+                                            <td class="dt-type-numeric">$145,600</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sorting_1 dtr-control" tabindex="0">Cedric Kelly</td>
+                                            <td>Senior Javascript Developer</td>
+                                            <td>Edinburgh</td>
+                                            <td class="dt-type-numeric">22</td>
+                                            <td class="dt-type-date">2012/03/29</td>
+                                            <td class="dt-type-numeric">$433,060</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sorting_1 dtr-control" tabindex="0">Charde Marshall</td>
+                                            <td>Regional Director</td>
+                                            <td>San Francisco</td>
+                                            <td class="dt-type-numeric">36</td>
+                                            <td class="dt-type-date">2008/10/16</td>
+                                            <td class="dt-type-numeric">$470,600</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sorting_1 dtr-control" tabindex="0">Colleen Hurst</td>
+                                            <td>Javascript Developer</td>
+                                            <td>San Francisco</td>
+                                            <td class="dt-type-numeric">39</td>
+                                            <td class="dt-type-date">2009/09/15</td>
+                                            <td class="dt-type-numeric">$205,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sorting_1 dtr-control" tabindex="0">Dai Rios</td>
+                                            <td>Personnel Lead</td>
+                                            <td>Edinburgh</td>
+                                            <td class="dt-type-numeric">35</td>
+                                            <td class="dt-type-date">2012/09/26</td>
+                                            <td class="dt-type-numeric">$217,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sorting_1 dtr-control" tabindex="0">Donna Snider</td>
+                                            <td>Customer Support</td>
+                                            <td>New York</td>
+                                            <td class="dt-type-numeric">27</td>
+                                            <td class="dt-type-date">2011/01/25</td>
+                                            <td class="dt-type-numeric">$112,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sorting_1 dtr-control" tabindex="0">Doris Wilder</td>
+                                            <td>Sales Assistant</td>
+                                            <td>Sidney</td>
+                                            <td class="dt-type-numeric">23</td>
+                                            <td class="dt-type-date">2010/09/20</td>
+                                            <td class="dt-type-numeric">$85,600</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th data-dt-column="0" rowspan="1" colspan="1">
+                                                <div class="dt-column-footer"><span class="dt-column-title">Name</span>
+                                                </div>
+                                            </th>
+                                            <th data-dt-column="1" rowspan="1" colspan="1">
+                                                <div class="dt-column-footer"><span
+                                                        class="dt-column-title">Position</span></div>
+                                            </th>
+                                            <th data-dt-column="2" rowspan="1" colspan="1">
+                                                <div class="dt-column-footer"><span
+                                                        class="dt-column-title">Office</span></div>
+                                            </th>
+                                            <th data-dt-column="3" rowspan="1" colspan="1" class="dt-type-numeric">
+                                                <div class="dt-column-footer"><span class="dt-column-title">Age</span>
+                                                </div>
+                                            </th>
+                                            <th data-dt-column="4" rowspan="1" colspan="1" class="dt-type-date">
+                                                <div class="dt-column-footer"><span class="dt-column-title">Start
+                                                        date</span></div>
+                                            </th>
+                                            <th data-dt-column="5" rowspan="1" colspan="1" class="dt-type-numeric">
+                                                <div class="dt-column-footer"><span
+                                                        class="dt-column-title">Salary</span></div>
+                                            </th>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="row mt-2 justify-content-between">
+                            <div
+                                class="d-md-flex justify-content-between align-items-center dt-layout-start col-md-auto me-auto">
+                                <div class="dt-info" aria-live="polite" id="fixed-header-datatable_info" role="status">
+                                    Showing 1 to 15 of 57 entries</div>
+                            </div>
+                            <div
+                                class="d-md-flex justify-content-between align-items-center dt-layout-end col-md-auto ms-auto">
+                                <div class="dt-paging">
+                                    <nav aria-label="pagination">
+                                        <ul class="pagination">
+                                            <li class="dt-paging-button page-item disabled"><button
+                                                    class="page-link first" role="link" type="button"
+                                                    aria-controls="fixed-header-datatable" aria-disabled="true"
+                                                    aria-label="First" data-dt-idx="first" tabindex="-1"><i
+                                                        class="ri-arrow-left-double-line align-middle"></i></button>
+                                            </li>
+                                            <li class="dt-paging-button page-item disabled"><button
+                                                    class="page-link previous" role="link" type="button"
+                                                    aria-controls="fixed-header-datatable" aria-disabled="true"
+                                                    aria-label="Previous" data-dt-idx="previous" tabindex="-1"><i
+                                                        class="ri-arrow-left-s-line align-middle"></i></button></li>
+                                            <li class="dt-paging-button page-item active"><button class="page-link"
+                                                    role="link" type="button" aria-controls="fixed-header-datatable"
+                                                    aria-current="page" data-dt-idx="0">1</button></li>
+                                            <li class="dt-paging-button page-item"><button class="page-link" role="link"
+                                                    type="button" aria-controls="fixed-header-datatable"
+                                                    data-dt-idx="1">2</button></li>
+                                            <li class="dt-paging-button page-item"><button class="page-link" role="link"
+                                                    type="button" aria-controls="fixed-header-datatable"
+                                                    data-dt-idx="2">3</button></li>
+                                            <li class="dt-paging-button page-item"><button class="page-link" role="link"
+                                                    type="button" aria-controls="fixed-header-datatable"
+                                                    data-dt-idx="3">4</button></li>
+                                            <li class="dt-paging-button page-item"><button class="page-link next"
+                                                    role="link" type="button" aria-controls="fixed-header-datatable"
+                                                    aria-label="Next" data-dt-idx="next"><i
+                                                        class="ri-arrow-right-s-line align-middle"></i></button></li>
+                                            <li class="dt-paging-button page-item"><button class="page-link last"
+                                                    role="link" type="button" aria-controls="fixed-header-datatable"
+                                                    aria-label="Last" data-dt-idx="last"><i
+                                                        class="ri-arrow-right-double-line align-middle"></i></button>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dt-autosize" style="width: 100%; height: 0px;"></div>
+                    </div>
+                </div> <!-- end card body-->
+            </div> <!-- end card -->
+        </div><!-- end col-->
+    </div> <!-- end row-->
+</div>
