@@ -32,7 +32,8 @@
 ************** LAYOUT ******************
 ****************************************/
 
-/*----------- Display -----------------*/
+/*----------- display -----------------*/
+.block { display: block; }
 .flex { display: flex; }
 .hidden { display: none; }
 
@@ -41,7 +42,10 @@
   .lg\:flex { display: flex; }
 }
 
-/*----------- Position -----------------*/
+/*----------- overflow -----------------*/
+.overflow-hidden { overflow: hidden; }
+
+/*----------- position -----------------*/
 .sticky { position: sticky; }
 .relative { position: relative; }
 
@@ -78,17 +82,44 @@
 
 
 /***************************************
+************ SIZING ************
+****************************************/
+
+/*---------- Height -------------*/
+.h-auto { height: auto; }
+.h-0 { height: calc(var(--spacing) * 0); }
+.h-5 { height: calc(var(--spacing) * 5); }
+.h-full { height: 100%; }
+
+
+
+/***************************************
 *************** SPACING ****************
 ****************************************/
 
-/*---------------- Margin ------------------*/
+/*---------------- margin ------------------*/
 /*
 .mb-1 { margin-bottom: var(--spacing); }
 .mb-2 { margin-bottom: calc(var(--spacing) * 2); }
 .mb-3 { margin-bottom: calc(var(--spacing) * 3); }*/
 
+.m-0 { margin: calc(var(--spacing) * 0); }
+
 .my-0 { margin-top: calc(var(--spacing) * 0); margin-bottom: calc(var(--spacing) * 0); }
 
-.mx-auto {
-    margin-inline: auto;
-}
+.mx-auto { margin-inline: auto; }
+
+
+
+/***************************************
+************* TYPOGRAPHY **************
+****************************************/
+
+/*----------- vartical-align -----------------*/
+.align-middle { vertical-align: middle; }
+
+/*----------- line-height -----------------*/
+.leading-\[1\.5rem\] { line-height: 1.5; }
+
+/*----------- font-size -----------------*/
+.text-\[0\.9rem\] { font-size: 0.9rem; }

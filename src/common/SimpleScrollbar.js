@@ -1,170 +1,77 @@
 export class SimpleScrollbar {
-    constructor(container) {
-        this.container = typeof container === "string"
-            ? document.querySelector(container)
-            : container;
+  constructor(view, thumb) {
+    this.view = view;
+    this.thumb = thumb;
+    this.isDragging = false;
+    this.startY = 0;
+    this.startScrollTop = 0;
 
-        if (!this.container) throw new Error("Container not found");
+    this.thumb.addEventListener('mousedown', (e) => {
+        this.isDragging = true;
+        this.startY = e.pageY;
+        this.startScrollTop = this.view.scrollTop;
+        
+        // DEZACTIVĂM tranziția de 1s în timpul drag-ului pentru a nu avea lag
+        this.thumb.style.transition = 'opacity 1s ease, transform 0s'; 
+        document.body.classList.add('is-dragging'); // Opțional: blocăm selecția textului
+        e.preventDefault();
+    });
 
-        // 1️⃣ Creăm wrapper-ul în jurul lui menu-inner
-        this.wrapper = document.createElement("div");
-        this.wrapper.className = "ss-content";
-        Object.assign(this.wrapper.style, {
-            position: "relative",
-            width: "100%",
-            height: "100%",
-            overflow: "hidden",
-        });
+    window.addEventListener('mousemove', (e) => {
+        if (!this.isDragging) return;
+        
+        const deltaY = e.pageY - this.startY;
+        const thumbHeight = this.thumb.offsetHeight;
+        const scrollableHeight = this.view.scrollHeight - this.view.clientHeight;
+        const trackHeight = this.view.clientHeight - thumbHeight;
 
-        const parent = this.container.parentNode;
-        parent.insertBefore(this.wrapper, this.container);
-        this.wrapper.appendChild(this.container);
+        // Calculăm noul scroll
+        const scrollMove = (deltaY / trackHeight) * scrollableHeight;
+        this.view.scrollTop = this.startScrollTop + scrollMove;
+    });
 
-        // 2️⃣ Creare track
-        this.track = document.createElement("div");
-        this.track.className = "ss-track";
-        Object.assign(this.track.style, {
-            position: "absolute",
-            top: "0",
-            right: "2px",
-            width: "3px",
-            bottom: "0",
-            background: "transparent",
-            borderRadius: "4px",
-            opacity: "1",
-            transition: "background-color 0.3s, width 0.3s",
-        });
-        this.wrapper.appendChild(this.track);
+    window.addEventListener('mouseup', () => {
+        if (this.isDragging) {
+           this.isDragging = false;
+            
+            // 1. Ștergem stilul inline pentru a lăsa CSS-ul să preia controlul
+            this.thumb.style.opacity = ''; 
+            
+            // 2. Reactivăm tranziția de 1s
+            this.thumb.style.transition = 'opacity 1s ease';
+            
+            document.body.classList.remove('is-dragging');
+        }
+    });
 
-        // 3️⃣ Creare thumb
-        this.thumb = document.createElement("div");
-        this.thumb.className = "ss-thumb";
-        Object.assign(this.thumb.style, {
-            position: "absolute",
-            left: "0",
-            width: "100%",
-            background: "var(--bs-gray-400)",
-            borderRadius: "4px",
-            cursor: "pointer",
-            opacity: "0",
-            transition: "background-color 0.3s, opacity 0.3s",
-        });
-        this.track.appendChild(this.thumb);
+    this.view.addEventListener('scroll', this.syncThumb);
+    window.addEventListener('resize', this.syncThumb);
 
-        // Variabile scroll
-        this.scrollTop = 0;
-        this.maxScroll = 0;
-        this.thumbHeight = 0;
-        this.dragging = false;
-        this.dragStartY = 0;
-        this.dragStartScroll = 0;
+    // ACESTA ESTE APELUL CARE O FACE SĂ APARĂ LA ÎNCEPUT:
+    this.syncThumb();
 
-        // 4️⃣ Evenimente
-        this._bindEvents();
+    setTimeout(this.syncThumb, 100);
+  }
 
-        // 5️⃣ Inițializare
-        this.update();
-    }
+  syncThumb = () => {
+  // Verificăm dacă e nevoie de scroll
+        if (this.view.scrollHeight <= this.view.clientHeight) {
+            this.thumb.style.opacity = "0"; // Ascundem bara dacă nu e conținut destul
+            return;
+        }
 
-    _bindEvents() {
-        // Wheel scroll
-        this.wrapper.addEventListener("wheel", e => {
-            e.preventDefault();
-            this.scrollTo(this.scrollTop + e.deltaY);
-        });
-
-        // Drag start
-        this.thumb.addEventListener("mousedown", e => {
-            this.dragging = true;
-            this.dragStartY = e.clientY;
-            this.dragStartScroll = this.scrollTop;
-            document.body.style.userSelect = "none";
-
-            this.track.style.width = "6px";
-            this.thumb.style.background = "var(--bs-gray-700)";
-        });
-
-        // Drag move
-        document.addEventListener("mousemove", e => {
-            if (!this.dragging) return;
-            const delta = e.clientY - this.dragStartY;
-            const ratio = this.maxScroll / (this.track.clientHeight - this.thumbHeight);
-            this.scrollTo(this.dragStartScroll + delta * ratio);
-        });
-
-        // Drag end
-        document.addEventListener("mouseup", () => {
-            if (this.dragging) {
-                this.dragging = false;
-                document.body.style.userSelect = "";
-            }
-            if (!this.track.matches(":hover")) {
-                this.track.style.width = "3px";
-                this.thumb.style.background = "var(--bs-gray-400)";
-            }
-        });
-
-        // Hover container
-        this.wrapper.addEventListener("mouseenter", () => {
-            this.thumb.style.opacity = "0.75";
-            this.thumb.style.background = "var(--bs-gray-400)";
-            this.track.style.background = "transparent";
-        });
-        this.wrapper.addEventListener("mouseleave", () => {
-            if (!this.dragging) {
-                this.thumb.style.opacity = "0";
-                this.track.style.background = "transparent";
-            }
-        });
-
-        // Hover track
-        this.track.addEventListener("mouseenter", () => {
-            this.track.style.background = "rgba(0,0,0,0.05)";
-            this.thumb.style.opacity = "0.9";
-            this.thumb.style.background = "var(--bs-gray-700)";
-            this.track.style.width = "6px";
-        });
-        this.track.addEventListener("mouseleave", () => {
-            if (!this.dragging) {
-                this.track.style.width = "3px";
-                this.track.style.background = "transparent";
-                this.thumb.style.background = "var(--bs-gray-400)";
-                this.thumb.style.opacity = "0.75";
-            }
-        });
-
-        // Resize observer
-        new ResizeObserver(() => this.update()).observe(this.wrapper);
-        new ResizeObserver(() => this.update()).observe(this.container);
-    }
-
-    update() {
-        const wrapperHeight = this.wrapper.clientHeight;
-        const contentHeight = this.container.scrollHeight;
-
-        this.maxScroll = Math.max(0, contentHeight - wrapperHeight);
-
-        this.thumbHeight = Math.max(
-            20,
-            (wrapperHeight / contentHeight) * this.track.clientHeight
-        );
-
-        this.thumb.style.height = this.thumbHeight + "px";
-        this.scrollTo(this.scrollTop);
-    }
-
-    scrollTo(y) {
-        this.scrollTop = Math.min(Math.max(0, y), this.maxScroll);
-        this.container.style.transform = `translateY(${-this.scrollTop}px)`;
-
-        const trackHeight = this.track.clientHeight - this.thumbHeight;
-        const thumbOffset = (this.scrollTop / this.maxScroll) * trackHeight;
-        this.thumb.style.top = `${thumbOffset}px`;
-    }
-
-    destroy() {
-        this.track.remove();
-        this.wrapper.replaceWith(this.container);
-        this.container.style.transform = "";
-    }
+        // Calculăm proporția
+        const scrollRatio = this.view.scrollTop / (this.view.scrollHeight - this.view.clientHeight);
+        const thumbHeight = Math.max((this.view.clientHeight / this.view.scrollHeight) * this.view.clientHeight, 40);
+        
+        this.thumb.style.height = `${thumbHeight}px`;
+        
+        // Mutăm bara
+        const moveMax = this.view.clientHeight - thumbHeight;
+        const translateY = scrollRatio * moveMax;
+        
+        this.thumb.style.transform = `translateY(${translateY}px)`;
+        this.thumb.style.opacity = this.isDragging ? "1" : "0.1"; // Menținem opacitatea în funcție de stare
+    };
+  
 }

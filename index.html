@@ -22,12 +22,13 @@
     <link rel="preload" href="/css/layout.css" as="style" onload="this.rel='stylesheet'">
     <link rel="preload" href="/css/fonts.css" as="style" onload="this.rel='stylesheet'">
     <link rel="preload" href="/css/menu.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="/css/sidebar.css" as="style" onload="this.rel='stylesheet'">
     <link rel="preload" href="/css/topbar.css" as="style" onload="this.rel='stylesheet'">
     <link rel="preload" href="/css/apex-charts.css" as="style" onload="this.rel='stylesheet'">
     <link rel="preload" href="/css/perfect-scrollbar.css" as="style" onload="this.rel='stylesheet'">
   
 </head>
-<body>
+<body class="m-0 text-[0.9rem] leading-[1.5rem]">
     <div id="app">
         <router-view></router-view>
     </app>
@@ -40,7 +41,6 @@
     <link rel="modulepreload" href="/src/uikit/button/button.js">
 
     <script src="/src/routes.js" type="module"></script>
-    <script src="/js/bootstrap.bundle.min.js"></script>
     <script src="/js/helpers.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {

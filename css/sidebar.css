@@ -1,0 +1,171 @@
+.leftside-menu-light {
+    --menu-bg: white;
+    --menu-item-color: #6c757d;
+    --menu-item-active-color: #727cf5;
+}
+
+.leftside-menu-dark {
+    --menu-bg: white;
+}
+
+.leftside-menu {
+    z-index: 1000;
+    bottom: 0;
+    top: 0;
+    position: fixed;
+    width: 260px;
+    padding-bottom: calc(60px + .75rem);
+    background: var(--menu-bg);
+    box-shadow: 0px 0px 35px 0px rgba(154, 161, 171, 0.15);
+    transition: width .25s ease-in-out, margin-left .25s ease-in-out;
+}
+
+.logo {
+    top: 0;
+    position: sticky;
+    text-align: center;
+    line-height: 70px;
+    padding: 0 calc(70px * .5 - 22px * .7);
+    transition: all .25s ease-in-out;
+}
+
+.side-nav .side-nav-title {
+    letter-spacing: .05em;
+    pointer-events: none;
+    cursor: default;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: var(--menu-item-color);
+    font-weight: 700;
+    font-size: calc(0.9375rem * .74);
+    padding: 10px calc(10px * 2.5);
+}
+
+.side-nav {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.side-nav .side-nav-link {
+    display: block;
+    list-style: none;
+    position: relative;
+    white-space: nowrap;
+    transition: all .25s ease-in-out;
+    font-size: 0.9375rem;
+    padding: 10px 10px;
+    color: var(--menu-item-color)
+}
+
+.side-nav .menuitem-active>a {
+    color: var(--menu-item-active-color);
+    font-weight: 500;
+}
+
+.side-nav .side-nav-link i {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    width: calc(70px - 10px * 2.5);
+    min-width: calc(70px - 10px * 2.5);
+}
+
+.side-nav .side-nav-link span {
+    vertical-align: middle;
+}
+
+.side-nav .side-nav-link span {
+    vertical-align: middle;
+}
+
+.side-nav .badge {
+    margin-top: calc(0.9375rem * .25);
+    position: absolute;
+    right: 0;
+    margin-right: calc(10px * 3);
+}
+
+a {
+    text-decoration: none;
+}
+
+.side-nav ul {
+    list-style-type: none;
+}
+
+.side-nav-second-level {
+    margin-top: calc(10px * -.5);
+    padding-left: calc(70px - 10px * 2.5);
+}
+
+.side-nav-forth-level .side-nav-item .side-nav-link, .side-nav-forth-level .side-nav-item a, .side-nav-forth-level li .side-nav-link, .side-nav-forth-level li a, .side-nav-second-level .side-nav-item .side-nav-link, .side-nav-second-level .side-nav-item a, .side-nav-second-level li .side-nav-link, .side-nav-second-level li a, .side-nav-third-level .side-nav-item .side-nav-link, .side-nav-third-level .side-nav-item a, .side-nav-third-level li .side-nav-link, .side-nav-third-level li a {
+    color: var(--menu-item-color);
+    display: block;
+    position: relative;
+    -webkit-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+    font-size: calc(0.9375rem * .95);
+    padding: calc(10px * .6) calc(10px * 1.5);
+}
+
+.side-nav .side-nav-link span {
+    vertical-align: middle;
+}
+
+.side-nav .menu-arrow {
+    display: inline-block;
+    text-rendering: auto;
+    position: absolute;
+    top: 50%;
+    right: calc(10px * 1.5);
+    transition: transform .15s;
+    transform: translate(-50%, -50%);
+    line-height: 1.2rem;
+    font-size: calc(0.9375rem * 1.18);
+}
+
+.side-nav .menu-arrow:before {
+    content: "\f0142";
+    font-family: "Material Design Icons";
+}
+
+.collapse {
+    transition: height 0.3s ease;
+}
+
+[data-simplebar] {
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.side-nav-link:hover {
+    cursor: pointer;
+}
+
+ol ol, ol ul, ul ol, ul ul {
+    margin-bottom: 0;
+}
+
+.side-nav-third-level {
+    padding-left: calc(10px * 2);
+}

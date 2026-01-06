@@ -2,3 +2,249 @@
     height: 100%;
     width: 100%;
 }
+
+body {
+    background-color: #fafbfe;
+    color: #6c757d;
+}
+
+.content-page {
+    position: relative;
+    margin-left: 260px;
+    min-height: calc(100vh - 70px - 2px);
+    padding: 0 .75rem 60px;
+    -webkit-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --ct-gutter-x: 1.5rem;
+    --ct-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(1.5rem * .5);
+    padding-left: calc(1.5rem * .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: inherit;
+}
+
+.row {
+    --ct-gutter-x: 1.5rem;
+    --ct-gutter-y: 0;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--ct-gutter-y));
+    margin-right: calc(-.5 * var(--ct-gutter-x));
+    margin-left: calc(-.5 * var(--ct-gutter-x));
+}
+
+.row>* {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--ct-gutter-x) * .5);
+    padding-left: calc(var(--ct-gutter-x) * .5);
+    margin-top: var(--ct-gutter-y);
+}
+
+.col-12 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.page-title-box .page-title-right {
+    float: right;
+    margin-top: 20px;
+}
+.page-title-box .page-title {
+    font-size: 18px;
+    margin: 0;
+    line-height: 75px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+@media (min-width: 1200px) {
+    .col-xl-6 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
+
+.card {
+    box-shadow: 0px 0px 35px 0px rgba(154, 161, 171, 0.15);
+    margin-bottom: 1.5rem;
+}
+
+.card {
+    --ct-card-spacer-y: 1.5rem;
+    --ct-card-spacer-x: 1.5rem;
+    --ct-card-title-spacer-y: 0.75rem;
+    --ct-card-border-width: var(--ct-theme-card-border-width);
+    --ct-card-border-color: var(--ct-border-color);
+    --ct-card-border-radius: var(--ct-border-radius);
+    --ct-card-box-shadow: var(--ct-box-shadow);
+    --ct-card-inner-border-radius: calc(var(--ct-border-radius) - (var(--ct-theme-card-border-width)));
+    --ct-card-cap-padding-y: 1.125rem;
+    --ct-card-cap-padding-x: 1.5rem;
+    --ct-card-cap-bg: transparent;
+    --ct-card-bg: var(--ct-secondary-bg);
+    --ct-card-img-overlay-padding: 1.5rem;
+    --ct-card-group-margin: 0.75rem;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    height: var(--ct-card-height);
+    color: #6c757d;
+    word-wrap: break-word;
+    background-color: white;
+    background-clip: border-box;
+    border: var(--ct-card-border-width) solid var(--ct-card-border-color);
+    border-radius: var(--ct-card-border-radius);
+}
+
+.pb-0 {
+    padding-bottom: 0 !important;
+}
+
+.card-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: var(--ct-card-spacer-y) var(--ct-card-spacer-x);
+    color: var(--ct-card-color);
+}
+
+.card .header-title {
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+    letter-spacing: .02em;
+    font-size: .9rem;
+    margin-top: 0;
+}
+
+.nav-tabs.nav-bordered {
+    border-bottom: 2px solid var(--ct-border-color);
+}
+
+.mb-3 {
+    margin-bottom: 1.5rem !important;
+}
+
+.nav-tabs {
+    --ct-nav-tabs-border-width: var(--ct-border-width);
+    --ct-nav-tabs-border-color: var(--ct-border-color);
+    --ct-nav-tabs-border-radius: var(--ct-border-radius);
+    --ct-nav-tabs-link-hover-border-color: var(--ct-secondary-bg) var(--ct-secondary-bg) var(--ct-border-color);
+    --ct-nav-tabs-link-active-color: var(--ct-emphasis-color);
+    --ct-nav-tabs-link-active-bg: var(--ct-secondary-bg);
+    --ct-nav-tabs-link-active-border-color: var(--ct-border-color) var(--ct-border-color) var(--ct-secondary-bg);
+    border-bottom: var(--ct-nav-tabs-border-width) solid var(--ct-nav-tabs-border-color);
+}
+
+.nav {
+    --ct-nav-link-padding-x: 1rem;
+    --ct-nav-link-padding-y: 0.5rem;
+    --ct-nav-link-color: var(--ct-link-color);
+    --ct-nav-link-hover-color: var(--ct-link-hover-color);
+    --ct-nav-link-disabled-color: var(--ct-secondary-color);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.nav-tabs.nav-bordered .nav-item {
+    margin-bottom: -1px;
+}
+
+.nav-tabs.nav-bordered li a {
+    border: 0;
+    padding: .625rem 1.25rem;
+}
+
+.nav-tabs .nav-link {
+    margin-bottom: calc(-1 * var(--ct-nav-tabs-border-width));
+    border: var(--ct-nav-tabs-border-width) solid transparent;
+    border-top-left-radius: var(--ct-nav-tabs-border-radius);
+    border-top-right-radius: var(--ct-nav-tabs-border-radius);
+}
+
+.nav-pills>li>a, .nav-tabs>li>a {
+    color: var(--ct-secondary-color);
+    font-weight: 600;
+}
+
+.nav-link {
+    display: block;
+    padding: var(--ct-nav-link-padding-y) var(--ct-nav-link-padding-x);
+    font-size: var(--ct-nav-link-font-size);
+    font-weight: var(--ct-nav-link-font-weight);
+    color: var(--ct-nav-link-color);
+    background: 0 0;
+    border: 0;
+    -webkit-transition: color .1s ease-in-out, border-color .1s ease-in-out;
+    transition: color .1s ease-in-out, border-color .1s ease-in-out;
+}
+
+
+
+
+
+
+.mini-bar-root {
+  position: relative;
+  height: 100%; /* Sau cât ai nevoie */
+  overflow: hidden;
+}
+
+.scroll-area {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  padding-right: 20px; /* Ascunde bara nativă */
+  box-sizing: content-box;
+}
+
+.bar-track {
+  position: absolute;
+  right: 2px; top: 0; bottom: 0;
+  width: 6px;
+}
+
+.bar-thumb:hover {
+  opacity: 1; /* Fade-in la 1 secundă */
+}
+
+.bar-thumb {
+  width: 100%;
+  background: #888;
+  border-radius: 10px;
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}
+
+.mini-bar-root:hover .bar-thumb {
+  opacity: 0.8 !important; /* Devine vizibilă instantaneu sau lin, conform tranziției */
+}
