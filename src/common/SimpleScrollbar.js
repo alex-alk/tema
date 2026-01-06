@@ -2,9 +2,34 @@ export class SimpleScrollbar {
   constructor(view, thumb) {
     this.view = view;
     this.thumb = thumb;
+    this.track = this.thumb.parentElement;
     this.isDragging = false;
     this.startY = 0;
     this.startScrollTop = 0;
+
+    this.track.addEventListener('mousedown', (e) => {
+        // Dacă am dat click direct pe thumb, nu facem nimic (se ocupă logica de drag)
+        if (e.target === this.thumb) return;
+
+        e.preventDefault();
+
+        // 1. Calculăm poziția click-ului relativ la track (0 - trackHeight)
+        const rect = this.track.getBoundingClientRect();
+        const clickY = e.clientY - rect.top;
+
+        // 2. Calculăm unde ar trebui să fie centrul thumb-ului
+        const thumbHeight = this.thumb.offsetHeight;
+        const scrollableHeight = this.view.scrollHeight - this.view.clientHeight;
+        
+        // 3. Mapăm poziția click-ului la scrollTop
+        // Scădem thumbHeight / 2 pentru ca thumb-ul să se centreze pe mouse
+        const clickRatio = (clickY - thumbHeight / 2) / (this.view.clientHeight - thumbHeight);
+        
+        // Limităm ratio între 0 și 1
+        const clampedRatio = Math.max(0, Math.min(1, clickRatio));
+
+        this.view.scrollTop = clampedRatio * scrollableHeight;
+    });
 
     this.thumb.addEventListener('mousedown', (e) => {
         this.isDragging = true;
