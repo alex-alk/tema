@@ -45,7 +45,14 @@ export class SimpleScrollbar {
     });
 
     this.view.addEventListener('scroll', this.syncThumb);
+    
     window.addEventListener('resize', this.syncThumb);
+
+    const ro = new ResizeObserver(() => {
+        this.syncThumb();
+    });
+    const sideNav = view.querySelector('.side-nav');
+    ro.observe(sideNav);
 
     // ACESTA ESTE APELUL CARE O FACE SĂ APARĂ LA ÎNCEPUT:
     this.syncThumb();
