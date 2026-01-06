@@ -1,0 +1,87 @@
+.topbar-light {
+    --topbar-bg: white;
+    --topbar-item-color: #6c757d;
+}
+
+.topbar-dark {
+    --topbar-bg: #313a46;
+    --topbar-item-color: #8391a2;
+}
+
+.topbar {
+    background: var(--topbar-bg);
+    box-shadow: 0px 0px 35px 0px rgba(154, 161, 171, 0.15);
+    min-height: 70px;
+    margin-left: 260px;
+    transition: margin-left .25s ease-in-out;
+    z-index: 1000;
+    border-bottom: 0px solid var(--border-color);
+}
+
+.button-toggle-menu {
+    color: var(--topbar-item-color);
+    width: 60px;
+    font-size: 24px;
+    z-index: 1;
+}
+
+.topbar .app-search form .form-control {
+    color: var(--topbar-item-color);
+    background-color: #f0f3f8;
+}
+
+.app-search form span.search-icon {
+    position: absolute;
+    font-size: 20px;
+    line-height: 38px;
+    left: 10px;
+    top: 0;
+    z-index: 5;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+
+.app-search form .form-control {
+    border: none;
+    height: calc(1.5em + .9rem + 2px);
+    padding-left: 40px;
+    padding-right: 20px;
+    box-shadow: none;
+}
+
+.input-group>.form-control, .input-group>.form-floating, .input-group>.form-select {
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    min-width: 0;
+}
+
+.topbar .app-search form {
+    height: 70px;
+    max-width: 320px;
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+.topbar .topbar-menu li {
+    max-height: 70px;
+}
+.dropdown, .dropdown-center, .dropend, .dropstart, .dropup, .dropup-center {
+    position: relative;
+}
+
+.topbar .topbar-menu .nav-link {
+    padding: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}

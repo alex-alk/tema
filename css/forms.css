@@ -1,0 +1,87 @@
+/* -------------- Buttons -------------------------*/
+
+.btn-primary {
+    --ct-btn-color: #fff;
+    --ct-btn-border-color: #727cf5;
+    --ct-btn-bg: #727cf5;
+
+    /*
+    --ct-btn-hover-color: #fff;
+    --ct-btn-hover-bg: #6973e3;
+    --ct-btn-hover-border-color: #6973e3;
+    --ct-btn-focus-shadow-rgb: 135, 144, 247;
+    --ct-btn-active-color: #fff;
+    --ct-btn-active-bg: #6973e3;
+    --ct-btn-active-border-color: #6973e3;
+    --ct-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --ct-btn-disabled-color: #fff;
+    --ct-btn-disabled-bg: #727cf5;
+    --ct-btn-disabled-border-color: #727cf5;
+    */
+}
+
+.btn {
+    display: inline-block;
+    /* padding: var(--ct-btn-padding-y) var(--ct-btn-padding-x); */
+    padding: 0.45rem 0.9rem;
+    /* font-size: var(--ct-btn-font-size); */
+    font-size: 0.9rem;
+    /* font-weight: var(--ct-btn-font-weight); */
+    font-weight: 400;
+    /* line-height: var(--ct-btn-line-height); */
+    line-height: 1.5;
+    color: var(--ct-btn-color);
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /* border: var(--ct-btn-border-width) solid var(--ct-btn-border-color); */
+    border: 1px solid var(--ct-btn-border-color);
+    /* border-radius: var(--ct-btn-border-radius); */
+    border-radius: 0.15rem;
+    background-color: var(--ct-btn-bg);
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+/* ------------- HTML Elements ---------------------*/
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+label {
+    font-weight: 600;
+    display: inline-block;
+}
+
+/* --------------- Common ----------------- */
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .45rem .9rem;
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--body-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--input-bg);
+    background-clip: padding-box;
+    border: var(--border-width) solid var(--border-color);
+    border-radius: .25rem;
+    -webkit-transition: none;
+    transition: none;
+}
+
+/*--------------------- Label ------------------------*/
+
+
+/*------------------ Input --------------------------*/
+

@@ -1,165 +1,94 @@
 :root {
-    --spacing: 0.25rem;
-}
-/*********** colors *************/
-.bg-white {
-  background-color: white;
+  --spacing: 0.25rem;
 }
 
-/********** constraints ***********/
-.mt-6 {
-    margin-top: calc(var(--spacing) * 6);
-}
+/***************************************
+************** BACKGROUNDS ******************
+****************************************/
 
-.mb-2 {
-    margin-bottom: .5rem;
-}
+/*----------- Background color -----------------*/
+.bg-transparent { background-color: transparent; }
 
-.mb-8 {
-    margin-bottom: 2rem;
-}
+/***************************************
+************** BORDERS ******************
+****************************************/
 
-.mb-6 {
-    margin-bottom: 1.5rem;
-}
+/*----------- Width -----------------*/
+.border-0 { border-width: calc(var(--spacing) * 0); }
 
-.mr-2 {
-    margin-right: .5rem;
-}
 
-.top-0 {
-    top: 0;
-}
 
-.left-0 {
-    left: 0;
-}
+/***************************************
+************ INTERACTIVITY *************
+****************************************/
 
-.py-20 {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-}
-
-.py-16 {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-}
-
-.py-12 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
-
-.py-8 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
-.mb-12 {
-    margin-bottom: 3rem;
-}
-
-.pb-20 {
-    padding-bottom: 5rem;
-}
-
-.mb-6 {
-    margin-bottom: 1.5rem;
-}
-
-@media (min-width: 992px) {
-    .lg\:px-20 {
-        padding-left: 5rem;
-        padding-right: 5rem;
-    }
-}  
-
-.p-6 {
-    padding: 1.5rem;
-}
-
-/************* dimensions *********/
-.rounded-lg {
-    border-radius: 1rem;
-}
-.min-h-screen {
-    min-height: 100vh;
-}
-
-.w-full {
-    width: 100%;
-}
-@media (min-width: 992px) {
-    .lg\:w-6\/12 {
-        width: 50%;
-    }
-} 
-
-.w-16 {
-    width: 4rem;
-}
-
-.h-screen {
-    height: 100vh;
-}
-
-.h-full {
-    height: 100%;
+/*----------- Cursor -----------------*/
+.cursor-pointer{
+    cursor: pointer;
 }
 
 
-/******** fonts ******************/
-.font-medium {
-    font-weight: 500;
+/***************************************
+************** LAYOUT ******************
+****************************************/
+
+/*----------- Display -----------------*/
+.flex { display: flex; }
+.hidden { display: none; }
+
+@media (min-width: 64rem) { /* 64rem = 1024px */
+  .lg\:block { display: block; }
+  .lg\:flex { display: flex; }
 }
 
-.text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-}
+/*----------- Position -----------------*/
+.sticky { position: sticky; }
+.relative { position: relative; }
 
-/*********** layout ***************/
-.flex {
-    display: flex;
-}
+/*----------- Top/Right/Bottom/Left -----------------*/
+/*.top-1 { top: var(--spacing); }*/
 
-.flex-col {
-    flex-direction: column;
-}
 
-.flex-wrap {
-    flex-wrap: wrap;
-}
 
-.shrink-0 {
-    flex-shrink: 0;
-}
+/***************************************
+************ FLEXBOX & GRID ************
+****************************************/
 
-.block {
-    display: block;
-}
+/*---------- Flex direction -------------*/
+.flex-col { flex-direction: column; }
 
-.z-10 {
-    z-index: 10;
-}
-
-.grow {
-    flex-grow: 1;
-}
-
-/*********** position *************/
-.justify-center {
-    justify-content: center;
-}
-
+/*----------- Align-items -----------------*/
 .items-center {
     align-items: center;
 }
 
-.text-center {
-    text-align: center;
+/* --------------- Gap ------------*/
+.gap-1 { gap: calc(var(--spacing) * 1); }
+.gap-3 { gap: calc(var(--spacing) * 3); }
+
+@media (min-width: 64rem) { /* 64rem = 1024px */
+  .lg\:gap-2 { gap: calc(var(--spacing) * 2); }
 }
 
-.fixed {
-    position: fixed;
+/*----------- Justify-content -----------------*/
+.justify-between {
+    justify-content: space-between;
+}
+
+
+
+/***************************************
+*************** SPACING ****************
+****************************************/
+
+/*---------------- Margin ------------------*/
+/*
+.mb-1 { margin-bottom: var(--spacing); }
+.mb-2 { margin-bottom: calc(var(--spacing) * 2); }
+.mb-3 { margin-bottom: calc(var(--spacing) * 3); }*/
+
+.my-0 { margin-top: calc(var(--spacing) * 0); margin-bottom: calc(var(--spacing) * 0); }
+
+.mx-auto {
+    margin-inline: auto;
 }
